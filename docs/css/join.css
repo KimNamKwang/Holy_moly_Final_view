@@ -1,0 +1,19 @@
+/* body {
+  background-color: rgba(249, 249, 249, 100);
+} */
+
+.container {
+  width: 500px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+.text-green {
+  color: rgb(55, 210, 67);
+}
