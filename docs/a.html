@@ -1,0 +1,1526 @@
+<html lang="ko"><head>
+    <meta charset="UTF-8">
+    <title>CU 편의점택배</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="CU편의점택배,포스트박스,CUpost,편의점택배,홈택배,CU끼리택배,CU안심퀵,방문택배,예약,할인,접수,조회,픽업">
+    <meta name="keywords" content="CU편의점택배,포스트박스,CUpost,편의점택배,홈택배,CU끼리택배,CU안심퀵,방문택배,예약,할인,접수,조회,픽업">
+    <link rel="stylesheet" href="/css/new/css/default.css?ver=20230127215030">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="/css/new/css/googlefonts_Roboto_300_400_500_700_900_swap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/new/css/font.css?ver=20230127215030">
+    <link rel="stylesheet" href="/css/new/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/new/css/select2.min.css">
+    <link rel="stylesheet" href="/css/new/css/simplebar.css">
+    <link rel="stylesheet" href="/css/new/css/ui-layout.css?ver=20230127215030">
+    <link rel="stylesheet" href="/css/new/css/ui-style.css?ver=20230127215030">
+    <link rel="stylesheet" href="/css/new/css/ui-content.css?ver=20230127215030">
+    <link rel="stylesheet" href="/css/new/css/common.css?ver=20230127215030">
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/js/new/jquery-3.4.1.min.js"></script>
+    <script src="/js/new/swiper-bundle.min.js"></script>
+    <script src="/js/new/select2.min.js"></script>
+    <script src="/js/new/simplebar.min.js"></script>
+    <script src="/js/new/ui-script.js?ver=20230127215030"></script>
+
+    <script type="text/javascript" src="/js/common.js?ver=20230127215030"></script>
+</head>
+<body>
+
+<!-- skipnav -->
+<div id="skip">
+<a href="#gnb" class="btn-gnb-trigger">주메뉴 바로가기</a>
+<a href="#gotoMainContents" id="skip-main">본문 바로가기</a>
+</div>
+
+<!-- Header Start -->
+<header class="main">
+
+
+
+
+
+
+
+
+
+<input type="hidden" id="businessInfo" value="">
+<!-- header -->
+<div id="header">
+<div class="header-inner">
+    <div class="header-bottom">
+        <div class="header-main">
+            <h1><a href="/postbox/main.cupost"><img src="/new_img/logo/logo_cupost.png" alt="CUPOST"></a></h1>
+            <ul>
+                <li><a href="/postbox/partner/convenienceStore.cupost">점포찾기</a></li>
+                <li><a href="/postbox/delivery/all.cupost">배송조회</a></li>
+                
+            </ul>
+        </div>
+        <div class="header-sub">
+            <ul class="social-list">
+                <li><a href="https://www.instagram.com/cupost__/" title="instagram"><img src="/new_img/ico/ico_social_instagram.png" alt="인스타그램"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCd7k0Xoiq8-2gR54ZBak1xQ" title="youtube"><img src="/new_img/ico/ico_social_youtube.png" alt="유튜브"></a></li>
+                <li><a href="https://pf.kakao.com/_xjCSlj" title="kakaotalk"><img src="/new_img/ico/ico_social_kakaotalk.png" alt="카카오톡채널"></a></li>
+            </ul>
+            <div class="gnb-trigger toggleParent">
+                <!-- gnb-dimmed -->
+                <div class="gnb-dimmed" role="button" title="gnb 닫기"></div>
+                <!-- //gnb-dimmed -->
+                <button type="button" class="btn-gnb-trigger toggleTrigger" title="GNB 열기"></button>
+                <div id="gnb" class="">
+                    <div class="gnb-inner">
+                        <div class="profile">
+                            <button type="button" class="btn-gnb-close" title="GNB 닫기"></button>
+                            
+                                
+                                
+                                    <div class="profile-inner" data-login="false">
+                                        <div class="member-init">
+                                            <div class="btn-member-login"><a href="/postbox/common/login.cupost">로그인</a></div>
+                                            <div class="btn-member-sign"><a href="/postbox/common/join_step.cupost">회원가입</a></div>
+                                            <p>*회원으로 이용 시 더 많은 서비스를 편리하게 이용하실 수 있습니다.</p>
+                                        </div>
+                                    </div>
+                                
+                            
+                        </div>
+
+                        <div class="gnb-list">
+                            <ul class="dep01 left">
+                                <li class="dep01-inner">
+                                    <a href="#">예약하기</a>
+                                    <ul class="dep02">
+                                        <li><a href="/postbox/local/member/reservation.cupost?returnUrl=/postbox/local/member/reservation.cupost">국내택배</a></li>
+                                        <li><a href="/postbox/home/general/reservationServices.cupost?returnUrl=/postbox/home/member/reservation.cupost">홈택배</a></li>
+                                        <li><a href="/postbox/store/general/reservationNote.cupost?returnUrl=/postbox/store/member/reservation.cupost">CU끼리택배</a></li>
+
+                                        <li><a href="javascript:goEmsReservation();">국제특송</a></li>
+                                        <li><a href="/postbox/local/general/quickService.cupost">안심 퀵</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dep01-inner">
+                                    <a href="/postbox/mypage/myCvsList.cupost?kind=local">예약내역 조회</a>
+                                    <ul class="dep02">
+                                            <li><a href="/postbox/mypage/myCvsList.cupost?kind=local">국내택배</a></li>
+                                            <li><a href="/postbox/mypage/myCvsList.cupost?kind=premium">홈 프리미엄</a></li>
+                                            <li><a href="/postbox/mypage/myCvsList.cupost?kind=home">홈 일반</a></li>
+                                            <li><a href="/postbox/mypage/myCvsList.cupost?kind=store">CU끼리택배</a></li>
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                <li class="dep01-inner">
+                                    <a href="#">이용안내</a>
+                                    <ul class="dep02">
+                                        
+                                        <li><a href="/postbox/common/postboxGuide.cupost">CUpost 이용안내</a></li>
+                                        <li><a href="/postbox/common/guideHowto.cupost">택배 이용안내</a></li>
+                                        <li><a href="/postbox/common/guidePackaging.cupost">포장안내</a></li>
+                                        <li><a href="/postbox/common/guideImpossible.cupost">이용불가 상품</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dep01-inner">
+                                    <a href="/postbox/delivery/all.cupost">배송조회</a>
+                                    <ul class="dep02">
+                                        <li><a href="/postbox/delivery/all.cupost?kind=local">국내택배</a></li>
+                                        <li><a href="/postbox/delivery/all.cupost?kind=premium">홈택배</a></li>
+                                        <li><a href="/postbox/delivery/all.cupost?kind=store">CU끼리택배</a></li>
+                                        <li><a href="/postbox/delivery/all.cupost?kind=ems">국제특송</a></li>
+                                        <li><a href="/postbox/delivery/all.cupost?kind=pickup">편의점 PICK-UP</a></li>
+                                        <li><a href="/postbox/local/general/quickService.cupost">안심 퀵</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dep01-inner">
+                                    <a href="#">이벤트</a>
+                                    <ul class="dep02">
+                                        <li><a href="/postbox/cuevent/eventList.cupost?searchStatus=L">진행중인 이벤트</a></li>
+                                        <li><a href="/postbox/cuevent/eventList.cupost?searchStatus=E">지난 이벤트</a></li>
+                                        <li><a href="/postbox/cs/eventWinnerList.cupost">당첨자 발표</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dep01-inner">
+                                    <a href="#">회원혜택</a>
+                                    <ul class="dep02">
+                                        <li><a href="/postbox/membership/gradeBenefit.cupost">등급별 혜택</a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="dep01 right">
+                                <li><a href="/postbox/cs/noticeList.cupost">공지사항</a></li>
+                                <li><a href="/postbox/cs/newsList.cupost">CUpost 소식</a></li>
+                                <li class=""><a href="/postbox/customer/faqList.cupost">고객센터</a></li>
+                                
+                                <li class=""><a href="/postbox/membership/gradeApply.cupost">법인 제휴 문의</a></li>
+                                <li class=""><a href="/postbox/partner/convenienceStore.cupost">점포찾기</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="gnb-footer">
+                            <div class="banner">
+                                <div class="thumb">
+                                    <a href="/postbox/cppon/main.cupost"><img src="/new_img/banner/img_gnb_banner01.png" alt="cupon 쿠폰(택배상품권 5% 상시할인)"></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top">
+        <div class="btn-util">
+            <ul>
+                <li>
+                    <div class="header-search toggleParent">
+                        <button type="button" class="toggleTrigger">
+                            <span class="blind">
+                                <span class="on" aria-hidden="true">검색창 닫기</span>
+                                <span class="off" aria-hidden="false">검색창 열기</span>
+                            </span>
+                        </button>
+                        <form class="header-search-inner" id="faqFrm" method="post" action="/postbox/customer/faqList.cupost">
+                            <input type="search" title="FAQ 내 검색" placeholder="FAQ 내 검색" id="searchWord" name="searchWord">
+                            <button type="submit" title="검색하기" id="btn-search-faq"></button>
+                        </form>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="btn-log">
+            
+                
+                
+                    <ul data-login="false">
+                        <li><a href="/postbox/common/login.cupost">로그인</a></li>
+                        <li><a href="/postbox/common/join_step.cupost">회원가입</a></li>
+                    </ul>
+                
+            
+        </div>
+    </div>
+</div>
+</div>
+<!-- //header -->
+
+<script>
+$(document).ready(function() {
+    // 주소검색, 주소록 중복 include시 1개 제외 모두 삭제
+    if($('[data-layer-id=layer-address1]').length > 1) {
+        $.each($('[data-layer-id=layer-address1]'), function(idx, item) {
+            if(idx > 0) {
+                $(item).remove();
+            }
+        });
+    }
+
+    if($('[data-layer-id=layer-book-popup]').length > 1) {
+        $.each($('[data-layer-id=layer-book-popup]'), function(idx, item) {
+            if(idx > 0) {
+                $(item).remove();
+            }
+        });
+    }
+
+    
+});
+
+function goEmsReservation() {
+    if(true) {
+        var msg = `국제특송 예약은 회원전용 서비스입니다.<br>로그인 하시겠습니까?`;
+        openCommonConfirmPopup(msg,
+            function () {
+                location.href = '/postbox/common/login.cupost?returnUrl=/postbox/ems/member/reservation.cupost';
+        });
+    }
+    else {
+        location.href = '/postbox/ems/member/reservation.cupost';
+    }
+}
+
+// 알림톡
+function noticeTalk() {
+    if(!$("#noticeTalk").hasClass("grade01")) {
+        location.href = "/postbox/mypage/info.cupost?type=sms";
+    }else{
+        $(".grade01").on("click", function(e){
+            e.preventdefault();
+        });
+    }
+}
+
+// 회원전용 반품
+function membershipReturn() {
+    if(!$("#membershipReturn").hasClass("grade01")) {
+        location.href = "/postbox/mypage/info.cupost?type=return";
+    }else{
+        $(".grade01").on("click", function(e){
+            e.preventdefault();
+        });
+    }
+}
+
+function hasNewPush() {
+    $.ajax({
+        url : '/postbox/common/hasNewPush.cupost',
+        dataType : "JSON",
+        type : "POST",
+        error : function() {
+            console.log("FAIL INQUIRY NEW PUSH");
+        },
+        success : function(data) {
+            if(data.newPushCount > 0) {
+                $('.header-alarm').addClass('active').attr('title', '알림 있음');
+                $('.profile-alarm').addClass('active').attr('title', '알림 있음');
+            }
+        }
+    });
+}
+</script>
+
+
+</header>
+<!--// Header End -->
+<div id="container">
+<section id="gotoMainContents" class="contents" style="width:auto;">
+    
+
+
+
+
+
+
+<!-- wrap -->
+<div id="wrap">
+
+    <!-- container -->
+    <div id="container">
+
+        <!-- content -->
+        <div id="content">
+
+            <section class="pb40" style="width: auto;">
+                <div class="main-shortcut-link">
+                    <div class="main-shortcut-link-inner">
+                        <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><h2 class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"><button type="button">예약하기</button></h2><h2 class="swiper-pagination-bullet"><button type="button">이용안내</button></h2></div>
+                            <div class="swiper-wrapper" id="swiper-wrapper-928b1c6d71db63af" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2" style="width: 1160px; margin-right: 28px;">
+                                    <ul>
+                                        <li>
+                                            <a href="/postbox/local/member/reservation.cupost?returnUrl=/postbox/local/member/reservation.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut01.png" alt="국내택배"></div>
+                                                <dl>
+                                                    <dt>국내택배</dt>
+                                                    <dd>CU편의점에서 <br> 직접 보내는 택배</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/postbox/home/general/reservationServices.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut02.png" alt="홈택배"></div>
+                                                <dl>
+                                                    <dt>홈택배</dt>
+                                                    <dd>원하는 시간, <br> 장소로 기사가 방문</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/postbox/store/general/reservationNote.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut03.png" alt="CU끼리택배"></div>
+                                                <dl>
+                                                    <dt>CU끼리택배</dt>
+                                                    <dd>저렴한 가격으로 <br> CU에서 CU로</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a href="javascript:goEmsReservation();">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut04.png" alt="국제특송"></div>
+                                                <dl>
+                                                    <dt>국제특송</dt>
+                                                    <dd>EMS <br> 국제택배</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/postbox/local/general/quickService.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut05.png" alt="안심퀵"></div>
+                                                <dl>
+                                                    <dt>안심 퀵</dt>
+                                                    <dd>안전하고 빠른 <br> CUpost 퀵 서비스</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2" style="width: 1160px; margin-right: 28px;">
+                                    <ul>
+                                        <li>
+                                            <a href="/postbox/common/postboxGuide.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut06.png" alt="POSTBOX 이용안내"></div>
+                                                <dl>
+                                                    <dt>CU postbox <br> 이용안내</dt>
+                                                    <dd>CU postbox 안내사항</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/postbox/common/guideHowto.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut07.png" alt="택배 이용안내"></div>
+                                                <dl>
+                                                    <dt>택배 이용안내</dt>
+                                                    <dd>택배 종류 별 운임 및 규정, <br> 배송과정</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/postbox/common/guidePackaging.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut08.png" alt="포장안내"></div>
+                                                <dl>
+                                                    <dt>포장안내</dt>
+                                                    <dd>물품 포장 박스 규격 및 <br> 품목별 포장 방법</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/postbox/common/guideImpossible.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut09.png" alt="이용불가 상품"></div>
+                                                <dl>
+                                                    <dt>이용불가 상품</dt>
+                                                    <dd>CUpostbox를 통해 <br> 접수 불가한 상품</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/postbox/customer/faqList.cupost">
+                                                <div class="thumb"><img src="/new_img/thumb/img_shortcut10.png" alt="고객센터"></div>
+                                                <dl>
+                                                    <dt>고객센터</dt>
+                                                    <dd>FAQ , 1:1 문의, 실시간 상담, <br> 현금영수증 조회</dd>
+                                                </dl>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="width: auto;">
+                <div class="main-visual">
+                    
+                        
+                            <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                                <div class="swiper-wrapper" id="swiper-wrapper-3a955322c9f77f51" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-3032.5px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20230116090634959">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673827718064.jpg" alt="아이패드">
+                                                    </div>
+                                                </a>
+                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20230109090303206">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673827209017.jpg" alt="끼리택배">
+                                                    </div>
+                                                </a>
+                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20221230092905417">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673999948554.jpg" alt="에스더버니">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20230116090634959">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673827718064.jpg" alt="아이패드">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20230109090303206">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673827209017.jpg" alt="끼리택배">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20221230092905417">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673999948554.jpg" alt="에스더버니">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20230116090634959">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673827718064.jpg" alt="아이패드">
+                                                    </div>
+                                                </a>
+                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20230109090303206">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673827209017.jpg" alt="끼리택배">
+                                                    </div>
+                                                </a>
+                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="margin-right: 28px;">
+                                                
+                                                    
+                                                    
+                                                        <a href="/postbox/cuevent/eventView.cupost?eventId=CE20221230092905417">
+                                                    
+                                                
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/info/1673999948554.jpg" alt="에스더버니">
+                                                    </div>
+                                                </a>
+                                            </div></div>
+                                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="이전 슬라이드" aria-controls="swiper-wrapper-3a955322c9f77f51"></div>
+                                <div class="swiper-button-next" tabindex="0" role="button" aria-label="다음 슬라이드" aria-controls="swiper-wrapper-3a955322c9f77f51"></div>
+                                <div class="swiper-control">
+                                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+                                    <button type="button" class="swiper-button-play" title="자동재생 시작"></button>
+                                    <button type="button" class="swiper-button-stop" title="자동재생 멈춤"></button>
+                                </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        
+                        
+                    
+                </div>
+            </section>
+
+            
+
+            <section style="width: auto;">
+                <div class="promotion-visual">
+                    <div class="promotion-visual-inner">
+                        <h3 class="section-title">다양한 프로모션</h3>
+                        <div class="swiper swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress">
+                            <div class="swiper-wrapper" id="swiper-wrapper-a85ecb75967f79ae" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-1427.69px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(-420px, 0px, -1600px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -3;">
+                                                <a href="https://www.cupost.co.kr/postbox/cuevent/eventView.cupost?eventId=CE20221230092905417">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1673482590318.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(-315.036px, 0px, -1200.14px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -2;">
+                                                <a href="https://www.cupost.co.kr/postbox/cs/noticeView.cupost?seq=103121">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1672374587210.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(-210.072px, 0px, -800.276px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -1;">
+                                                <a href="https://bank1s.co.kr/scash/join?siteCode=LG&amp;ctgCode=3">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1668747613235.png" alt="증정이벤트">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                
+                                    
+                                        
+                                            <div class="swiper-slide swiper-slide-visible swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(-105.109px, 0px, -400.414px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0;">
+                                                <a href="https://www.cupost.co.kr/postbox/cuevent/eventView.cupost?eventId=CE20221230092905417">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1673482590318.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="swiper-slide swiper-slide-visible swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(0.0905172px, 0px, -0.344828px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1;">
+                                                <a href="https://www.cupost.co.kr/postbox/cs/noticeView.cupost?seq=103121">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1672374587210.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        
+                                            <div class="swiper-slide swiper-slide-visible swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(105.054px, 0px, -400.207px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 0;">
+                                                <a href="https://bank1s.co.kr/scash/join?siteCode=LG&amp;ctgCode=3">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1668747613235.png" alt="증정이벤트">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        
+                                    
+                                    
+                                
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(210.018px, 0px, -800.069px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -1;">
+                                                <a href="https://www.cupost.co.kr/postbox/cuevent/eventView.cupost?eventId=CE20221230092905417">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1673482590318.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="1" role="group" aria-label="2 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(314.982px, 0px, -1199.93px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -2;">
+                                                <a href="https://www.cupost.co.kr/postbox/cs/noticeView.cupost?seq=103121">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1672374587210.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="2" role="group" aria-label="3 / 3" style="width: 446.154px; transition-duration: 0ms; transform: translate3d(419.946px, 0px, -1599.79px) rotateX(0deg) rotateY(0deg) scale(1); z-index: -3;">
+                                                <a href="https://bank1s.co.kr/scash/join?siteCode=LG&amp;ctgCode=3">
+                                                    <div class="thumb">
+                                                        <img src="/upload/main/popup/1668747613235.png" alt="증정이벤트">
+                                                    </div>
+                                                </a>
+                                            </div></div>
+                            
+                                <div class="swiper-button-prev" tabindex="0" role="button" aria-label="이전 슬라이드" aria-controls="swiper-wrapper-a85ecb75967f79ae"></div>
+                                <div class="swiper-button-next" tabindex="0" role="button" aria-label="다음 슬라이드" aria-controls="swiper-wrapper-a85ecb75967f79ae"></div>
+                                <div class="swiper-control">
+                                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+                                    <button type="button" class="swiper-button-play" title="자동재생 시작"></button>
+                                    <button type="button" class="swiper-button-stop" title="자동재생 멈춤"></button>
+                                </div>
+                            
+                            <div class="view-more"><a href="/postbox/cuevent/eventList.cupost">전체보기</a></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section style="width: auto;">
+                <div class="notice">
+                    <div class="notice-inner">
+                        <div class="notice-title-wrap">
+                            <h3 class="section-title">공지사항</h3>
+                            <div class="view-more"><a href="/postbox/cs/noticeList.cupost">전체보기</a></div>
+                        </div>
+                        
+                            <ul>
+                                
+                                    
+                                        
+                                        <li><a href="/postbox/cs/noticeView.cupost?seq=104621">2023년 설 연휴 택배중단 안내<span>23.01.09</span></a></li>
+                                    
+                                
+                                    
+                                        
+                                        <li><a href="/postbox/cs/noticeView.cupost?seq=103871">2023년 설 연휴 홈택배 중단 일정 안내<span>23.01.03</span></a></li>
+                                    
+                                
+                                    
+                                        
+                                        <li><a href="/postbox/cs/noticeView.cupost?seq=103121">국내택배 운임 조정 안내<span>22.12.28</span></a></li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            </ul>
+                        
+                    </div>
+                </div>
+            </section>
+
+            
+                <section style="width: auto;">
+                    <div class="sns-youtube">
+                        <h3 class="section-title">#마음을전하세요 #CUPOST</h3>
+                        <div class="sns-youtube-inner" style="background:url() center center / cover no-repeat;">
+                            <div class="youtube-view">
+
+                                <div class="youtube-frame" style="margin-left:427.325px;">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c3qRc9UE0rg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+
+            <section style="width: auto;">
+                <div class="ongoing-event">
+                    <div class="ongoing-event-title-wrap">
+                        <h3 class="section-title">진행중인 이벤트</h3>
+                        <div class="view-more"><a href="/postbox/cuevent/eventList.cupost">전체보기</a></div>
+                    </div>
+
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                        <div class="swiper-wrapper" id="swiper-wrapper-1723c4dfbf04105ec" aria-live="off" style="transform: translate3d(-3406px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 1683px; margin-right: 20px;">
+                                            <a href="https://www.cupost.co.kr/postbox/cuevent/eventView.cupost?eventId=CE20201231082043510" class="ongoing-link" style="background-color:#F9F9F9;">
+                                                <img src="/upload/main/popup/1672625042145.jpg" alt="">
+                                            </a>
+                                        </div>
+                            
+                                
+                                    
+                                        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 1683px; margin-right: 20px;">
+                                            <a href="https://bank1s.co.kr/scash/join?siteCode=LG&amp;ctgCode=4" class="ongoing-link" style="background-color:#F9F9F9;">
+                                                <img src="/upload/main/popup/1668747622802.png" alt="">
+                                            </a>
+                                        </div>
+                                    
+                                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" role="group" aria-label="2 / 4" style="width: 1683px; margin-right: 20px;">
+                                            <a href="https://www.cupost.co.kr/postbox/cuevent/eventView.cupost?eventId=CE20221230092905417" class="ongoing-link" style="background-color:#F9F9F9;">
+                                                <img src="/upload/main/popup/1672622481649.jpg" alt="에스더버니">
+                                            </a>
+                                        </div>
+                                    
+                                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" role="group" aria-label="3 / 4" style="width: 1683px; margin-right: 20px;">
+                                            <a href="https://www.cupost.co.kr/postbox/cuevent/eventView.cupost?eventId=CE20201231082846791" class="ongoing-link" style="background-color:#F9F9F9;">
+                                                <img src="/upload/main/popup/1672625027203.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    
+                                        <div class="swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 4" style="width: 1683px; margin-right: 20px;">
+                                            <a href="https://www.cupost.co.kr/postbox/cuevent/eventView.cupost?eventId=CE20201231082043510" class="ongoing-link" style="background-color:#F9F9F9;">
+                                                <img src="/upload/main/popup/1672625042145.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    
+                                
+                                
+                            
+
+                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 1683px; margin-right: 20px;">
+                                            <a href="https://bank1s.co.kr/scash/join?siteCode=LG&amp;ctgCode=4" class="ongoing-link" style="background-color:#F9F9F9;">
+                                                <img src="/upload/main/popup/1668747622802.png" alt="">
+                                            </a>
+                                        </div></div>
+                        
+                        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="이전 슬라이드" aria-controls="swiper-wrapper-1723c4dfbf04105ec"></div>
+                        <div class="swiper-button-next" tabindex="0" role="button" aria-label="다음 슬라이드" aria-controls="swiper-wrapper-1723c4dfbf04105ec"></div>
+                        <div class="swiper-control">
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2" aria-current="true"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+                            <button type="button" class="swiper-button-play" title="자동재생 시작"></button>
+                            <button type="button" class="swiper-button-stop" title="자동재생 멈춤"></button>
+                        </div>
+                        
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+                </div>
+            </section>
+
+            <section style="width: auto;">
+                <div class="faq">
+                    <div class="faq-title-wrap">
+                        <h3 class="section-title">자주 묻는 질문</h3>
+                        <div class="view-more"><a href="/postbox/customer/faqList.cupost">전체보기</a></div>
+                    </div>
+                    <div class="faq-inner">
+                        <div class="faq-list-wrap">
+                            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-vertical"><button type="button" class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" aria-current="true">오늘 보내면 언제 배송 되나요?</button><button type="button" class="swiper-pagination-bullet" tabindex="0">화물 추적은 어떻게 해야 하나요?</button><button type="button" class="swiper-pagination-bullet" tabindex="0">화물이 분실(파손)되면 어떻게 해야 하죠?</button><button type="button" class="swiper-pagination-bullet" tabindex="0">CU끼리택배 접수시 유의할 사항이 있나요?</button><button type="button" class="swiper-pagination-bullet" tabindex="0">홈택배 할증금액이 무엇인가요?</button></div>
+                            <div class="swiper-wrap">
+                                <div class="swiper swiper-initialized swiper-vertical swiper-pointer-events swiper-backface-hidden">
+                                    <div class="swiper-wrapper" id="swiper-wrapper-77c073ea7102f10a58" aria-live="polite">
+                                        
+                                            <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 5" style="height: 400px; margin-bottom: 100px;">
+                                                <pre><p>점포별 택배 마감시간 이전에 맡기신 물건은</p><p>일반지역 : 2영업일 이내 배송</p><p>제주 및 도서, 산간지역은 배송이 지연될 수 있습니다.</p><p>(단 공휴일, 일요일, 천재지변시에는 배송기일에서 제외됩니다)</p><p><br></p><p>점포별 택배 마감시간은 평일 17시 (시,군,구 일부지역 및 경기 일부지역 15시), 토요일 12시 이며,<br>일요일 및 공휴일은 배송되지 않습니다. </p><p><br></p><p>택배 마감시간은 지역마다 다르므로 접수하시는 CU편의점으로 문의 바랍니다.<br></p></pre>
+                                            </div>
+                                        
+                                            <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 5" style="height: 400px; margin-bottom: 100px;">
+                                                <pre><p>물건을 CU편의점에 접수하시면 운송장이 출력되고 POS에 등록 처리된 후&nbsp;고객용 운송장을 받게 됩니다.</p><p>&nbsp;</p><p>이 운송장은 화물이 잘 도착할 때까지 잘 보관하셔야 합니다.</p><p>&nbsp;</p><p>운송장의 송장번호는 해당 물건을 대표하는 번호로 이 번호를 통해 온라인으로 조회를 하실 수 있으며,&nbsp;고객센터에</p><p>문의를 하실 때에도 반드시 필요합니다.</p><p>&nbsp;</p><p><a href="/postbox/delivery/local.cupost" target="_self">(운송장 조회하기)</a></p><p>&nbsp;</p></pre>
+                                            </div>
+                                        
+                                            <div class="swiper-slide" role="group" aria-label="3 / 5" style="height: 400px; margin-bottom: 100px;">
+                                                <pre><p>화물이 분실 혹은 파손 되었을 경우에는 CJ대한통운 고객센터(1577-1287)로 문의로 문의 부탁 드리겠습니다.</p><p>&nbsp;</p><p>특히, 파손 시에는 화물의 포장상태와 파손내용을 택배사에서 확인할 수 있도록 그대로 유지한 상태에서 연락을 주시면, <br>사진이나 방문확인 등을 통해서 택배표준약관의 기준에 준하여 신속히 처리하여 드립니다.</p><p><br></p><p>단, 품목과 물품가액 고객 정보 등을 거짓 기재한 경우와 파손면책 동의 건, 포장이 충분하지 않은 건은 고객님 귀책이 있는 사안으로 빠른 처리가 <br>어려울 수 있습니다.<br></p><p><br></p><p>&nbsp;</p></pre>
+                                            </div>
+                                        
+                                            <div class="swiper-slide" role="group" aria-label="4 / 5" style="height: 400px; margin-bottom: 100px;">
+                                                <pre><p>CU끼리택배는 일반택배와 접수기준이 다소 차이가 있습니다. </p><p><br></p><p>1) 배송기간 : 택배 접수후 4~6영업일 (접수일 미포함)<br>2)&nbsp;중량 / 규격 : 5kg 이하 / 세변의 합 100cm이하<br>3)&nbsp;접수가능품목 : 잡화/서적류, 의류, 가전제품, 곡물류 (식품, 편지봉투 절대불가)<br>4)&nbsp;물품가액 : 50만원 이하&nbsp;</p><p>5) 택배반송 : 점포 택배 도착후 4일 이내 받는 분 택배 미수령시 송화인 주소로 착불 반송</p><p><br></p><p>* 택배 예약접수시 받는 분 휴대폰 번호 정확하게 입력해주세요.</p><p>&nbsp; (연락처&nbsp;오등록시 배송알림톡 및 QR코드 미전송으로 택배수령이 불가할 수 있음)<br></p><p><br></p><p>유의사항 잘 숙지하시어 서비스 이용해주시기 바랍니다.<br></p></pre>
+                                            </div>
+                                        
+                                            <div class="swiper-slide" role="group" aria-label="5 / 5" style="height: 400px; margin-bottom: 100px;">
+                                                <pre><p>실제 상품의 규격과 무게가 고객님이 예약하신 규격 또는 무게를 초과할 시 할증이 발생하게 됩니다.</p><p><br></p><p>할증 발생 시, 문자를 통해 할증금액 납부 안내가 진행되며 신용카드 또는 휴대폰 소액결제로 납부 가능합니다. <br>&nbsp;</p></pre>
+                                            </div>
+                                        
+                                    </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="width: auto;">
+                <div class="family-service">
+                    <h3 class="section-title">연동 서비스몰</h3>
+                    <div class="family-service-inner">
+                        <ul>
+                            <li><a href="https://www.cu-pon.co.kr"><img src="/upload/main/popup/1672639022509.jpg" alt=""></a></li>
+                            <li><a href="https://mforyou.co.kr/main/main.do"><img src="/upload/main/popup/1664909360080.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+        <!-- //content -->
+
+        
+    </div>
+    <!-- //container -->
+
+</div>
+<!-- //wrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="trackingForm" method="post">
+<input type="hidden" id="invoice_no" name="invoice_no">
+</form>
+
+<script>
+    $(document).ready(function() {
+        
+
+        
+
+        
+
+        
+
+        
+        
+
+        
+        
+
+        var mainShortcutLinkTitle = [
+            '예약하기',
+            '이용안내'
+        ];
+        const mainShortcutLink = new Swiper('.main-shortcut-link .swiper', {
+            spaceBetween: 28,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<h2 class="' + className + '"><button type="button">' + (mainShortcutLinkTitle[index]) + '</button></h2>';
+                },
+            },
+        });
+        $('.swiper-pagination-bullet').removeAttr('tabindex');
+        const mainVisual = new Swiper('.main-visual .swiper', {
+            slidesPerView : 'auto',
+            spaceBetween: 28,
+            pagination: {
+                el: '.main-visual .swiper-pagination',
+                clickable : true
+            },
+            centeredSlides : true,
+            
+            loop: true,
+            autoplay : {
+                delay : 4000,
+                disableOnInteraction : false
+            },
+            navigation: {
+                nextEl: '.main-visual .swiper-button-next',
+                prevEl: '.main-visual .swiper-button-prev',
+            },
+            a11y: {
+                prevSlideMessage: '이전 슬라이드',
+                nextSlideMessage: '다음 슬라이드',
+            },
+            
+        });
+        $('.main-visual .swiper').find('.swiper-button-play').bind({
+            'click':function(e){
+                mainVisual.autoplay.start();
+                $(this).hide();
+                $(this).parent().find('.swiper-button-stop').show().focus();
+            }
+        });
+        $('.main-visual .swiper').find('.swiper-button-stop').bind({
+            'click':function(e){
+                mainVisual.autoplay.stop();
+                $(this).hide();
+                $(this).parent().find('.swiper-button-play').show().focus();
+            }
+        });
+
+        const promotionVisual = new Swiper('.promotion-visual .swiper', {
+            slidesPerView: 2.6,
+            // spaceBetween: 20,
+            pagination: {
+                el: '.promotion-visual .swiper-pagination',
+                clickable : true
+            },
+            centeredSlides : true,
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 0,
+                slideShadows:false,
+                stretch:105,
+                modifier:-1,
+                depth :400,
+            },
+            
+            loop: true,
+            autoplay : {
+                delay : 4000,
+                disableOnInteraction : false
+            },
+            navigation: {
+                nextEl: '.promotion-visual .swiper-button-next',
+                prevEl: '.promotion-visual .swiper-button-prev',
+            },
+            a11y: {
+                prevSlideMessage: '이전 슬라이드',
+                nextSlideMessage: '다음 슬라이드',
+            },
+            
+        });
+
+        $('.promotion-visual .swiper').find('.swiper-button-play').bind({
+            'click':function(e){
+                promotionVisual.autoplay.start();
+                $(this).hide();
+                $(this).parent().find('.swiper-button-stop').show().focus();
+            }
+        });
+        $('.promotion-visual .swiper').find('.swiper-button-stop').bind({
+            'click':function(e){
+                promotionVisual.autoplay.stop();
+                $(this).hide();
+                $(this).parent().find('.swiper-button-play').show().focus();
+            }
+        });
+
+        const ongoingEventVisual = new Swiper('.ongoing-event .swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.ongoing-event .swiper-pagination',
+                clickable : true
+            },
+            
+            loop: true,
+            autoplay : {
+                delay : 4000,
+                disableOnInteraction : false
+            },
+            navigation: {
+                nextEl: '.ongoing-event .swiper-button-next',
+                prevEl: '.ongoing-event .swiper-button-prev',
+            },
+            a11y: {
+                prevSlideMessage: '이전 슬라이드',
+                nextSlideMessage: '다음 슬라이드',
+            },
+            
+        });
+        $('.ongoing-event .swiper').find('.swiper-button-play').bind({
+            'click':function(e){
+                ongoingEventVisual.autoplay.start();
+                $(this).hide();
+                $(this).parent().find('.swiper-button-stop').show().focus();
+            }
+        });
+        $('.ongoing-event .swiper').find('.swiper-button-stop').bind({
+            'click':function(e){
+                ongoingEventVisual.autoplay.stop();
+                $(this).hide();
+                $(this).parent().find('.swiper-button-play').show().focus();
+            }
+        });
+
+        var faqListTitle = [];
+
+        
+        faqListTitle.push('오늘 보내면 언제 배송 되나요?');
+        
+        faqListTitle.push('화물 추적은 어떻게 해야 하나요?');
+        
+        faqListTitle.push('화물이 분실(파손)되면 어떻게 해야 하죠?');
+        
+        faqListTitle.push('CU끼리택배 접수시 유의할 사항이 있나요?');
+        
+        faqListTitle.push('홈택배 할증금액이 무엇인가요?');
+        
+
+        const faqList = new Swiper('.faq-list-wrap .swiper', {
+            direction:'vertical',
+            spaceBetween: 100,
+            pagination: {
+                el: '.faq-list-wrap .swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<button type="button" class="' + className + '">' + (faqListTitle[index]) + '</button>';
+                },
+            },
+        });
+
+        $('section').css('width', 'auto');
+    });
+
+    
+    function eventDonateDetail(){
+        $('#frmEvent').attr("action","/postbox/cuevent/eventView.cupost")
+        $('#frmEvent').submit();
+    }
+
+    
+    function viewReserveDetail(invoiceNo) {
+        $('#invoice_no').val(invoiceNo);
+
+        $('#trackingForm').attr('action', '/postbox/delivery/allResult.cupost').submit();
+    }
+
+    
+    function setMap(seq, zoneTotal) {
+        var startX = 0,
+                startY = 0,
+                imageWidth = $('#zoneImage_' + seq).width(),
+                imageHeight = $('#zoneImage_' + seq).height(),
+                moveY = imageHeight / zoneTotal;
+
+        for(var i = 0; i < zoneTotal; i++) {
+            $("map[name=popupMap_"+seq+"]").children('area:eq('+i+')').attr('coords', startX+','+startY+','+imageWidth+','+(startY+moveY));
+            startY+=moveY;
+        }
+    }
+
+    
+    function link(url,target){
+        if(url!=""){
+            if(target=="N")
+                window.open(url,"","");
+            else
+                location = url;
+        }
+    }
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-92509665-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+</section>
+</div>
+
+<footer>
+
+
+<div id="footer">
+
+<div class="support-info">
+    <div class="support-info-top">
+        <div class="support-info-inner">
+            <div class="support-name">주)비지에프네트웍스</div>
+            <ul>
+                <li><a href="http://bgfnetworks.com/">회사소개</a></li>
+                <li><a href="/postbox/terms/terms.cupost">이용약관</a></li>
+                <li><a href="/postbox/terms/privacy.cupost" style="color:#7b4cd3;">개인정보처리방침</a></li>
+                <li><a href="/postbox/partner/pickupUse.cupost">사업제휴</a></li>
+                <li><a href="/postbox/customer/faqList.cupost">고객센터</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="support-info-bottom dropDown active">
+        <button type="button" class="btn-support-toggle trigger" title="고객센터 연락처">
+                    <span class="blind">
+                        <span class="on" aria-hidden="true">닫기</span>
+                        <span class="off" aria-hidden="false">열기</span>
+                    </span>
+        </button>
+        <ul class="target">
+            <li>
+                <a href="tel:1577-1287">1577-1287 </a>
+                <dl>
+                    <dt>국내택배 고객센터</dt>
+                    <dd>평일 09~18시/ 토요일 09~13시 <br> (평일 점심시간 12~13시)</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="tel:1566-1025">1566-1025 </a>
+                <dl>
+                    <dt>픽업/제휴 회원관련 문의</dt>
+                    <dd>평일 09~18시/ 토요일 09~13시 <br> (평일 점심시간 11:30~12:30)</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="tel:1833-8209">1833-8209 </a>
+                <dl>
+                    <dt>안심퀵 고객센터 </dt>
+                    <dd>평일 09~19시 / 주말,공휴일 10~16시</dd>
+                </dl>
+            </li>
+            <li>
+                <a href="tel:1577-8007">1577-8007 </a>
+                <dl>
+                    <dt>CU끼리택배 관련문의 </dt>
+                    <dd>평일 09~18시</dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="company-list">
+    <div class="company-list-inner">
+        <ul>
+            <li>
+                <dl>
+                    <dt>대표자명</dt>
+                    <dd>황환조</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>주소</dt>
+                    <dd>서울특별시 광진구 광나루로56길,85 24층 1-13</dd>
+                    <dt>e-mail</dt>
+                    <dd><a href="mailto:cupost@bgf.co.kr">cupost@bgf.co.kr</a></dd>
+                    <dt>FAX</dt>
+                    <dd>02-6711-0699</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>호스팅 서비스 제공자</dt>
+                    <dd>주)비지에프네트웍스</dd>
+                    <dt>사업자등록번호</dt>
+                    <dd>119-86-23709 <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1198623709" class="box-round">사업자 정보 확인</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <div class="web-accessibility"><a href="http://www.wa.or.kr/board/list.asp?BoardID=0006"><img src="/new_img/ico/ico_wa1.png" alt="WA"></a></div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <div class="left">
+        <div class="logo"><img src="/new_img/logo/logo_cupost_black.png" alt="CUPOST"></div>
+        <div class="copy">Copyright ⓒ2016 CUpost ALL RIGHTS RESERVED.</div>
+    </div>
+    <div class="right">
+        <div class="family-site dropDown">
+            <button type="button" class="trigger"><span>패밀리 사이트</span></button>
+            <ul class="target" style="display:none;" id="familySite"><li><a href="https://cu.bgfretail.com/index.do">CU</a></li><li><a href="https://mforyou.co.kr/main/main.do">M for U</a></li><li><a href="https://www.cu-pon.co.kr">CUPON</a></li></ul>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "/postbox/common/GetFamilySiteList.cupost",
+        dataType: "JSON",
+
+        success: function (data) {
+            var familyList = ""
+
+            $.each(data.list, function (i, ob) {
+                familyList += "<li><a href='" + ob.site_url + "'>" + ob.site_nm + "</a></li>"
+            });
+
+            $("#familySite").html(familyList);
+        },
+
+        complete: function (data) {
+        },
+
+        error: function (xhr, status, error) {
+            alert("에러발생");
+        }
+    })
+});
+</script>
+</footer>
+
+
+<!-- layerpopup -->
+<div class="layer-popup layer-alert" data-layer-id="layer-common">
+<div class="layer-dimmed" title="레이어팝업 닫기"></div>
+<div class="layer-wrap">
+    <strong class="alert-title mt10" id="pop-text"></strong>
+    <div class="layer-footer">
+        <div class="btn-wrap">
+            <button type="button" class="btn-large btn-green" data-layer-close="">확인</button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="layer-popup layer-alert" data-layer-id="layer-title-common">
+<div class="layer-dimmed" title="레이어팝업 닫기"></div>
+<div class="layer-wrap">
+    <div class="layer-header">
+        <strong class="tit" id="title-common-title"></strong>
+    </div>
+    <div class="layer-content">
+        <div style="padding:0 65px; margin-top:30px; text-align: center;">
+            <p style="color:#808080;" id="title-common-message"></p>
+        </div>
+    </div>
+    <div class="layer-footer">
+        <div class="btn-wrap">
+            <button id="btn-title-common-pop" class="btn-large btn-green" data-layer-close="">확인</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- layerpopup -->
+<div class="layer-popup layer-alert" data-layer-id="layer-confirm-alert1">
+<div class="layer-dimmed" title="레이어팝업 닫기"></div>
+<div class="layer-wrap">
+    <p class="alert-title" id="confirm-text" style="text-align:center;"></p>
+    <div class="layer-footer">
+        <div class="btn-wrap">
+            <button type="button" class="btn-large btn-lime" id="layer-confirmCancel" data-layer-close="">취소</button>
+            <button type="button" class="btn-large btn-green" id="layer-confirmOk" data-layer-close="">확인</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- //layerpopup -->
+
+
+<div id="loading_bar" class="loader-whole">
+<div class="loader-animation"></div>
+<div class="layer-dimmed" title="레이어팝업 닫기"></div>
+</div>
+<script>
+$(window).on('load', function() {
+    $('#loading_bar').removeClass('active');
+});
+
+$(document).on("submit", "form", function (e){
+    try {
+        setReservationState();
+    }
+    catch (e) {
+        console.log('No Reservation Page');
+    }
+});
+
+$( document ).ajaxStart(function() {
+    $('#loading_bar').addClass('active');
+});
+//AJAX 통신 종료
+$( document ).ajaxStop(function() {
+    //마우스 커서를 원래대로 돌린다
+    $('#loading_bar').removeClass('active');
+});
+
+
+function  setPatten(str,tel1,tel2,tel3) {
+    str=getPhonePatten(str);
+    var strArr=str.split("-");
+    $("#"+tel1).val(strArr[0]);
+    $("#"+tel2).val(strArr[1]);
+    $("#"+tel3).val(strArr[2]);
+}
+
+function  getPhonePatten(str) {
+    var returnner = "";
+    var leng = str.length;
+    if(leng==11){
+        returnner=str.substring(0, 3)+"-"+str.substring(3, 7)+"-"+str.substring(7, 11);
+    }else if(leng==12){
+        returnner=str.substring(0, 4)+"-"+str.substring(4, 8)+"-"+str.substring(8, 11);
+    }else if(leng==10){
+        if(str.substring(0, 2)=="02"){
+            returnner=str.substring(0, 2)+"-"+str.substring(2, 6)+"-"+str.substring(6, 10);
+        }else{
+            returnner=str.substring(0, 3)+"-"+str.substring(3, 6)+"-"+str.substring(6, 10);
+        }
+    }else if(leng==9){
+        returnner=str.substring(0, 2)+"-"+str.substring(2, 5)+"-"+str.substring(5, 9);
+    }else if(leng==8){
+        returnner=str.substring(0, 3)+"-"+str.substring(3,7)+"-"+str.substring(7, 8);
+    }else{
+        returnner=str;
+    }
+    return returnner;
+}
+
+function fNewWin(url, width, height)  {
+    var x_pos = (screen.availWidth - width) / 2;
+    var y_pos = (screen.availHeight - height) / 2;
+    window.open(url, 'regiWin', 'width=' + width +',height='+ height + ', left=' + x_pos + ', top=' + y_pos+', resizable=no,scrollbars=yes');
+}
+function fNewWin(url, width, height,target)  {
+    var x_pos = (screen.availWidth - width) / 2;
+    var y_pos = (screen.availHeight - height) / 2;
+    window.open(url, target, 'width=' + width +',height='+ height + ', left=' + x_pos + ', top=' + y_pos+', resizable=no,scrollbars=yes');
+}
+
+function keySet(){
+    $("[data-idonly='true']").on("keyup",function(){
+        var re =/[^a-zA-Z0-9]/g;
+        var temp=$(this).val();
+        if(re.test(temp)){
+            $(this).val(temp.replace(re,""));
+        }
+    });
+    $("[data-numonly='true']").on("keyup",function(){
+        var re =/[^0-9.]/g;
+        var temp=$(this).val();
+        if(re.test(temp)){
+            $(this).val(temp.replace(re,""));
+        }
+    });
+
+    $("[data-alphaonly='true']").on("keyup",function(){
+        var re = /[^a-zA-Z\s]/g;
+        var temp=$(this).val();
+        if(re.test(temp)){
+            $(this).val(temp.replace(re,""));
+        }
+    });
+
+    $("[data-alphanumonly='true']").on("keyup",function(){
+        var re = /[^a-zA-Z0-9\s]/g;
+        var temp=$(this).val();
+        if(re.test(temp)){
+            $(this).val(temp.replace(re,""));
+        }
+    });
+
+    $("[data-nameonly='true']").on("keyup",function(){
+        var re =/[^a-zA-Z0-9ㄱ-ㅎ|ㅏ-ㅣ|가-힣\s]/g;
+        var temp=$(this).val();
+        if(re.test(temp)){
+            $(this).val(temp.replace(re,""));
+        }
+    });
+
+    $("[data-addronly='true']").on("keyup",function(){
+        var re = /[^a-zA-Z0-9ㄱ-ㅎ|ㅏ-ㅣ|가-힣\s\.\_#\@\-\~\[\]\,\(\)]/g;
+        var temp=$(this).val();
+        if(re.test(temp)){
+            $(this).val(temp.replace(re,""));
+        }
+    });
+
+
+    $("[data-eaddronly='true']").on("keyup",function(){
+        var re = /[^a-zA-Z0-9\s\.\_#\@\-\~\[\]\,]/g;
+        var temp=$(this).val();
+        if(re.test(temp)){
+            $(this).val(temp.replace(re,""));
+        }
+    });
+
+    // 휴대폰번호 입력제한
+    $("[data-phoneonly='true']").on("input", function() {
+        if($(this).val().length >= 3) {
+            var phoneHead = $(this).val().substring(0,3);
+            if(phoneHead != "010" && phoneHead != "011" && phoneHead != "016" && phoneHead != "017"
+                && phoneHead != "018" && phoneHead != "019") {
+                $(this).val("");
+            }
+        } else if($(this).val().length > 11) {
+            $(this).val($(this).val().substring(0,11));
+        }
+    });
+}
+
+function Validate_Email(strEmail)
+{
+    //var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    //메일주소 작성시, 아이디란의 입력 아이디 마지막에 _ 가 들어가도 수용되도록 수정 20190415 jmbaek
+    var regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z_])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+    if (strEmail.match(regExp) == null) {
+        return 1;
+    }
+    return 0;
+}
+
+
+var callbackPop = null;
+$(document).on("click", "[data-layer-id=layer-common],[data-layer-id=layer-common] button.btn-large.btn-green", function (){
+
+    if($('#pop-text').hasClass("callback") && callbackPop != null) {
+        $('#pop-text').removeClass("callback");
+        callbackPop();
+    }
+    callbackPop = null;
+});
+
+
+var titlePopResult=null;
+function openCommonTitlePopup(title,msg,callbackOk) {
+    $('#title-common-title').text(title);
+    $('#title-common-message').text(replaceBrTag(msg));
+
+    popupOpenFunc('layer-title-common');
+
+    var titlePopPromise =  new Promise((resolve, reject) => {
+        titlePopResult = resolve;
+    });
+
+    titlePopPromise.then(function(result){
+        if(result) {
+            if (callbackOk != null) {
+                callbackOk();
+            }
+        }
+    });
+}
+
+$("#btn-title-common-pop").click(function () {
+    titlePopResult(true);
+});
+
+
+function openCommonPopup(msg,callback) {
+    $('#pop-text').html(replaceBrTag(msg));
+
+    if( callback ==null) {
+        $('#pop-text').removeClass("callback");
+        callbackPop = null;
+    } else {
+        $('#pop-text').addClass("callback");
+        callbackPop = callback;
+    }
+
+    popupOpenFunc('layer-common');
+}
+
+
+var confirmResult=null;
+function openCommonConfirmPopup(msg,callbackOk,callbackCancel) {
+
+    $('#confirm-text').html(replaceBrTag(msg));
+
+   var confirmPromise =  new Promise((resolve, reject) => {
+       confirmResult = resolve;
+    });
+
+    confirmPromise.then(function(result){
+        if(result) {
+            if (callbackOk != null) {
+                callbackOk();
+            }
+        } else {
+            if (callbackCancel != null) {
+                callbackCancel();
+            }
+        }
+
+    });
+    confirmPromise.catch(function(e){
+        console.error(e);
+        if (callbackCancel != null) {
+            callbackCancel();
+        }
+    });
+
+    popupOpenFunc('layer-confirm-alert1');
+}
+
+//확인 클릭
+$(document).on("click", "#layer-confirmOk", function (){
+    confirmResult(true);
+});
+
+//확인 클릭
+$(document).on("click", "#layer-confirmCancel", function (){
+    confirmResult(false);
+
+});
+
+function replaceBrTag(str) {
+    if (str == undefined || str == null)
+    {
+        return "";
+    }
+
+    str = str.replace(/\r\n/ig, '<br>');
+    str = str.replace(/\\n/ig, '<br>');
+    str = str.replace(/\n/ig, '<br>');
+    return str;
+}
+
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-92509665-1', 'auto');
+ga('send', 'pageview');
+</script></body></html>
