@@ -11,6 +11,11 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <style>
+      input:focus {
+        outline: 1px solid rgb(55, 210, 67);
+      }
+    </style>
   </head>
   <body class="bg-light">
     <div class="container-fluid bg-white">
@@ -24,13 +29,15 @@
     <div class="container">
       <div class="d-flex row justify-content-center text-center">
         <div
-          class="border p-5 mt-5"
-          style="border-radius: 20px; background-color: white; width: 630px"
+          class="border p-4 mt-5"
+          style="border-radius: 20px; background-color: white; width: 710px"
         >
           <div>
             <input
               type="text"
-              class="form-control"
+              xn
+              class="w-100 border border-secondary border-opacity-25 p-3"
+              style="height: 50px; border-radius: 10px"
               name="search"
               placeholder="검색어"
             />
@@ -39,7 +46,7 @@
             <table class="table">
               <tbody>
                 <tr>
-                  <td style="width: 100%">
+                  <td style="border-bottom: none; width: 100%">
                     <a href="./inquiryView.html" style="text-decoration: none">
                       <div class="row">
                         <div class="col text-start">
@@ -49,7 +56,7 @@
                           >
                             2023.01.10
                           </div>
-                          <div class="fs-6 text-dark">내가문의한제목</div>
+                          <div class="fs-5 text-dark">내가문의한제목</div>
                         </div>
                         <div class="col text-end">
                           <div class="pb-2">
