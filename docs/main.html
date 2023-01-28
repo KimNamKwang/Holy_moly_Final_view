@@ -21,6 +21,23 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <style>
+      .notice1 li:hover {
+        display: block;
+        height: 100px;
+        background-color: #04aa6d;
+      }
+      .notice2 li:hover {
+        display: block;
+        height: 100px;
+        background-color: #04aa6d;
+      }
+      .notice3 li:hover {
+        display: block;
+        height: 100px;
+        background-color: #04aa6d;
+      }
+    </style>
   </head>
   <body style="height: 1500px">
     <!-- 여기부터 navbar -->
@@ -64,42 +81,77 @@
         </div>
       </div>
     </nav>
-    <aside class="w-25 mb-3rem" style="float: right; z-index: 2">
-      <div class="card">
-        <div>홍길동</div>
-        <span>홍길동 회원님의 등급 : Family</span>
-        <span>홍길동 회원님의 보유 포인트 : 740p</span>
-      </div>
-    </aside>
-
+      <aside class="w-25 mb-3rem" style="position: absolute; z-index: 999">
+      <nav class="navbar">
+        <a href="#collapseID" class="navbar-toggler" data-bs-toggle="collapse"
+        ><span class="navbar-toggler-icon"></span
+          ></a>
+          <div class="navbar-nav">
+            <div class="collapse navbar-collapse me-5" id="collapseID">
+              <div class="card">
+                <div>홍길동</div>
+                <span>홍길동 회원님의 등급 : Family</span>
+                <span>홍길동 회원님의 보유 포인트 : 740p</span>
+              </div>
+            </div>
+          </nav>
+        </aside>
+        
     <!-- 여기까지 navbar -->
     <div class="container" style="margin-top: 6rem; z-index: 1">
       <section class="mt-3">
         <ul class="d-flex list-unstyled justify-content-around">
           <li>
-            <a href="./login.html" class="text-decoration-none text-dark"
-              ><img src="./images/holy_delivery_login.png" style="width: 8rem"
-            /></a>
+            <div style="position: relative">
+              <a href="./login.html" class="text-decoration-none text-dark">
+                <img
+                  src="./images/holy_delivery_login.png"
+                  style="width: 8rem; position: relative"
+                />
+                <div style="position: absolute; bottom: 10px; left: 32px">
+                  국내택배
+                </div>
+              </a>
+            </div>
           </li>
           <li>
-            <a href="./login.html" class="text-decoration-none text-dark"
-              ><img src="./images/holy_delivery_login.png" style="width: 8rem"
-            /></a>
+            <div style="position: relative">
+              <a href="./login.html" class="text-decoration-none text-dark">
+                <img
+                  src="./images/게시판용.png"
+                  style="width: 8rem; position: relative"
+                />
+                <div style="position: absolute; bottom: 10px; left: 32px">
+                  공지사항
+                </div>
+              </a>
+            </div>
           </li>
           <li>
-            <a href="./login.html" class="text-decoration-none text-dark"
-              ><img src="./images/holy_delivery_login.png" style="width: 8rem"
-            /></a>
+            <div style="position: relative">
+              <a href="./login.html" class="text-decoration-none text-dark">
+                <img
+                  src="./images/holy_delivery_login2.png"
+                  style="width: 8rem; position: relative"
+                />
+                <div style="position: absolute; bottom: 10px; left: 32px">
+                  방문수거
+                </div>
+              </a>
+            </div>
           </li>
           <li>
-            <a href="./login.html" class="text-decoration-none text-dark"
-              ><img src="./images/holy_delivery_login.png" style="width: 8rem"
-            /></a>
-          </li>
-          <li>
-            <a href="./login.html" class="text-decoration-none text-dark"
-              ><img src="./images/holy_delivery_login.png" style="width: 8rem"
-            /></a>
+            <div style="position: relative">
+              <a href="./login.html" class="text-decoration-none text-dark">
+                <img
+                  src="./images/holy_delivery_login3.png"
+                  style="width: 8rem; position: relative"
+                />
+                <div style="position: absolute; bottom: 10px; left: 32px">
+                  화물배송
+                </div>
+              </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -201,25 +253,35 @@
             class="d-inline-block col-3 border-top border-1 border-success"
             style="height: 5rem"
           >
-            <li>
-              <a href="#" class="text-decoration-none"
-                >2023년 새.복.많 이벤트</a
-              >
-            </li>
+            <div class="notice1">
+              <li>
+                <a href="#" class="text-decoration-none"
+                  >2023년 새.복.많 이벤트</a
+                >
+              </li>
+            </div>
           </div>
           <div
             class="d-inline-block col-3 border-top border-1 border-success"
             style="height: 5rem"
           >
-            <li>
-              <a href="#" class="text-decoration-none">택배 접수 시 주의사항</a>
-            </li>
+            <div class="notice2">
+              <li>
+                <a href="#" class="text-decoration-none"
+                  >택배 접수 시 주의사항</a
+                >
+              </li>
+            </div>
           </div>
           <div
             class="d-inline-block col-3 border-top border-1 border-success"
             style="height: 5rem"
           >
-            <li><a href="#" class="text-decoration-none">배송지연 안내</a></li>
+            <div class="notice3">
+              <li>
+                <a href="#" class="text-decoration-none">배송지연 안내</a>
+              </li>
+            </div>
           </div>
         </ul>
       </section>
