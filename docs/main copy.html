@@ -30,22 +30,28 @@
         display: block;
         transition: all 1s;
         height: 100px;
-        background-color: #04aa6d;
+        background-color: rgb(55, 210, 67);
       }
       .notice2 li:hover {
         display: block;
         transition: all 1s;
         height: 100px;
-        background-color: #04aa6d;
+        background-color: rgb(55, 210, 67);
       }
       .notice3 li:hover {
         display: block;
         transition: all 1s;
         height: 100px;
-        background-color: #04aa6d;
+        background-color: rgb(55, 210, 67);
       }
       .hoverGreen:hover {
         color: blue;
+      }
+      .nav_content_first:hover > a {
+        text-decoration-color: rgb(55, 210, 67);
+      }
+      .nav_content_second:hover > a {
+        background-color: rgb(55, 210, 67);
       }
     </style>
   </head>
@@ -74,16 +80,20 @@
               </a>
             </div>
             <div class="col">
-              <a href="Inquiry.html" class="nav-link text-secondary"
-                >점포찾기</a
-              >
+              <div class="nav_content_first">
+                <a href="Inquiry.html" class="nav-link text-secondary"
+                  >점포찾기</a
+                >
+              </div>
             </div>
             <div class="col">
-              <a
-                href="trackShipment.html"
-                class="nav-link text-secondary text-nowrap"
-                >배송조회</a
-              >
+              <div class="nav_content_second">
+                <a
+                  href="trackShipment.html"
+                  class="nav-link text-secondary text-nowrap"
+                  >배송조회</a
+                >
+              </div>
             </div>
           </div>
           <div class="row">
