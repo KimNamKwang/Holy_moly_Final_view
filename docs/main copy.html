@@ -44,15 +44,6 @@
         height: 100px;
         background-color: rgb(55, 210, 67);
       }
-      .hoverGreen:hover {
-        color: blue;
-      }
-      .nav_content_first:hover > a {
-        text-decoration-color: rgb(55, 210, 67);
-      }
-      .nav_content_second:hover > a {
-        background-color: rgb(55, 210, 67);
-      }
     </style>
   </head>
   <body style="height: 1500px">
@@ -79,9 +70,12 @@
                 </div>
               </a>
             </div>
-            <div class="col">
+            <div class="col ms-5">
               <div class="nav_content_first">
-                <a href="Inquiry.html" class="nav-link text-secondary"
+                <a
+                  href="Inquiry.html"
+                  class="nav-link fw-bold text-nowrap"
+                  style="font-size: 1.1rem"
                   >점포찾기</a
                 >
               </div>
@@ -90,7 +84,8 @@
               <div class="nav_content_second">
                 <a
                   href="trackShipment.html"
-                  class="nav-link text-secondary text-nowrap"
+                  class="nav-link fw-bold text-nowrap"
+                  style="font-size: 1.1rem"
                   >배송조회</a
                 >
               </div>
@@ -102,12 +97,12 @@
                 <div class="navbar me-5" id="">
                   <a
                     href="login.html"
-                    class="nav-link text-dark fw-bold text-nowrap"
+                    class="nav-link text-secondary text-nowrap"
                     >로그인</a
                   >
                   <a
                     href="join_step1.html"
-                    class="nav-link text-dark fw-bold text-nowrap"
+                    class="nav-link text-secondary text-nowrap"
                     >회원가입</a
                   >
                 </div>
@@ -141,6 +136,9 @@
           </li>
         </ul>
       </section>
+      <hr />
+      <div class="bg-secondary">일반</div>
+      <hr />
       <section class="mt-3">
         <ul class="d-flex list-unstyled justify-content-around">
           <li>
@@ -237,64 +235,29 @@
                 data-bs-target="#carouselId"
                 data-bs-slide-to="0"
                 class="active"
+                style="
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  margin-right: 10px;
+                "
               ></button>
               <button
                 data-bs-target="#carouselId"
                 data-bs-slide-to="1"
-              ></button>
-              <button
-                data-bs-target="#carouselId"
-                data-bs-slide-to="2"
+                style="width: 10px; height: 10px; border-radius: 50%"
               ></button>
             </div>
             <!-- carousel inner-->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active" data-bs-interval="4000">
                 <a href="./login.html" class="text-decoration-none text-light">
-                  <img
-                    class="w-100 h-50"
-                    src="./images/dhl-ga0b13101a_1920.jpg"
-                    alt="dhl"
-                  />
-                  <div class="carousel-caption">
-                    <div class="h2">빠른 배송</div>
-                    <div>
-                      빠른 배송은 일반 배송보다 1~2일 가량 적은 시간이
-                      소요됩니다.
-                    </div>
-                  </div>
+                  <img class="h-50" src="./images/캐러셀1.png" alt="dhl" />
                 </a>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="4000">
                 <a href="./login.html" class="text-decoration-none text-light">
-                  <img
-                    class="w-100 h-50"
-                    src="./images/dock-gf69bc6df3_1920.jpg"
-                    alt="dock"
-                  />
-                  <div class="carousel-caption">
-                    <div class="h2">해외 배송</div>
-                    <div>
-                      해외 배송은 기후, 선박 상황등에 따라 일정이 변동될 수
-                      있습니다.
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="./login.html" class="text-decoration-none text-light">
-                  <img
-                    class="w-100 h-50"
-                    src="./images/city-trans-g1689c66be_1920.jpg"
-                    alt="city"
-                  />
-                  <div class="carousel-caption">
-                    <div class="h2">퀵 서비스</div>
-                    <div>
-                      퀵 서비스는 오후 4시 이전 발송건에 따라 당일 도착
-                      가능합니다.
-                    </div>
-                  </div>
+                  <img class="h-50" src="./images/캐러셀2.png" alt="dock" />
                 </a>
               </div>
               <button
@@ -315,7 +278,6 @@
           </div>
         </div>
       </section>
-      <hr />
       <section style="width: auto; margin-top: 3rem">
         <ul class="d-flex list-unstyled justify-content-around text-center">
           <div
