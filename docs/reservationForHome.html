@@ -102,7 +102,7 @@
       </nav>
     </header>
     <!-- 여기까지 header -->
-    <main class="">
+    <main class="container">
       <div class="mt-5">
         <ul class="list-unstyled d-flex justify-content-center">
           <li
@@ -133,6 +133,81 @@
             >
           </li>
         </ul>
+        <div class="mt-5">
+          <h4>보내는 분</h4>
+          <table class="table mt-4" style="border-top: 1px solid gray">
+            <tbody>
+              <tr>
+                <td
+                  class="bg-secondary bg-opacity-10 col-3"
+                  style="height: 4rem"
+                >
+                  <div class="mt-2 ms-2">보내는 사람</div>
+                </td>
+                <td><input type="text" class="form-control w-50" /></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="bg-secondary bg-opacity-10" style="height: 5rem">
+                  <div class="mt-3 ms-2">연락처</div>
+                </td>
+                <td>
+                  <select class="form-select w-50" aria-label="">
+                    <option selected>010</option>
+                    <option value="M01">011</option>
+                    <option value="M02">016</option>
+                    <option value="M03">017</option>
+                    <!--selected를 어디다 주느냐에 따라 처음 나오는 선택지가 다름.-->
+                  </select>
+                </td>
+                <td><div class="mt-2">-</div></td>
+                <td><input type="text" class="form-control col-3" /></td>
+                <td><div class="mt-2">-</div></td>
+
+                <td><input type="text" class="form-control col-3" /></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="bg-secondary bg-opacity-10" style="height: 6rem">
+                  <div class="mt-4 ms-2">보내는 곳</div>
+                </td>
+                <td>
+                  <input type="text" class="w-75" />
+                  <input type="text" class="w-75 mt-2" />
+                </td>
+
+                <td></td>
+                <td><button>우편번호 검색</button></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="bg-secondary bg-opacity-10" style="height: 4rem">
+                  <div class="mt-2 ms-2">비밀번호</div>
+                </td>
+                <td><input type="text" class="" /></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
       <br />
     </main>
