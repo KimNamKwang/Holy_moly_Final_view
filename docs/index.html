@@ -129,7 +129,7 @@
       style="z-index: 1; font-family: 'Noto Sans KR', sans-serif"
     >
       <div class="row">
-        <div class="col">
+        <div class="col-10">
           <section
             class="mt-3"
             style="font-family: 'Noto Sans KR', sans-serif; width: 1160px"
@@ -372,13 +372,30 @@
             </ul>
           </section>
         </div>
-        <div class="col">
-          <div
-            class="p-5"
-            style="position: fixed; border-left: 3px solid rgb(55, 210, 67)"
-          >
-            <div style="">sdfd</div>
-          </div>
+        <div
+          class="p-3 mt-5"
+          style="position: fixed; border-left: 3px solid rgb(55, 210, 67)"
+        >
+          <nav class="navbar navbar-expand-xxl">
+            <!--navbar-expand-sm 은 브라우저 창이 sm이 되면 메뉴바가 세로로 정렬됌.
+            cross browsing-->
+            <a
+              href="#collapseID"
+              style="font-size: 15px"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              ><span class="navbar-toggler-icon"></span
+            ></a>
+            <div class="collapse navbar-collapse" id="collapseID">
+              <div class="card w-25">
+                <div class="card-header">홍길동</div>
+                <div class="card-body">
+                  <div>포인트</div>
+                  <div>회원등급 : Family</div>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
     </div>
