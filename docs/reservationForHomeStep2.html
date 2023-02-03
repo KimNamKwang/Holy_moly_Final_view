@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .hover:hover {
+        outline: 1px solid rgb(55, 210, 67);
+        color: rgb(55, 210, 67);
+      }
+      .color:hover {
+        color: rgb(55, 210, 67);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 여기부터 header -->
+    <header class="">
+      <nav class="navbar navbar-dark navbar-expand-sm">
+        <div
+          class="container-fluid border-bottom d-flex justify-content-between"
+          style="height: 130px"
+        >
+          <div class="row d-flex align-items-center">
+            <div class="col">
+              <a href="index.html" class="navbar-brand ms-5">
+                <div
+                  style="
+                    font-family: 'Zen Dots', cursive;
+                    color: rgb(76, 183, 86);
+                  "
+                >
+                  <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
+                  <span class="material-symbols-outlined fw-bold align-middle">
+                    local_shipping
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="col ms-5">
+              <div class="color nav_content_first">
+                <a
+                  href="./store.html"
+                  class="nav-link fw-bold text-nowrap"
+                  style="font-size: 1.2rem"
+                  >점포찾기</a
+                >
+              </div>
+            </div>
+            <div class="col">
+              <div class="color nav_content_second">
+                <a
+                  href="trackShipment.html"
+                  class="nav-link fw-bold text-nowrap"
+                  style="font-size: 1.2rem"
+                  >배송조회</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" id>
+              <div class="navbar-nav">
+                <div class="navbar me-5" id="">
+                  <a
+                    href="login.html"
+                    class="nav-link text-secondary text-nowrap"
+                    >로그인</a
+                  >
+                  <a
+                    href="join_step1.html"
+                    class="nav-link text-secondary text-nowrap"
+                    >회원가입</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- 여기까지 header -->
+    <main class="container">
+      <div class="mt-5">
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li
+            id=""
+            class="pb-4 me-2"
+            style="
+              border-bottom: 3px solid rgb(55, 210, 67);
+              width: 330px;
+              text-align: center;
+            "
+          >
+            <a href="" class="text-decoration-none text-dark fs-5"
+              >일반홈택배 예약하기</a
+            >
+          </li>
+
+          <li
+            id=""
+            class="pb-4 ms-2"
+            style="
+              border-bottom: 3px solid rgb(55, 210, 67);
+              width: 330px;
+              text-align: center;
+            "
+          >
+            <a href="" class="text-decoration-none text-dark fs-5"
+              >예약확인 및 취소</a
+            >
+          </li>
+        </ul>
+        <div class="mt-5">
+          <div class="receiver receiver_a" cidx="0">
+            <a href="#none" class="btn_g4 btn_del" style="display: none"
+              ><span>- 삭제</span></a
+            >
+            <h2 class="mgb_5">받는 사람</h2>
+            <form action="./reservationForHomeStep3.html" method="get">
+            <table class="table border-top border-3">
+              <colgroup>
+                <col style="width: 23%" />
+              </colgroup>
+              <tbody>
+                <tr class="first1">
+                  <th scope="row" class="bg-secondary bg-opacity-10">받는 사람</th>
+                  <td class="lh_40">
+                  
+                    <input
+                      name="r_name"
+                      type="text"
+                      class="inp03"
+                      maxlength="7"
+                      value=""
+                      placeholder="성명/상호명 입력"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" class="bg-secondary bg-opacity-10">연락처</th>
+                  <td class="tel_area">
+                    <select name="r_mobile1" class="select_st sel22">
+                      <option value="010">010</option>
+                      <option value="011">011</option>
+                      <option value="016">016</option>
+                      <option value="017">017</option>
+                      <option value="018">018</option>
+                      <option value="019">019</option>
+                      <option value="050">050</option>
+                      <option value="0502">0502</option>
+                      <option value="0503">0503</option>
+                      <option value="0504">0504</option>
+                      <option value="0505">0505</option>
+                      <option value="0506">0506</option>
+                      <option value="0507">0507</option>
+                      <option value="0508">0508</option>
+                      <option value="02">02</option>
+                      <option value="031">031</option>
+                      <option value="032">032</option>
+                      <option value="033">033</option>
+                      <option value="041">041</option>
+                      <option value="042">042</option>
+                      <option value="043">043</option>
+                      <option value="044">044</option>
+                      <option value="051">051</option>
+                      <option value="052">052</option>
+                      <option value="053">053</option>
+                      <option value="054">054</option>
+                      <option value="055">055</option>
+                      <option value="061">061</option>
+                      <option value="062">062</option>
+                      <option value="063">063</option>
+                      <option value="064">064</option>
+                      <option value="070">070</option>
+                      <option value="080">080</option>
+                    </select>
+
+                    -
+                    <input
+                      type="tel"
+                      class="inp17"
+                      name="r_mobile2"
+                      maxlength="4"
+                      value=""
+                      onblur="onlyNumber(this);"
+                    />
+                    -
+                    <input
+                      type="tel"
+                      class="inp17"
+                      name="r_mobile3"
+                      maxlength="4"
+                      value=""
+                      onblur="onlyNumber(this);"
+                    />
+                  </td>
+                </tr>
+
+                <!--<tr class="add_phone div_AddPhone" style="display:none;">-->
+                
+
+                <tr>
+                  <th scope="row" class="bg-secondary bg-opacity-10">받는 곳</th>
+                  <td>
+                    <div class="mgb_5">
+                      <input
+                        type="hidden"
+                        class="inp03"
+                        name="r_zipcode"
+                        value=""
+                        readonly="readonly"
+                      />
+                    </div>
+                    <p class="mgb_5">
+                      <input
+                        name="r_addr1"
+                        type="text"
+                        class="inp11 input_AddAddress"
+                        value=""
+                        readonly="readonly"
+                      />
+                      <a
+                        href="#none"
+                        class="btn btn-outline-dark text-decoration-none text-dark"
+                        ><span>우편번호 검색</span></a
+                      >
+                    </p>
+                    <p>
+                      <input
+                        name="r_addr2"
+                        type="text"
+                        class="inp08"
+                        value=""
+                        maxlength=""
+                        placeholder="(상세주소 입력)"
+                      />
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="bg-secondary bg-opacity-10">물품종류</th>
+                  <td>
+                    <select name="" class="w-25">
+                      <option>물품선택</option>
+                      <option value="food">농축산물류 ↓</option>
+                      <option value="food_dried">건어물</option>
+                      <option value="food_fruits">과일류</option>
+                      <option value="food_rice">쌀</option>
+                      <option value="food_vegetables">채소류</option>
+                      <option value="food_else">기타 농축산물류</option>
+                      <option value="book">서적류 ↓</option>
+                      <option value="book_documents">서류</option>
+                      <option value="book_publications">서적</option>
+                      <option value="book_prints">인쇄물</option>
+                      <option value="book_else">기타 서적류</option>
+                      <option value="medicine">약품류 ↓</option>
+                      <option value="medicine_drugs">의약품</option>
+                      <option value="medicine_oriental">한약</option>
+                      <option value="medicine_healthSupplement">
+                        건강보조제품
+                      </option>
+                      <option value="clothing">의류/잡화 ↓</option>
+                      <option value="clothing_clothes">의류</option>
+                      <option value="clothing_shoes">신발</option>
+                      <option value="clothing_bagAndWallets">가방/지갑</option>
+                      <option value="clothing_accessories">액세서리</option>
+                    </select>
+
+                    <div class="select_type11">
+                      <div class="mt-3">
+                        <a
+                          name="aNoticeView"
+                          href="#none"
+                          class="btn btn-outline-dark"
+                          ><span>유의사항 보기</span></a
+                        >
+                        <a href="#none" class="btn btn-outline-dark"
+                          ><span>취급제한품목</span></a
+                        >
+                      </div>
+                      <span
+                        style="display: none"
+                        class="p_kind_table_ajaxcall_yn"
+                        >N</span
+                      >
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="bg-secondary bg-opacity-10">물품단가</th>
+                  <td>
+                    <input
+                      type="Tel"
+                      class="inp03"
+                      name="r_p_pric"
+                      value=""
+                      maxlength="2"
+                    />
+                    만원 (수량 : 1개)
+
+                    <p class="ls-1 c_8 tpirce">
+                      * 사고발생 시 보상기준이 되니 실제 물품 금액을
+                      입력해주세요.
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th colspan="2"  class="bg-secondary bg-opacity-10">
+                    포장수량선택
+                    <span class="f12 fnor c_8">(중복선택 가능)</span>
+                  </th>
+                </tr>
+
+                <tr>
+                  <td colspan="2" class="boxsize_wrap">
+                    <ul class="boxsize list-unstyled">
+                      <li>
+                        <p class="tit">
+                          <input
+                            id="bs_B_0"
+                            type="checkbox"
+                            value="B"
+                            class="chk optTitleB chk_sel"
+                            required
+                          /><label for="bs_B_0" class="optLabelB"
+                            >일반박스</label
+                          >
+                        </p>
+                        <p class="f11">15kg이하/ 120cm이하</p>
+                      </li>
+                      <li style="display: none">
+                        <p class="tit">
+                          <input
+                            id="bs_C_0"
+                            type="checkbox"
+                            value="C"
+                            class="chk optTitleC chk_sel"
+                          /><label for="bs_C_0" class="optLabelC"></label>
+                        </p>
+                        <p class="f11">이하/이하</p>
+                        <div class="pmwrap">
+                          <div>
+                            <a href="#none" class="minus minusC"> - </a>
+                          </div>
+                          <div class="ea"><span name="p_amt_C">0</span></div>
+                          <div><a href="#none" class="plus plusC"> + </a></div>
+                        </div>
+                      </li>
+
+                      <li class="sum">
+                        <p class="tit">
+                          총 발송수량<span class="f11">
+                            (상기 입력 수량의 합산수량)</span
+                          >
+                        </p>
+                        <p class="qty"><em name="p_amt">0</em> 박스</p>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+
+                <tr class="first1">
+                  <th scope="row" class="bg-secondary bg-opacity-10">요청사항</th>
+
+                  <td class="select_100">
+                    <select
+                      class="select08 w100 etc_info_select"
+                      id="etc_info_select_idx_0"
+                      name="etc_info_select"
+                    >
+                      <option value="">===선택===</option>
+
+                      <option value="option1">기사님 방문 전 연락주세요</option>
+                      <option value="option2">
+                        보낼 물품을 문 앞에 놓아 두겠습니다
+                      </option>
+                      <option value="option3">
+                        보낼 물품을 경비실에 맡겨두겠습니다
+                      </option>
+
+                      <option value="option4">파손에 주의해 주세요</option>
+                      <option value="option5">
+                        배송 시 경비실에 맡겨 주세요
+                      </option>
+                      <option value="option6">
+                        배송 시 택배함에 넣어 주세요
+                      </option>
+                      <option value="option7">
+                        배송 시 문앞에 놓아 주세요.
+                      </option>
+                      <option value="write">직접입력하기</option>
+                    </select>
+
+                    <div
+                      class="etc_info_write_div"
+                      style="padding-top: 10px; display: none"
+                      id="etc_info_write_div_idx_0"
+                    >
+                      <p class="wide_i">
+                        <input
+                          type="text"
+                          class="inp08"
+                          name="etc_info"
+                          id="etc_info"
+                          placeholder="요청사항을 입력해주세요. (입력내용은 운송장에 표기되며 최대 30자까지 입력가능)"
+                          value=""
+                          maxlength="30"
+                        />
+                      </p>
+                      <!--<p class="lh_24 f11">※배송기사님 전달메시지를 등록해주세요.(운송장에 표기됨)</p>-->
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="d-flex justify-content-center">
+        <a
+          href="./reservationForHome.html"
+          class="btn btn-secondary me-3"
+          style="width: 12rem; height: 3rem; padding-top: 11px"
+        >
+          이전단계
+        </a>
+        <button
+          class="btn me-3 text-light"
+          style="width: 12rem; height: 3rem; background-color: rgb(55, 210, 67)"
+        >
+          다음단계
+        </button>
+        </form>
+      </div>
+    </main>
+    <!-- 여기부터 footer -->
+    <footer
+      class="pb-5"
+      style="
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: rgb(246, 246, 245);
+      "
+    >
+      <div class="container">
+        <div style="width: 1160px; font-size: 1.2rem">
+          <ul
+            class="d-flex justify-content-end list-unstyled pt-4 mt-5"
+            style="height: 70px"
+          >
+            <li>
+              <a
+                class="text-decoration-none me-3 pe-3 border-end border-2"
+                style="color: rgb(89, 89, 89)"
+                href=""
+                >회사소개</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none me-3 pe-3 border-end border-2"
+                style="color: rgb(89, 89, 89)"
+                href=""
+                >이용약관</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none me-3 pe-3 border-end border-2"
+                style="color: rgb(89, 89, 89)"
+                href=""
+                >개인정보처리방침</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none me-3 pe-3 border-end border-2"
+                style="color: rgb(89, 89, 89)"
+                href=""
+                >사업제휴</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none me-3 pe-3"
+                style="color: rgb(89, 89, 89)"
+                href=""
+                >고객센터</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div style="background-color: white">
+        <div class="container">
+          <div class="row pt-4 pb-4">
+            <div class="col" style="color: rgb(147, 147, 147)">
+              <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+                1000-0110
+              </div>
+              <div class="pt-1 pb-1" style="font-size: 1.2rem">
+                홈택배 고객센터
+              </div>
+              <div>평일 09~18시/ 토요일 09~13시</div>
+              <div>(평일 점심시간 12~13시)</div>
+            </div>
+            <div class="col" style="color: rgb(147, 147, 147)">
+              <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+                1221-2211
+              </div>
+              <div class="pt-1 pb-1" style="font-size: 1.2rem">
+                픽업/제휴 회원관련 문의
+              </div>
+              <div>평일 09~18시/ 토요일 09~13시</div>
+              <div>(평일 점심시간 11:30~12:30)</div>
+            </div>
+            <div class="col" style="color: rgb(147, 147, 147)">
+              <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+                1771-7711
+              </div>
+              <div class="pt-1 pb-1" style="font-size: 1.2rem">
+                홈페이지 관련문의
+              </div>
+              <div>평일 09~18시</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container" style="font-size: 0.85rem">
+          <div class="mt-5 pt-5">
+            <span class="border-end border-dark pe-2">대표자명</span>&nbsp;
+            <span style="color: rgb(110, 110, 110)">강낭콩 </span>
+          </div>
+          <div class="pt-1">
+            <span class="border-end border-dark pe-2">주소</span>&nbsp;
+            <span style="color: rgb(110, 110, 110)"
+              >서울특별시 광진구 광나루로56길,85 24층 1-13
+            </span>
+            <span class="border-end border-dark pe-2 ps-4">e-mail</span
+            >&nbsp;<span style="color: rgb(110, 110, 110)">post@bgf.co.kr</span>
+            <span class="border-end border-dark pe-2 ps-4">FAX</span>&nbsp;<span
+              style="color: rgb(110, 110, 110)"
+              >02-1001-2977</span
+            >
+          </div>
+          <div class="pt-1">
+            <span class="border-end border-dark pe-2">상호명</span>&nbsp;
+            <span style="color: rgb(110, 110, 110)">(주)포스트네트웍스 </span>
+            <span class="border-end border-dark pe-2 ps-4">사업자등록번호</span>
+            &nbsp;<span style="color: rgb(110, 110, 110)">110-02-24397 </span>
+          </div>
+          <div class="mt-4">
+            <span class="text-dark" style="font-family: 'Zen Dots', cursive">
+              <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
+              <span class="material-symbols-outlined fw-bold align-middle">
+                local_shipping
+              </span>
+            </span>
+            <span class="ps-3"
+              >Copyright ⓒ2016 CUpost ALL RIGHTS RESERVED.</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 여기까지 footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

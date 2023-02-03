@@ -25,6 +25,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <style>
       .notice1 li:hover {
         display: block;
@@ -47,6 +51,12 @@
       }
       .color:hover {
         color: rgb(55, 210, 67);
+      }
+      .test1menu {
+        display: none;
+      }
+      .test1:hover + .test1menu {
+        display: block;
       }
     </style>
   </head>
@@ -98,23 +108,94 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col" id>
-              <div
-                class="navbar-nav"
-                style="font-family: 'Noto Sans KR', sans-serif"
-              >
-                <div class="navbar me-5" id="">
-                  <a
-                    href="login.html"
-                    class="nav-link text-secondary text-nowrap"
-                    >로그인</a
+          <div class="text-end">
+            <div class="row">
+              <div class="col">
+                <div
+                  class="navbar-nav"
+                  style="
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 0.8rem;
+                  "
+                >
+                  <div class="navbar" id="">
+                    <a
+                      href="login.html"
+                      class="nav-link text-secondary text-nowrap"
+                      >로그인</a
+                    >
+                    <a
+                      href="join_step1.html"
+                      class="nav-link text-secondary text-nowrap"
+                      >회원가입</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="font-family: 'Noto Sans KR', sans-serif">
+              <div class="dropdown dropstart">
+                <a
+                  href=""
+                  class="text-dark dropdown-toggle"
+                  style="text-decoration: none"
+                  data-bs-toggle="dropdown"
+                >
+                  <span
+                    class="color material-symbols-outlined"
+                    style="font-size: 40px"
                   >
-                  <a
-                    href="join_step1.html"
-                    class="nav-link text-secondary text-nowrap"
-                    >회원가입</a
-                  >
+                    segment
+                  </span>
+                </a>
+                <div
+                  class="dropdown-menu p-5"
+                  style="
+                    width: 500px;
+                    border: 3px solid rgb(55, 210, 67);
+                    border-radius: 20px 20px;
+                    font-size: 1.2rem;
+                  "
+                >
+                  <!-- 사이드바 메뉴 -->
+                  <div class="row">
+                    <ul class="col">
+                      <a href="" class="test1 dropdown-item">
+                        예약하기
+                        <!-- 사이드바 상세 메뉴 -->
+                        <div class="test1menu" style="font-size: 0.8rem">
+                          <a
+                            href=""
+                            class="text-dark pe-2"
+                            style="text-decoration: none"
+                            >일반홈</a
+                          >
+                          <a
+                            href=""
+                            class="text-dark pe-2"
+                            style="text-decoration: none"
+                            >다량접수</a
+                          >
+                          <a
+                            href=""
+                            class="text-dark"
+                            style="text-decoration: none"
+                            >프리미엄</a
+                          >
+                        </div>
+                      </a>
+
+                      <a href="" class="pt-5 dropdown-item">예약내역 조회</a>
+                      <a href="" class="pt-5 dropdown-item">이용안내</a>
+                      <a href="" class="pt-5 dropdown-item">배송조회</a>
+                      <a href="" class="pt-5 dropdown-item">이벤트</a>
+                    </ul>
+                    <ul class="col">
+                      <a href="" class="pb-5 dropdown-item">공지사항</a>
+                      <a href="" class="pb-5 dropdown-item">고객센터</a>
+                      <a href="" class="pb-5 dropdown-item">점포찾기</a>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -247,13 +328,7 @@
                 </a>
               </div>
             </div>
-          </section>
-          <!-- 이용안내 -->
-          <section
-            class="d-flex justify-content-center"
-            style="margin-top: 30px; padding-bottom: 40px; width: 1160px"
-          >
-            <div class="row">
+            <div hidden class="row">
               <div class="col">
                 <a
                   href="./termsForHome.html"
@@ -406,7 +481,7 @@
                 <div class="carousel-inner text-center">
                   <div class="carousel-item active" data-bs-interval="4000">
                     <a
-                      href="./login.html"
+                      href="./eventView.html"
                       class="text-decoration-none text-light"
                     >
                       <img class="h-50" src="./images/캐러셀1.png" alt="dhl" />
@@ -414,7 +489,7 @@
                   </div>
                   <div class="carousel-item" data-bs-interval="4000">
                     <a
-                      href="./login.html"
+                      href="./eventView.html"
                       class="text-decoration-none text-light"
                     >
                       <img class="h-50" src="./images/캐러셀2.png" alt="dock" />
@@ -438,7 +513,7 @@
               </div>
             </div>
           </section>
-          <section style="width: 1160px; margin-top: 3rem">
+          <section style="width: 1160px; margin-top: 5rem">
             <ul class="d-flex list-unstyled justify-content-around text-center">
               <div class="h-75 d-inline-block pt-2">
                 <li class="fs-2 fw-bold">공지사항</li>
