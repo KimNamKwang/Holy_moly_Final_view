@@ -135,7 +135,10 @@
         </ul>
         <div class="mt-5">
           <h4>보내는 분</h4>
-          <table class="table mt-4" style="border-top: 1px solid gray">
+          <table
+            class="table mt-4 table-bordered"
+            style="border-top: 1px solid gray"
+          >
             <tbody>
               <tr>
                 <td
@@ -144,7 +147,11 @@
                 >
                   <div class="mt-2 ms-2">보내는 사람</div>
                 </td>
-                <td><input type="text" class="form-control w-50" /></td>
+                <div class="">
+                  <td colspan="1">
+                    <input type="text" class="form-control" />
+                  </td>
+                </div>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -158,22 +165,27 @@
                   <div class="mt-3 ms-2">연락처</div>
                 </td>
                 <td>
-                  <select class="form-select w-50" aria-label="">
-                    <option selected>010</option>
-                    <option value="M01">011</option>
-                    <option value="M02">016</option>
-                    <option value="M03">017</option>
-                    <!--selected를 어디다 주느냐에 따라 처음 나오는 선택지가 다름.-->
-                  </select>
+                  <div class="col-4">
+                    <select class="form-select" aria-label="">
+                      <option selected>010</option>
+                      <option value="M01">011</option>
+                      <option value="M02">016</option>
+                      <option value="M03">017</option>
+                      <!--selected를 어디다 주느냐에 따라 처음 나오는 선택지가 다름.-->
+                    </select>
+                    <div class="mt-2" style="font-size: 10px">
+                      * 연락처기반으로 예약조회가 가능하니, 정확한 입력바랍니다.
+                    </div>
+                  </div>
                 </td>
-                <td><div class="mt-2">-</div></td>
-                <td><input type="text" class="form-control col-3" /></td>
+                <td><div class="mt-2 col-1">-</div></td>
+                <td><input type="text" class="form-control col" /></td>
                 <td><div class="mt-2">-</div></td>
 
                 <td><input type="text" class="form-control col-3" /></td>
                 <td></td>
-                <td></td>
-                <td></td>
+                <div></div>
+                <td><div>ds</div></td>
               </tr>
               <tr>
                 <td class="bg-secondary bg-opacity-10" style="height: 6rem">
