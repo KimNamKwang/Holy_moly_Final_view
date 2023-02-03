@@ -52,6 +52,12 @@
       .color:hover {
         color: rgb(55, 210, 67);
       }
+      .test1menu {
+        display: none;
+      }
+      .test1:hover + .test1menu {
+        display: block;
+      }
     </style>
   </head>
   <body style="height: 1500px">
@@ -127,8 +133,8 @@
                 </div>
               </div>
             </div>
-            <div>
-              <div class="dropdown">
+            <div style="font-family: 'Noto Sans KR', sans-serif">
+              <div class="dropdown dropstart">
                 <a
                   href=""
                   class="text-dark dropdown-toggle"
@@ -142,7 +148,55 @@
                     segment
                   </span>
                 </a>
-                <div class="dropdown-menu"></div>
+                <div
+                  class="dropdown-menu p-5"
+                  style="
+                    width: 500px;
+                    border: 3px solid rgb(55, 210, 67);
+                    border-radius: 20px 20px;
+                    font-size: 1.2rem;
+                  "
+                >
+                  <!-- 사이드바 메뉴 -->
+                  <div class="row">
+                    <ul class="col">
+                      <a href="" class="test1 dropdown-item">
+                        예약하기
+                        <!-- 사이드바 상세 메뉴 -->
+                        <div class="test1menu" style="font-size: 0.8rem">
+                          <a
+                            href=""
+                            class="text-dark pe-2"
+                            style="text-decoration: none"
+                            >일반홈</a
+                          >
+                          <a
+                            href=""
+                            class="text-dark pe-2"
+                            style="text-decoration: none"
+                            >다량접수</a
+                          >
+                          <a
+                            href=""
+                            class="text-dark"
+                            style="text-decoration: none"
+                            >프리미엄</a
+                          >
+                        </div>
+                      </a>
+
+                      <a href="" class="pt-5 dropdown-item">예약내역 조회</a>
+                      <a href="" class="pt-5 dropdown-item">이용안내</a>
+                      <a href="" class="pt-5 dropdown-item">배송조회</a>
+                      <a href="" class="pt-5 dropdown-item">이벤트</a>
+                    </ul>
+                    <ul class="col">
+                      <a href="" class="pb-5 dropdown-item">공지사항</a>
+                      <a href="" class="pb-5 dropdown-item">고객센터</a>
+                      <a href="" class="pb-5 dropdown-item">점포찾기</a>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
