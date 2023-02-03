@@ -126,7 +126,7 @@
     <br />
     <form action="./reservationForHome.html" method="get">
 
-    <div id="container">
+    <div class="container-fluid">
       <ul class="list-unstyled d-flex justify-content-center">
         <li
           id=""
@@ -137,9 +137,11 @@
             text-align: center;
           "
         >
+        <div class=""id="reserv_for_home">
           <a href="" class="text-decoration-none text-dark fs-5"
-            >일반홈택배 예약하기</a
+          >일반홈택배 예약하기</a
           >
+        </div>
         </li>
 
         <li
@@ -151,7 +153,7 @@
             text-align: center;
           "
         >
-          <a href="" class="text-decoration-none text-dark fs-5"
+          <a href="#" id="reserv_check_and_cancel" class="text-decoration-none text-dark fs-5"
             >예약확인 및 취소</a
           >
         </li>
@@ -591,6 +593,26 @@
           </form>
         </div>
       </div>
+
+      <div class="container" id="text_for_reserv_check_and_cancel">
+        <div class="border row d-flex justify-content-center text-center" style="height: 10rem;">
+<div class="col border-end align-self-center " style="font-size: 18px;">택배예약 시 등록한 <span style="color: rgb(55, 210, 67)">보내는분 연락처</span>와
+  <div> <span style="color: rgb(55, 210, 67)">비밀번호</span>를 입력해 주세요.</div>
+  예약일 기준 90일 이내 정보에 한하여 조회됩니다.</div>
+<div class="col align-self-center" style="font-size: 18px;">
+  휴대폰번호
+  <input type="text">
+ <div class="mt-2">
+   비밀번호 &nbsp;&nbsp;
+   <input type="password">
+
+ </div>
+
+</div>
+        </div>
+        
+      </div>
+
     </div>
     <!-- 여기부터 footer -->
     <footer
@@ -723,7 +745,7 @@
       </div>
     </footer>
     <!-- 여기까지 footer -->
-
+    <script src="./js/termsForHome.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
