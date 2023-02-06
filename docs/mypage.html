@@ -12,6 +12,9 @@
       crossorigin="anonymous"
     />
     
+    <!-- 23.02.06추가 -->
+    <link rel="stylesheet" href="./css/mypage.css" />
+
     <!-- 23.02.04추가 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
@@ -33,16 +36,17 @@
     />
 
     <style>
-      .hover:hover {
-        outline: 1px solid rgb(55, 210, 67);
-        color: rgb(55, 210, 67);
-      }
-      .color:hover {
-        color: rgb(55, 210, 67);
-      }
-      span:hover{
-        color:black;
-      }
+    .hover:hover {
+    outline: 1px solid rgb(55, 210, 67);
+    color: rgb(55, 210, 67);
+    }
+    .color:hover {
+    color: rgb(55, 210, 67);
+    }
+    span:hover{
+    color:black;
+    }
+
 
     </style>
 </head>
@@ -197,42 +201,66 @@
             <br>
                 
              <!-- 23.02.6추가 -->
+             <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                <script>    
+                    $(document).ready(function() {
+                        $("#contents").click(function() {
+                            $("#popup").fadeIn();
+                        });
+                        $(".exit").click(function() {
+                            $("#popup").fadeOut();
+                        });
+                    });                    
+                </script>
 
              <div class="row text-center mt-4">
-              <div class="col-2"></div> <!-- 여백 맞춤용-->
-              
-              <div class="col-2">                      
+                <div class="col-2"></div> <!-- 여백 맞춤용-->
+                
+                <div class="col-2">                      
+                    <button style="border:0px; background-color: white;">
+                      <a:hover style="color:#86919c">                   
+                      <b><span style="font-size:150%">예약내역 조회</span></b>
+                      </a:hover>  
+                  </button> 
+                </div>
+
+                <div class="col-2"  id="popup">
+                  <div id="popmenu">
                   <button style="border:0px; background-color: white;">
-                    <a:hover style="color:#86919c">                   
-                    <b><span style="font-size:150%">예약내역 조회</span></b>
-                    </a:hover>  
-                </button> 
-              </div>
+                    <a:hover style="color:#86919c">                    
+                    <b><span style="font-size:150% ">알림톡</span></b>
+                    </a:hover>
+                  </button>
+                  </div>
+                </div>
 
-              <div class="col-2 myDiv"  id="myDiv">
-                <button style="border:0px; background-color: white;">
-                  <a:hover style="color:#86919c">                    
-                  <b><span style="font-size:150% ">알림톡</span></b>
-                  </a:hover>
-                </button>
-              </div>
+                
+                <div class="col-2" id="popup">
+                  <button style="border:0px; background-color: white;">
+                    <a:hover style="color:#86919c">
+                    <b><span style="font-size:150%">회원전용 반품</span></b>
+                    </a:hover>   
+                  </button> 
+                </div>
+              
 
-              <div class="col-2">
-                <button style="border:0px; background-color: white;">
-                  <a:hover style="color:#86919c">
-                  <b><span style="font-size:150%">회원전용 반품</span></b>
-                  </a:hover>   
-                </button> 
-              </div>
+                
 
           </div>
 
-                <div style="background-color:#f9f9f9">
-                  야
-                  호
-                 
-
+              <!-- new build 중 -->
+                <div>
+                  <ul>
+                    <li>s</li>
+                    <li>s</li>
+                    <li>a</li>
+                  </ul>
+                  <div style="background-color:#f9f9f9">
+                    야
+                    호
+                  </div>
                 </div>
+
                 
              
                 
@@ -245,6 +273,7 @@
   </div>
 
 </section>
+
 
 
 
