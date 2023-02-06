@@ -1,7 +1,7 @@
 document
   .getElementById("reserv_check_and_cancel")
   .addEventListener("click", function () {
-    greenBorderForReservCheckAndCancel;
+    greenBorderForReservCheckAndCancel();
     showTextForReservCheckAndCancel();
     hideAgreementBox();
   });
@@ -11,7 +11,6 @@ function showTextForReservCheckAndCancel(
 ) {
   document.getElementById("text_for_reserv_check_and_cancel").style.display =
     "block";
-  // agreeBox = document.getElementById("agreement_box");
   document.getElementById("agreement_box").style.display = "none";
 }
 
@@ -30,13 +29,16 @@ function greenBorderForReservCheckAndCancel(
 ) {
   document.getElementById("reserv_check_and_cancel").style.borderBottom =
     "3px solid rgb(55, 210, 67)";
+  document.getElementById("reserv_for_home").style.opacity = "0.5";
+  document.getElementById("reserv_check_and_cancel").style.opacity = "1";
+  document.getElementById("reserv_for_home").style.borderBottom = "";
 }
 
 document
   .getElementById("reserv_for_home")
   .addEventListener("click", function () {
     showAgreementBox();
-    // changeToGeneralReserv();
+    greenBorderForReservForHome();
   });
 
 function showAgreementBox(
@@ -48,10 +50,12 @@ function showAgreementBox(
     "none";
 }
 
-function changeToGeneralReserv(event) {
-  let queryTargetText = document.querySelector(
-    "#text_for_reserv_check_and_cancel"
-  );
-  let queryChangeText = document.getElementById("#agreement_box");
-  queryTargetText.innerHTML = queryChangeText;
+function greenBorderForReservForHome(
+  event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
+) {
+  document.getElementById("reserv_for_home").style.opacity = "1";
+  document.getElementById("reserv_for_home").style.borderBottom =
+    "3px solid rgb(55, 210, 67)";
+  document.getElementById("reserv_check_and_cancel").style.opacity = "0.5";
+  document.getElementById("reserv_check_and_cancel").style.borderBottom = "";
 }
