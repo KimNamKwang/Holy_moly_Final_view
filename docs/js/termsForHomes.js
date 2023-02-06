@@ -3,26 +3,7 @@ document
   .addEventListener("click", function () {
     greenBorderForReservCheckAndCancel();
     showTextForReservCheckAndCancel();
-    hideAgreementBox();
   });
-
-function showTextForReservCheckAndCancel(
-  event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
-) {
-  document.getElementById("text_for_reserv_check_and_cancel").style.display =
-    "block";
-  document.getElementById("agreement_box").style.display = "none";
-}
-
-function hideAgreementBox(
-  event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
-) {
-  let queryTargetText = document.querySelector("#boxForChange");
-  let queryChangeText = document.getElementById(
-    "#text_for_reserv_check_and_cancel"
-  );
-  queryTargetText.innerHTML = queryChangeText;
-}
 
 function greenBorderForReservCheckAndCancel(
   event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
@@ -32,6 +13,14 @@ function greenBorderForReservCheckAndCancel(
   document.getElementById("reserv_for_home").style.opacity = "0.5";
   document.getElementById("reserv_check_and_cancel").style.opacity = "1";
   document.getElementById("reserv_for_home").style.borderBottom = "";
+}
+
+function showTextForReservCheckAndCancel(
+  event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
+) {
+  document.getElementById("text_for_reserv_check_and_cancel").style.display =
+    "block";
+  document.getElementById("agreement_box").style.display = "none";
 }
 
 document
@@ -58,4 +47,12 @@ function greenBorderForReservForHome(
     "3px solid rgb(55, 210, 67)";
   document.getElementById("reserv_check_and_cancel").style.opacity = "0.5";
   document.getElementById("reserv_check_and_cancel").style.borderBottom = "";
+}
+
+function selectAll(selectAll) {
+  const checkboxes = document.getElementsByName("agree");
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked;
+  });
 }
