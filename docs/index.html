@@ -29,6 +29,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.js"
+      integrity="sha256-DKU1CmJ8kBuEwumaLuh9Tl/6ZB6jzGOBV/5YpNE2BWc="
+      crossorigin="anonymous"
+    ></script>
     <style>
       .notice1 li:hover {
         display: block;
@@ -157,8 +162,9 @@
                     segment
                   </span>
                 </a>
+                <!-- 사이드바 메뉴 -->
                 <div
-                  class="dropdown-menu p-5"
+                  class="dropdown-menu shadow-lg p-5"
                   style="
                     width: 500px;
                     border: 3px solid rgb(55, 210, 67);
@@ -166,43 +172,145 @@
                     font-size: 1.2rem;
                   "
                 >
-                  <!-- 사이드바 메뉴 -->
                   <div class="row">
                     <ul class="col">
-                      <a href="" class="dropdown-item dropdown-submenu">
+                      <a
+                        href=""
+                        class="dropdown-item dropdown-submenu01 fw-bold"
+                      >
                         예약하기
-                        <!-- 사이드바 상세 메뉴 -->
-                        <div class="dropdown-menu" style="font-size: 0.8rem">
-                          <a
-                            href="./termsForHome.html"
-                            class="text-dark pe-2"
-                            style="text-decoration: none"
-                            >방문택배접수</a
-                          >
-                          <a
-                            href=""
-                            class="text-dark pe-2"
-                            style="text-decoration: none"
-                            >다량접수</a
-                          >
-                          <a
-                            href=""
-                            class="text-dark"
-                            style="text-decoration: none"
-                            >프리미엄</a
-                          >
-                        </div>
                       </a>
+                      <!-- 예약하기 상세 메뉴 -->
+                      <div
+                        class="dropdown-menu ps-2 pe-2"
+                        style="font-size: 0.8rem"
+                      >
+                        <a
+                          href="/docs/termsForHome.html"
+                          class="text-dark pe-2"
+                          style="text-decoration: none"
+                          >방문택배접수</a
+                        >
+                        <a
+                          href=""
+                          class="text-dark pe-2"
+                          style="text-decoration: none"
+                          >다량접수</a
+                        >
+                        <a
+                          href=""
+                          class="text-dark"
+                          style="text-decoration: none"
+                          >프리미엄</a
+                        >
+                      </div>
 
-                      <a href="" class="pt-5 dropdown-item">예약내역 조회</a>
-                      <a href="" class="pt-5 dropdown-item">이용안내</a>
-                      <a href="" class="pt-5 dropdown-item">배송조회</a>
-                      <a href="" class="pt-5 dropdown-item">이벤트</a>
+                      <div class="pt-3">&nbsp;</div>
+
+                      <a
+                        href=""
+                        class="dropdown-item dropdown-submenu02 fw-bold"
+                      >
+                        예약내역 조회
+                      </a>
+                      <!-- 예약내역 조회 상세 메뉴 -->
+                      <div
+                        class="dropdown-menu ps-2 pe-2"
+                        style="font-size: 0.8rem"
+                      >
+                        <a
+                          href=""
+                          class="text-dark pe-2"
+                          style="text-decoration: none"
+                          >홈 프리미엄</a
+                        >
+                        <a
+                          href=""
+                          class="text-dark pe-2"
+                          style="text-decoration: none"
+                          >홈 일반</a
+                        >
+                      </div>
+
+                      <div class="pt-3">&nbsp;</div>
+
+                      <a
+                        href=""
+                        class="dropdown-item dropdown-submenu03 fw-bold"
+                      >
+                        이용안내
+                      </a>
+                      <!-- 이용안내 상세 메뉴 -->
+                      <div
+                        class="dropdown-menu ps-2 pe-2"
+                        style="font-size: 0.8rem"
+                      >
+                        <a
+                          href="./guideHome.html"
+                          class="text-dark pe-2"
+                          style="text-decoration: none"
+                          >택배 이용안내</a
+                        >
+                        <a
+                          href=""
+                          class="text-dark pe-2"
+                          style="text-decoration: none"
+                          >포장안내</a
+                        >
+                        <a
+                          href="./guideImpossible.html"
+                          class="text-dark"
+                          style="text-decoration: none"
+                          >이용불가 상품</a
+                        >
+                      </div>
+
+                      <div class="pt-3">&nbsp;</div>
+
+                      <a
+                        href="./trackShipment.html"
+                        class="dropdown-item fw-bold"
+                        >배송조회</a
+                      >
+
+                      <div class="pt-3">&nbsp;</div>
+
+                      <a
+                        href=""
+                        class="dropdown-item dropdown-submenu04 fw-bold"
+                      >
+                        회원 혜택
+                      </a>
+                      <!-- 회원 혜택 상세 메뉴 -->
+                      <div
+                        class="dropdown-menu ps-2 pe-2"
+                        style="font-size: 0.8rem"
+                      >
+                        <a
+                          href=""
+                          class="text-dark pe-2"
+                          style="text-decoration: none"
+                          >등급별 혜택</a
+                        >
+                      </div>
                     </ul>
                     <ul class="col">
-                      <a href="" class="pb-5 dropdown-item">공지사항</a>
-                      <a href="" class="pb-5 dropdown-item">고객센터</a>
-                      <a href="" class="pb-5 dropdown-item">점포찾기</a>
+                      <a href="./noticeList.html" class="dropdown-item fw-bold"
+                        >공지사항</a
+                      >
+                      <div class="pt-3">&nbsp;</div>
+                      <a href="./Inquiry.html" class="dropdown-item fw-bold"
+                        >고객센터</a
+                      >
+                      <div class="pt-3">&nbsp;</div>
+                      <a href="./store.html" class="dropdown-item fw-bold"
+                        >점포찾기</a
+                      >
+                      <div class="pt-3">&nbsp;</div>
+
+                      <a href="./eventList.html" class="dropdown-item fw-bold"
+                        >이벤트</a
+                      >
                     </ul>
                   </div>
                 </div>
@@ -774,7 +882,16 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $(".dropdown-submenu").on("mouseover", function (e) {
+        $(".dropdown-submenu01").on("mouseover", function (e) {
+          $(this).next("div").toggle();
+        });
+        $(".dropdown-submenu02").on("mouseover", function (e) {
+          $(this).next("div").toggle();
+        });
+        $(".dropdown-submenu03").on("mouseover", function (e) {
+          $(this).next("div").toggle();
+        });
+        $(".dropdown-submenu04").on("mouseover", function (e) {
           $(this).next("div").toggle();
         });
       });
