@@ -30,21 +30,6 @@
       color: rgb(55, 210, 67);
       ;
     }
-
-    .menu p {
-      padding: 0 10px;
-      margin: 0;
-      height: 0;
-
-      overflow: hidden;
-      /*답변 내용들 숨기기*/
-      transition: height 0.5s ease-in;
-    }
-
-    .menu:target p {
-      overflow: auto;
-      height: 100px;
-    }
   </style>
 </head>
 
@@ -105,41 +90,41 @@
         </ul>
       </div>
       <!-- 컨텐츠 부분 시작 -->
-      <div class="container-fluid d-flex justify-content-center bg-secondary bg-opacity-10 mb-5">
-        <ul class="list-unstyled">
-          <li>전체</li>
-          <li>접수문의</li>
-          <li>배송문의</li>
-          <li>지도문의</li>
-          <li>사고문의</li>
-        </ul>
-        <div class="border-2 bg-white">
-          <div class="menu " id="part1">
-            <div>
-              <a href="#part1" class="text-decoration-none"> Q.이름이 무엇인가요? </a>
-              <!-- h2태그가 질문부분 아래 p태그가 답변 부분-->
-            </div>
-            <p>
-              A. 홍길동입니다
-            </p>
-          </div>
-          <div class="menu" id="part2">
-            <div>
-              <a href="#part2"> Q.몇살인가요? </a>
-            </div>
-            <p>
-              12살입니다.
-            </p>
-          </div>
-          <div class="menu" id="part3">
-            <div>
-              <a href="#part3"> Q.내일 뭐하시나요? </a>
-            </div>
-            <p>잡니다.</p>
-          </div>
+      <div class="container-fluid d-flex bg-secondary bg-opacity-10 mb-5">
+
+        <div class="d-inline-block">
+
+          <ul class="list-unstyled ">
+            <li>전체</li>
+            <li>접수문의</li>
+            <li>배송문의</li>
+            <li>지도문의</li>
+            <li>사고문의</li>
+          </ul>
         </div>
+        <div class="border-2 bg-white d-inline-block" style="margin-left: 10rem; margin-right: 10rem;">
+          <ul>
+            <li>
+              <div>
+                오늘 보내면 언제 배송 되나요?
+              </div>
+            </li>
+            <li>
+              <div class="">
+                유구한 역사와 전통에 빛나는 우리 대한국민은 3ㆍ1운동으로 건립된
+                대한민국임시정부의 법통과 불의에 항거한 4ㆍ19민주이념을 계승하고,
+                조국의 민주개혁과 평화적 통일의 사명에 입각하여 정의ㆍ인도와
+                동포애로써 민족의 단결을 공고히 하고, 모든 사회적 폐습과 불의를
+                타파하며
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
       </div>
-      <!-- 컨텐츠 부분 끝-->
+    </div>
+    <!-- 컨텐츠 부분 끝-->
     </div>
   </main>
   <!-- 여기부터 footer -->
