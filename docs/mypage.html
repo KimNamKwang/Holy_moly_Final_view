@@ -262,7 +262,7 @@
                             <br>
                             <br>
                                 <div class=""><!--버튼-->
-                                  <button class="mb-3" style=" border-radius: 20px; background-color:rgb(55, 210, 67);color:white; border:1px solid white;">
+                                  <button class="mb-3" style=" border-radius: 20px;background-color:rgb(55, 210, 67);color:white; border:1px solid white;">
                                   편집
                                   </button>
                                 </div>
@@ -301,28 +301,39 @@
                                     </label>
                                   </div>
                                   
-                                  <div class="result"> <!--총0건-->
-                                      <div>
-                                          "총"
-                                          <span class="" id="reservation-count">0</span>
-                                          "건"
-                                          <button title="엑셀 다운로드" class="dw-btn" onclick="excelAll();">엑셀 다운로드</button>
-                                      </div>
-
-                                      <div>
-                                        <button class="inquiry-result-sort-btn active" id="btn-reservation-desc" onclick="setReservationOrder('desc');">최신순</button>
-											                  <button class="inquiry-result-sort-btn" id="btn-reservation-asc" onclick="setReservationOrder('asc');">등록순</button>
-                                      </div>
-
-
+                                 </div>
+                                </div>
+                                  
+                                <br>
+                                <div class="row"> <!--총0건-->
+                                  
+                                  <div class="col-auto">
+                                    <span class="text-align:start" id=""><b>총</b></span>
+                                     <span class="" id=""><b>0</b></span>
+                                    <span class="" id=""><b>건</b></span>
+                                      <button title="엑셀 다운로드" class="dw-btn" onclick="excelAll();"
+                                      style="border-radius: 20px; background-color: #f9f9f9; border:1px solid rgb(240, 240, 240);">엑셀 다운로드</button>
                                   </div>
+                                  
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                  &nbsp&nbsp&nbsp
+                                  <div class="col-auto">
+                                    <button class="inquiry-result-sort-btn active" id="btn-reservation-desc" onclick="setReservationOrder('desc');"
+                                    style="border-radius: 20px; background-color: #f9f9f9; border:0px solid rgb(240, 240, 240); color:rgb(55, 210, 67);"><b>최신순</b></button>
+
+                                    <button class="inquiry-result-sort-btn" id="btn-reservation-asc" onclick="setReservationOrder('asc');"
+                                    style="border-radius: 20px; background-color: #f9f9f9; border:0px solid rgb(240, 240, 240);color:rgb(55, 210, 67);"><b>등록순</b></button>
+                                  </div>
+                                </div>
                                   
 
 
 
-                                </div>
+                               
 
-                          
+                                <hr>
                              
                          
                           </div> 
