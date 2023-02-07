@@ -1,147 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>포장안내</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body style="z-index: 1; font-family: 'Noto Sans KR', sans-serif">
-    <div class="container text-center">
-      <div class="fs-1 fw-bold p-5">포장안내</div>
-      <ul class="d-flex justify-content-center list-unstyled">
-        <li class="fs-3 fw-bold" style="padding-right: 100px">
-          <a
-            href="#"
-            id="post_packaging"
-            class="text-decoration-none text-dark"
-          >
-            택배별 포장방법
-          </a>
-        </li>
-        <li class="fs-3 fw-bold" id="item_packaging" style="opacity: 0.5">
-          <a href="#" class="text-decoration-none text-dark">
-            품목별 포장방법
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div
-      class="container-fluid d-flex flex-column justify-content-center pt-5"
-      style="background-color: rgb(249, 249, 249); padding-bottom: 200px"
-    >
-      <div class="container" style="width: 650px">
-        <!-- 택배별 포장방법 -->
-        <div id="content_post_packaging">
-          <div
-            class="shadow-sm p-4 mt-4"
-            style="border-radius: 10px 10px; background-color: white"
-          >
-            <div
-              class="pb-2 mb-3 fw-bold"
-              style="
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>포장안내</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body style="z-index: 1; font-family: 'Noto Sans KR', sans-serif">
+  <div class="container text-center">
+    <div class="fs-1 fw-bold p-5">포장안내</div>
+    <ul class="d-flex justify-content-center list-unstyled">
+      <li class="fs-3 fw-bold" style="padding-right: 100px">
+        <a href="#" id="post_packaging" class="text-decoration-none text-dark">
+          택배별 포장방법
+        </a>
+      </li>
+      <li class="fs-3 fw-bold" id="item_packaging" style="opacity: 0.5">
+        <a href="#" class="text-decoration-none text-dark">
+          품목별 포장방법
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid d-flex flex-column justify-content-center pt-5"
+    style="background-color: rgb(249, 249, 249); padding-bottom: 200px">
+    <div class="container" style="width: 650px">
+      <!-- 택배별 포장방법 -->
+      <div id="content_post_packaging">
+        <div class="shadow-sm p-4 mt-4" style="border-radius: 10px 10px; background-color: white">
+          <div class="pb-2 mb-3 fw-bold" style="
                 font-size: 1.2rem;
                 border-bottom: 1px solid rgb(55, 210, 67);
-              "
-            >
-              홈택배
-            </div>
-            <div style="color: rgb(136, 138, 136)">
-              모든 택배 상품은 내용물을 보호할 수 있도록 박스로
-              포장되어야합니다. 부피가 작은 상품의 경우
-              <span class="fw-bold"
-                >운송장보다 큰 소형박스 (15cm x 8cm 이상)</span
-              >
-              에 재포장하여 접수하셔야 합니다. 박스에 포장한 규격은
-              <span style="color: rgb(55, 210, 73)"
-                >가로, 세로, 높이의 합이 프리미엄의 경우 100cm, 일반 홈택배의
-                경우 120cm</span
-              >
-              이고
-              <span style="color: rgb(55, 210, 73)"
-                >다량접수 할인 홈택배의 경우60cm</span
-              >
-              입니다. 프리미엄 홈택배는
-              <span style="color: rgb(55, 210, 73)">10kg 이하</span> , 일반
-              홈택배는 <span style="color: rgb(55, 210, 73)">15kg 이하</span>,
-              다량접수 할인 홈택배는
-              <span style="color: rgb(55, 210, 73)">2kg 이하</span> 상품에 한해
-              접수 가능합니다.
-            </div>
+              ">
+            홈택배
+          </div>
+          <div style="color: rgb(136, 138, 136)">
+            모든 택배 상품은 내용물을 보호할 수 있도록 박스로
+            포장되어야합니다. 부피가 작은 상품의 경우
+            <span class="fw-bold">운송장보다 큰 소형박스 (15cm x 8cm 이상)</span>
+            에 재포장하여 접수하셔야 합니다. 박스에 포장한 규격은
+            <span style="color: rgb(55, 210, 73)">가로, 세로, 높이의 합이 프리미엄의 경우 100cm, 일반 홈택배의
+              경우 120cm</span>
+            이고
+            <span style="color: rgb(55, 210, 73)">다량접수 할인 홈택배의 경우60cm</span>
+            입니다. 프리미엄 홈택배는
+            <span style="color: rgb(55, 210, 73)">10kg 이하</span> , 일반
+            홈택배는 <span style="color: rgb(55, 210, 73)">15kg 이하</span>,
+            다량접수 할인 홈택배는
+            <span style="color: rgb(55, 210, 73)">2kg 이하</span> 상품에 한해
+            접수 가능합니다.
           </div>
         </div>
+      </div>
 
-        <!-- 품목별 포장방법 -->
-        <div id="content_item_packaging">
-          <div
-            class="shadow-sm p-4 mt-4"
-            style="border-radius: 10px 10px; background-color: white"
-          >
-            <div
-              class="pb-2 mb-3 fw-bold"
-              style="
+      <!-- 품목별 포장방법 -->
+      <div id="content_item_packaging" style="display: none;">
+        <div class="shadow-sm p-4 mt-4" style="border-radius: 10px 10px; background-color: white">
+          <div class="pb-2 mb-3 fw-bold" style="
                 font-size: 1.2rem;
                 border-bottom: 1px solid rgb(55, 210, 67);
-              "
-            >
-              홈택배
-            </div>
-            <div style="color: rgb(136, 138, 136)">
-              모든 택배 상품은 내용물을 보호할 수 있도록 박스로
-              포장되어야합니다. 부피가 작은 상품의 경우
-              <span class="fw-bold"
-                >운송장보다 큰 소형박스 (15cm x 8cm 이상)</span
-              >
-              에 재포장하여 접수하셔야 합니다. 박스에 포장한 규격은
-              <span style="color: rgb(55, 210, 73)"
-                >가로, 세로, 높이의 합이 프리미엄의 경우 100cm, 일반 홈택배의
-                경우 120cm</span
-              >
-              이고
-              <span style="color: rgb(55, 210, 73)"
-                >다량접수 할인 홈택배의 경우60cm</span
-              >
-              입니다. 프리미엄 홈택배는
-              <span style="color: rgb(55, 210, 73)">10kg 이하</span> , 일반
-              홈택배는 <span style="color: rgb(55, 210, 73)">15kg 이하</span>,
-              다량접수 할인 홈택배는
-              <span style="color: rgb(55, 210, 73)">2kg 이하</span> 상품에 한해
-              접수 가능합니다.
-            </div>
+              ">
+            품목별 포장방법
+          </div>
+          <div style="color: rgb(136, 138, 136)">
+            모든 택배 상품은 내용물을 보호할 수 있도록 박스로
+            포장되어야합니다. 부피가 작은 상품의 경우
+            <span class="fw-bold">운송장보다 큰 소형박스 (15cm x 8cm 이상)</span>
+            에 재포장하여 접수하셔야 합니다. 박스에 포장한 규격은
+            <span style="color: rgb(55, 210, 73)">가로, 세로, 높이의 합이 프리미엄의 경우 100cm, 일반 홈택배의
+              경우 120cm</span>
+            이고
+            <span style="color: rgb(55, 210, 73)">다량접수 할인 홈택배의 경우60cm</span>
+            입니다. 프리미엄 홈택배는
+            <span style="color: rgb(55, 210, 73)">10kg 이하</span> , 일반
+            홈택배는 <span style="color: rgb(55, 210, 73)">15kg 이하</span>,
+            다량접수 할인 홈택배는
+            <span style="color: rgb(55, 210, 73)">2kg 이하</span> 상품에 한해
+            접수 가능합니다.
           </div>
         </div>
       </div>
     </div>
-    <script src="./js/guidePackaging.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <script src="./js/guidePackaging.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

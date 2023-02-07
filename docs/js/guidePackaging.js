@@ -1,7 +1,7 @@
 // 택배별 포장방법 클릭 시 이벤트
 document
   .getElementById("post_packaging")
-  .addEventListener("clink", function () {
+  .addEventListener("click", function () {
     opacityForPostPackaging();
     showContentsPostPackaging();
   });
@@ -19,7 +19,7 @@ function showContentsPostPackaging(event) {
 // 품목별 포장방법 클릭 시 이벤트
 document
   .getElementById("item_packaging")
-  .addEventListener("clink", function () {
+  .addEventListener("click", function () {
     opacityForItemPackaging();
     showContentsItemPackaging();
   });
