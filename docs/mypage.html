@@ -132,20 +132,20 @@
     <br>
     <!--바디바디 시작-->   
       <div class="content-area group">
-        <div class="container ">
+        <div class="container">
         <h2 class="mypage-title"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp마이페이지</b></h2>
         <br>
         <br>
         <div class="row">
 
-            <div class=" col-auto"></div><!-- 여백용 -->
-                <div class=" col-auto">
+           
+              <div class=" col-auto">
                   <h3><b>이재현</b>님은</h3>          
                   <h3><b><span style="color:rgb(55, 210, 67);">FAMILY</span></b>등급 회원입니다.</h3>
                   <hr noshade size="5px" style="width:350px">            
                   <button id="btn-update-myinfo" style="border-radius:20px; background-color: gainsboro; border:1px solid white;">
                     <span style="color:gray;"> 내 정보 수정</span></button>
-                </div>
+              </div>
 
               <div class="col-auto" style="border-left:1px solid gray; height:100px">
                   <div style="display:table-row ">
@@ -159,6 +159,9 @@
                   </ul>                 
                   </div>          
               </div>
+              <div class="col-auto"></div><!--띄어쓰기용-->
+              <div class="col-auto"></div><!--띄어쓰기용-->
+              <div class="col-auto"></div><!--띄어쓰기용-->
 
               <!-- 나중에 숫자는 db로 변경 -->
               <div class="col-auto">
@@ -167,6 +170,9 @@
                 <b><p><span style="font-size:150%">97</span></b><span style="font-size:100%">명</span></p>
               </div> 
 
+              <div class="col-auto"></div><!--띄어쓰기용-->
+              <div class="col-auto"></div><!--띄어쓰기용-->
+              
                 <div class="col-auto" style="border-left:1px solid gray; height:100px">
                     <div style="display:table-row ">
                       <ul>
@@ -187,7 +193,7 @@
                     <p></p>
                     <b><p><span style="font-size:150%">15</span></b><span style="font-size:100%">건</span></p>
                   
-                      <div style="width:80%;  float: left;">
+                      <div style="width:100%;  float: left;">
                         <a href="./gradeBenefit.html">
                         <button style="border-radius:20px; background-color:#f2ffd9; border:1px solid white;">
                         <span style="color:rgb(55, 210, 67);">등급별 혜택</span></button></a>
@@ -201,8 +207,8 @@
             
             
 
-             <div class="row text-center">
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp              
+             <div class="row">
+              
                 <div class="col-auto">                      
                     <button style="border:0px; background-color: white;">
                       <a:hover style="color:#86919c">                   
@@ -229,19 +235,19 @@
               </div> <!----> 
             
             
-            </div><!--컨테이너 끝-->
-          </div>
+           
           <!--바디 끝-->
                    
             <!-- 여기에 아랫꺼넣기 -->
-              
+            <div style="background-color:#f9f9f9;"></div> 
             
-            <div class="d-flex" style="background-color:#f9f9f9;"> <!--감싸기-->
-                    
-              <div class="col-auto"></div>
+            <div class="d-flex" style="background-color:#f9f9f9; width:1000px; height:500px;"> <!--감싸기-->
+                   
+              
 
-                  <div class="col-auto" style="width: 300px; font-size: 1.2rem">
-                        
+                  <div class="col-auto" style="width:300px; font-size: 1.2rem">
+                        <br>
+                        <br>
                         <ul>                                    
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
@@ -281,33 +287,33 @@
 
                     
 
-                        <div class="view-mode col-sm-2">
+                        <div class="col-auto" style="text-align: end; ">
                             <br>
                             <br>
-                                <div class="" style="text-align:center"><!--버튼-->
-                                  <button class="mb-3" >편집</button>
+                                <div class=""><!--버튼-->
+                                  <button class="mb-3" style=" border-radius: 20px; background-color:rgb(55, 210, 67);color:white; border:1px solid white;">
+                                  편집
+                                  </button>
                                 </div>
 
                             <div class="box-search">
-                              <div class="border p-4 " style="border-radius: 20px; background-color: white; width: 650px;"><!--날짜-->
-                                <label class="inquiry-search-filter-label" for="inquiry-search-filter-select">기간 선택</label>
+                              <div class="border p-4" style="border-radius: 20px; background-color: white; width: 650px;"><!--날짜-->
+                                <label class="inquiry-search-filter-label" for="inquiry-search-filter-select"><span style="font-size:50%">기간 선택</span></label>
                                 
-                                <select id="inquiry-search-filter-select" class="inquiry-search-filter-select" onchange="setReservationDate();">
-                                  <option value="1">최근 7일</option>
-                                  <option value="2" selected>최근 14일</option>
-                                  <option value="3">직접선택</option>
+                                <select id="inquiry-search-filter-select"style="border-radius: 10px; height: 40px; width:20%; border:2px solid rgb(240, 240, 240);"
+                                    class="inquiry-search-filter-select" onchange="setReservationDate();" class="text-align:center;">
+                                    <option value="1">최근 7일</option>
+                                    <option value="2" selected>최근 14일</option>
+                                    <option value="3">직접선택</option>
                                 </select>                                
-                               
-
-                                  <div class="inquiry-search-filter-group">
-                                    <input style="border-radius: 10px; height: 40px; width:15%; border:2px solid rgb(240, 240, 240);"  class="inquiry-search-filter-date" type="text" id="from-date" title="시작날짜" value="2023.01.24" onclick="searchReservationStartDate();" oninput="setReservationStartDate();" readonly/>
-                                    <span class="inquiry-search-filter-tilde">~</span>
-                                    <input style="border-radius: 10px; height: 40px; width:15%; border:2px solid rgb(240, 240, 240);"  class="inquiry-search-filter-date" type="text" id="to-date" title="종료날짜" value="2023.02.07" onclick="searchReservationEndDate();" oninput="setReservationEndDate();" readonly/>
-                                  </div>
-
-                                  
+                           
+                                &nbsp&nbsp
+                                  <input style="text-align:center; border-radius: 10px; height: 40px; width:30%; border:2px solid rgb(240, 240, 240);"  class="inquiry-search-filter-date" type="text" id="from-date" title="시작날짜" value="2023.01.24" onclick="searchReservationStartDate();" oninput="setReservationStartDate();" readonly/>
+                                  <span class="inquiry-search-filter-tilde">&nbsp~&nbsp</span>
+                                  <input style="text-align:center; border-radius: 10px; height: 40px; width:30%; border:2px solid rgb(240, 240, 240);"  class="inquiry-search-filter-date" type="text" id="to-date" title="종료날짜" value="2023.02.07" onclick="searchReservationEndDate();" oninput="setReservationEndDate();" readonly/>
+                                 
                                     <br>
-                                  <div class="inquiry-search-row;"> <!--검색-->
+                                  <div class="inquiry-search-row; mt-4"> <!--검색-->
                                     <label>  
                                     <input class="" type="text" id="search-post-text" title="검색어" placeholder="예약명 또는 예약번호를 입력해주세요." onkeydown="searchReservationEnter(); " 
                                       style="padding:15px; border-radius: 10px; border:2px solid rgb(240, 240, 240);  width:550px"></input>
@@ -322,15 +328,28 @@
                                         </button>
                                       </a>
                                     </label>
-
-                                    
-                                      
                                   </div>
+                                  
+                                  <div class="result"> <!--총0건-->
+                                      <div>
+                                          "총"
+                                          <span class="" id="reservation-count">0</span>
+                                          "건"
+                                          <button title="엑셀 다운로드" class="dw-btn" onclick="excelAll();">엑셀 다운로드</button>
+                                      </div>
 
-                                 
+                                      <div>
+                                        <button class="inquiry-result-sort-btn active" id="btn-reservation-desc" onclick="setReservationOrder('desc');">최신순</button>
+											                  <button class="inquiry-result-sort-btn" id="btn-reservation-asc" onclick="setReservationOrder('asc');">등록순</button>
+                                      </div>
 
-                              </div>                                                           
-                            </div>
+
+                                  </div>
+                                  
+
+
+
+                                </div>
 
                           
                              
@@ -339,6 +358,8 @@
                           </div>
                         </div>
 
+                      </div><!--컨테이너 끝-->
+                    </div>
 
                        
 
