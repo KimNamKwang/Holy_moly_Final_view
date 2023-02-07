@@ -1,823 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      /* header css */
-      .hover:hover {
-        outline: 1px solid rgb(55, 210, 67);
-        color: rgb(55, 210, 67);
-      }
-      .color:hover {
-        color: rgb(55, 210, 67);
-      }
-      /* 여기까지 header css */
-      #termsUl > li {
-        list-style-type: none;
-      }
-      li > a {
-        text-decoration-line: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- 여기부터 header -->
-    <header class="">
-      <nav class="navbar navbar-dark navbar-expand-sm">
-        <div
-          class="container-fluid border-bottom d-flex justify-content-between"
-          style="height: 130px"
-        >
-          <div class="row d-flex align-items-center">
-            <div class="col">
-              <a href="index.html" class="navbar-brand ms-5">
-                <div
-                  style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap" rel="stylesheet" />
+  <style>
+    /* header css */
+    .hover:hover {
+      outline: 1px solid rgb(55, 210, 67);
+      color: rgb(55, 210, 67);
+    }
+
+    .color:hover {
+      color: rgb(55, 210, 67);
+    }
+
+    /* 여기까지 header css */
+    #termsUl>li {
+      list-style-type: none;
+    }
+
+    li>a {
+      text-decoration-line: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 여기부터 header -->
+  <header class="">
+    <nav class="navbar navbar-dark navbar-expand-sm">
+      <div class="container-fluid border-bottom d-flex justify-content-between" style="height: 130px">
+        <div class="row d-flex align-items-center">
+          <div class="col">
+            <a href="index.html" class="navbar-brand ms-5">
+              <div style="
                     font-family: 'Zen Dots', cursive;
                     color: rgb(76, 183, 86);
-                  "
-                >
-                  <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
-                  <span class="material-symbols-outlined fw-bold align-middle">
-                    local_shipping
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="col ms-5">
-              <div class="color nav_content_first">
-                <a
-                  href="inquiry.html"
-                  class="nav-link fw-bold text-nowrap"
-                  style="font-size: 1.1rem"
-                  >점포찾기</a
-                >
+                  ">
+                <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
+                <span class="material-symbols-outlined fw-bold align-middle">
+                  local_shipping
+                </span>
               </div>
-            </div>
-            <div class="col">
-              <div class="color nav_content_second">
-                <a
-                  href="trackShipment.html"
-                  class="nav-link fw-bold text-nowrap"
-                  style="font-size: 1.1rem"
-                  >배송조회</a
-                >
-              </div>
+            </a>
+          </div>
+          <div class="col ms-5">
+            <div class="color nav_content_first">
+              <a href="inquiry.html" class="nav-link fw-bold text-nowrap" style="font-size: 1.1rem">점포찾기</a>
             </div>
           </div>
-          <div class="row">
-            <div class="col" id>
-              <div class="navbar-nav">
-                <div class="navbar me-5" id="">
-                  <a
-                    href="login.html"
-                    class="nav-link text-secondary text-nowrap"
-                    >로그인</a
-                  >
-                  <a
-                    href="join_step1.html"
-                    class="nav-link text-secondary text-nowrap"
-                    >회원가입</a
-                  >
-                </div>
-              </div>
+          <div class="col">
+            <div class="color nav_content_second">
+              <a href="trackShipment.html" class="nav-link fw-bold text-nowrap" style="font-size: 1.1rem">배송조회</a>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <!-- 여기까지 header -->
-    <main>
-      <div class="container">
-        <div class="mb-5">
-          <div class="h2 fw-bold text-center mt-4 mb-4">약관</div>
-          <div class="d-flex justify-content-center">
-            <ul
-              id="termsUl"
-              class="d-flex justify-content-evenly align-items-center w-50"
-              style="font-size: small"
-            >
-              <li>
-                <a
-                  class="border-bottom border-success p-2 text-secondary"
-                  href="./terms.html"
-                  >이용약관</a
-                >
-              </li>
-              <li>
-                <a
-                  class="border-bottom border-success p-2 text-secondary"
-                  href="./termsPS.html"
-                  >택배 이용 약관</a
-                >
-              </li>
-              <li>
-                <a
-                  class="border-bottom border-success p-2 text-secondary"
-                  href="./termsPrivacy.html"
-                  >개인정보 처리방침</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- 약관 내용 담는 곳 -->
-        <div class="d-flex justify-content-center">
-          <div class="overflow-auto w-75">
-            <p class="fs-4 fw-bold mb-4">이용약관</p>
-            <p style="font-weight: bold" class="text-success">제1장 총칙</p>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제1조(약관의 적용)
-            </p>
-            <p style="font-size: small">
-              이 약관은 주식회사 홀몰택(이하 “㈜HOLMOLTEK”)가 운영하는 인터넷
-              홈페이지(http://www.PEST.co.kr)와 모바일 애플리케이션에서 제공하는
-              서비스(이하 "PEST서비스"라 한다)를 이용함에 있어 ㈜HOLMOLTEK와
-              이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
-            </p>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제2조 (정의)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  "이용자"란 ㈜HOLMOLTEK 사이트(http://www.PEST.co.kr)또는
-                  모바일 애플리케이션에 접속하여 이 약관에 따라 ㈜HOLMOLTEK가
-                  제공하는 PEST서비스를 받는 회원 및 비회원을 말합니다.
-                </li>
-                <li>
-                  “회원”이라 함은 ㈜HOLMOLTEK에 개인정보를 제공하여 회원등록을
-                  한 자로서, ㈜HOLMOLTEK의 정보를 지속적으로 제공받으며,
-                  ㈜HOLMOLTEK가 제공하는 PEST서비스를 계속적으로 이용할 수 있는
-                  자를 말합니다.
-                </li>
-                <li>
-                  “사업자회원” 이라 함은 사업자등록 을 한 회원으로서 회원 가입
-                  시 또는 가입 후 ㈜HOLMOLTEK에 사업자등록번호를 제공하여 등록된
-                  회원을 말합니다.
-                </li>
-                <li>
-                  “비회원”이라 함은 회원으로 가입하지 않고 ㈜HOLMOLTEK가
-                  제공하는 PEST서비스를 이용하는 자를 말합니다.
-                </li>
-                <li>
-                  “PEST멤버십 포인트”라 함은 “㈜HOLMOLTEK”이 운영하는 멤버십
-                  포인트로, 적립 및 결제 시 현금처럼 사용 가능한 포인트(담배,
-                  유가증권, 서비스상품 등 일부 상품 제외)를 말하며, “PEST멤버십
-                  포인트”의 구체적인 이용 방법은 “㈜HOLMOLTEK”의 『PEST멤버십
-                  서비스 이용약관』을 따릅니다. 단, 포켓PEST등 ㈜HOLMOLTEK이
-                  제공하는 모든 서비스를 이용하기 위하여는 별도로 ㈜HOLMOLTEK
-                  회원가입이 필요합니다.
-                </li>
-              </ol>
+        <div class="row">
+          <div class="col" id>
+            <div class="navbar-nav">
+              <div class="navbar me-5" id="">
+                <a href="login.html" class="nav-link text-secondary text-nowrap">로그인</a>
+                <a href="join_step1.html" class="nav-link text-secondary text-nowrap">회원가입</a>
+              </div>
             </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제3조 (약관의 효력과 개정)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>이 약관은 이용자에게 공시함으로써 효력을 발생합니다</li>
-                <li>
-                  이 약관의 내용을 이용자가 알 수 있도록
-                  사이트(http://www.pest.co.kr)와 모바일 애플리케이션에
-                  게시합니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK는 약관의 규제에 관한 법률, 전자문서 및 전자거래
-                  기본법, 전자서명법, 정보통신망 이용촉진 및 정보보호 등에 관한
-                  법률 등 관련법을 위배하지 않는 범위에서 수시로 이 약관을
-                  개정할 수 있습니다.
-                </li>
-                <li>
-                  본 서비스를 이용할 때에는 수시로 최신의 본 약관 및 적용된 개별
-                  이용약관을 참조하시기 바랍니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK가 약관을 개정할 경우에는 적용일자 및 개정사유를
-                  명시하여 현행 약관과 함께 ㈜HOLMOLTEK의 초기화면에 그 적용일자
-                  7일 이전부터 적용일자 전일까지 공지합니다. 다만, “회원”에게
-                  불리한 약관 개정의 경우에는 30일 이상의 사전 유예기간을 두고
-                  공지합니다."
-                </li>
-                <li>
-                  변경된 약관의 효력 발생일까지 약관 변경에 대한 거부의사를
-                  명시적으로 표시하지 않거나 약관 변경 이후에 서비스를 이용할
-                  경우 변경된 약관에 동의한 것으로 봅니다. 이용자가 변경된
-                  약관에 동의하지 않는 경우 고객이 서비스 이용이 제한되거나
-                  정지될 수 있습니다.
-                </li>
-              </ol>
-            </div>
-            <p style="font-weight: bold" class="text-success">
-              제2장 회원가입계약
-            </p>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제4조 (회원가입)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  이용자는 ㈜HOLMOLTEK가 사이트(http://www.pest.co.kr)또는
-                  모바일 애플리케이션에 정한 가입 양식에 따라 회원정보를 기입한
-                  후 이 약관에 동의한다는 의사표시를 함으로써 회원가입을
-                  신청합니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK는 회원으로 가입할 것을 신청한 이용자 중 다음
-                  각호에 해당하지 않는 한 회원으로 등록합니다.
-                  <ol>
-                    <li>다른 사람의 명의를 사용하여 신청하였을 때</li>
-                    <li>등록 내용에 허위, 기재누락, 오기가 있는 때</li>
-                    <li>
-                      사회의 안녕과 질서 혹은 미풍양속을 저해할 목적으로
-                      신청하였을 때
-                    </li>
-                    <li>타인의 서비스 이용을 방해 하거나, 정보를 도용한 때</li>
-                    <li>
-                      기타 회원으로 등록하는 것이 ㈜HOLMOLTEK의 서비스에 현저히
-                      지장이 있다고 판단되는 경우
-                    </li>
-                  </ol>
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제5조 (회원 탈퇴 및 자격 상실 등)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  회원은 ㈜HOLMOLTEK에 언제든지 탈퇴를 요청할 수 있으며
-                  ㈜HOLMOLTEK는 즉시 회원 탈퇴를 처리합니다.
-                </li>
-                <li>
-                  회원이 다음 각호의 사유에 해당하는 경우, ㈜HOLMOLTEK는
-                  회원자격을 제한 및 정지시킬 수 있습니다.
-                  <ol>
-                    <li>가입 신청시에 허위 내용을 등록한 경우</li>
-                    <li>
-                      다른 사람의 ㈜HOLMOLTEK 서비스 이용을 방해하거나 그 정보를
-                      도용하는 등 전자거래 질서를 위협하는 경우
-                    </li>
-                    <li>
-                      ㈜HOLMOLTEK를 이용하여 법령과 이 약관이 금지하거나
-                      공서양속에 반하는 행위를 하는 경우
-                    </li>
-                    <li>㈜HOLMOLTEK 업무에 지장을 초래한 경우</li>
-                  </ol>
-                </li>
-                <li>
-                  ㈜HOLMOLTEK가 회원 자격을 제한, 정지 시킨후, 동일한 행위가 2회
-                  이상 반복 되거나 30일이내에 그 사유가 시정되지 아니하는 경우
-                  ㈜HOLMOLTEK는 회원 자격을 상실시킬 수 있습니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK가 회원자격을 상실 시키는 경우에는 회원등록을
-                  말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에
-                  소명할 기회를 부여합니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제6조 (회원에 대한 통지)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK가 회원에 대한 통지를 하는 경우, 회원이
-                  ㈜HOLMOLTEK에 제출한 전자우편 주소로 할 수 있습니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK는 불특정다수 회원에 대한 통지의 경우 1주일이상
-                  홈페이지에 게시함으로서 개별 통지에 갈음할 수 있습니다.
-                </li>
-              </ol>
-            </div>
-            <p style="font-weight: bold" class="text-success">
-              제3장 서비스 제공 및 이용
-            </p>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제7조 (서비스 제공)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK는 회원의 구매 금액, 횟수, 빈도 및 기타 이용실적
-                  등을 토대로 회원에게 소정의 등급을 부여할 수 있으며,
-                  ㈜HOLMOLTEK가 정한 절차와 방법에 따라 등급별로 일정한 혜택을
-                  부여할 수 있습니다. 해당 내용은 사이트(www.PEST.co.kr)와
-                  모바일 애플리케이션에 게시합니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK는 제공하는 서비스의 내용이 변경되거나,
-                  ㈜HOLMOLTEK가 회원에게 부여하는 등급 및 혜택에 관한 제반사항이
-                  변경될 경우 사이트(www.PEST.co.kr)와 모바일 애플리케이션에
-                  게시하여 안내합니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제8조 (서비스 이용 및 제한)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  서비스 이용은 ㈜HOLMOLTEK의 업무상 또는 기술상 특별한 지장이
-                  없는 한, 중단 없이 서비스를 제공함을 원칙으로 합니다.
-                </li>
-                <li>
-                  정보통신시설의 보수 점검ㆍ교체 및 고장, 통신의 두절 등의
-                  사유가 발생하거나, 시스템 장애, 서비스 이용의 폭주 등
-                  불가항력으로 인하여 서비스 이용에 지장이 있는 경우 서비스
-                  이용의 전부 또는 일부에 대하여 제한할 수 있습니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제9조 (할인쿠폰의 사용)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK는 회원에게 서비스 이용 시 일정금액 또는 일정비율을
-                  할인 받을 수 있는 할인 쿠폰을 발급할 수 있습니다.
-                </li>
-                <li>
-                  할인쿠폰은 운송장이 출력됨과 동시에 사용된 것으로 봅니다.
-                </li>
-                <li>
-                  할인쿠폰의 구체적인 내용은 ㈜HOLMOLTEK의 서비스 정책에 따라
-                  변경될 수 있습니다.
-                </li>
-                <li>
-                  할인쿠폰은 유효기간이 경과한 후에는 사용할 수 없고, 고객
-                  변심으로 인해 환불이 이루어지는 경우 재사용 할 수 없습니다.
-                </li>
-                <li>
-                  회원은 할인쿠폰을 회원 본인에 한해서만 사용할 수 있으며,
-                  어떠한 경우에도 이를 타인에게 매매 또는 양도할 수 없습니다.
-                  만약 이를 위반한 경우 ㈜HOLMOLTEK는 할인쿠폰을 즉시 회수하거나
-                  ㈜HOLMOLTEK가 입은 손해에 대해 배상을 청구하거나 회원자격의
-                  제한 또는 상실 등의 조치를 취할 수 있습니다.
-                </li>
-                <li>
-                  할인쿠폰은 이용 가능 서비스, 회원 등급, 중복 사용 가능 여부,
-                  총 할인 금액 제한 등의 조건이 상이하게 설정될 수 있으며, 이를
-                  사전에 확인하지 않아 발생한 회원의 손해에 대해 ㈜HOLMOLTEK는
-                  책임을 지지 않습니다.
-                </li>
-              </ol>
-            </div>
-            <p style="font-weight: bold" class="text-success">
-              제4장 ㈜HOLMOLTEK와 이용자의 의무사항
-            </p>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제10조 (개인정보 보호 정책)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK는 이용자의 정보수집 시 서비스 이용 등에 필요한
-                  정보를 수집합니다. 다음 사항을 필수사항으로 하며 그 외 사항은
-                  선택사항으로 합니다.
-                  <ol>
-                    <li>성명</li>
-                    <li>생년월일(회원의 경우)</li>
-                    <li>주소</li>
-                    <li>전화번호</li>
-                    <li>휴대폰 번호</li>
-                    <li>이메일</li>
-                    <li>희망ID(회원의 경우)</li>
-                    <li>비밀번호(회원의 경우)</li>
-                    <li>성별(회원의 경우)</li>
-                    <li>기타 회사가 필요하다고 인정하는 사항</li>
-                  </ol>
-                </li>
-                <li>
-                  ㈜HOLMOLTEK가 이용자의 개인식별이 가능한 개인정보를 수집하는
-                  때에는 반드시 당해 이용자의 동의를 받습니다.
-                </li>
-                <li>
-                  제공된 개인정보는 당해 이용자의 동의 없이 목적 외의 이용이나
-                  제3자에게 제공할 수 없으며, 이에 대한 모든 책임은
-                  ㈜HOLMOLTEK가 집니다. 다만 통계작성, 학술연구, 시장조사를
-                  위하여 필요한 경우로서, 특정 개인을 식별할 수 없는 형태로
-                  제공하는 경우에는 예외로 합니다
-                </li>
-                <li>
-                  ㈜HOLMOLTEK는 관계법령이 정하는 바에 따라 회원 개인정보의
-                  보호.관리를 위해 필요한 조치를 취하고, 회사의 개인정보
-                  처리방침에 해당 내용을 게시하며 개인정보의 보호 및 사용에
-                  대해서는 관련 법령 및 회사의 "개인정보 처리방침"이 적용됩니다.
-                  또한 회사는 이용자의 귀책사유로 인하여 노출된 정보에 대해서는
-                  책임을 지지 않습니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK가 제2항과 제3항에 의해 이용자의 동의를 받아야 하는
-                  경우에는 개인정보 관리 책임자의 신원(소속, 성명 및 전화번호
-                  기타 연락처), 정보의 수집목적 및 이용목적, 제3자에 대한
-                  정보제공 관련사항(제공받는 자, 제공목적 및 제공할 정보의 내용)
-                  등 관련 법령에서 정한 사항을 미리 명시하거나, 고지해야 하며
-                  이용자는 언제든지 이 동의를 철회할 수 있습니다.
-                </li>
-                <li>
-                  이용자는 언제든지 ㈜HOLMOLTEK가 가지고 있는 자신의 개인정보에
-                  대해 열람 및 오류정정을 요구할 수 있으며, ㈜HOLMOLTEK는 이에
-                  대해 지체 없이 필요한 조치를 취할 의무를 집니다. 이용자가
-                  오류의 정정을 요구한 경우에는 ㈜HOLMOLTEK 는 그 오류를 정정할
-                  때까지 당해 개인정보를 이용하지 않습니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK 또는 그로부터 개인정보를 제공받은 제 3자는
-                  개인정보의 수집목적 또는 제공받은 목적을 달성한 때에는 당해
-                  개인정보를 지체 없이 파기합니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제11조 (㈜HOLMOLTEK의 의무)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK는 법령과 이 약관이 금지하거나 공서양속에 반하는
-                  행위를 하지 않으며 이 약관이 정하는 바에 따라 지속적이고,
-                  안정적으로 재화, 용역을 제공하는 데 최선을 다하여야 합니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK는 이용자가 안전하게 인터넷 서비스를 이용할 수
-                  있도록 이용자의 개인정보(신용정보포함)보호를 위한 보안
-                  시스템을 갖추어야 합니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK는 이용자가 원하지 않는 영리목적의 광고성
-                  전자우편을 발송하지 않습니다. 원하지 않는 이용자에게는 더 이상
-                  광고성 전자우편을 발송하지 않습니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제12조 (회원의 ID 및 비밀번호에 대한 의무)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>ID와 비밀번호에 관한 관리책임은 회원에게 있습니다.</li>
-                <li>
-                  회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는
-                  안됩니다.
-                </li>
-                <li>
-                  회원이 자신의 ID 및 비밀번호를 도난 당하거나 제3자가 사용하고
-                  있음을 인지한 경우에는 바로 ㈜HOLMOLTEK에 통보하고
-                  ㈜HOLMOLTEK의 안내가 있는 경우에는 그에 따라야 합니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제13조 (이용자의 의무)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  이용자는 다음 행위를 하여서는 안됩니다.
-                  <ol>
-                    <li>신청 또는 변경시 허위내용의 등록</li>
-                    <li>㈜HOLMOLTEK에 게시된 정보의 변경</li>
-                    <li>
-                      ㈜HOLMOLTEK가 정한 정보 이외의 정보(컴퓨터 프로그램 등)의
-                      송신 또는 게시
-                    </li>
-                    <li>
-                      ㈜HOLMOLTEK 기타 제3자의 저작권 등 지적재산권에 대한 침해
-                    </li>
-                    <li>
-                      ㈜HOLMOLTEK 기타 제3자의 명예를 손상시키거나 업무를
-                      방해하는 행위
-                    </li>
-                    <li>
-                      외설 또는 폭력적인 메시지, 화상, 음성 기타 공서양속에
-                      반하는 정보를 사이트 또는 모바일 애플리케이션에 공개 또는
-                      게시하는 행위
-                    </li>
-                    <li>
-                      사실관계를 왜곡하는 정보제공 행위 등 기타 ㈜HOLMOLTEK가
-                      부적절하다고 판단하는 행위
-                    </li>
-                  </ol>
-                </li>
-                <li>
-                  전항 각호의 정보 기타 ㈜HOLMOLTEK가 서비스 운영상 부적절하다고
-                  판단한 정보가 사이트 또는 모바일 애플리케이션에 게시되거나
-                  사이트 또는 모바일 애플리케이션과 링크된 곳에 게시된 경우,
-                  ㈜HOLMOLTEK는 이용자 기타 정보의 게시를 행한 자의 승낙없이
-                  ㈜HOLMOLTEK에 게재된 당해 정보를 삭제하거나 사이트 또는 모바일
-                  애플리케이션에 확장된 링크를 절단할 수 있습니다. 단,
-                  ㈜HOLMOLTEK는 이러한 정보의 삭제˙링크의 절단 등을 할 의무를
-                  지지 않습니다.
-                </li>
-              </ol>
-            </div>
-            <p style="font-weight: bold" class="text-success">제5장 기타</p>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제14조 (㈜HOLMOLTEK와 피연결 홈페이지 간의 관계)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK의 하위 홈페이지 또는 하이퍼 링크(하이퍼 링크의
-                  대상에는 문자, 그림 및 동화상 등이 포함됨)가 있는 경우, 전자를
-                  연결 사이트라고 하고 후자를 피연결 사이트라고 합니다.
-                </li>
-                <li>
-                  연결 사이트는 피연결 사이트가 독자적으로 제공하는 재화, 용역에
-                  의하여 이용자와 행하는 거래에 대해서 보증책임을 지지 않습니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제15조 (저작권의 귀속 및 이용제한)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK가 작성한 저작물에 대한 저작권 기타 지적재산권은
-                  ㈜HOLMOLTEK에 귀속합니다.
-                </li>
-                <li>
-                  이용자는 ㈜HOLMOLTEK를 이용함으로써 얻은 정보를 ㈜HOLMOLTEK의
-                  사전 승낙없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여
-                  영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제16조 (분쟁해결)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK는 이용자가 제기하는 정당한 의견이나 불만을
-                  반영하고 그 피해를 보상처리하기 위하여 피해보상처리조직을
-                  설치, 운영합니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK는 이용자로부터 제출되는 불만사항을 신속하게
-                  처리합니다. 다만, 신속한 처리가 곤란한 경우에는 이용자에게 그
-                  사유와 처리일정을 즉시 통보해 드립니다.
-                </li>
-              </ol>
-            </div>
-            <p
-              style="font-size: smaller; font-weight: bold"
-              class="text-success"
-            >
-              제17조 (재판권 및 준거법)
-            </p>
-            <div>
-              <ol style="font-size: small">
-                <li>
-                  ㈜HOLMOLTEK와 이용자간에 발생한 분쟁에 관한 소송은
-                  민사소송법상의 관할법원에 제기할 수 있습니다.
-                </li>
-                <li>
-                  ㈜HOLMOLTEK와 이용자간에 제기된 소송에는 대한민국법을
-                  적용합니다.
-                </li>
-              </ol>
-            </div>
-            <p>
-              ※ 본 약관에 대한 저작권은 ㈜HOLMOLTEK에 귀속하며 무단 복제, 배포,
-              전송 기타 저작권 침해 행위를 엄금합니다.
-            </p>
-          </div>
-          <div>
-            <br />
           </div>
         </div>
       </div>
-    </main>
-    <!-- 여기부터 footer -->
-    <footer
-      class="pb-5"
-      style="
-        font-family: 'Noto Sans KR', sans-serif;
-        background-color: rgb(246, 246, 245);
-      "
-    >
-      <div class="container">
-        <div style="width: 1160px; font-size: 1.2rem">
-          <ul
-            class="d-flex justify-content-end list-unstyled pt-4 mt-5"
-            style="height: 70px"
-          >
+    </nav>
+  </header>
+  <!-- 여기까지 header -->
+  <main>
+    <div class="container">
+      <div class="mb-5">
+        <div class="h2 fw-bold text-center mt-4 mb-4">약관</div>
+        <div class="d-flex justify-content-center">
+          <ul id="termsUl" class="d-flex justify-content-evenly align-items-center w-50" style="font-size: small">
             <li>
-              <a
-                class="text-decoration-none me-3 pe-3 border-end border-2"
-                style="color: rgb(89, 89, 89)"
-                href="./company_introduction.html"
-                >회사소개</a
-              >
+              <a class="border-bottom border-success p-2 text-secondary" href="./terms.html">이용약관</a>
             </li>
             <li>
-              <a
-                class="text-decoration-none me-3 pe-3 border-end border-2"
-                style="color: rgb(89, 89, 89)"
-                href="./terms.html"
-                >이용약관</a
-              >
+              <a class="border-bottom border-success p-2 text-secondary" href="./termsPS.html">택배 이용 약관</a>
             </li>
             <li>
-              <a
-                class="text-decoration-none me-3 pe-3 border-end border-2"
-                style="color: rgb(89, 89, 89)"
-                href="./termsPrivacy.html"
-                >개인정보처리방침</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-decoration-none me-3 pe-3 border-end border-2"
-                style="color: rgb(89, 89, 89)"
-                href=""
-                >사업제휴</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-decoration-none me-3 pe-3"
-                style="color: rgb(89, 89, 89)"
-                href="./inquiry.html"
-                >고객센터</a
-              >
+              <a class="border-bottom border-success p-2 text-secondary" href="./termsPrivacy.html">개인정보 처리방침</a>
             </li>
           </ul>
         </div>
       </div>
-      <div style="background-color: white">
-        <div class="container">
-          <div class="row pt-4 pb-4">
-            <div class="col" style="color: rgb(147, 147, 147)">
-              <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
-                1000-0110
-              </div>
-              <div class="pt-1 pb-1" style="font-size: 1.2rem">
-                홈택배 고객센터
-              </div>
-              <div>평일 09~18시/ 토요일 09~13시</div>
-              <div>(평일 점심시간 12~13시)</div>
-            </div>
-            <div class="col" style="color: rgb(147, 147, 147)">
-              <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
-                1221-2211
-              </div>
-              <div class="pt-1 pb-1" style="font-size: 1.2rem">
-                픽업/제휴 회원관련 문의
-              </div>
-              <div>평일 09~18시/ 토요일 09~13시</div>
-              <div>(평일 점심시간 11:30~12:30)</div>
-            </div>
-            <div class="col" style="color: rgb(147, 147, 147)">
-              <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
-                1771-7711
-              </div>
-              <div class="pt-1 pb-1" style="font-size: 1.2rem">
-                홈페이지 관련문의
-              </div>
-              <div>평일 09~18시</div>
-            </div>
+      <!-- 약관 내용 담는 곳 -->
+      <div class="d-flex justify-content-center">
+        <div class="overflow-auto w-75">
+          <p class="fs-4 fw-bold mb-4">이용약관</p>
+          <p style="font-weight: bold" class="text-success">제1장 총칙</p>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제1조(약관의 적용)
+          </p>
+          <p style="font-size: small">
+            이 약관은 주식회사 홀몰택(이하 “㈜HOLMOLTEK”)가 운영하는 인터넷
+            홈페이지(http://www.PEST.co.kr)와 모바일 애플리케이션에서 제공하는
+            서비스(이하 "PEST서비스"라 한다)를 이용함에 있어 ㈜HOLMOLTEK와
+            이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
+          </p>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제2조 (정의)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                "이용자"란 ㈜HOLMOLTEK 사이트(http://www.PEST.co.kr)또는
+                모바일 애플리케이션에 접속하여 이 약관에 따라 ㈜HOLMOLTEK가
+                제공하는 PEST서비스를 받는 회원 및 비회원을 말합니다.
+              </li>
+              <li>
+                “회원”이라 함은 ㈜HOLMOLTEK에 개인정보를 제공하여 회원등록을
+                한 자로서, ㈜HOLMOLTEK의 정보를 지속적으로 제공받으며,
+                ㈜HOLMOLTEK가 제공하는 PEST서비스를 계속적으로 이용할 수 있는
+                자를 말합니다.
+              </li>
+              <li>
+                “사업자회원” 이라 함은 사업자등록 을 한 회원으로서 회원 가입
+                시 또는 가입 후 ㈜HOLMOLTEK에 사업자등록번호를 제공하여 등록된
+                회원을 말합니다.
+              </li>
+              <li>
+                “비회원”이라 함은 회원으로 가입하지 않고 ㈜HOLMOLTEK가
+                제공하는 PEST서비스를 이용하는 자를 말합니다.
+              </li>
+              <li>
+                “PEST멤버십 포인트”라 함은 “㈜HOLMOLTEK”이 운영하는 멤버십
+                포인트로, 적립 및 결제 시 현금처럼 사용 가능한 포인트(담배,
+                유가증권, 서비스상품 등 일부 상품 제외)를 말하며, “PEST멤버십
+                포인트”의 구체적인 이용 방법은 “㈜HOLMOLTEK”의 『PEST멤버십
+                서비스 이용약관』을 따릅니다. 단, 포켓PEST등 ㈜HOLMOLTEK이
+                제공하는 모든 서비스를 이용하기 위하여는 별도로 ㈜HOLMOLTEK
+                회원가입이 필요합니다.
+              </li>
+            </ol>
           </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제3조 (약관의 효력과 개정)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>이 약관은 이용자에게 공시함으로써 효력을 발생합니다</li>
+              <li>
+                이 약관의 내용을 이용자가 알 수 있도록
+                사이트(http://www.pest.co.kr)와 모바일 애플리케이션에
+                게시합니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK는 약관의 규제에 관한 법률, 전자문서 및 전자거래
+                기본법, 전자서명법, 정보통신망 이용촉진 및 정보보호 등에 관한
+                법률 등 관련법을 위배하지 않는 범위에서 수시로 이 약관을
+                개정할 수 있습니다.
+              </li>
+              <li>
+                본 서비스를 이용할 때에는 수시로 최신의 본 약관 및 적용된 개별
+                이용약관을 참조하시기 바랍니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK가 약관을 개정할 경우에는 적용일자 및 개정사유를
+                명시하여 현행 약관과 함께 ㈜HOLMOLTEK의 초기화면에 그 적용일자
+                7일 이전부터 적용일자 전일까지 공지합니다. 다만, “회원”에게
+                불리한 약관 개정의 경우에는 30일 이상의 사전 유예기간을 두고
+                공지합니다."
+              </li>
+              <li>
+                변경된 약관의 효력 발생일까지 약관 변경에 대한 거부의사를
+                명시적으로 표시하지 않거나 약관 변경 이후에 서비스를 이용할
+                경우 변경된 약관에 동의한 것으로 봅니다. 이용자가 변경된
+                약관에 동의하지 않는 경우 고객이 서비스 이용이 제한되거나
+                정지될 수 있습니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-weight: bold" class="text-success">
+            제2장 회원가입계약
+          </p>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제4조 (회원가입)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                이용자는 ㈜HOLMOLTEK가 사이트(http://www.pest.co.kr)또는
+                모바일 애플리케이션에 정한 가입 양식에 따라 회원정보를 기입한
+                후 이 약관에 동의한다는 의사표시를 함으로써 회원가입을
+                신청합니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK는 회원으로 가입할 것을 신청한 이용자 중 다음
+                각호에 해당하지 않는 한 회원으로 등록합니다.
+                <ol>
+                  <li>다른 사람의 명의를 사용하여 신청하였을 때</li>
+                  <li>등록 내용에 허위, 기재누락, 오기가 있는 때</li>
+                  <li>
+                    사회의 안녕과 질서 혹은 미풍양속을 저해할 목적으로
+                    신청하였을 때
+                  </li>
+                  <li>타인의 서비스 이용을 방해 하거나, 정보를 도용한 때</li>
+                  <li>
+                    기타 회원으로 등록하는 것이 ㈜HOLMOLTEK의 서비스에 현저히
+                    지장이 있다고 판단되는 경우
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제5조 (회원 탈퇴 및 자격 상실 등)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                회원은 ㈜HOLMOLTEK에 언제든지 탈퇴를 요청할 수 있으며
+                ㈜HOLMOLTEK는 즉시 회원 탈퇴를 처리합니다.
+              </li>
+              <li>
+                회원이 다음 각호의 사유에 해당하는 경우, ㈜HOLMOLTEK는
+                회원자격을 제한 및 정지시킬 수 있습니다.
+                <ol>
+                  <li>가입 신청시에 허위 내용을 등록한 경우</li>
+                  <li>
+                    다른 사람의 ㈜HOLMOLTEK 서비스 이용을 방해하거나 그 정보를
+                    도용하는 등 전자거래 질서를 위협하는 경우
+                  </li>
+                  <li>
+                    ㈜HOLMOLTEK를 이용하여 법령과 이 약관이 금지하거나
+                    공서양속에 반하는 행위를 하는 경우
+                  </li>
+                  <li>㈜HOLMOLTEK 업무에 지장을 초래한 경우</li>
+                </ol>
+              </li>
+              <li>
+                ㈜HOLMOLTEK가 회원 자격을 제한, 정지 시킨후, 동일한 행위가 2회
+                이상 반복 되거나 30일이내에 그 사유가 시정되지 아니하는 경우
+                ㈜HOLMOLTEK는 회원 자격을 상실시킬 수 있습니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK가 회원자격을 상실 시키는 경우에는 회원등록을
+                말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소 전에
+                소명할 기회를 부여합니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제6조 (회원에 대한 통지)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK가 회원에 대한 통지를 하는 경우, 회원이
+                ㈜HOLMOLTEK에 제출한 전자우편 주소로 할 수 있습니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK는 불특정다수 회원에 대한 통지의 경우 1주일이상
+                홈페이지에 게시함으로서 개별 통지에 갈음할 수 있습니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-weight: bold" class="text-success">
+            제3장 서비스 제공 및 이용
+          </p>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제7조 (서비스 제공)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK는 회원의 구매 금액, 횟수, 빈도 및 기타 이용실적
+                등을 토대로 회원에게 소정의 등급을 부여할 수 있으며,
+                ㈜HOLMOLTEK가 정한 절차와 방법에 따라 등급별로 일정한 혜택을
+                부여할 수 있습니다. 해당 내용은 사이트(www.PEST.co.kr)와
+                모바일 애플리케이션에 게시합니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK는 제공하는 서비스의 내용이 변경되거나,
+                ㈜HOLMOLTEK가 회원에게 부여하는 등급 및 혜택에 관한 제반사항이
+                변경될 경우 사이트(www.PEST.co.kr)와 모바일 애플리케이션에
+                게시하여 안내합니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제8조 (서비스 이용 및 제한)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                서비스 이용은 ㈜HOLMOLTEK의 업무상 또는 기술상 특별한 지장이
+                없는 한, 중단 없이 서비스를 제공함을 원칙으로 합니다.
+              </li>
+              <li>
+                정보통신시설의 보수 점검ㆍ교체 및 고장, 통신의 두절 등의
+                사유가 발생하거나, 시스템 장애, 서비스 이용의 폭주 등
+                불가항력으로 인하여 서비스 이용에 지장이 있는 경우 서비스
+                이용의 전부 또는 일부에 대하여 제한할 수 있습니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제9조 (할인쿠폰의 사용)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK는 회원에게 서비스 이용 시 일정금액 또는 일정비율을
+                할인 받을 수 있는 할인 쿠폰을 발급할 수 있습니다.
+              </li>
+              <li>
+                할인쿠폰은 운송장이 출력됨과 동시에 사용된 것으로 봅니다.
+              </li>
+              <li>
+                할인쿠폰의 구체적인 내용은 ㈜HOLMOLTEK의 서비스 정책에 따라
+                변경될 수 있습니다.
+              </li>
+              <li>
+                할인쿠폰은 유효기간이 경과한 후에는 사용할 수 없고, 고객
+                변심으로 인해 환불이 이루어지는 경우 재사용 할 수 없습니다.
+              </li>
+              <li>
+                회원은 할인쿠폰을 회원 본인에 한해서만 사용할 수 있으며,
+                어떠한 경우에도 이를 타인에게 매매 또는 양도할 수 없습니다.
+                만약 이를 위반한 경우 ㈜HOLMOLTEK는 할인쿠폰을 즉시 회수하거나
+                ㈜HOLMOLTEK가 입은 손해에 대해 배상을 청구하거나 회원자격의
+                제한 또는 상실 등의 조치를 취할 수 있습니다.
+              </li>
+              <li>
+                할인쿠폰은 이용 가능 서비스, 회원 등급, 중복 사용 가능 여부,
+                총 할인 금액 제한 등의 조건이 상이하게 설정될 수 있으며, 이를
+                사전에 확인하지 않아 발생한 회원의 손해에 대해 ㈜HOLMOLTEK는
+                책임을 지지 않습니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-weight: bold" class="text-success">
+            제4장 ㈜HOLMOLTEK와 이용자의 의무사항
+          </p>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제10조 (개인정보 보호 정책)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK는 이용자의 정보수집 시 서비스 이용 등에 필요한
+                정보를 수집합니다. 다음 사항을 필수사항으로 하며 그 외 사항은
+                선택사항으로 합니다.
+                <ol>
+                  <li>성명</li>
+                  <li>생년월일(회원의 경우)</li>
+                  <li>주소</li>
+                  <li>전화번호</li>
+                  <li>휴대폰 번호</li>
+                  <li>이메일</li>
+                  <li>희망ID(회원의 경우)</li>
+                  <li>비밀번호(회원의 경우)</li>
+                  <li>성별(회원의 경우)</li>
+                  <li>기타 회사가 필요하다고 인정하는 사항</li>
+                </ol>
+              </li>
+              <li>
+                ㈜HOLMOLTEK가 이용자의 개인식별이 가능한 개인정보를 수집하는
+                때에는 반드시 당해 이용자의 동의를 받습니다.
+              </li>
+              <li>
+                제공된 개인정보는 당해 이용자의 동의 없이 목적 외의 이용이나
+                제3자에게 제공할 수 없으며, 이에 대한 모든 책임은
+                ㈜HOLMOLTEK가 집니다. 다만 통계작성, 학술연구, 시장조사를
+                위하여 필요한 경우로서, 특정 개인을 식별할 수 없는 형태로
+                제공하는 경우에는 예외로 합니다
+              </li>
+              <li>
+                ㈜HOLMOLTEK는 관계법령이 정하는 바에 따라 회원 개인정보의
+                보호.관리를 위해 필요한 조치를 취하고, 회사의 개인정보
+                처리방침에 해당 내용을 게시하며 개인정보의 보호 및 사용에
+                대해서는 관련 법령 및 회사의 "개인정보 처리방침"이 적용됩니다.
+                또한 회사는 이용자의 귀책사유로 인하여 노출된 정보에 대해서는
+                책임을 지지 않습니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK가 제2항과 제3항에 의해 이용자의 동의를 받아야 하는
+                경우에는 개인정보 관리 책임자의 신원(소속, 성명 및 전화번호
+                기타 연락처), 정보의 수집목적 및 이용목적, 제3자에 대한
+                정보제공 관련사항(제공받는 자, 제공목적 및 제공할 정보의 내용)
+                등 관련 법령에서 정한 사항을 미리 명시하거나, 고지해야 하며
+                이용자는 언제든지 이 동의를 철회할 수 있습니다.
+              </li>
+              <li>
+                이용자는 언제든지 ㈜HOLMOLTEK가 가지고 있는 자신의 개인정보에
+                대해 열람 및 오류정정을 요구할 수 있으며, ㈜HOLMOLTEK는 이에
+                대해 지체 없이 필요한 조치를 취할 의무를 집니다. 이용자가
+                오류의 정정을 요구한 경우에는 ㈜HOLMOLTEK 는 그 오류를 정정할
+                때까지 당해 개인정보를 이용하지 않습니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK 또는 그로부터 개인정보를 제공받은 제 3자는
+                개인정보의 수집목적 또는 제공받은 목적을 달성한 때에는 당해
+                개인정보를 지체 없이 파기합니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제11조 (㈜HOLMOLTEK의 의무)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK는 법령과 이 약관이 금지하거나 공서양속에 반하는
+                행위를 하지 않으며 이 약관이 정하는 바에 따라 지속적이고,
+                안정적으로 재화, 용역을 제공하는 데 최선을 다하여야 합니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK는 이용자가 안전하게 인터넷 서비스를 이용할 수
+                있도록 이용자의 개인정보(신용정보포함)보호를 위한 보안
+                시스템을 갖추어야 합니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK는 이용자가 원하지 않는 영리목적의 광고성
+                전자우편을 발송하지 않습니다. 원하지 않는 이용자에게는 더 이상
+                광고성 전자우편을 발송하지 않습니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제12조 (회원의 ID 및 비밀번호에 대한 의무)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>ID와 비밀번호에 관한 관리책임은 회원에게 있습니다.</li>
+              <li>
+                회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는
+                안됩니다.
+              </li>
+              <li>
+                회원이 자신의 ID 및 비밀번호를 도난 당하거나 제3자가 사용하고
+                있음을 인지한 경우에는 바로 ㈜HOLMOLTEK에 통보하고
+                ㈜HOLMOLTEK의 안내가 있는 경우에는 그에 따라야 합니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제13조 (이용자의 의무)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                이용자는 다음 행위를 하여서는 안됩니다.
+                <ol>
+                  <li>신청 또는 변경시 허위내용의 등록</li>
+                  <li>㈜HOLMOLTEK에 게시된 정보의 변경</li>
+                  <li>
+                    ㈜HOLMOLTEK가 정한 정보 이외의 정보(컴퓨터 프로그램 등)의
+                    송신 또는 게시
+                  </li>
+                  <li>
+                    ㈜HOLMOLTEK 기타 제3자의 저작권 등 지적재산권에 대한 침해
+                  </li>
+                  <li>
+                    ㈜HOLMOLTEK 기타 제3자의 명예를 손상시키거나 업무를
+                    방해하는 행위
+                  </li>
+                  <li>
+                    외설 또는 폭력적인 메시지, 화상, 음성 기타 공서양속에
+                    반하는 정보를 사이트 또는 모바일 애플리케이션에 공개 또는
+                    게시하는 행위
+                  </li>
+                  <li>
+                    사실관계를 왜곡하는 정보제공 행위 등 기타 ㈜HOLMOLTEK가
+                    부적절하다고 판단하는 행위
+                  </li>
+                </ol>
+              </li>
+              <li>
+                전항 각호의 정보 기타 ㈜HOLMOLTEK가 서비스 운영상 부적절하다고
+                판단한 정보가 사이트 또는 모바일 애플리케이션에 게시되거나
+                사이트 또는 모바일 애플리케이션과 링크된 곳에 게시된 경우,
+                ㈜HOLMOLTEK는 이용자 기타 정보의 게시를 행한 자의 승낙없이
+                ㈜HOLMOLTEK에 게재된 당해 정보를 삭제하거나 사이트 또는 모바일
+                애플리케이션에 확장된 링크를 절단할 수 있습니다. 단,
+                ㈜HOLMOLTEK는 이러한 정보의 삭제˙링크의 절단 등을 할 의무를
+                지지 않습니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-weight: bold" class="text-success">제5장 기타</p>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제14조 (㈜HOLMOLTEK와 피연결 홈페이지 간의 관계)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK의 하위 홈페이지 또는 하이퍼 링크(하이퍼 링크의
+                대상에는 문자, 그림 및 동화상 등이 포함됨)가 있는 경우, 전자를
+                연결 사이트라고 하고 후자를 피연결 사이트라고 합니다.
+              </li>
+              <li>
+                연결 사이트는 피연결 사이트가 독자적으로 제공하는 재화, 용역에
+                의하여 이용자와 행하는 거래에 대해서 보증책임을 지지 않습니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제15조 (저작권의 귀속 및 이용제한)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK가 작성한 저작물에 대한 저작권 기타 지적재산권은
+                ㈜HOLMOLTEK에 귀속합니다.
+              </li>
+              <li>
+                이용자는 ㈜HOLMOLTEK를 이용함으로써 얻은 정보를 ㈜HOLMOLTEK의
+                사전 승낙없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여
+                영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제16조 (분쟁해결)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK는 이용자가 제기하는 정당한 의견이나 불만을
+                반영하고 그 피해를 보상처리하기 위하여 피해보상처리조직을
+                설치, 운영합니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK는 이용자로부터 제출되는 불만사항을 신속하게
+                처리합니다. 다만, 신속한 처리가 곤란한 경우에는 이용자에게 그
+                사유와 처리일정을 즉시 통보해 드립니다.
+              </li>
+            </ol>
+          </div>
+          <p style="font-size: smaller; font-weight: bold" class="text-success">
+            제17조 (재판권 및 준거법)
+          </p>
+          <div>
+            <ol style="font-size: small">
+              <li>
+                ㈜HOLMOLTEK와 이용자간에 발생한 분쟁에 관한 소송은
+                민사소송법상의 관할법원에 제기할 수 있습니다.
+              </li>
+              <li>
+                ㈜HOLMOLTEK와 이용자간에 제기된 소송에는 대한민국법을
+                적용합니다.
+              </li>
+            </ol>
+          </div>
+          <p>
+            ※ 본 약관에 대한 저작권은 ㈜HOLMOLTEK에 귀속하며 무단 복제, 배포,
+            전송 기타 저작권 침해 행위를 엄금합니다.
+          </p>
+        </div>
+        <div>
+          <br />
         </div>
       </div>
-      <div>
-        <div class="container" style="font-size: 0.85rem">
-          <div class="mt-5 pt-5">
-            <span class="border-end border-dark pe-2">대표자명</span>&nbsp;
-            <span style="color: rgb(110, 110, 110)">강낭콩 </span>
-          </div>
-          <div class="row">
-            <div class="col-auto pt-1">
-              <span class="border-end border-dark pe-2">주소</span>&nbsp;
-              <span style="color: rgb(110, 110, 110)"
-                >서울특별시 광진구 광나루로56길,85 24층 1-13
-              </span>
-            </div>
-            <div class="col-auto pt-1">
-              <span class="text-nowrap">
-                <span class="border-end border-dark pe-2">e-mail</span
-                >&nbsp;<span style="color: rgb(110, 110, 110)"
-                  >post@bgf.co.kr</span
-                >
-              </span>
-            </div>
-            <div class="col pt-1">
-              <span class="border-end border-dark pe-2">FAX</span>&nbsp;<span
-                style="color: rgb(110, 110, 110)"
-                >02-1001-2977</span
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-auto pt-1">
-              <span class="border-end border-dark pe-2">상호명</span>&nbsp;
-              <span style="color: rgb(110, 110, 110)">(주)포스트네트웍스 </span>
-            </div>
-            <div class="col pt-1">
-              <span class="border-end border-dark pe-2 ps-4"
-                >사업자등록번호</span
-              >
-              &nbsp;<span style="color: rgb(110, 110, 110)">110-02-24397 </span>
-            </div>
-          </div>
+    </div>
+  </main>
+  <!-- 여기부터 footer -->
+  <footer class="pb-5" style="
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: rgb(246, 246, 245);
+      ">
+    <div class="container-fluid">
+      <div style="font-size: 1.2rem">
+        <ul class="d-flex justify-content-end list-unstyled pt-4 mt-5" style="height: 70px">
+          <li>
+            <a class="text-decoration-none me-3 pe-3 border-end border-2" style="color: rgb(89, 89, 89)"
+              href="./company_introduction.html">회사소개</a>
+          </li>
+          <li>
+            <a class="text-decoration-none me-3 pe-3 border-end border-2" style="color: rgb(89, 89, 89)"
+              href="./terms.html">이용약관</a>
+          </li>
+          <li>
+            <a class="text-decoration-none me-3 pe-3 border-end border-2" style="color: rgb(89, 89, 89)"
+              href="./termsPrivacy.html">개인정보처리방침</a>
+          </li>
 
-          <div class="mt-4">
-            <span class="text-dark" style="font-family: 'Zen Dots', cursive">
-              <span class="fst-italic fw-bold ms-2">POST</span>
-              <span class="material-symbols-outlined fw-bold align-middle">
-                local_shipping
-              </span>
-            </span>
-            <span class="ps-3"
-              >Copyright ⓒ2016 CUpost ALL RIGHTS RESERVED.</span
-            >
+          <li>
+            <a class="text-decoration-none me-3 pe-3" style="color: rgb(89, 89, 89)" href="./Inquiry.html">고객센터</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="background-color: white">
+      <div class="container">
+        <div class="row pt-4 pb-4">
+          <div class="col" style="color: rgb(147, 147, 147)">
+            <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+              1000-0110
+            </div>
+            <div class="pt-1 pb-1" style="font-size: 1.2rem">
+              홈택배 고객센터
+            </div>
+            <div>평일 09~18시/ 토요일 09~13시</div>
+            <div>(평일 점심시간 12~13시)</div>
+          </div>
+          <div class="col" style="color: rgb(147, 147, 147)">
+            <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+              1221-2211
+            </div>
+            <div class="pt-1 pb-1" style="font-size: 1.2rem">
+              픽업/제휴 회원관련 문의
+            </div>
+            <div>평일 09~18시/ 토요일 09~13시</div>
+            <div>(평일 점심시간 11:30~12:30)</div>
+          </div>
+          <div class="col" style="color: rgb(147, 147, 147)">
+            <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+              1771-7711
+            </div>
+            <div class="pt-1 pb-1" style="font-size: 1.2rem">
+              홈페이지 관련문의
+            </div>
+            <div>평일 09~18시</div>
           </div>
         </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+    <div>
+      <div class="container" style="font-size: 0.85rem">
+        <div class="mt-5 pt-5">
+          <span class="border-end border-dark pe-2">대표자명</span>&nbsp;
+          <span style="color: rgb(110, 110, 110)">강낭콩 </span>
+        </div>
+        <div class="row">
+          <div class="col-auto pt-1">
+            <span class="border-end border-dark pe-2">주소</span>&nbsp;
+            <span style="color: rgb(110, 110, 110)">서울특별시 광진구 광나루로56길,85 24층 1-13
+            </span>
+          </div>
+          <div class="col-auto pt-1">
+            <span class="text-nowrap">
+              <span class="border-end border-dark pe-2">e-mail</span>&nbsp;<span
+                style="color: rgb(110, 110, 110)">post@bgf.co.kr</span>
+            </span>
+          </div>
+          <div class="col pt-1">
+            <span class="border-end border-dark pe-2">FAX</span>&nbsp;<span
+              style="color: rgb(110, 110, 110)">02-1001-2977</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto pt-1">
+            <span class="border-end border-dark pe-2">상호명</span>&nbsp;
+            <span style="color: rgb(110, 110, 110)">(주)포스트네트웍스 </span>
+          </div>
+          <div class="col pt-1">
+            <span class="border-end border-dark pe-2 ps-4">사업자등록번호</span>
+            &nbsp;<span style="color: rgb(110, 110, 110)">110-02-24397 </span>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <span class="text-dark" style="font-family: 'Zen Dots', cursive">
+            <span class="fst-italic fw-bold ms-2">POST</span>
+            <span class="material-symbols-outlined fw-bold align-middle">
+              local_shipping
+            </span>
+          </span>
+          <span class="ps-3">Copyright ⓒ2016 CUpost ALL RIGHTS RESERVED.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 여기까지 footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
