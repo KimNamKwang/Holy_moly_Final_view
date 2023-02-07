@@ -1,129 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    
-    <!-- 23.02.06추가 -->
-    <link rel="stylesheet" href="./css/mypage.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
-    <!-- 23.02.04추가 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+  <!-- 23.02.06추가 -->
+  <link rel="stylesheet" href="./css/mypage.css" />
+
+  <!-- 23.02.04추가 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap" rel="stylesheet" />
 
-    <style>
+  <style>
     .hover:hover {
-    outline: 1px solid rgb(55, 210, 67);
-    color: rgb(55, 210, 67);
+      outline: 1px solid rgb(55, 210, 67);
+      color: rgb(55, 210, 67);
     }
+
     .color:hover {
-    color: rgb(55, 210, 67);
-    }
-    span:hover{
-    color:black;
+      color: rgb(55, 210, 67);
     }
 
-
-    </style>
+    span:hover {
+      color: black;
+    }
+  </style>
 </head>
+
 <body>
-     <!-- 여기부터 header -->
-     <header class="">
-      <nav class="navbar navbar-dark navbar-expand-sm">
-        <div
-          class="container-fluid border-bottom d-flex justify-content-between"
-          style="height: 130px"
-        >
-          <div class="row d-flex align-items-center">
-            <div class="col">
-              <a href="index.html" class="navbar-brand ms-5">
-                <div
-                  style="
+  <!-- 여기부터 header -->
+  <header class="">
+    <nav class="navbar navbar-dark navbar-expand-sm">
+      <div class="container-fluid border-bottom d-flex justify-content-between" style="height: 130px">
+        <div class="row d-flex align-items-center">
+          <div class="col">
+            <a href="index.html" class="navbar-brand ms-5">
+              <div style="
                     font-family: 'Zen Dots', cursive;
                     color: rgb(76, 183, 86);
-                  "
-                >
-                  <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
-                  <span class="material-symbols-outlined fw-bold align-middle">
-                    local_shipping
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div class="col ms-5">
-              <div class="color nav_content_first">
-                <a
-                  href="./store.html"
-                  class="nav-link fw-bold text-nowrap"
-                  style="font-size: 1.2rem"
-                  >점포찾기</a
-                >
+                  ">
+                <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
+                <span class="material-symbols-outlined fw-bold align-middle">
+                  local_shipping
+                </span>
               </div>
-            </div>
-            <div class="col">
-              <div class="color nav_content_second">
-                <a
-                  href="trackShipment.html"
-                  class="nav-link fw-bold text-nowrap"
-                  style="font-size: 1.2rem"
-                  >배송조회</a
-                >
-              </div>
-            </div>
-            <div class="col">
-              <div class="color nav_content_second">
-                <a
-                  href="reservationDetailInquiry.html"
-                  class="nav-link fw-bold text-nowrap"
-                  style="font-size: 1.2rem"
-                  >MY</a
-                >
-              </div>
+            </a>
+          </div>
+          <div class="col ms-5">
+            <div class="color nav_content_first">
+              <a href="./store.html" class="nav-link fw-bold text-nowrap" style="font-size: 1.2rem">점포찾기</a>
             </div>
           </div>
-          <div class="row">
-            <div class="col" id>
-              <div class="navbar-nav">
-                <div class="navbar me-5" id="">
-                  <a
-                    href="login.html"
-                    class="nav-link text-secondary text-nowrap"
-                    >로그인</a
-                  >
-                  <a
-                    href="join_step1.html"
-                    class="nav-link text-secondary text-nowrap"
-                    >회원가입</a
-                  >
-                </div>
+          <div class="col">
+            <div class="color nav_content_second">
+              <a href="trackShipment.html" class="nav-link fw-bold text-nowrap" style="font-size: 1.2rem">배송조회</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="color nav_content_second">
+              <a href="reservationDetailInquiry.html" class="nav-link fw-bold text-nowrap"
+                style="font-size: 1.2rem">MY</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" id>
+            <div class="navbar-nav">
+              <div class="navbar me-5" id="">
+                <a href="login.html" class="nav-link text-secondary text-nowrap">로그인</a>
+                <a href="join_step1.html" class="nav-link text-secondary text-nowrap">회원가입</a>
               </div>
             </div>
           </div>
         </div>
+
       </nav>
     </header>
     <!-- 여기까지 header -->
@@ -131,21 +94,22 @@
     <br>
     <!--바디바디 시작-->   
       <div class="content-area group">
-        <div class="container ">
+        <div class="container">
         <h2 class="mypage-title"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp마이페이지</b></h2>
         <br>
         <br>
         <div class="row">
-            <div class="colmon col-sm-1"></div><!-- 여백용 -->
-                <div class="colmon col-sm-4">
+
+           
+              <div class=" col-auto">
                   <h3><b>이재현</b>님은</h3>          
                   <h3><b><span style="color:rgb(55, 210, 67);">FAMILY</span></b>등급 회원입니다.</h3>
                   <hr noshade size="5px" style="width:350px">            
                   <button id="btn-update-myinfo" style="border-radius:20px; background-color: gainsboro; border:1px solid white;">
                     <span style="color:gray;"> 내 정보 수정</span></button>
-                </div>
+              </div>
 
-              <div class="col-sm-2" style="border-left:1px solid gray; height:100px">
+              <div class="col-auto" style="border-left:1px solid gray; height:100px">
                   <div style="display:table-row ">
                   <ul>
                   <a href="링크걸기">
@@ -157,22 +121,28 @@
                   </ul>                 
                   </div>          
               </div>
+              <div class="col-auto"></div><!--띄어쓰기용-->
+              <div class="col-auto"></div><!--띄어쓰기용-->
+              <div class="col-auto"></div><!--띄어쓰기용-->
 
               <!-- 나중에 숫자는 db로 변경 -->
-              <div class="col-sm-1">
+              <div class="col-auto">
                 <b><span style="color:rgb(55, 210, 67); font-size:150%">123</span></b>
                 <p></p>
                 <b><p><span style="font-size:150%">97</span></b><span style="font-size:100%">명</span></p>
               </div> 
 
-                <div class="col-sm-2" style="border-left:1px solid gray; height:100px">
+              <div class="col-auto"></div><!--띄어쓰기용-->
+              <div class="col-auto"></div><!--띄어쓰기용-->
+              
+                <div class="col-auto" style="border-left:1px solid gray; height:100px">
                     <div style="display:table-row ">
                       <ul>
                       <a href="링크걸기">                              
                       <p><img src="./images/내주소록.png" alt=""></a><b> 내 주소록</b></p>
                       </ul>           
                       <ul>
-                      <a href="./Inquiry.html"> 
+                      <a href="./inquiry.html"> 
                       <p><img src="./images/내문의현황.png" alt=""></a><b>&nbsp 내 문의 현황</b></p>  
                       </ul>  
                     </div>
@@ -180,12 +150,12 @@
                 </div>
 
                   <!-- 나중에 숫자는 db로 변경 -->
-                  <div class="col-sm-2">
+                  <div class="col-auto">
                     <b><span style="font-size:150%">1</span></b><span style="font-size:100%">명</span>
                     <p></p>
                     <b><p><span style="font-size:150%">15</span></b><span style="font-size:100%">건</span></p>
                   
-                      <div style="width:80%;  float: left;">
+                      <div style="width:100%;  float: left;">
                         <a href="./gradeBenefit.html">
                         <button style="border-radius:20px; background-color:#f2ffd9; border:1px solid white;">
                         <span style="color:rgb(55, 210, 67);">등급별 혜택</span></button></a>
@@ -199,9 +169,9 @@
             
             
 
-             <div class="row text-center">
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp              
-                <div class="col-sm-2">                      
+             <div class="row">
+              
+                <div class="col-auto">                      
                     <button style="border:0px; background-color: white;">
                       <a:hover style="color:#86919c">                   
                       <b><span style="font-size:150%">예약내역 조회</span></b>
@@ -209,7 +179,7 @@
                   </button> 
                 </div>
                 
-                <div class="col-sm-2">                  
+                <div class="col-auto">                  
                   <button style="border:1px; background-color: white;">
                     <a:hover style="color:#86919c">                    
                     <b><span style="font-size:150% ">알림톡</span></b>
@@ -217,7 +187,7 @@
                   </button>
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-auto">
                   <button style="border:0px; background-color: white;">
                     <a:hover style="color:#86919c">
                     <b><span style="font-size:150%">회원전용 반품</span></b>
@@ -227,76 +197,153 @@
               </div> <!----> 
             
             
-            </div><!--컨테이너 끝-->
-          </div>
+           
           <!--바디 끝-->
                    
             <!-- 여기에 아랫꺼넣기 -->
-              
+            <div style="background-color:#f9f9f9;"></div> 
             
-            <div class="d-flex" style="background-color:#f9f9f9;"> <!--감싸기-->
-                    
-              <div class="col-sm-2"></div>
+            <div class="d-flex" style="background-color:#f9f9f9; width:1000px; height:500px;"> <!--감싸기-->
+                   
               
-                  <div class="col-sm-2" style="width: 300px; font-size: 1.2rem">
-                        <ul>
-                                    <br>
-                                    <br>
+
+                  <div class="col-auto" style="width:300px; font-size: 1.2rem">
+                        <br>
+                        <br>
+                        <ul>                                    
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
+                              <a:hover style="color:#86919c">
                               <b><span style="font-size:100%">국내택배</span></b>
+                              </a:hover>
                             </button>
                           </div>
                                     <br>
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
+                              <a:hover style="color:#86919c">
                               <span style="font-size:100%">택배친구</span>
+                              </a:hover>
                             </button>
                           </div>
                                     <br>
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
+                              <a:hover style="color:#86919c">
                               <span style="font-size:100%">홈 프리미엄 택배</span>
+                              </a:hover>
                             </button>
                           </div>
                                     <br>
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
+                              <a:hover style="color:#86919c">
                               <span style="font-size:100%">홈 일반 택배</span>
+                              </a:hover>
                             </button>
                           </div>                          
                        </ul>
                   </div>
                   
-                  <div class="col-sm-4">
-                        <div class="view-mode">
+                  <div class="">
+
+      </div>
+    </nav>
+  </header>
+  <!-- 여기까지 header -->
+  <br>
+  <br>
+  <!--바디바디 시작-->
+  <div class="content-area group">
+    <div class="container ">
+      <h2 class="mypage-title"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp마이페이지</b></h2>
+      <br>
+      <br>
+      <div class="row">
+
+        <div class=" col-auto"></div><!-- 여백용 -->
+        <div class=" col-auto">
+          <h3><b>이재현</b>님은</h3>
+          <h3><b><span style="color:rgb(55, 210, 67);">FAMILY</span></b>등급 회원입니다.</h3>
+          <hr noshade size="5px" style="width:350px">
+          <button id="btn-update-myinfo"
+            style="border-radius:20px; background-color: gainsboro; border:1px solid white;">
+            <span style="color:gray;"> 내 정보 수정</span></button>
+        </div>
+
+        <div class="col-auto" style="border-left:1px solid gray; height:100px">
+          <div style="display:table-row ">
+            <ul>
+              <a href="링크걸기">
+                <p><img src="./images/쿠폰함.png" alt="">
+              </a><b> 쿠폰함</b></p>
+            </ul>
+            <ul>
+              <a href="링크걸기">
+                <p><img src="./images/택배친구.png" alt="">
+              </a><b>&nbsp&nbsp택배친구</b></p>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 나중에 숫자는 db로 변경 -->
+        <div class="col-auto">
+          <b><span style="color:rgb(55, 210, 67); font-size:150%">123</span></b>
+          <p></p>
+          <b>
+            <p><span style="font-size:150%">97</span>
+          </b><span style="font-size:100%">명</span></p>
+        </div>
+
+
+        <div class="col-auto" style="border-left:1px solid gray; height:100px">
+          <div style="display:table-row ">
+            <ul>
+              <a href="링크걸기">
+                <p><img src="./images/내주소록.png" alt="">
+              </a><b> 내 주소록</b></p>
+            </ul>
+            <ul>
+              <a href="./inquiry.html">
+                <p><img src="./images/내문의현황.png" alt="">
+              </a><b>&nbsp 내 문의 현황</b></p>
+            </ul>
+          </div>
+          <br>
+        </div>
+
+
+                        <div class="col-auto" style="text-align: end; ">
                             <br>
                             <br>
-                            <div class="button" style="text-align:center"><!--버튼-->
-                              <button class="">편집</button>
-                            </div>
+                                <div class=""><!--버튼-->
+                                  <button class="mb-3" style=" border-radius: 20px; background-color:rgb(55, 210, 67);color:white; border:1px solid white;">
+                                  편집
+                                  </button>
+                                </div>
 
                             <div class="box-search">
-                              <div class="border p-4 " style="border-radius: 20px; background-color: white; width: 550px;"><!--날짜-->
-                                <label class="inquiry-search-filter-label" for="inquiry-search-filter-select">기간 선택</label>
+                              <div class="border p-4" style="border-radius: 20px; background-color: white; width: 650px;"><!--날짜-->
+                                <label class="inquiry-search-filter-label" for="inquiry-search-filter-select"><span style="font-size:50%">기간 선택</span></label>
                                 
-                                <select id="inquiry-search-filter-select" class="inquiry-search-filter-select" onchange="setReservationDate();">
-                                  <option value="1">최근 7일</option>
-                                  <option value="2" selected>최근 14일</option>
-                                  <option value="3">직접선택</option>
-                                </select>
-
-                                  <div class="inquiry-search-filter-group">
-                                    <input class="inquiry-search-filter-date" type="text" id="from-date" title="시작날짜" value="2023.01.24" onclick="searchReservationStartDate();" oninput="setReservationStartDate();" readonly/>
-                                    <span class="inquiry-search-filter-tilde">~</span>
-                                    <input class="inquiry-search-filter-date" type="text" id="to-date" title="종료날짜" value="2023.02.07" onclick="searchReservationEndDate();" oninput="setReservationEndDate();" readonly/>
-                                  </div>
-
-                                  <div class="inquiry-search-row;"> <!--검색-->
+                                <select id="inquiry-search-filter-select"style="border-radius: 10px; height: 40px; width:20%; border:2px solid rgb(240, 240, 240);"
+                                    class="inquiry-search-filter-select" onchange="setReservationDate();" class="text-align:center;">
+                                    <option value="1">최근 7일</option>
+                                    <option value="2" selected>최근 14일</option>
+                                    <option value="3">직접선택</option>
+                                </select>                                
+                           
+                                &nbsp&nbsp
+                                  <input style="text-align:center; border-radius: 10px; height: 40px; width:30%; border:2px solid rgb(240, 240, 240);"  class="inquiry-search-filter-date" type="text" id="from-date" title="시작날짜" value="2023.01.24" onclick="searchReservationStartDate();" oninput="setReservationStartDate();" readonly/>
+                                  <span class="inquiry-search-filter-tilde">&nbsp~&nbsp</span>
+                                  <input style="text-align:center; border-radius: 10px; height: 40px; width:30%; border:2px solid rgb(240, 240, 240);"  class="inquiry-search-filter-date" type="text" id="to-date" title="종료날짜" value="2023.02.07" onclick="searchReservationEndDate();" oninput="setReservationEndDate();" readonly/>
+                                 
+                                    <br>
+                                  <div class="inquiry-search-row; mt-4"> <!--검색-->
                                     <label>  
-                                    <input class="inquiry-search-text" type="text" id="search-post-text" title="검색어" placeholder="예약명 또는 예약번호를 입력해주세요." onkeydown="searchReservationEnter(); " 
-                                      style="padding:10px; border-radius: 10px; border:2px solid rgb(240, 240, 240);  width:450px"></input>
-                                                                        
+                                    <input class="" type="text" id="search-post-text" title="검색어" placeholder="예약명 또는 예약번호를 입력해주세요." onkeydown="searchReservationEnter(); " 
+                                      style="padding:15px; border-radius: 10px; border:2px solid rgb(240, 240, 240);  width:550px"></input>
+                                     
                                       <a href="">
                                         <button class="" style="border-radius: 5px; font-size: 24px;
                                           background: white; margin: 2px; border:2px solid white">
@@ -307,15 +354,28 @@
                                         </button>
                                       </a>
                                     </label>
-                                      
                                   </div>
+                                  
+                                  <div class="result"> <!--총0건-->
+                                      <div>
+                                          "총"
+                                          <span class="" id="reservation-count">0</span>
+                                          "건"
+                                          <button title="엑셀 다운로드" class="dw-btn" onclick="excelAll();">엑셀 다운로드</button>
+                                      </div>
+
+                                      <div>
+                                        <button class="inquiry-result-sort-btn active" id="btn-reservation-desc" onclick="setReservationOrder('desc');">최신순</button>
+											                  <button class="inquiry-result-sort-btn" id="btn-reservation-asc" onclick="setReservationOrder('asc');">등록순</button>
+                                      </div>
+
+
+                                  </div>
+                                  
 
 
 
-                              </div>
-
-                                                           
-                            </div>
+                                </div>
 
                           
                              
@@ -324,165 +384,312 @@
                           </div>
                         </div>
 
+        <!-- 나중에 숫자는 db로 변경 -->
+        <div class="col-auto">
+          <b><span style="font-size:150%">1</span></b><span style="font-size:100%">명</span>
+          <p></p>
+          <b>
+            <p><span style="font-size:150%">15</span>
+          </b><span style="font-size:100%">건</span></p>
 
-                       
+          <div style="width:80%;  float: left;">
+            <a href="./gradeBenefit.html">
+              <button style="border-radius:20px; background-color:#f2ffd9; border:1px solid white;">
+                <span style="color:rgb(55, 210, 67);">등급별 혜택</span></button></a>
+          </div>
+        </div>
 
-              </div>
+      </div>
 
-           
-          
-                
-              
-  
+      <br>
+      <br><br><br><br><br>
 
-                       
 
-  <!-- 여기부터 footer -->
-  <footer
-  class="pb-5"
-  style="
-    font-family: 'Noto Sans KR', sans-serif;
-    background-color: rgb(246, 246, 245);
-  "
->
-  <div class="container">
-    <div style="width: 1160px; font-size: 1.2rem">
-      <ul
-        class="d-flex justify-content-end list-unstyled pt-4 mt-5"
-        style="height: 70px"
-      >
-        <li>
-          <a
-            class="text-decoration-none me-3 pe-3 border-end border-2"
-            style="color: rgb(89, 89, 89)"
-            href=""
-            >회사소개</a
-          >
-        </li>
-        <li>
-          <a
-            class="text-decoration-none me-3 pe-3 border-end border-2"
-            style="color: rgb(89, 89, 89)"
-            href=""
-            >이용약관</a
-          >
-        </li>
-        <li>
-          <a
-            class="text-decoration-none me-3 pe-3 border-end border-2"
-            style="color: rgb(89, 89, 89)"
-            href=""
-            >개인정보처리방침</a
-          >
-        </li>
-        <li>
-          <a
-            class="text-decoration-none me-3 pe-3 border-end border-2"
-            style="color: rgb(89, 89, 89)"
-            href=""
-            >사업제휴</a
-          >
-        </li>
-        <li>
-          <a
-            class="text-decoration-none me-3 pe-3"
-            style="color: rgb(89, 89, 89)"
-            href=""
-            >고객센터</a
-          >
-        </li>
+                      </div><!--컨테이너 끝-->
+                    </div>
+
+
+      <div class="row text-center">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <div class="col-auto">
+          <button style="border:0px; background-color: white;">
+            <a:hover style="color:#86919c">
+              <b><span style="font-size:150%">예약내역 조회</span></b>
+            </a:hover>
+          </button>
+        </div>
+
+        <div class="col-auto">
+          <button style="border:1px; background-color: white;">
+            <a:hover style="color:#86919c">
+              <b><span style="font-size:150% ">알림톡</span></b>
+            </a:hover>
+          </button>
+        </div>
+
+        <div class="col-auto">
+          <button style="border:0px; background-color: white;">
+            <a:hover style="color:#86919c">
+              <b><span style="font-size:150%">회원전용 반품</span></b>
+            </a:hover>
+          </button>
+        </div>
+      </div> <!---->
+
+
+    </div><!--컨테이너 끝-->
+  </div>
+  <!--바디 끝-->
+
+  <!-- 여기에 아랫꺼넣기 -->
+
+
+  <div class="d-flex" style="background-color:#f9f9f9;"> <!--감싸기-->
+
+    <div class="col-auto"></div>
+
+    <div class="col-auto" style="width: 300px; font-size: 1.2rem">
+
+      <ul>
+        <div>
+          <button style="border:1px; background-color:#f9f9f9;">
+            <a:hover style="color:#86919c">
+              <b><span style="font-size:100%">국내택배</span></b>
+            </a:hover>
+          </button>
+        </div>
+        <br>
+        <div>
+          <button style="border:1px; background-color:#f9f9f9;">
+            <a:hover style="color:#86919c">
+              <span style="font-size:100%">택배친구</span>
+            </a:hover>
+          </button>
+        </div>
+        <br>
+        <div>
+          <button style="border:1px; background-color:#f9f9f9;">
+            <a:hover style="color:#86919c">
+              <span style="font-size:100%">홈 프리미엄 택배</span>
+            </a:hover>
+          </button>
+        </div>
+        <br>
+        <div>
+          <button style="border:1px; background-color:#f9f9f9;">
+            <a:hover style="color:#86919c">
+              <span style="font-size:100%">홈 일반 택배</span>
+            </a:hover>
+          </button>
+        </div>
       </ul>
     </div>
-  </div>
+
+    <div class="">
 
 
 
-
-  <div style="background-color: white">
-    <div class="container">
-      <div class="row pt-4 pb-4">
-        <div class="col" style="color: rgb(147, 147, 147)">
-          <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
-            1000-0110
-          </div>
-          <div class="pt-1 pb-1" style="font-size: 1.2rem">
-            홈택배 고객센터
-          </div>
-          <div>평일 09~18시/ 토요일 09~13시</div>
-          <div>(평일 점심시간 12~13시)</div>
+      <div class="view-mode col-sm-2">
+        <br>
+        <br>
+        <div class="" style="text-align:center"><!--버튼-->
+          <button class="mb-3">편집</button>
         </div>
-        <div class="col" style="color: rgb(147, 147, 147)">
-          <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
-            1221-2211
+
+        <div class="box-search">
+          <div class="border p-4 " style="border-radius: 20px; background-color: white; width: 650px;"><!--날짜-->
+            <label class="inquiry-search-filter-label" for="inquiry-search-filter-select">기간 선택</label>
+
+            <select id="inquiry-search-filter-select" class="inquiry-search-filter-select"
+              onchange="setReservationDate();">
+              <option value="1">최근 7일</option>
+              <option value="2" selected>최근 14일</option>
+              <option value="3">직접선택</option>
+            </select>
+
+
+            <div class="inquiry-search-filter-group">
+              <input style="border-radius: 10px; height: 40px; width:15%; border:2px solid rgb(240, 240, 240);"
+                class="inquiry-search-filter-date" type="text" id="from-date" title="시작날짜" value="2023.01.24"
+                onclick="searchReservationStartDate();" oninput="setReservationStartDate();" readonly />
+              <span class="inquiry-search-filter-tilde">~</span>
+              <input style="border-radius: 10px; height: 40px; width:15%; border:2px solid rgb(240, 240, 240);"
+                class="inquiry-search-filter-date" type="text" id="to-date" title="종료날짜" value="2023.02.07"
+                onclick="searchReservationEndDate();" oninput="setReservationEndDate();" readonly />
+            </div>
+
+
+            <br>
+            <div class="inquiry-search-row;"> <!--검색-->
+              <label>
+                <input class="" type="text" id="search-post-text" title="검색어" placeholder="예약명 또는 예약번호를 입력해주세요."
+                  onkeydown="searchReservationEnter(); "
+                  style="padding:15px; border-radius: 10px; border:2px solid rgb(240, 240, 240);  width:550px"></input>
+
+                <a href="">
+                  <button class="" style="border-radius: 5px; font-size: 24px;
+                                          background: white; margin: 2px; border:2px solid white">
+                    <svg width="22" height="40" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="0"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.5 20.75C4.85 20.75 0.25 16.15 0.25 10.5C0.25 4.85 4.85 0.25 10.5 0.25C16.15 0.25 20.75 4.85 20.75 10.5C20.75 16.15 16.15 20.75 10.5 20.75ZM10.5 1.75C5.67 1.75 1.75 5.68 1.75 10.5C1.75 15.32 5.67 19.25 10.5 19.25C15.33 19.25 19.25 15.32 19.25 10.5C19.25 5.68 15.33 1.75 10.5 1.75Z"
+                        fill="#282828" />
+                      <path
+                        d="M21.0004 21.7499C20.8104 21.7499 20.6204 21.6799 20.4704 21.5299L18.4704 19.5299C18.1804 19.2399 18.1804 18.7599 18.4704 18.4699C18.7604 18.1799 19.2404 18.1799 19.5304 18.4699L21.5304 20.4699C21.8204 20.7599 21.8204 21.2399 21.5304 21.5299C21.3804 21.6799 21.1904 21.7499 21.0004 21.7499Z"
+                        fill="#282828" />
+                    </svg>
+                  </button>
+                </a>
+              </label>
+
+
+
+            </div>
+
+
+
           </div>
-          <div class="pt-1 pb-1" style="font-size: 1.2rem">
-            픽업/제휴 회원관련 문의
-          </div>
-          <div>평일 09~18시/ 토요일 09~13시</div>
-          <div>(평일 점심시간 11:30~12:30)</div>
         </div>
-        <div class="col" style="color: rgb(147, 147, 147)">
-          <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
-            1771-7711
-          </div>
-          <div class="pt-1 pb-1" style="font-size: 1.2rem">
-            홈페이지 관련문의
-          </div>
-          <div>평일 09~18시</div>
-        </div>
+
+
+
+
       </div>
     </div>
   </div>
-  <div>
-    <div class="container" style="font-size: 0.85rem">
-      <div class="mt-5 pt-5">
-        <span class="border-end border-dark pe-2">대표자명</span>&nbsp;
-        <span style="color: rgb(110, 110, 110)">강낭콩 </span>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- 여기부터 footer -->
+  <footer class="pb-5" style="
+ font-family: 'Noto Sans KR', sans-serif;
+ background-color: rgb(246, 246, 245);
+">
+    <div class="container-fluid">
+      <div style="font-size: 1.2rem">
+        <ul class="d-flex justify-content-end list-unstyled pt-4 mt-5" style="height: 70px">
+          <li>
+            <a class="text-decoration-none me-3 pe-3 border-end border-2" style="color: rgb(89, 89, 89)"
+              href="./company_introduction.html">회사소개</a>
+          </li>
+          <li>
+            <a class="text-decoration-none me-3 pe-3 border-end border-2" style="color: rgb(89, 89, 89)"
+              href="./terms.html">이용약관</a>
+          </li>
+          <li>
+            <a class="text-decoration-none me-3 pe-3 border-end border-2" style="color: rgb(89, 89, 89)"
+              href="./termsPrivacy.html">개인정보처리방침</a>
+          </li>
+
+          <li>
+            <a class="text-decoration-none me-3 pe-3" style="color: rgb(89, 89, 89)" href="./Inquiry.html">고객센터</a>
+          </li>
+        </ul>
       </div>
-      <div class="pt-1">
-        <span class="border-end border-dark pe-2">주소</span>&nbsp;
-        <span style="color: rgb(110, 110, 110)"
-          >서울특별시 광진구 광나루로56길,85 24층 1-13
-        </span>
-        <span class="border-end border-dark pe-2 ps-4">e-mail</span
-        >&nbsp;<span style="color: rgb(110, 110, 110)">post@bgf.co.kr</span>
-        <span class="border-end border-dark pe-2 ps-4">FAX</span>&nbsp;<span
-          style="color: rgb(110, 110, 110)"
-          >02-1001-2977</span
-        >
+    </div>
+    <div style="background-color: white">
+      <div class="container">
+        <div class="row pt-4 pb-4">
+          <div class="col" style="color: rgb(147, 147, 147)">
+            <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+              1000-0110
+            </div>
+            <div class="pt-1 pb-1" style="font-size: 1.2rem">
+              홈택배 고객센터
+            </div>
+            <div>평일 09~18시/ 토요일 09~13시</div>
+            <div>(평일 점심시간 12~13시)</div>
+          </div>
+          <div class="col" style="color: rgb(147, 147, 147)">
+            <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+              1221-2211
+            </div>
+            <div class="pt-1 pb-1" style="font-size: 1.2rem">
+              픽업/제휴 회원관련 문의
+            </div>
+            <div>평일 09~18시/ 토요일 09~13시</div>
+            <div>(평일 점심시간 11:30~12:30)</div>
+          </div>
+          <div class="col" style="color: rgb(147, 147, 147)">
+            <div class="fw-bold fs-4" style="color: rgb(55, 210, 67)">
+              1771-7711
+            </div>
+            <div class="pt-1 pb-1" style="font-size: 1.2rem">
+              홈페이지 관련문의
+            </div>
+            <div>평일 09~18시</div>
+          </div>
+        </div>
       </div>
-      <div class="pt-1">
-        <span class="border-end border-dark pe-2">상호명</span>&nbsp;
-        <span style="color: rgb(110, 110, 110)">(주)포스트네트웍스 </span>
-        <span class="border-end border-dark pe-2 ps-4">사업자등록번호</span>
-        &nbsp;<span style="color: rgb(110, 110, 110)">110-02-24397 </span>
-      </div>
-      <div class="mt-4">
-        <span class="text-dark" style="font-family: 'Zen Dots', cursive">
-          <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
-          <span class="material-symbols-outlined fw-bold align-middle">
-            local_shipping
+    </div>
+    <div>
+      <div class="container" style="font-size: 0.85rem">
+        <div class="mt-5 pt-5">
+          <span class="border-end border-dark pe-2">대표자명</span>&nbsp;
+          <span style="color: rgb(110, 110, 110)">강낭콩 </span>
+        </div>
+        <div class="row">
+          <div class="col-auto pt-1">
+            <span class="border-end border-dark pe-2">주소</span>&nbsp;
+            <span style="color: rgb(110, 110, 110)">서울특별시 광진구 광나루로56길,85 24층 1-13
+            </span>
+          </div>
+          <div class="col-auto pt-1">
+            <span class="text-nowrap">
+              <span class="border-end border-dark pe-2">e-mail</span>&nbsp;<span
+                style="color: rgb(110, 110, 110)">post@bgf.co.kr</span>
+            </span>
+          </div>
+          <div class="col pt-1">
+            <span class="border-end border-dark pe-2">FAX</span>&nbsp;<span
+              style="color: rgb(110, 110, 110)">02-1001-2977</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto pt-1">
+            <span class="border-end border-dark pe-2">상호명</span>&nbsp;
+            <span style="color: rgb(110, 110, 110)">(주)포스트네트웍스 </span>
+          </div>
+          <div class="col pt-1">
+            <span class="border-end border-dark pe-2 ps-4">사업자등록번호</span>
+            &nbsp;<span style="color: rgb(110, 110, 110)">110-02-24397 </span>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <span class="text-dark" style="font-family: 'Zen Dots', cursive">
+            <span class="fst-italic fw-bold ms-2">POST</span>
+            <span class="material-symbols-outlined fw-bold align-middle">
+              local_shipping
+            </span>
           </span>
-        </span>
-        <span class="ps-3"
-          >Copyright ⓒ2016 CUpost ALL RIGHTS RESERVED.</span
-        >
+          <span class="ps-3">Copyright ⓒ2016 CUpost ALL RIGHTS RESERVED.</span>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- 여기까지 footer -->
+  </footer>
+  <!-- 여기까지 footer -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
 
- 
-    
+
+
 
 
 </body>
+
 </html>
