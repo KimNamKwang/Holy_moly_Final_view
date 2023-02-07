@@ -48,6 +48,7 @@
     }
 
 
+
     </style>
 </head>
 <body>
@@ -201,7 +202,7 @@
 
              <div class="row text-center">
                 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp              
-                <div class="col-sm-2">                      
+                <div class="col-sm-2 mb-2">                      
                     <button style="border:0px; background-color: white;">
                       <a:hover style="color:#86919c">                   
                       <b><span style="font-size:150%">예약내역 조회</span></b>
@@ -209,7 +210,7 @@
                   </button> 
                 </div>
                 
-                <div class="col-sm-2">                  
+                <div class="col-sm-2 mb-2">                  
                   <button style="border:1px; background-color: white;">
                     <a:hover style="color:#86919c">                    
                     <b><span style="font-size:150% ">알림톡</span></b>
@@ -217,7 +218,7 @@
                   </button>
                 </div>
 
-                <div class="col-sm-2">
+                <div class="col-sm-2 mb-2">
                   <button style="border:0px; background-color: white;">
                     <a:hover style="color:#86919c">
                     <b><span style="font-size:150%">회원전용 반품</span></b>
@@ -237,54 +238,65 @@
             <div class="d-flex" style="background-color:#f9f9f9;"> <!--감싸기-->
                     
               <div class="col-sm-2"></div>
-              
-                  <div class="col-sm-2" style="width: 300px; font-size: 1.2rem">
-                        <ul>
-                                    <br>
-                                    <br>
+
+                  <div class="col-sm-2 mt-5" style="width: 300px; font-size: 1.2rem">
+                        
+                        <ul>                                    
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
+                              <a:hover style="color:#86919c">
                               <b><span style="font-size:100%">국내택배</span></b>
+                              </a:hover>
                             </button>
                           </div>
                                     <br>
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
+                              <a:hover style="color:#86919c">
                               <span style="font-size:100%">택배친구</span>
+                              </a:hover>
                             </button>
                           </div>
                                     <br>
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
+                              <a:hover style="color:#86919c">
                               <span style="font-size:100%">홈 프리미엄 택배</span>
+                              </a:hover>
                             </button>
                           </div>
                                     <br>
                           <div>
                             <button style="border:1px; background-color:#f9f9f9;">
+                              <a:hover style="color:#86919c">
                               <span style="font-size:100%">홈 일반 택배</span>
+                              </a:hover>
                             </button>
                           </div>                          
                        </ul>
                   </div>
                   
-                  <div class="col-sm-4">
-                        <div class="view-mode">
+                  <div class="">
+
+                    
+
+                        <div class="view-mode col-sm-2">
                             <br>
                             <br>
-                            <div class="button" style="text-align:center"><!--버튼-->
-                              <button class="">편집</button>
-                            </div>
+                                <div class="" style="text-align:center"><!--버튼-->
+                                  <button class="mb-3" >편집</button>
+                                </div>
 
                             <div class="box-search">
-                              <div class="border p-4 " style="border-radius: 20px; background-color: white; width: 550px;"><!--날짜-->
+                              <div class="border p-4 " style="border-radius: 20px; background-color: white; width: 650px;"><!--날짜-->
                                 <label class="inquiry-search-filter-label" for="inquiry-search-filter-select">기간 선택</label>
                                 
                                 <select id="inquiry-search-filter-select" class="inquiry-search-filter-select" onchange="setReservationDate();">
                                   <option value="1">최근 7일</option>
                                   <option value="2" selected>최근 14일</option>
                                   <option value="3">직접선택</option>
-                                </select>
+                                </select>                                
+                               
 
                                   <div class="inquiry-search-filter-group">
                                     <input class="inquiry-search-filter-date" type="text" id="from-date" title="시작날짜" value="2023.01.24" onclick="searchReservationStartDate();" oninput="setReservationStartDate();" readonly/>
@@ -292,11 +304,14 @@
                                     <input class="inquiry-search-filter-date" type="text" id="to-date" title="종료날짜" value="2023.02.07" onclick="searchReservationEndDate();" oninput="setReservationEndDate();" readonly/>
                                   </div>
 
+                                  
+                                    <br>
                                   <div class="inquiry-search-row;"> <!--검색-->
                                     <label>  
                                     <input class="inquiry-search-text" type="text" id="search-post-text" title="검색어" placeholder="예약명 또는 예약번호를 입력해주세요." onkeydown="searchReservationEnter(); " 
-                                      style="padding:10px; border-radius: 10px; border:2px solid rgb(240, 240, 240);  width:450px"></input>
-                                                                        
+                                      style="padding:10px; border-radius: 10px; border:2px solid rgb(240, 240, 240);  width:550px"></input>
+                                      
+                                     
                                       <a href="">
                                         <button class="" style="border-radius: 5px; font-size: 24px;
                                           background: white; margin: 2px; border:2px solid white">
@@ -307,14 +322,14 @@
                                         </button>
                                       </a>
                                     </label>
+
+                                    
                                       
                                   </div>
 
+                                 
 
-
-                              </div>
-
-                                                           
+                              </div>                                                           
                             </div>
 
                           
