@@ -22,10 +22,15 @@
     .color:hover {
       color: rgb(55, 210, 67);
     }
+    
   </style>
 </head>
 
 <body>
+      <!-- 23.02.08추가 -->
+    
+
+
       <!-- 여기부터 navbar -->
       <header class="">
         <nav class="navbar navbar-dark navbar-expand-sm">
@@ -284,116 +289,55 @@
         </nav>
       </header>
       <!-- 여기까지 navbar -->
-  
+    <!-- Header 끝 -->
 
-  <!-- Header 끝 -->
-  <br>
-  <br>
-  <br>
+    <!-- body 시작-->
+    <div class="content">
+    <div class="container">
+        <div
+          class="fs-3 fw-bold d-flex align-items-center justify-content-center"
+          style="height:4rem">배송조회
+        </div>
 
-  <div id="container-fluid bg-white">
-    <div class="fs-3 fw-bold d-flex align-items-center justify-content-center" style="height: 6rem"> 조회결과 </div>
-
-    <div class="d-flex row justify-content-center text-center">
-      <div>
-        <input type="text" placeholder="운송장번호" id="tracking-number-input" maxlength="20" title="운송장 번호"
-          style="border-radius: 5px; width:450px" />
-        <a href="./trackShipInquiry.html">
-          <button class="submit" id="" onclick="" style="border-radius: 5px;">
-            <img src="./images/물음표.jpg" alt="" width="20px">
-          </button>
-        </a>
-      </div>
-
-    </div>
-
-    <div class="container" id="">
-      <h5 class="title-sub5depth" style="padding:52px 0 23px 0;">조회 결과</h5>
-      <div class="align-items-center">
-        <hr>
-
-        <div class="">
-          <table style="margin-left: auto; margin-right: auto;">
-
-            <colgroup>
-              <col style="width:200px;">
-              <col style="width:200px;">
-              <col style="width:200px;">
-              <col style="width:200px;">
-              <col style="width:200px;">
-            </colgroup>
-            <thead>
-              <tr>
-                <th scope="col">운송장 번호</th>
-                <th scope="col">보내는 분</th>
-                <th scope="col">받는 분</th>
-                <th scope="col">상품 정보</th>
-                <th scope="col">수량</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="text-alignCenter" id="invcNo">652476015150</td>
-                <td class="text-alignCenter" id="sendrNm">***</td>
-                <td class="text-alignCenter" id="rcvrNm">김윤자</td>
-                <td class="text-alignCenter" id="itemNm">무릎보호대 블랙</td>
-                <td class="text-alignCenter" id="qty">3</td>
-              </tr>
-            </tbody>
-          </table>
-
-
-
-          <h5 class="title-sub5depth" style="padding:52px 0 23px 0;">상품 상태 확인</h5>
-
-          <img src="./images/상품상태확인.png" alt="">
-
-          <p style="padding:0 0 47px 0;"><img src="" alt="" id="statusImage"></p>
-
-          <div class="">
-            <table style="margin-left: auto; margin-right: auto;">
-
-              <colgroup>
-                <col style="width:200px;">
-                <col style="width:200px;">
-                <col style="width:200px;">
-                <col style="width:200px;">
-
-              </colgroup>
-              <thead>
-                <tr>
-                  <th scope="col">단계</th>
-                  <th scope="col">처리</th>
-                  <th scope="col">상품상태</th>
-                  <th scope="col">담당 점소</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="text-alignCenter" id="invcNo">652476015150</td>
-                  <td class="text-alignCenter" id="sendrNm">***</td>
-                  <td class="text-alignCenter" id="rcvrNm">김윤자</td>
-                  <td class="text-alignCenter" id="itemNm">무릎보호대 블랙</td>
-                <tr>
-              </tbody>
-            </table>
-          </div>
-
-
-
+        <div class="fs-3 fw-bold d-flex align-items-start justify-content-start">
+          <span style="color:rgb(55, 210, 67);">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp조회결과</span>
 
         </div>
-      </div>
+
+          <div class="d-flex row justify-content-center text-center">
+            <div class="border p-5" style="border-radius: 20px; background-color: white; width: 80%">
+            <!-- 그림삽입 저작권침해임 -->
+                <div>
+                  <span class="tracking-list-icon">
+                    <img src="./images/없어요.png" alt="" width="25%" />
+                  </span>
+                </div>
+              <div class="p-3" style="color:gray;"><h4>배송조회 결과가 없습니다.</h4></div>
+            </div>
+          </div>
+      
+    
+            <br>
+            
+            <div>
+              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            <a href="./login.html"
+              class="btn text-light fw-bold"
+              style="background-color: #a5a5a5;
+                      color: white;
+                      width: 5%;">
+                      BACK
+            </a>
+          </div>
     </div>
-  </div>
-  </div>
-  </div>
+</div>
 
 
 
 
-
-  <!-- 여기부터 footer -->
+ 
+    <!-- body 끝-->
+    <!-- 여기부터 footer -->
   <footer class="pb-5" style="
 font-family: 'Noto Sans KR', sans-serif;
 background-color: rgb(246, 246, 245);
