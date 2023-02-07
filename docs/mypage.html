@@ -37,6 +37,26 @@
     span:hover {
       color: black;
     }
+
+    #myMsgDialog {
+			width:40%;
+      background-color: white; 
+			border:1px solid white; 
+			border-radius: 15px;
+      text-align: center;
+		}		
+
+		#mButton {
+      text-align: center;
+			padding: 7px 30px;
+			background-color: rgb(55, 210, 67);;
+			color: white;
+      border-radius: 7px;
+			font-size: 15px;
+			border: 0;
+    }
+
+
   </style>
 </head>
 
@@ -92,9 +112,10 @@
     <!-- 여기까지 header -->
     <br>
     <br>
-    <!--바디바디 시작-->   
+    <!--바디바디 시작-->
+  <div class="container">   
       <div class="content-area group">
-        <div class="container">
+        <div>
         <h2 class="mypage-title"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp마이페이지</b></h2>
         <br>
         <br>
@@ -116,8 +137,10 @@
                   <p><img src="./images/쿠폰함.png" alt=""></a><b> 쿠폰함</b></p>
                   </ul>                           
                   <ul>
-                  <a href="링크걸기">            
-                  <p><img src="./images/택배친구.png" alt=""></a><b>&nbsp&nbsp택배친구</b></p>
+                  <a href="링크걸기">
+                             
+                  <p><img src="./images/택배친구.png" alt=""></a><b>&nbsp 택배친구</b></p>
+                 
                   </ul>                 
                   </div>          
               </div>
@@ -139,11 +162,11 @@
                     <div style="display:table-row ">
                       <ul>
                       <a href="링크걸기">                              
-                      <p><img src="./images/내주소록.png" alt=""></a><b> 내 주소록</b></p>
+                      <p><img src="./images/내주소록.png" alt=""></a><b>내 주소록</b></p>
                       </ul>           
                       <ul>
                       <a href="./inquiry.html"> 
-                      <p><img src="./images/내문의현황.png" alt=""></a><b>&nbsp 내 문의 현황</b></p>  
+                      <p><img src="./images/내문의현황.png" alt=""></a><b>  내 문의 현황</b></p>  
                       </ul>  
                     </div>
                     <br> 
@@ -180,7 +203,7 @@
                 </div>
                 
                 <div class="col-auto">                  
-                  <button style="border:1px; background-color: white;">
+                  <button  onclick="showMsg()" style="border:1px; background-color: white;">
                     <a:hover style="color:#86919c">                    
                     <b><span style="font-size:150% ">알림톡</span></b>
                     </a:hover>
@@ -188,7 +211,7 @@
                 </div>
 
                 <div class="col-auto">
-                  <button style="border:0px; background-color: white;">
+                  <button onclick="showMsg()" style="border:0px; background-color: white;">
                     <a:hover style="color:#86919c">
                     <b><span style="font-size:150%">회원전용 반품</span></b>
                     </a:hover>   
@@ -197,17 +220,14 @@
               </div> <!----> 
             
             
-           
+            </div>
+          
           <!--바디 끝-->
                    
             <!-- 여기에 아랫꺼넣기 -->
-            <div style="background-color:#f9f9f9;"></div> 
-            
-            <div class="d-flex" style="background-color:#f9f9f9; width:1000px; height:500px;"> <!--감싸기-->
-                   
-              
-
-                  <div class="col-auto" style="width:300px; font-size: 1.2rem">
+        <div style="background-color:#f9f9f9; width:auto; height:auto;">
+           <div class="d-flex"> <!--감싸기-->
+              <div class="col-auto" style="width:300px; font-size: 1.2rem">
                         <br>
                         <br>
                         <ul>                                    
@@ -220,7 +240,7 @@
                           </div>
                                     <br>
                           <div>
-                            <button style="border:1px; background-color:#f9f9f9;">
+                            <button onclick="showMsg()" style="border:1px; background-color:#f9f9f9;">
                               <a:hover style="color:#86919c">
                               <span style="font-size:100%">택배친구</span>
                               </a:hover>
@@ -228,7 +248,7 @@
                           </div>
                                     <br>
                           <div>
-                            <button style="border:1px; background-color:#f9f9f9;">
+                            <button onclick="showMsg()" style="border:1px; background-color:#f9f9f9;">
                               <a:hover style="color:#86919c">
                               <span style="font-size:100%">홈 프리미엄 택배</span>
                               </a:hover>
@@ -236,7 +256,7 @@
                           </div>
                                     <br>
                           <div>
-                            <button style="border:1px; background-color:#f9f9f9;">
+                            <button onclick="showMsg()" style="border:1px; background-color:#f9f9f9;">
                               <a:hover style="color:#86919c">
                               <span style="font-size:100%">홈 일반 택배</span>
                               </a:hover>
@@ -247,14 +267,13 @@
                   
                   <div class="">
 
-      </div>
-    </nav>
-  </header>
-  <!-- 여기까지 header -->
-  <br>
-  <br>
-  <!--바디바디 시작-->
-  
+                  </div>
+                  </nav>
+               
+            
+                <br>
+                <br>
+              
 
 
 
@@ -262,11 +281,11 @@
                             <br>
                             <br>
                                 <div class=""><!--버튼-->
-                                  <button class="mb-3" style=" border-radius: 20px;background-color:rgb(55, 210, 67);color:white; border:1px solid white;">
+                                  <button onclick="showMsg()" class="mb-3" style=" border-radius: 20px;background-color:rgb(55, 210, 67);color:white; border:1px solid white;">
                                   편집
                                   </button>
                                 </div>
-
+                                
                             <div class="box-search">
                               <div class="border p-4" style="border-radius: 20px; background-color: white; width: 650px;"><!--날짜-->
                                 <label class="inquiry-search-filter-label" for="inquiry-search-filter-select"><span style="font-size:50%">기간 선택</span></label>
@@ -302,16 +321,15 @@
                                   </div>
                                   
                                  </div>
-                                </div>
-                                  
-                                <br>
-                                <div class="row"> <!--총0건-->
+                            </div>
+                            <br>                                  
+                                  <div class="row"> <!--총0건-->
                                   
                                   <div class="col-auto">
-                                    <span class="text-align:start" id=""><b>총</b></span>
+                                    <span class="text-align:start" id=""><b>&nbsp 총</b></span>
                                      <span class="" id=""><b>0</b></span>
                                     <span class="" id=""><b>건</b></span>
-                                      <button title="엑셀 다운로드" class="dw-btn" onclick="excelAll();"
+                                      <button onclick="showMsg()" title="엑셀 다운로드" class="dw-btn" onclick="excelAll();"
                                       style="border-radius: 20px; background-color: #f9f9f9; border:1px solid rgb(240, 240, 240);">엑셀 다운로드</button>
                                   </div>
                                   
@@ -320,54 +338,55 @@
                                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                                   &nbsp&nbsp&nbsp
                                   <div class="col-auto">
-                                    <button class="inquiry-result-sort-btn active" id="btn-reservation-desc" onclick="setReservationOrder('desc');"
+                                    <button onclick="showMsg()" class="inquiry-result-sort-btn active" id="btn-reservation-desc" onclick="setReservationOrder('desc');"
                                     style="border-radius: 20px; background-color: #f9f9f9; border:0px solid rgb(240, 240, 240); color:rgb(55, 210, 67);"><b>최신순</b></button>
 
-                                    <button class="inquiry-result-sort-btn" id="btn-reservation-asc" onclick="setReservationOrder('asc');"
+                                    <button onclick="showMsg()" class="inquiry-result-sort-btn" id="btn-reservation-asc" onclick="setReservationOrder('asc');"
                                     style="border-radius: 20px; background-color: #f9f9f9; border:0px solid rgb(240, 240, 240);color:rgb(55, 210, 67);"><b>등록순</b></button>
                                   </div>
-                                </div>
-                                  
-
-
-
-                               
-
-                                <hr>
-                             
-                         
-                          </div> 
-                          </div>
+                            </div>                                
                         </div>
-
+                                <hr>
+                    </div> 
+            </div>
+</div>
+</div>                        
         <!-- 나중에 숫자는 db로 변경 -->
-        
-
-      </div>
-
-
-
+   
                       </div><!--컨테이너 끝-->
                     </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-
-
           </div>
         </div>
-
-
-
-
       </div>
-    </div>
-  </div>
 
 
+     
 
+	<div>
 
-  </div>
-
+		<!-- 아래 dialog 태그 영역이 메시지 창 -->
+		<dialog id="myMsgDialog">
+			<h3>VIP, VVIP, PLATINUM, PURPLE 등급</h3> 
+      <h3>서비스입니다.</h3>
+			<input type="button" id="mButton" onclick="closeMsg()" value=" 확 인 " >
+		</dialog>
+	</div>
+	
+  <script>
+		function showMsg(){
+			var dialog = document.getElementById("myMsgDialog");
+			dialog.showModal();
+		}
+		
+		function closeMsg(){
+			var dialog = document.getElementById("myMsgDialog");
+			dialog.close();
+		}
+	</script>
 
 
 
