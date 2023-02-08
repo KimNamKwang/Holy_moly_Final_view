@@ -52,7 +52,7 @@
           <div
             class="col-2 text-green text-nowrap fs-5 fw-bold d-flex align-items-center"
           >
-            로그인
+            아이디 찾기
           </div>
           <div class="col">
             <span
@@ -72,13 +72,18 @@
             style="border-radius: 20px; padding: 50px 100px 50px 100px"
           >
             <div>
-              <div class="form-check-label fw-bold pb-2">아이디</div>
+              <div class="form-check-label fw-bold pb-2">회원님의 소중한 개인정보 보호를 위하여<br>
+               <span style="color:rgb(55, 210, 67);">본인확인</span>이 필요합니다.
+              </div>
+              <br>
+              <div class="form-check-label fw-bold pb-2">이름
+              </div>
               <div>
                 <input
                   class="form-control form-check-input w-100"
                   type="text"
                   name="userId"
-                  placeholder="ID"
+                  placeholder="이름"
                   required
                   style="
                     height: 50px;
@@ -89,13 +94,14 @@
               </div>
             </div>
             <div>
-              <div class="form-check-label fw-bold pb-2">비밀번호</div>
-              <div>
+              <div class="form-check-label fw-bold pb-2">휴대폰 번호</div>
+              <div class="inputWrap">
+                
                 <input
                   class="form-control form-check-input w-100"
                   type="password"
                   name="userPassword"
-                  placeholder="PW"
+                  placeholder="휴대폰 번호"
                   required
                   style="
                     height: 50px;
@@ -103,66 +109,13 @@
                     border-color: rgb(242, 242, 242);
                   "
                 />
+                <button>ss</button>
               </div>
-            </div>
-            <div
-              class="row text-center pt-4"
-              style="font-size: 0.8rem; color: rgb(143, 139, 133)"
-            >
-              <div class="col border-end">
-              <a href="./IdSearch.html" style="text-decoration: none;">
-              <span style="color:rgb(143, 139, 133);">
-              아이디 찾기
-              </span></a></div>
-              
-              <div class="col border-end">
-              <a href="" style="text-decoration: none;">
-              <span style="color:rgb(143, 139, 133);">
-              비밀번호 찾기</span></a></div>
-              
-              
-              <div class="col">
-              <a href="./join_step1.html" style="text-decoration: none;">
-                <span style="color:rgb(143, 139, 133);">
-                회원가입</span></a></div>
-            
-            </div>
-            <div class="row text-center pt-4">
-              <div class="col d-flex justify-content-center pe-0">
-                <a
-                  href="index.html"
-                  class="btn fw-bold d-flex align-items-center justify-content-center"
-                  style="
-                    width: 150px;
-                    height: 45px;
-                    border-color: rgb(241, 241, 241);
-                    border-radius: 9px 9px;
-                  "
-                  >비회원으로 이용</a
-                >
-              </div>
-              <div class="col d-flex justify-content-center ps-0">
-                <a
-                  href="login.html"
-                  class="btn text-light fw-bold d-flex align-items-center justify-content-center"
-                  style="
-                    background-color: rgb(55, 210, 67);
-                    height: 45px;
-                    width: 150px;
-                    border-radius: 9px 9px;
-                  "
-                  >로그인</a
-                >
-              </div>
-            </div>
-            <div class="text-center pt-4">
-              <div style="font-size: 0.7rem; color: rgb(191, 194, 193)">
-                *회원가입이나 로그인 없이 비회원 예약이 가능합니다.
-              </div>
-            </div>
-          </div>
+            </div>            
+          </div>         
         </div>
-      </form>
-    </div>
+        </form>
+   <button>BACK</button>
+  </div>
   </body>
 </html>
