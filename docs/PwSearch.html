@@ -79,19 +79,14 @@
               <br>
               <div class="form-check-label fw-bold pb-2">이름
               </div>
-              <div>
-                <input
-                  class="form-control form-check-input w-100"
-                  type="text"
-                  name="userId"
-                  placeholder="이름"
-                  required
-                  style="
-                    height: 50%;
-                    border-radius: 10px 10px;
-                    border-color: rgb(242, 242, 242);
-                  "
-                />
+              <div>               
+
+                <div class="input-group">
+                  <input style="height:20%" id="phone" type="text" class="form-control" placeholder="아이디" id="phone">
+                             
+                   <span class="input-group-text" id="sendMessage" onclick="getToken()" style="height: 50%;">
+                 본인인증 여부 체크</span>
+               </div>
               </div>
             </div>
             <div>
