@@ -106,45 +106,55 @@
                
                
                 
-            
-                <div class="input-group">
-                  <input style="height:50%" type="text" class="form-control" placeholder="휴대폰 번호">
-                  <span class="input-group-text" id="basic-addon2" style="height: 50%;">
-                             인증번호받기</span>
+                <div class="auth">
+                  <div class="input-group">
+                    <input style="height:20%" id="phone" type="text" class="form-control" placeholder="휴대폰 번호" id="phone">
+                               
+                     <span class="input-group-text" id="sendMessage" onclick="getToken()" style="height: 50%;">
+                    인증번호받기</span>
+                 </div>
+               <br>
+               <div class="timer">
+                  <div class="input-group">
+                    <input style="height:50%" type="text" class="form-control" placeholder="인증번호">
+                    <span class="input-group-text" id="basic-addon2" style="height: 50%;">
+                              인증 완료</span>
+                  </div>
                </div>
-
-               <div class="input-group">
-                <input style="height:50%" type="text" class="form-control" placeholder="인증번호">
-                <span class="input-group-text" id="basic-addon2" style="height: 50%;">
-                           인증 완료</span>
-             </div>
-             
                 
               </div>
             </div>            
-          </div>         
+          </div>
+          
+          
+
+
+
+
         </div>
         </form>
-        <div class="row">
-          <div class="col mt-3">
-            <a
-              href="./login.html"
-              class="btn btn-sm btn-secondary"
-              style="border-radius: 50px"
-              >BACK</a
-            >
-          </div>
-          <div class="col text-end mt-3">
-            <button
-              class="btn text-light fw-bold"
-              style="background-color: rgb(55, 210, 67)"
-            >
-              > >
-            </button>
-          </div>
-      </div>
+        
 
 
   </div>
+
+  <div class="row">
+    <div class="col mt-3">
+      <a
+        href="./login.html"
+        class="btn btn-sm btn-secondary"
+        style="border-radius: 50px"
+        >BACK</a
+      >
+    </div>
+    <div class="col text-end mt-3">
+      <button
+        class="btn text-light fw-bold"
+        style="background-color: rgb(55, 210, 67)"
+      >
+        > >
+      </button>
+    </div>
+</div>
   </body>
 </html>
