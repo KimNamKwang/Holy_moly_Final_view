@@ -90,7 +90,7 @@
                     height: 50%;
                     width: 100%;
                     border-radius: 10px 10px;
-                   
+                    border-color: rgb(242, 242, 242);
                   "
                 />
               </div>
@@ -104,12 +104,23 @@
               <div class="form-input form-input-ph ph-length6 mb0">
              
                
+               
+                
                 <div class="auth">
                   <div class="input-group">
-                    <input style="height:20%;  border-radius: 10px 10px;" id="phone" type="text" class="form-control" placeholder="휴대폰 번호" id="phone">
-                  </div>
+                    <input style="height:20%" id="phone" type="text" class="form-control" placeholder="휴대폰 번호" id="phone">
+                               
+                     <span class="input-group-text" id="sendMessage" onclick="getToken()" style="height: 50%;">
+                    인증번호받기</span>
+                 </div>
                <br>
-              
+               <div class="timer">
+                  <div class="input-group">
+                    <input style="height:50%" type="text" class="form-control" placeholder="인증번호">
+                    <span class="input-group-text" id="basic-addon2" style="height: 50%;">
+                              인증 완료</span>
+                  </div>
+               </div>
                 
               </div>
             </div>            
