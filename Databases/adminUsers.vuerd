@@ -139,7 +139,7 @@
             "id": "93d5adbb-cfc2-411d-9e07-10b9ce91670b"
           },
           {
-            "name": "POSTCODE",
+            "name": "POSTALCODE",
             "comment": "우편번호",
             "dataType": "VARCHAR(100)",
             "default": "",
@@ -154,7 +154,7 @@
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 74.95361328125,
+              "widthName": 89.8896484375,
               "widthComment": 60,
               "widthDataType": 94.94873046875,
               "widthDefault": 60
@@ -233,7 +233,7 @@
           {
             "name": "PHONE",
             "comment": "전화번호",
-            "dataType": "INTEGER(20)",
+            "dataType": "INTEGER",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -248,7 +248,7 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 82.90087890625,
+              "widthDataType": 60,
               "widthDefault": 60
             },
             "id": "02457071-9ba3-4f53-8a7c-d70dd9715e82"
@@ -304,7 +304,7 @@
           "active": false,
           "left": 43,
           "top": 29,
-          "zIndex": 116,
+          "zIndex": 8,
           "widthName": 60,
           "widthComment": 60
         },
