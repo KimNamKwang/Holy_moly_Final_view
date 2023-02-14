@@ -4,7 +4,7 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": 0,
-    "scrollLeft": 0,
+    "scrollLeft": -3,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -43,12 +43,12 @@
   "table": {
     "tables": [
       {
-        "name": "INQUIRY",
-        "comment": "1:1문의",
+        "name": "INQUIRY_VIEW",
+        "comment": "1:1문의 상세",
         "columns": [
           {
-            "name": "INQUIRY_UID",
-            "comment": "1:1문의UID",
+            "name": "INQUIRY_VIEW_UID",
+            "comment": "1:1문의 상세UID",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -62,104 +62,12 @@
               "pk": true,
               "fk": false,
               "pfk": false,
-              "widthName": 85.55419921875,
-              "widthComment": 68.4599609375,
+              "widthName": 126.0078125,
+              "widthComment": 98.07177734375,
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             },
-            "id": "392cc0d3-0670-433a-9369-0f8a3f672ef3"
-          },
-          {
-            "name": "USER_NAME",
-            "comment": "사용자이름",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 82.9072265625,
-              "widthComment": 67,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "ac0272ca-fa05-42c9-9c20-7690b63abdf9"
-          },
-          {
-            "name": "USER_EMAIL",
-            "comment": "사용자이메일",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 84.36083984375,
-              "widthComment": 80,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "912e5483-6ad0-41f2-a625-bf364bbbb34c"
-          },
-          {
-            "name": "USER_PHONE_NUMBER",
-            "comment": "사용자휴대폰번호",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 155.1435546875,
-              "widthComment": 106,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "40238a7e-fa70-4d37-b68c-2c24bb198a34"
-          },
-          {
-            "name": "INQUIRY_TYPE",
-            "comment": "문의유형",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 97.11962890625,
-              "widthComment": 60,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "a858b0a0-a60f-4300-b666-abb3c9a675ce"
+            "id": "2f891b13-a681-4fb1-ae79-df6e1874870e"
           },
           {
             "name": "INQUERY_TITLE",
@@ -182,30 +90,30 @@
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             },
-            "id": "1a035b8a-0087-44db-8cfe-f56f5ac74465"
+            "id": "5bc614fe-4bc2-4220-90cf-486e52771ff1"
           },
           {
-            "name": "TRACKING_NUMBER",
-            "comment": "운송장번호",
-            "dataType": "INTEGER(100)",
+            "name": "INQUERY_DATE",
+            "comment": "문의날짜",
+            "dataType": "DATETIME",
             "default": "",
             "option": {
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": false
+              "notNull": true
             },
             "ui": {
               "active": false,
               "pk": false,
               "fk": false,
               "pfk": false,
-              "widthName": 132.736328125,
-              "widthComment": 67,
-              "widthDataType": 90.130859375,
+              "widthName": 101.93115234375,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
               "widthDefault": 60
             },
-            "id": "f182de79-49d8-4707-bcd4-0ab2597d935c"
+            "id": "77cc8907-ad3d-425c-b205-163db2f2375f"
           },
           {
             "name": "INQUIRY_CONTENT",
@@ -228,19 +136,42 @@
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             },
-            "id": "79a5bcdd-fda1-4ca4-b68a-2176a3a602ef"
+            "id": "97a6760a-8a43-4121-8820-ac9bb7dace9d"
+          },
+          {
+            "name": "INQUIRY_TYPE",
+            "comment": "문의유형",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 97.11962890625,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "bc4f9de3-fda4-4b13-841f-4564e3958fd8"
           }
         ],
         "ui": {
           "active": false,
-          "left": 56,
-          "top": 83,
-          "zIndex": 54,
-          "widthName": 60,
-          "widthComment": 60
+          "left": 114,
+          "top": 55,
+          "zIndex": 74,
+          "widthName": 96.3896484375,
+          "widthComment": 75.68359375
         },
         "visible": true,
-        "id": "549011c9-ced0-4975-988d-cb7a170dc64b"
+        "id": "1d0005ee-e146-4c15-b0b4-d9bd6aefea39"
       }
     ],
     "indexes": []
