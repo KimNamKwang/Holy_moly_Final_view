@@ -197,7 +197,7 @@
   </header>
   <!-- 여기까지 navbar -->
 
-  <main class="container">
+  <main class="container"   style="font-family: 'Noto Sans KR', sans-serif">
     <div class="mt-5">
       <ul class="list-unstyled d-flex justify-content-center">
         <li id="reserv_for_home" class="pb-4 me-2" style="
@@ -222,7 +222,7 @@
           <!-- 다량택배 이용 form태그 -->
           <form action="./reservationForHomeBulkStep4.html" method="get">
 
-            <div class="fs-3 mb-4" style="font-family: 'Noto Sans KR', sans-serif">
+            <div class="fs-3 mb-4">
               방문희망일 선택
             </div>
             <input type="date" id="VISITING_DATE" name="VISITING_DATE" min="2023-02-15">
@@ -294,8 +294,8 @@
       <!-- 예약확인 및 취소용 form태그 -->
       <form action="" method="get">
         <div class="container" id="text_for_reserv_check_and_cancel" style="display: none">
-          <div class="border d-flex" style="height: 10rem">
-            <div class="align-self-center border-end flex-fill" style="text-align: center;"> 택배예약 시 등록한
+          <div class="border d-flex" style="height: 10rem;">
+            <div class="align-self-center border-end flex-fill" style="text-align: center; font-size: 1.1rem;"> 택배예약 시 등록한
               <span style="color: rgb(55, 210, 67)">보내는분 연락처</span>와
               <div>
                 <span style="color: rgb(55, 210, 67)">비밀번호</span>를 입력해
@@ -303,29 +303,33 @@
               </div>
               예약일 기준 90일 이내 정보에 한하여 조회됩니다.
             </div>
-            <div class="align-self-center flex-fill" style="text-align: center;">휴대폰번호
-              <input type="text" />
+            <div class="align-self-center flex-fill" style="text-align: center; color: rgb(69,69,69); font-size: 0.9rem;">휴대폰번호
+              <input class="ms-4" type="text" style="border: 1px solid rgb(204,204,204); height: 35px;" />
               <div class="mt-2">
                 비밀번호 &nbsp;&nbsp;
-                <input type="password" />
+                <input class="ms-4" type="password" style="border: 1px solid rgb(204,204,204); height: 35px;" />
               </div>
-            </div>
+              </div>
           </div>
-          <div class="mt-4" style="text-align: center">
-            <button type="submit" class="text-light btn fw-bold fs-5" style="
-                  background-color: rgb(54, 213, 66);
-                  width: 13rem;
-                  height: 3rem;
-                ">
-              예약내역 조회
-            </button>
-            <button type="submit" class="text-light btn fw-bold fs-5" style="
-                  background-color: rgb(54, 213, 66);
-                  width: 13rem;
-                  height: 3rem;
+          <div class="mt-4 row" style="text-align: center">
+            <div class="col text-end">
+              <button type="submit" class="text-light btn" style="
+                    background-color: rgb(54, 213, 66);
+                    width: 13rem;
+                    height: 3rem;
                   ">
-              이용문의
-            </button>
+                예약내역 조회
+              </button>
+            </div>
+            <div class="col text-start">
+              <button type="submit" class="text-light btn" style="
+                    background-color: rgb(54, 213, 66);
+                    width: 13rem;
+                    height: 3rem;
+                    ">
+                이용문의
+              </button>
+            </div>
       </form>
     </div>
 
