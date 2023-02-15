@@ -28,8 +28,16 @@
     <link rel="stylesheet" href="./css/join.css" />
   </head>
   <body class="bg-light" style="font-family: 'Noto Sans KR', sans-serif">
+
+
+
+
+
+
+
+
     <div class="container" style="width: 600px">
-      <form action="./join_step2.html">
+      <form action="">
         <div
           class="row mb-5 d-flex align-items-center text-startr"
           style="padding-top: 150px"
@@ -67,6 +75,14 @@
           </div>
         </div>
 
+
+
+
+
+
+
+
+
         <div class="d-flex justify-content-center">
           <div
             class="bg-white border text-start w-100"
@@ -77,16 +93,29 @@
                <span style="color:rgb(55, 210, 67);">본인확인</span>이 필요합니다.
               </div>
               <br>
-              <div class="form-check-label fw-bold pb-2">이름
+              <div class="form-check-label fw-bold pb-2">아이디
               </div>
               <div>               
 
                 <div class="input-group">
                   <input style="height:20%" id="phone" type="text" class="form-control" placeholder="아이디" id="phone">
-                             
-                   <span class="input-group-text" id="sendMessage" onclick="getToken()" style="height: 50%;">
-                 본인인증 여부 체크</span>
-               </div>
+                </div>
+
+               <div class="form-check-label fw-bold mb-2">휴대폰 번호
+              </div>
+               
+                     
+              
+            <div class="form-input form-input-ph ph-length6 mb0">
+              <div class="auth">
+                  <div class="input-group">
+                    <input style="height:20%;  border-radius: 10px 10px;" id="phone" type="text" class="form-control" placeholder="휴대폰 번호" id="phone">
+                  </div>
+               <br>
+              </div>
+            </div>
+            
+            
               </div>
             </div>
             <div>
@@ -111,12 +140,27 @@
           </div>
           <div class="col text-end mt-3">
             <button
+              onclick="doAction()"
               class="btn text-light fw-bold"
               style="background-color: rgb(55, 210, 67)"
             >
               > >
             </button>
           </div>
+
+          <script>
+            function doAction(){
+              if(confirm("등록된 이메일주소에 비밀번호를 보내겠습니까?")){
+                alert("전송하였습니다.");
+                location.href="./login.html";
+             } else {
+                alert("취소하였습니다.")
+                location.href="./login.html";
+            }
+          }
+            
+          </script>
+
       </div>
 
 
