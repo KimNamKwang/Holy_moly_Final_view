@@ -1,202 +1,202 @@
-document.getElementById("monday").addEventListener("click", function () {
-  greenBorderForMonday();
+document.getElementById("dateFirst").addEventListener("click", function () {
+  greenBorderFordateFirst();
 });
 
-function greenBorderForMonday(
+function greenBorderFordateFirst(
   event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
 ) {
-  document.getElementById("monday").style.color = "rgb(55, 210, 67)";
-  document.getElementById("monday").style.outline =
+  document.getElementById("dateFirst").style.color = "rgb(55, 210, 67)";
+  document.getElementById("dateFirst").style.outline =
     "1px solid rgb(55, 210, 67)";
-  document.getElementById("tuesday").style.color = "";
-  document.getElementById("tuesday").style.outline = "";
+  document.getElementById("dateSecond").style.color = "";
+  document.getElementById("dateSecond").style.outline = "";
 
-  document.getElementById("wednesday").style.color = "";
-  document.getElementById("wednesday").style.outline = "";
+  document.getElementById("dateThird").style.color = "";
+  document.getElementById("dateThird").style.outline = "";
 
-  document.getElementById("thursday").style.color = "";
-  document.getElementById("thursday").style.outline = "";
+  document.getElementById("dateFourth").style.color = "";
+  document.getElementById("dateFourth").style.outline = "";
 
-  document.getElementById("friday").style.color = "";
-  document.getElementById("friday").style.outline = "";
+  document.getElementById("dateFifth").style.color = "";
+  document.getElementById("dateFifth").style.outline = "";
 
-  document.getElementById("saturday").style.color = "";
-  document.getElementById("saturday").style.outline = "";
+  document.getElementById("dateSixth").style.color = "";
+  document.getElementById("dateSixth").style.outline = "";
 
-  document.getElementById("sunday").style.color = "";
-  document.getElementById("sunday").style.outline = "";
+  document.getElementById("dateSeventh").style.color = "";
+  document.getElementById("dateSeventh").style.outline = "";
 }
 
-document.getElementById("tuesday").addEventListener("click", function () {
-  greenBorderForTuesday();
+document.getElementById("dateSecond").addEventListener("click", function () {
+  greenBorderFordateSecond();
 });
 
-function greenBorderForTuesday(
+function greenBorderFordateSecond(
   event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
 ) {
-  document.getElementById("tuesday").style.color = "rgb(55, 210, 67)";
-  document.getElementById("tuesday").style.outline =
+  document.getElementById("dateSecond").style.color = "rgb(55, 210, 67)";
+  document.getElementById("dateSecond").style.outline =
     "1px solid rgb(55, 210, 67)";
-  document.getElementById("monday").style.color = "";
-  document.getElementById("monday").style.outline = "";
+  document.getElementById("dateFirst").style.color = "";
+  document.getElementById("dateFirst").style.outline = "";
 
-  document.getElementById("wednesday").style.color = "";
-  document.getElementById("wednesday").style.outline = "";
+  document.getElementById("dateThird").style.color = "";
+  document.getElementById("dateThird").style.outline = "";
 
-  document.getElementById("thursday").style.color = "";
-  document.getElementById("thursday").style.outline = "";
+  document.getElementById("dateFourth").style.color = "";
+  document.getElementById("dateFourth").style.outline = "";
 
-  document.getElementById("friday").style.color = "";
-  document.getElementById("friday").style.outline = "";
+  document.getElementById("dateFifth").style.color = "";
+  document.getElementById("dateFifth").style.outline = "";
 
-  document.getElementById("saturday").style.color = "";
-  document.getElementById("saturday").style.outline = "";
+  document.getElementById("dateSixth").style.color = "";
+  document.getElementById("dateSixth").style.outline = "";
 
-  document.getElementById("sunday").style.color = "";
-  document.getElementById("sunday").style.outline = "";
+  document.getElementById("dateSeventh").style.color = "";
+  document.getElementById("dateSeventh").style.outline = "";
 }
 
-document.getElementById("wednesday").addEventListener("click", function () {
-  greenBorderForWednesday();
+document.getElementById("dateThird").addEventListener("click", function () {
+  greenBorderFordateThird();
 });
 
-function greenBorderForWednesday(
+function greenBorderFordateThird(
   event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
 ) {
-  document.getElementById("wednesday").style.color = "rgb(55, 210, 67)";
-  document.getElementById("wednesday").style.outline =
+  document.getElementById("dateThird").style.color = "rgb(55, 210, 67)";
+  document.getElementById("dateThird").style.outline =
     "1px solid rgb(55, 210, 67)";
-  document.getElementById("monday").style.color = "";
-  document.getElementById("monday").style.outline = "";
+  document.getElementById("dateFirst").style.color = "";
+  document.getElementById("dateFirst").style.outline = "";
 
-  document.getElementById("tuesday").style.color = "";
-  document.getElementById("tuesday").style.outline = "";
+  document.getElementById("dateSecond").style.color = "";
+  document.getElementById("dateSecond").style.outline = "";
 
-  document.getElementById("thursday").style.color = "";
-  document.getElementById("thursday").style.outline = "";
+  document.getElementById("dateFourth").style.color = "";
+  document.getElementById("dateFourth").style.outline = "";
 
-  document.getElementById("friday").style.color = "";
-  document.getElementById("friday").style.outline = "";
+  document.getElementById("dateFifth").style.color = "";
+  document.getElementById("dateFifth").style.outline = "";
 
-  document.getElementById("saturday").style.color = "";
-  document.getElementById("saturday").style.outline = "";
+  document.getElementById("dateSixth").style.color = "";
+  document.getElementById("dateSixth").style.outline = "";
 
-  document.getElementById("sunday").style.color = "";
-  document.getElementById("sunday").style.outline = "";
+  document.getElementById("dateSeventh").style.color = "";
+  document.getElementById("dateSeventh").style.outline = "";
 }
 
-document.getElementById("thursday").addEventListener("click", function () {
-  greenBorderForThursday();
+document.getElementById("dateFourth").addEventListener("click", function () {
+  greenBorderFordateFourth();
 });
 
-function greenBorderForThursday(
+function greenBorderFordateFourth(
   event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
 ) {
-  document.getElementById("thursday").style.color = "rgb(55, 210, 67)";
-  document.getElementById("thursday").style.outline =
+  document.getElementById("dateFourth").style.color = "rgb(55, 210, 67)";
+  document.getElementById("dateFourth").style.outline =
     "1px solid rgb(55, 210, 67)";
-  document.getElementById("monday").style.color = "";
-  document.getElementById("monday").style.outline = "";
+  document.getElementById("dateFirst").style.color = "";
+  document.getElementById("dateFirst").style.outline = "";
 
-  document.getElementById("tuesday").style.color = "";
-  document.getElementById("tuesday").style.outline = "";
+  document.getElementById("dateSecond").style.color = "";
+  document.getElementById("dateSecond").style.outline = "";
 
-  document.getElementById("wednesday").style.color = "";
-  document.getElementById("wednesday").style.outline = "";
+  document.getElementById("dateThird").style.color = "";
+  document.getElementById("dateThird").style.outline = "";
 
-  document.getElementById("friday").style.color = "";
-  document.getElementById("friday").style.outline = "";
+  document.getElementById("dateFifth").style.color = "";
+  document.getElementById("dateFifth").style.outline = "";
 
-  document.getElementById("saturday").style.color = "";
-  document.getElementById("saturday").style.outline = "";
+  document.getElementById("dateSixth").style.color = "";
+  document.getElementById("dateSixth").style.outline = "";
 
-  document.getElementById("sunday").style.color = "";
-  document.getElementById("sunday").style.outline = "";
+  document.getElementById("dateSeventh").style.color = "";
+  document.getElementById("dateSeventh").style.outline = "";
 }
 
-document.getElementById("friday").addEventListener("click", function () {
-  greenBorderForFriday();
+document.getElementById("dateFifth").addEventListener("click", function () {
+  greenBorderFordateFifth();
 });
 
-function greenBorderForFriday(
+function greenBorderFordateFifth(
   event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
 ) {
-  document.getElementById("friday").style.color = "rgb(55, 210, 67)";
-  document.getElementById("friday").style.outline =
+  document.getElementById("dateFifth").style.color = "rgb(55, 210, 67)";
+  document.getElementById("dateFifth").style.outline =
     "1px solid rgb(55, 210, 67)";
-  document.getElementById("monday").style.color = "";
-  document.getElementById("monday").style.outline = "";
+  document.getElementById("dateFirst").style.color = "";
+  document.getElementById("dateFirst").style.outline = "";
 
-  document.getElementById("tuesday").style.color = "";
-  document.getElementById("tuesday").style.outline = "";
+  document.getElementById("dateSecond").style.color = "";
+  document.getElementById("dateSecond").style.outline = "";
 
-  document.getElementById("wednesday").style.color = "";
-  document.getElementById("wednesday").style.outline = "";
+  document.getElementById("dateThird").style.color = "";
+  document.getElementById("dateThird").style.outline = "";
 
-  document.getElementById("thursday").style.color = "";
-  document.getElementById("thursday").style.outline = "";
+  document.getElementById("dateFourth").style.color = "";
+  document.getElementById("dateFourth").style.outline = "";
 
-  document.getElementById("saturday").style.color = "";
-  document.getElementById("saturday").style.outline = "";
+  document.getElementById("dateSixth").style.color = "";
+  document.getElementById("dateSixth").style.outline = "";
 
-  document.getElementById("sunday").style.color = "";
-  document.getElementById("sunday").style.outline = "";
+  document.getElementById("dateSeventh").style.color = "";
+  document.getElementById("dateSeventh").style.outline = "";
 }
 
-document.getElementById("saturday").addEventListener("click", function () {
-  greenBorderForSaturday();
+document.getElementById("dateSixth").addEventListener("click", function () {
+  greenBorderFordateSixth();
 });
 
-function greenBorderForSaturday(
+function greenBorderFordateSixth(
   event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
 ) {
-  document.getElementById("saturday").style.color = "rgb(55, 210, 67)";
-  document.getElementById("saturday").style.outline =
+  document.getElementById("dateSixth").style.color = "rgb(55, 210, 67)";
+  document.getElementById("dateSixth").style.outline =
     "1px solid rgb(55, 210, 67)";
-  document.getElementById("monday").style.color = "";
-  document.getElementById("monday").style.outline = "";
+  document.getElementById("dateFirst").style.color = "";
+  document.getElementById("dateFirst").style.outline = "";
 
-  document.getElementById("tuesday").style.color = "";
-  document.getElementById("tuesday").style.outline = "";
+  document.getElementById("dateSecond").style.color = "";
+  document.getElementById("dateSecond").style.outline = "";
 
-  document.getElementById("wednesday").style.color = "";
-  document.getElementById("wednesday").style.outline = "";
+  document.getElementById("dateThird").style.color = "";
+  document.getElementById("dateThird").style.outline = "";
 
-  document.getElementById("thursday").style.color = "";
-  document.getElementById("thursday").style.outline = "";
+  document.getElementById("dateFourth").style.color = "";
+  document.getElementById("dateFourth").style.outline = "";
 
-  document.getElementById("friday").style.color = "";
-  document.getElementById("friday").style.outline = "";
+  document.getElementById("dateFifth").style.color = "";
+  document.getElementById("dateFifth").style.outline = "";
 
-  document.getElementById("sunday").style.color = "";
-  document.getElementById("sunday").style.outline = "";
+  document.getElementById("dateSeventh").style.color = "";
+  document.getElementById("dateSeventh").style.outline = "";
 }
 
-document.getElementById("sunday").addEventListener("click", function () {
-  greenBorderForSunday();
+document.getElementById("dateSeventh").addEventListener("click", function () {
+  greenBorderFordateSeventh();
 });
 
-function greenBorderForSunday(
+function greenBorderFordateSeventh(
   event /**event는 기본적으로 들어가는 파라미터이다. 어떤 것이든 입력을 의미 */
 ) {
-  document.getElementById("sunday").style.color = "rgb(55, 210, 67)";
-  document.getElementById("sunday").style.outline =
+  document.getElementById("dateSeventh").style.color = "rgb(55, 210, 67)";
+  document.getElementById("dateSeventh").style.outline =
     "1px solid rgb(55, 210, 67)";
-  document.getElementById("monday").style.color = "";
-  document.getElementById("monday").style.outline = "";
+  document.getElementById("dateFirst").style.color = "";
+  document.getElementById("dateFirst").style.outline = "";
 
-  document.getElementById("tuesday").style.color = "";
-  document.getElementById("tuesday").style.outline = "";
+  document.getElementById("dateSecond").style.color = "";
+  document.getElementById("dateSecond").style.outline = "";
 
-  document.getElementById("wednesday").style.color = "";
-  document.getElementById("wednesday").style.outline = "";
+  document.getElementById("dateThird").style.color = "";
+  document.getElementById("dateThird").style.outline = "";
 
-  document.getElementById("thursday").style.color = "";
-  document.getElementById("thursday").style.outline = "";
+  document.getElementById("dateFourth").style.color = "";
+  document.getElementById("dateFourth").style.outline = "";
 
-  document.getElementById("friday").style.color = "";
-  document.getElementById("friday").style.outline = "";
+  document.getElementById("dateFifth").style.color = "";
+  document.getElementById("dateFifth").style.outline = "";
 
-  document.getElementById("saturday").style.color = "";
-  document.getElementById("saturday").style.outline = "";
+  document.getElementById("dateSixth").style.color = "";
+  document.getElementById("dateSixth").style.outline = "";
 }
