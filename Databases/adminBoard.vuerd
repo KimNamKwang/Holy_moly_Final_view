@@ -48,7 +48,7 @@
         "columns": [
           {
             "name": "BOARD_UID",
-            "comment": "게시판UID",
+            "comment": "게시글UID",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -189,7 +189,7 @@
           "active": false,
           "left": 48,
           "top": 51,
-          "zIndex": 97,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 60
         },
