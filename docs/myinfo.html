@@ -331,7 +331,7 @@
     </header>
     <!-- 여기까지 navbar -->
     <main class="bg-light" style="font-family: 'Noto Sans KR', sans-serif">
-      <div class="container" style="width: 600px">
+      <div class="container" style="width: 650px">
         <form action="./login.html">
           <div class="fs-3 fw-bold mb-5 text-center" style="padding-top: 50px">
             회원정보
@@ -339,7 +339,7 @@
 
           <div class="d-flex justify-content-center">
             <div
-              class="bg-white border text-start w-100 p-4"
+              class="bg-white border text-start w-100 p-5"
               style="border-radius: 20px"
             >
               <div>
@@ -400,6 +400,13 @@
                 <div class="form-check-label fw-bold pb-2">주소</div>
                 <div>
                   <input
+                    type="button"
+                    class="form-control mt-2"
+                    style="width: 150px; border-color: rgb(242, 242, 242)"
+                    onclick="sample6_execDaumPostcode()"
+                    value="우편번호 찾기"
+                  />
+                  <input
                     class="form-control form-check-input w-100"
                     type="text"
                     id="sample6_postcode"
@@ -412,11 +419,6 @@
                       border-color: rgb(242, 242, 242);
                     "
                   />
-                  <input
-                    type="button"
-                    onclick="sample6_execDaumPostcode()"
-                    value="우편번호 찾기"
-                  /><br />
                   <input
                     class="form-control form-check-input w-100"
                     type="text"
