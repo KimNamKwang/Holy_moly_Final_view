@@ -407,6 +407,7 @@
                       height: 200px;
                       background-color: rgb(247, 247, 247);
                     "
+                    id="home2"
                   >
                     <div>
                       <img
@@ -435,6 +436,7 @@
                       height: 200px;
                       background-color: rgb(247, 247, 247);
                     "
+                    id="home3"
                   >
                     <div>
                       <img
@@ -916,6 +918,30 @@
         });
 
         $("#home1").mouseout(function () {
+          $(this).css({
+            background: "rgb(247, 247, 247)",
+          });
+        });
+
+        $("#home2").mouseover(function () {
+          $(this).css({
+            background: "white",
+          });
+        });
+
+        $("#home2").mouseout(function () {
+          $(this).css({
+            background: "rgb(247, 247, 247)",
+          });
+        });
+
+        $("#home3").mouseover(function () {
+          $(this).css({
+            background: "white",
+          });
+        });
+
+        $("#home3").mouseout(function () {
           $(this).css({
             background: "rgb(247, 247, 247)",
           });
