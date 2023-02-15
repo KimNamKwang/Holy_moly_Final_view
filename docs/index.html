@@ -374,6 +374,7 @@
                       height: 200px;
                       background-color: rgb(247, 247, 247);
                     "
+                    id="home1"
                   >
                     <div>
                       <img
@@ -902,6 +903,22 @@
         });
         $(".dropdown-submenu04").on("mouseover", function (e) {
           $(this).next("div").toggle();
+        });
+      });
+    </script>
+    <script>
+      // hover function (원형부분)
+      $(function () {
+        $("#home1").mouseover(function () {
+          $(this).css({
+            background: "white",
+          });
+        });
+
+        $("#home1").mouseout(function () {
+          $(this).css({
+            background: "rgb(247, 247, 247)",
+          });
         });
       });
     </script>
