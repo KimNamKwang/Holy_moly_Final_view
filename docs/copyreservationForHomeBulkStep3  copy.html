@@ -225,7 +225,126 @@
             <div class="fs-3 mb-4" style="font-family: 'Noto Sans KR', sans-serif">
               방문희망일 선택
             </div>
-            <input type="date" id="VISITING_DATE" name="VISITING_DATE">
+            <ul class="list-unstyled d-flex justify-content-around">
+              <a href="#" class="text-decoration-none text-dark">
+                <li id="dateFirst">
+                  <div class="bg-secondary bg-opacity-25 text-center ms-3"
+                    style="border-radius: 50%; padding-top: 15px; height: 50px; width: 50px;">
+                    월
+                  </div>
+                  <label for="dateFirst" id="labelDateFirst">
+                    <!-- <input type="hidden" name="VISITING_DATE" id="VISITING_DATE" value=""> -->
+                    <script>
+                      // let today = new Date();
+                      // let year = today.getFullYear();
+                      // let month = today.getMonth() + 1;
+                      // let date = today.getDate();
+                      // let datefirstDay = year + "-" + month + "-" + date;
+                      // document.write(datefirstDay);
+                      // document.getElementById("VISITING_DATE").value = datefirstDay;
+                    </script>
+                  </label>
+                </li>
+              </a>
+              <a href="#" class="text-decoration-none text-dark">
+                <li id="dateSecond">
+                  <div class="bg-secondary bg-opacity-25 text-center ms-3"
+                    style="border-radius: 50%; padding-top: 15px; height: 50px; width: 50px;">
+                    화
+                  </div>
+                  <label for="dateSecond">
+                    <script>
+                      let dateForSecond = date + 1;
+                      let dateSecondDay = year + "-" + month + "-" + dateForSecond
+                      document.write(dateSecondDay);
+                      if (document.getElementById("dateSecond").click) {
+                        // document.getElementById("VISITING_DATE_TWO").value = dateSecondDay;
+                      }
+                    </script>
+                  </label>
+                </li>
+              </a>
+              <a href="#" class="text-decoration-none text-dark">
+                <li id="dateThird" class="bg-secondary bg-opacity-25"
+                  style="border-radius: 50%;padding: 9px 13px 9px 13px;">수</li>
+              </a>
+              <a href="#" class="text-decoration-none text-dark">
+
+                <li id="dateFourth" class="bg-secondary bg-opacity-25"
+                  style="border-radius: 50%;padding: 9px 13px 9px 13px;">목</li>
+              </a>
+              <a href="#" class="text-decoration-none text-dark">
+
+                <li id="dateFifth" class="bg-secondary bg-opacity-25"
+                  style="border-radius: 50%;padding: 9px 13px 9px 13px;">
+                  금</li>
+              </a>
+              <a href="#" class="text-decoration-none text-dark">
+
+                <li id="dateSixth" class="bg-secondary bg-opacity-25"
+                  style="border-radius: 50%;padding: 9px 13px 9px 13px;">토</li>
+              </a>
+              <a href="#" class="text-decoration-none text-dark">
+
+                <li id="dateSeventh" class="bg-secondary bg-opacity-25"
+                  style="border-radius: 50%;padding: 9px 13px 9px 13px;">
+                  일</li>
+              </a>
+            </ul>
+            <ul class="list-unstyled d-flex justify-content-around">
+              <!-- 나중에 구현할때는 sysdate() 에 +1씩 더해서. -->
+              <!-- <input type="date" name="VISITING_DATE" id="VISITING_DATE" min="today">
+               -->
+              <input type="date" name="VISITING_DATE" min="" id="VISITING_DATE" value="">
+
+
+              <li><label for="dateFirst" id="labelDateFirst">
+                  <!-- <script>
+                    let today = new Date();
+                    let year = today.getFullYear();
+                    let month = today.getMonth() + 1;
+                    let date = today.getDate();
+                    let datefirst = year + "-" + month + "-" + date;
+                    document.write(datefirst);                    
+                  </script> -->
+                </label></li>
+              <!-- <li><label for="dateSecond">
+                  <script>
+                    let dateForSecond = date + 1;
+                    document.write(year + "-" + month + "-" + dateForSecond);
+                  </script>
+                </label></li> -->
+              <li><label for="dateThird">
+                  <script>
+                    let dateForThird = dateForSecond + 1;
+                    document.write(year + "-" + month + "-" + dateForThird);
+                  </script>
+                </label></li>
+              <li><label for="dateFourth">
+                  <script>
+                    let dateForFourth = dateForThird + 1;
+                    document.write(year + "-" + month + "-" + dateForFourth);
+                  </script>
+                </label></li>
+              <li><label for="dateFifth">
+                  <script>
+                    let dateForFifth = dateForFourth + 1;
+                    document.write(year + "-" + month + "-" + dateForFifth);
+                  </script>
+                </label></li>
+              <li><label for="dateSixth">
+                  <script>
+                    let dateForSixth = dateForFifth + 1;
+                    document.write(year + "-" + month + "-" + dateForSixth);
+                  </script>
+                </label></li>
+              <li><label for="dateSeventh">
+                  <script>
+                    let dateForSeventh = dateForSixth + 1;
+                    document.write(year + "-" + month + "-" + dateForSeventh);
+                  </script>
+                </label></li>
+            </ul>
             <div class="d-flex justify-content-center mt-5 mb-5">
               <select class="form-control">
                 <option value="">===물품전달방식선택===</option>
