@@ -909,39 +909,14 @@
       });
     </script>
     <script>
-      // hover function (원형부분)
       $(function () {
-        $("#home1").mouseover(function () {
+        $("#home1, #home2, #home3").mouseover(function () {
           $(this).css({
             background: "white",
           });
         });
 
-        $("#home1").mouseout(function () {
-          $(this).css({
-            background: "rgb(247, 247, 247)",
-          });
-        });
-
-        $("#home2").mouseover(function () {
-          $(this).css({
-            background: "white",
-          });
-        });
-
-        $("#home2").mouseout(function () {
-          $(this).css({
-            background: "rgb(247, 247, 247)",
-          });
-        });
-
-        $("#home3").mouseover(function () {
-          $(this).css({
-            background: "white",
-          });
-        });
-
-        $("#home3").mouseout(function () {
+        $("#home1, #home2, #home3").mouseout(function () {
           $(this).css({
             background: "rgb(247, 247, 247)",
           });
