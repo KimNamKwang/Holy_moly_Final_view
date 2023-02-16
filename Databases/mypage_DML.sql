@@ -3,3 +3,5 @@ INSERT INTO MYPAGE
 VALUES
 ('user1','천혜향','FAMILY',1500,'INQ_230215_1','TRK_20230215_1'),
 ('user2','한라봉','FAMILY',NULL,'INQ_230215_2','TRK_20230215_2');
+
+select * from MYPAGE;
