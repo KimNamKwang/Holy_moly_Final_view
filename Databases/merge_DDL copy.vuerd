@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -232,
+    "scrollTop": -427,
     "scrollLeft": 0,
     "zoomLevel": 0.8,
     "show": {
@@ -120,7 +120,7 @@
           "active": false,
           "left": 54.1383,
           "top": 997.3607,
-          "zIndex": 7,
+          "zIndex": 12,
           "widthName": 87.9599609375,
           "widthComment": 60
         },
@@ -339,29 +339,6 @@
             "id": "1b7f334e-ce63-464e-819d-38664c805c40"
           },
           {
-            "name": "BOARD_UID",
-            "comment": "게시글UID",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 77.84814453125,
-              "widthComment": 63.38818359375,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "6d6dc326-eb54-4cc6-a38c-2fc3d354dff1"
-          },
-          {
             "name": "USER_UID",
             "comment": "사용자 아이디",
             "dataType": "VARCHAR(100)",
@@ -412,7 +389,7 @@
           "active": false,
           "left": 48.723,
           "top": 443.4447,
-          "zIndex": 8,
+          "zIndex": 13,
           "widthName": 116.1181640625,
           "widthComment": 70.61181640625
         },
@@ -471,7 +448,7 @@
             "f296b14c-6a9c-492e-8b5f-eeb0385783cf"
           ],
           "x": 292.56235546875,
-          "y": 758.4447,
+          "y": 737.9447,
           "direction": "bottom"
         },
         "constraintName": "fk_main_to_common_board",
