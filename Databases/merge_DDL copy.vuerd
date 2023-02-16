@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -439,
-    "scrollLeft": 0,
-    "zoomLevel": 0.9,
+    "scrollTop": -471,
+    "scrollLeft": -14,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -97,7 +97,7 @@
           "active": false,
           "left": 18.583,
           "top": 1014.0272,
-          "zIndex": 12,
+          "zIndex": 3,
           "widthName": 87.9599609375,
           "widthComment": 60
         },
@@ -366,7 +366,7 @@
           "active": false,
           "left": 48.723,
           "top": 443.4447,
-          "zIndex": 13,
+          "zIndex": 4,
           "widthName": 116.1181640625,
           "widthComment": 70.61181640625
         },
@@ -384,7 +384,7 @@
           "active": false,
           "left": 63.58333333333255,
           "top": 782.1388888888889,
-          "zIndex": 4,
+          "zIndex": 1,
           "width": 147,
           "height": 106
         },
@@ -396,7 +396,7 @@
           "active": false,
           "left": 372.63888888888886,
           "top": 782.1666666666666,
-          "zIndex": 5,
+          "zIndex": 2,
           "width": 149,
           "height": 121
         },
