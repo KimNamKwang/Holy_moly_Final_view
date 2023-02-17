@@ -29,44 +29,38 @@
   </head>
   <body class="bg-light" style="font-family: 'Noto Sans KR', sans-serif">
     <div class="container" style="width: 600px">
-      <form action="">
-        <div
-          class="row mb-5 d-flex align-items-center text-startr"
-          style="padding-top: 150px"
-        >
-          <div class="col-3 d-flex align-items-center">
-            <a href="index.html" class="navbar-brand">
-              <div
-                style="
-                  font-family: 'Zen Dots', cursive;
-                  color: rgb(76, 183, 86);
-                "
-              >
-                <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
-                <span class="material-symbols-outlined fw-bold align-middle">
-                  local_shipping
-                </span>
-              </div>
-            </a>
-          </div>
-          <div
-            class="col-2 text-green text-nowrap fs-5 fw-bold d-flex align-items-center"
-          >
-            비밀번호 찾기
-          </div>
-          &nbsp; &nbsp; &nbsp; &nbsp;
-          <div class="col">
-            <span
-              style="text-decoration: line-through; color: rgb(55, 210, 67)"
+      <div
+        class="row mb-5 d-flex align-items-center text-startr"
+        style="padding-top: 150px"
+      >
+        <div class="col-3 d-flex align-items-center">
+          <a href="index.html" class="navbar-brand">
+            <div
+              style="font-family: 'Zen Dots', cursive; color: rgb(76, 183, 86)"
             >
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-              &nbsp;
-            </span>
-          </div>
+              <span class="fst-italic fw-bold ms-2 fs-4">POST</span>
+              <span class="material-symbols-outlined fw-bold align-middle">
+                local_shipping
+              </span>
+            </div>
+          </a>
         </div>
-
+        <div
+          class="col-2 text-green text-nowrap fs-5 fw-bold d-flex align-items-center"
+        >
+          비밀번호 찾기
+        </div>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <div class="col">
+          <span style="text-decoration: line-through; color: rgb(55, 210, 67)">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;
+          </span>
+        </div>
+      </div>
+      <form action="">
         <div class="d-flex justify-content-center">
           <div
             class="bg-white border text-start w-100"
@@ -91,41 +85,28 @@
                     id="phone"
                   />
                 </div>
-
-
-               <div class="form-check-label fw-bold mb-2">휴대폰 번호
               </div>
-               
-                     
-              
-            <div class="form-input form-input-ph ph-length6 mb0">
-              <div class="auth">
+
+              <div class="form-check-label fw-bold mb-2">휴대폰 번호</div>
+
+              <div class="form-input form-input-ph ph-length6 mb0">
+                <div class="auth">
                   <div class="input-group">
-                    <input style="height:20%;  border-radius: 10px 10px;" id="phone" type="text" class="form-control" placeholder="휴대폰 번호" id="phone">
+                    <input
+                      style="height: 50px; border-color: rgb(242, 242, 242)"
+                      id="phone"
+                      type="text"
+                      class="form-control"
+                      placeholder="휴대폰 번호"
+                      id="phone"
+                    />
                   </div>
-               <br>
+                  <br />
+                </div>
               </div>
             </div>
-
-            <!-- 23.02.15추가 smtp-->
-           
-
-
-
-            
-              </div>
-            </div>
-            <div>
-              
-               
-             
-              
-              
-              
-            </div>            
-          </div>         
+          </div>
         </div>
-        </form>
         <div class="row">
           <div class="col mt-3">
             <a
@@ -135,6 +116,7 @@
               >BACK</a
             >
           </div>
+
           <div class="col text-end mt-3">
             <button
               onclick="doAction()"
@@ -144,71 +126,21 @@
               > >
             </button>
           </div>
-
-                <div class="form-check-label fw-bold mb-2">휴대폰 번호</div>
-
-
-                <div class="form-input form-input-ph ph-length6 mb0">
-                  <div class="auth">
-                    <div class="input-group">
-                      <input
-                        style="
-                          height: 50px;
-                          border-radius: 10px 10px;
-                          border-color: rgb(242, 242, 242);
-                        "
-                        id="phone"
-                        type="text"
-                        class="form-control"
-                        placeholder="휴대폰 번호"
-                        id="phone"
-                      />
-                    </div>
-                    <br />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div></div>
-          </div>
         </div>
       </form>
-      <div class="row">
-        <div class="col mt-3">
-          <a
-            href="./login.html"
-            class="btn btn-sm"
-            style="
-              border-radius: 50px;
-              color: white;
-              background-color: rgb(165, 165, 165);
-            "
-            >BACK</a
-          >
-        </div>
-        <div class="col text-end mt-3">
-          <button
-            onclick="doAction()"
-            class="btn text-light fw-bold"
-            style="background-color: rgb(55, 210, 67)"
-          >
-            > >
-          </button>
-        </div>
-
-        <script>
-          function doAction() {
-            if (confirm("등록된 이메일주소에 비밀번호를 보내겠습니까?")) {
-              alert("전송하였습니다.");
-
-              location.href = "./login.html";
-            } else {
-              alert("취소하였습니다.");
-              location.href = "./login.html";
-            }
-          }
-        </script>
-      </div>
     </div>
+
+    <script>
+      function doAction() {
+        if (confirm("등록된 이메일주소에 비밀번호를 보내겠습니까?")) {
+          alert("전송하였습니다.");
+
+          location.href = "./login.html";
+        } else {
+          alert("취소하였습니다.");
+          location.href = "./login.html";
+        }
+      }
+    </script>
   </body>
 </html>
