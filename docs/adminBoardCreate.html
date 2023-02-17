@@ -70,11 +70,12 @@
                       class="w-100 border border-secondary border-opacity-25 p-2 text-center"
                       style="border-radius: 10px"
                       name="boardType"
+                      id="boardType"
                     >
                       <option value="" selected disabled>선택</option>
                       <option value="notice">공지사항</option>
                       <option value="event">이벤트</option>
-                      <option value="faq" onclick="faqTypeView();">FAQ</option>
+                      <option value="faq">FAQ</option>
                     </select>
                   </td>
                 </tr>
@@ -149,10 +150,17 @@
     ></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <script>
-      // FAQ가 select되면 노출되는 라인
-      function faqTypeView() {
-        $("#faqType").css("display", "flex");
-      }
+      // FAQ가 select되면 문의 유형 선택 라인 노출
+      $(document).ready(function () {
+        $("#boardType").change(function () {
+          let result = $("#boardType option:selected").val();
+          if (result == "faq") {
+            $("#faqType").css("display", "");
+          } else {
+            $("#faqType").css("display", "none");
+          }
+        });
+      });
 
       // 우편번호
       function sample6_execDaumPostcode() {
