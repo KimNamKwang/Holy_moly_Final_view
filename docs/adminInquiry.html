@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>관리자 - 1:1문의</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <style>
+      textarea:focus,
+      select:focus {
+        outline: 1px solid rgb(55, 210, 67);
+      }
+
+      .outline-green:focus {
+        outline: 1px solid rgb(55, 210, 67);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      textarea:focus {
+        outline: 1px solid rgb(55, 210, 67);
+      }
+    </style>
+  </head>
+
+  <body style="z-index: 1; font-family: 'Noto Sans KR', sans-serif">
+    <main>
+      <!-- 여기부터 navbar -->
+
+      <!-- 여기까지 navbar -->
+      <div
+        class="container-fluid pt-5"
+        style="background-color: rgb(249, 249, 249); padding-bottom: 200px"
+      >
+        <div class="container">
+          <div class="d-flex row justify-content-center text-center">
+            <div class="p-0" style="width: 710px">
+              <div class="fs-2 fw-bold pb-3">1:1문의 관리</div>
+              <div
+                class="border p-4 mt-5 text-start"
+                style="border-radius: 20px; background-color: white"
+              >
+                <ul>
+                  <li>
+                    <div class="row d-flex justify-content-between">
+                      <div class="col fs-6 fw-bold">
+                        어제 출발했는데 언제 도착하나요?
+                      </div>
+                      <div
+                        class="col-auto p-1"
+                        style="
+                          background-color: rgb(242, 255, 216);
+                          border-radius: 20px;
+                          color: rgb(55, 210, 77);
+                          font-size: 0.9rem;
+                        "
+                      >
+                        배송문의
+                      </div>
+                      <div
+                        class="mt-1"
+                        style="font-size: 0.9rem; color: rgb(165, 165, 165)"
+                      >
+                        등록일 | 2023.02.17
+                      </div>
+                      <div class="fs-6 pt-3">
+                        어제 출발했다고 조회가 되는데 오늘 중으로 도착할까요?
+                      </div>
+                      <div class="pt-3">
+                        <div>
+                          <a
+                            class="btn d-flex align-items-center"
+                            href="#collapseTarget"
+                            data-bs-toggle="collapse"
+                            style="
+                              border: 1px solid rgb(233, 236, 239);
+                              width: 105px;
+                            "
+                          >
+                            <span
+                              class="material-symbols-outlined"
+                              style="font-size: 1rem"
+                            >
+                              drive_file_rename_outline
+                            </span>
+                            <span class="ps-1">답글달기</span>
+                          </a>
+                        </div>
+                        <div class="collapse" id="collapseTarget">
+                          <div class="pt-3">
+                            <form action="" method="post">
+                              <textarea
+                                class="w-100 border border-secondary border-opacity-25 p-3"
+                                style="
+                                  resize: none;
+                                  height: 200px;
+                                  border-radius: 10px;
+                                "
+                                name=""
+                                id=""
+                                cols="30"
+                                rows="6"
+                                placeholder="비방, 명예훼손을 포함은 답글의 경우 분쟁의 사유가 될 수 있습니다."
+                              ></textarea>
+                              <div class="mt-2 text-end">
+                                <span style="font-size: 0.9rem"> 0 </span>
+                                <span
+                                  style="
+                                    color: rgb(143, 143, 143);
+                                    font-size: 0.9rem;
+                                  "
+                                >
+                                  / 400(최소15자)
+                                </span>
+                                <button
+                                  class="btn ms-1"
+                                  style="
+                                    background-color: rgb(55, 210, 67);
+                                    color: white;
+                                    width: 70px;
+                                  "
+                                >
+                                  등록
+                                </button>
+                                <a
+                                  class="btn btn-secondary"
+                                  style="color: white; width: 70px"
+                                >
+                                  닫기
+                                </a>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-start mt-4">
+                <a
+                  href="./inquiryList.html"
+                  class="btn btn-sm"
+                  style="
+                    border-radius: 50px;
+                    color: white;
+                    background-color: rgb(165, 165, 165);
+                  "
+                  >BACK</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 여기부터 footer -->
+
+      <!-- 여기까지 footer -->
+    </main>
+    <script src="./js/test.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
