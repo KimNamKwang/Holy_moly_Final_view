@@ -28,7 +28,7 @@
 
 <body>
 
-  <main class="container"   style="font-family: 'Noto Sans KR', sans-serif">
+  <main class="container" style="font-family: 'Noto Sans KR', sans-serif">
     <div class="mt-5">
       <ul class="list-unstyled d-flex justify-content-center">
         <li id="reserv_for_home" class="pb-4 me-2" style="
@@ -47,7 +47,7 @@
           <a href="#" class="text-decoration-none text-dark fs-5">예약확인 및 취소</a>
         </li>
       </ul>
-      
+
       <div id="boxForChange" class="mt-5 justify-content-center"></div>
       <div id="agreement_box" class="mt-5">
         <div class="receiver receiver_a" cidx="0">
@@ -63,19 +63,15 @@
                   <th scope="row" class="bg-secondary bg-opacity-10">받는 사람</th>
                   <td class="lh_40">
 
-                    <input  class="inp04 form-control w-50 inp03" name="r_name" type="text" maxlength="7" value="" placeholder="성명/상호명 입력" />
+                    <input class="inp04 form-control w-50 inp03" name="r_name" type="text" maxlength="7" value=""
+                      placeholder="성명/상호명 입력" />
                   </td>
                 </tr>
                 <tr>
                   <th scope="row" class="bg-secondary bg-opacity-10">연락처</th>
                   <td class="tel_area row">
                     <div class="col-auto">
-                      <select
-                        class="form-select select_st sel22"
-                        name="s_mobile1"
-                        id="phoneFirst"
-                        required
-                      >
+                      <select class="form-select select_st sel22" name="s_mobile1" id="phoneFirst" required>
                         <option value="010">010</option>
                         <option value="011">011</option>
                         <option value="016">016</option>
@@ -86,25 +82,13 @@
                     </div>
                     <div class="col-1">-</div>
                     <div class="col">
-                      <input
-                        type="number"
-                        class="inp17 form-control text-center"
-                        id="phoneSecond"
-                        name="s_mobile2"
-                        onblur="onlyNumber(this);"
-                        required
-                      />
+                      <input type="tel" class="inp17 form-control text-center" id="phoneSecond" name="s_mobile2"
+                        onblur="onlyNumber(this);" required />
                     </div>
                     <div class="col-1">-</div>
                     <div class="col">
-                      <input
-                        type="tel"
-                        class="inp17 form-control text-center"
-                        id="phoneThird"
-                        name="s_mobile3"
-                        onblur="onlyNumber(this);"
-                        required
-                      />
+                      <input type="tel" class="inp17 form-control text-center" id="phoneThird" name="s_mobile3"
+                        onblur="onlyNumber(this);" required />
                     </div>
                   </td>
                 </tr>
@@ -115,13 +99,18 @@
                 <tr>
                   <th scope="row" class="bg-secondary bg-opacity-10">받는 곳</th>
                   <td>
-                    
+
                     <p class="mgb_5">
-                      <input class="form-control w-25" type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
-                      <input class="form-control w-50 mt-2" type="text" name="postcode" id="sample6_postcode" placeholder="우편번호">
-                      <input class="form-control mt-2" type="text" name="address" class="col-6" id="sample6_address" placeholder="주소">
-                      <input class="form-control mt-2" type="text" name="addressadd" class="col-10" id="sample6_detailAddress" placeholder="상세주소">
-                      <input class="form-control mt-2" type="text" name="extraaddress" id="sample6_extraAddress" placeholder="참고항목">
+                      <input class="form-control w-25" type="button" onclick="sample6_execDaumPostcode()"
+                        value="우편번호 찾기">
+                      <input class="form-control w-50 mt-2" type="text" name="postcode" id="sample6_postcode"
+                        placeholder="우편번호">
+                      <input class="form-control mt-2" type="text" name="address" class="col-6" id="sample6_address"
+                        placeholder="주소">
+                      <input class="form-control mt-2" type="text" name="addressadd" class="col-10"
+                        id="sample6_detailAddress" placeholder="상세주소">
+                      <input class="form-control mt-2" type="text" name="extraaddress" id="sample6_extraAddress"
+                        placeholder="참고항목">
                     </p>
 
                   </td>
@@ -197,18 +186,10 @@
                     <ul class="boxsize list-unstyled">
                       <li>
                         <p class="tit">
-                          <input id="bs_B_0" type="checkbox" value="B" class="chk optTitleB chk_sel form-check-input" required /><label
-                            for="bs_B_0" class="optLabelB form-check-label ps-1">일반박스</label>
+                          <input id="bs_B_0" type="checkbox" value="B" class="chk optTitleB chk_sel form-check-input"
+                            required /><label for="bs_B_0" class="optLabelB form-check-label ps-1">일반박스</label>
                         </p>
                         <p class="f11">15kg이하/ 120cm이하</p>
-                      </li>
-                      <li style="display: none">
-                        <p class="tit">
-                          <input id="bs_C_0" type="checkbox" value="C" class="chk optTitleC chk_sel" /><label
-                            for="bs_C_0" class="optLabelC"></label>
-                        </p>
-                        <p class="f11">이하/이하</p>
-                        
                       </li>
 
                       <li class="sum">
@@ -216,11 +197,12 @@
                           총 발송수량
                         </p>
                         <div>
-                        <span class="count" >
-                          <a class="btn" id="minus">-</a>
-                          <span id="result">1</span>
-                          <a class="btn" id="plus">+</a>
-                        </span>                        
+                          <span class="count">
+                            <a class="btn" id="minus">-</a>
+                            <span id="result">1</span>
+                            <a class="btn" id="plus">+</a>
+                          </span>
+                          <input type="hidden" id="total_count_items" name="total_count_items">
                         </div>
                       </li>
                     </ul>
@@ -231,7 +213,8 @@
                   <th scope="row" class="bg-secondary bg-opacity-10">요청사항</th>
 
                   <td class="select_100">
-                    <select class="select08 w100 etc_info_select form-select w-75" id="etc_info_select_idx_0" name="etc_info_select">
+                    <select class="select08 w100 etc_info_select form-select w-75" id="etc_info_select_idx_0"
+                      name="etc_info_select">
                       <option value="">===선택===</option>
 
                       <option value="option1">기사님 방문 전 연락주세요</option>
@@ -303,66 +286,66 @@
                 </tbody>
               </table>
             </div>
-            
-            
-            
-        <div class="d-flex justify-content-center mt-5">
+
+
+
+            <div class="d-flex justify-content-center mt-5">
               <a href="./reservationForHome.html" class="btn btn-secondary me-3"
-              style="width: 12rem; height: 3rem; padding-top: 11px">
-              이전단계
-            </a>
-            <button class="btn me-3 text-light" type="submit"
-            style="width: 12rem; height: 3rem; background-color: rgb(55, 210, 67)">
-            다음단계
-          </button>
+                style="width: 12rem; height: 3rem; padding-top: 11px">
+                이전단계
+              </a>
+              <button class="btn me-3 text-light" type="submit"
+                style="width: 12rem; height: 3rem; background-color: rgb(55, 210, 67)">
+                다음단계
+              </button>
+            </div>
+
+          </form>
         </div>
 
-      </form>
-    </div>
-
-      <form action="" method="get">
-        <div class="container" id="text_for_reserv_check_and_cancel" style="display: none">
-          <div class="border d-flex" style="height: 10rem">
-            <div class="align-self-center border-end flex-fill" style="text-align: center;"> 택배예약 시 등록한
-              <span style="color: rgb(55, 210, 67)">보내는분 연락처</span>와
-              <div>
-                <span style="color: rgb(55, 210, 67)">비밀번호</span>를 입력해
-                주세요.
+        <form action="" method="get">
+          <div class="container" id="text_for_reserv_check_and_cancel" style="display: none">
+            <div class="border d-flex" style="height: 10rem">
+              <div class="align-self-center border-end flex-fill" style="text-align: center;"> 택배예약 시 등록한
+                <span style="color: rgb(55, 210, 67)">보내는분 연락처</span>와
+                <div>
+                  <span style="color: rgb(55, 210, 67)">비밀번호</span>를 입력해
+                  주세요.
+                </div>
+                예약일 기준 90일 이내 정보에 한하여 조회됩니다.
               </div>
-              예약일 기준 90일 이내 정보에 한하여 조회됩니다.
-            </div>
-            <div class="align-self-center flex-fill" style="text-align: center; ">휴대폰번호
-              <input type="text" class="ms-4" style="border: 1px solid rgb(204,204,204); height: 35px;" />
-              <div class="mt-2">
-                비밀번호 &nbsp;&nbsp;
-                <input type="password" class="ms-4" style="border: 1px solid rgb(204,204,204); height: 35px;"  />
+              <div class="align-self-center flex-fill" style="text-align: center; ">휴대폰번호
+                <input type="text" class="ms-4" style="border: 1px solid rgb(204,204,204); height: 35px;" />
+                <div class="mt-2">
+                  비밀번호 &nbsp;&nbsp;
+                  <input type="password" class="ms-4" style="border: 1px solid rgb(204,204,204); height: 35px;" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="mt-4" style="text-align: center">
-            <div class="row d-flex justify-content-center">
-              <div class="col text-end">
-                <button type="submit" class="text-light btn" style="
+            <div class="mt-4" style="text-align: center">
+              <div class="row d-flex justify-content-center">
+                <div class="col text-end">
+                  <button type="submit" class="text-light btn" style="
                 background-color: rgb(54, 213, 66);
                 width: 13rem;
                 height: 3rem;
               ">
-                  예약내역 조회
-                </button>
-              </div>
-              <div class="col text-start">
-                <button type="submit" class="text-light btn" style="
+                    예약내역 조회
+                  </button>
+                </div>
+                <div class="col text-start">
+                  <button type="submit" class="text-light btn" style="
                 background-color: rgb(54, 213, 66);
                 width: 13rem;
                 height: 3rem;
                 ">
-                  이용문의
-                </button>
-              
+                    이용문의
+                  </button>
+
+                </div>
               </div>
-            </div>
-      </form>
-    </div>
+        </form>
+      </div>
     </div>
     </div>
   </main>
@@ -423,7 +406,7 @@
       }).open();
     }
   </script>
-  
+
 </body>
 
 </html>
