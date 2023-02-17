@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -279,
-    "scrollLeft": -394,
-    "zoomLevel": 1,
+    "scrollTop": -477,
+    "scrollLeft": -160,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -120,7 +120,7 @@
           "active": false,
           "left": 26.361,
           "top": 119.5828,
-          "zIndex": 158,
+          "zIndex": 6,
           "widthName": 87.9599609375,
           "widthComment": 60
         },
@@ -205,7 +205,7 @@
           "active": false,
           "left": 1231.2222,
           "top": 740.5547,
-          "zIndex": 154,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 67
         },
@@ -451,7 +451,7 @@
           "active": false,
           "left": 593.01,
           "top": 945.5054,
-          "zIndex": 182,
+          "zIndex": 8,
           "widthName": 64.60693359375,
           "widthComment": 75.68359375
         },
@@ -670,29 +670,6 @@
             }
           },
           {
-            "id": "d227342d-fcdf-49b0-9f3f-d64ab93069f6",
-            "name": "GRADE",
-            "comment": "사용자 등급",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 70.61181640625,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            }
-          },
-          {
             "id": "480c6d91-9fc1-4b1e-bf5c-fa0fd1961ba1",
             "name": "USER_AUTH",
             "comment": "사용자 권한",
@@ -760,13 +737,36 @@
               "widthDefault": 60
             },
             "id": "7af941fd-6ad9-4f53-9541-ad4e57a644a7"
+          },
+          {
+            "name": "GRADE_UID",
+            "comment": "등급UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 77.84814453125,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "bdfe84ab-ed0d-4890-8671-eace38ff365d"
           }
         ],
         "ui": {
           "active": false,
           "left": 659.3052,
           "top": 437.1116,
-          "zIndex": 1,
+          "zIndex": 53,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1259,36 +1259,13 @@
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             }
-          },
-          {
-            "name": "SHIPMENT_TYPE_UID",
-            "comment": "배송타입 UID",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 139.97265625,
-              "widthComment": 80,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "6fdfb8fb-a45e-49bb-ae1d-bb7a48f69182"
           }
         ],
         "ui": {
           "active": false,
-          "left": 1285.7137,
-          "top": 92.5151,
-          "zIndex": 148,
+          "left": 1317.9366,
+          "top": 70.2932,
+          "zIndex": 12,
           "widthName": 69.1708984375,
           "widthComment": 60
         },
@@ -1557,7 +1534,7 @@
           "active": false,
           "left": 46.5008,
           "top": 456.7779,
-          "zIndex": 160,
+          "zIndex": 25,
           "widthName": 116.1181640625,
           "widthComment": 70.61181640625
         },
@@ -1568,29 +1545,6 @@
         "name": "MANAGE_SHIPMENT",
         "comment": "배송관리",
         "columns": [
-          {
-            "name": "SHIPMENT_TYPE_UID",
-            "comment": "배송타입 UID",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": true,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": true,
-              "fk": false,
-              "pfk": false,
-              "widthName": 139.97265625,
-              "widthComment": 80,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "adc924ff-1c71-4876-bc60-77d5ef6bd569"
-          },
           {
             "name": "SHIPMENT_TYPE",
             "comment": "배송타입",
@@ -1642,12 +1596,97 @@
           "active": false,
           "left": 621.4441,
           "top": 189.222,
-          "zIndex": 146,
+          "zIndex": 11,
           "widthName": 132.74267578125,
           "widthComment": 60
         },
         "visible": true,
         "id": "fcfaad3f-e058-428f-9663-3f20f91a6abb"
+      },
+      {
+        "name": "USER_GRADE",
+        "comment": "사용자 등급",
+        "columns": [
+          {
+            "name": "GRADE_UID",
+            "comment": "등급UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 77.84814453125,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "68794821-e55f-46b8-885b-4a0094c841fa"
+          },
+          {
+            "name": "GRADE",
+            "comment": "등급",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "2ef116f8-7174-460c-b38c-ba4ce820aad0"
+          },
+          {
+            "name": "GRADE_DESCRIPTION",
+            "comment": "등급설명",
+            "dataType": "VARCHAR(500)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 144.3017578125,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "41b62ea6-2db8-4e31-b155-f07af9e77008"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 75,
+          "top": 842.75,
+          "zIndex": 52,
+          "widthName": 91.578125,
+          "widthComment": 70.61181640625
+        },
+        "visible": true,
+        "id": "c5525b0b-229c-4938-b5e8-1378fe639910"
       }
     ],
     "indexes": []
@@ -1660,11 +1699,23 @@
           "active": false,
           "left": 735.8888888888881,
           "top": 26.555555555555603,
-          "zIndex": 113,
+          "zIndex": 2,
           "width": 127,
           "height": 100
         },
         "id": "602029c3-50bf-441e-b776-80517024f9c9"
+      },
+      {
+        "value": "GRADE_UID는 GRADE_F, GRADE_P, GRADE_VV 등. \nGRADE는 FAMILY, PURPLE등.",
+        "ui": {
+          "active": true,
+          "left": 73.25,
+          "top": 977.25,
+          "zIndex": 54,
+          "width": 127,
+          "height": 100
+        },
+        "id": "d7017ed6-23ac-498e-bfc9-9a41264a3009"
       }
     ]
   },
@@ -1679,8 +1730,8 @@
           "columnIds": [
             "a72a2fd3-30f8-4810-a59d-07b8feb6511f"
           ],
-          "x": 1578.215897265625,
-          "y": 612.5151,
+          "x": 1610.438797265625,
+          "y": 569.7932,
           "direction": "bottom"
         },
         "end": {
@@ -1758,7 +1809,7 @@
             "73598d7c-7873-4d57-ac90-92a037d24e64"
           ],
           "x": 659.3052,
-          "y": 604.8616,
+          "y": 520.9866,
           "direction": "left"
         },
         "end": {
@@ -1831,26 +1882,26 @@
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
         "start": {
-          "tableId": "fcfaad3f-e058-428f-9663-3f20f91a6abb",
+          "tableId": "c5525b0b-229c-4938-b5e8-1378fe639910",
           "columnIds": [
-            "adc924ff-1c71-4876-bc60-77d5ef6bd569"
+            "68794821-e55f-46b8-885b-4a0094c841fa"
           ],
-          "x": 1173.4309164062502,
-          "y": 254.472,
+          "x": 541.25048828125,
+          "y": 908,
           "direction": "right"
         },
         "end": {
-          "tableId": "b2a0198f-b801-408b-8404-38405a8ea9f0",
+          "tableId": "f2e42ff4-a06d-45db-b0e5-d0940b641252",
           "columnIds": [
-            "6fdfb8fb-a45e-49bb-ae1d-bb7a48f69182"
+            "bdfe84ab-ed0d-4890-8671-eace38ff365d"
           ],
-          "x": 1285.7137,
-          "y": 352.5151,
+          "x": 659.3052,
+          "y": 688.7366,
           "direction": "left"
         },
-        "constraintName": "fk_manage_shipment_to_shipment",
+        "constraintName": "fk_user_grade_to_users",
         "visible": true,
-        "id": "9e98f07e-6189-47ba-83a4-2d8c71d59285"
+        "id": "990ce9de-6b4d-412b-b917-d4d505221991"
       }
     ]
   }
