@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -235,
-    "scrollLeft": -606,
+    "scrollTop": -430,
+    "scrollLeft": 0,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -120,7 +120,7 @@
           "active": false,
           "left": 39.0276,
           "top": 343.5824,
-          "zIndex": 6,
+          "zIndex": 4,
           "widthName": 87.9599609375,
           "widthComment": 60
         },
@@ -203,9 +203,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1333.8892,
-          "top": 1124.4703,
-          "zIndex": 60,
+          "left": 1190.1392,
+          "top": 1216.9703,
+          "zIndex": 104,
           "widthName": 60,
           "widthComment": 67
         },
@@ -426,9 +426,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 641.3437,
-          "top": 1364.2553,
-          "zIndex": 96,
+          "left": 602.5937,
+          "top": 1713.0053,
+          "zIndex": 97,
           "widthName": 64.60693359375,
           "widthComment": 75.68359375
         },
@@ -741,9 +741,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 663.3052,
-          "top": 865.1116,
-          "zIndex": 9,
+          "left": 629.5552,
+          "top": 938.8616,
+          "zIndex": 103,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1169,29 +1169,6 @@
             }
           },
           {
-            "id": "2b44b08e-9420-4402-b4e8-32c32f537c84",
-            "name": "PROGRESS_STATUS",
-            "comment": "배송진행상태",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 132.2666015625,
-              "widthComment": 80,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            }
-          },
-          {
             "name": "SHIPMENT_TYPE_UID",
             "comment": "배송타입 UID",
             "dataType": "VARCHAR(100)",
@@ -1259,13 +1236,36 @@
               "widthDefault": 60
             },
             "id": "e2223324-395e-4437-a784-14fa92bcad4e"
+          },
+          {
+            "name": "PROGRESS_STATUS_UID",
+            "comment": "진행상태UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 161.884765625,
+              "widthComment": 76.38818359375,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "7a9cd2ef-7622-4675-8136-556ab06e3668"
           }
         ],
         "ui": {
           "active": false,
           "left": 1287.0477,
           "top": 499.4043,
-          "zIndex": 3,
+          "zIndex": 121,
           "widthName": 69.1708984375,
           "widthComment": 60
         },
@@ -1534,7 +1534,7 @@
           "active": false,
           "left": 59.3894,
           "top": 667.4446,
-          "zIndex": 7,
+          "zIndex": 5,
           "widthName": 116.1181640625,
           "widthComment": 70.61181640625
         },
@@ -1619,7 +1619,7 @@
           "active": false,
           "left": 1443.6109,
           "top": 86.4999,
-          "zIndex": 8,
+          "zIndex": 18,
           "widthName": 119.025390625,
           "widthComment": 60
         },
@@ -1702,9 +1702,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 94.4167,
-          "top": 1268.5554,
-          "zIndex": 12,
+          "left": 56.9167,
+          "top": 1349.8054,
+          "zIndex": 101,
           "widthName": 100.2490234375,
           "widthComment": 70.61181640625
         },
@@ -1874,7 +1874,7 @@
           "active": false,
           "left": 870.3887,
           "top": 230.2516,
-          "zIndex": 5,
+          "zIndex": 17,
           "widthName": 82.9072265625,
           "widthComment": 60
         },
@@ -1936,7 +1936,7 @@
           "active": false,
           "left": 681.7782,
           "top": 422.7774,
-          "zIndex": 2,
+          "zIndex": 16,
           "widthName": 73.5126953125,
           "widthComment": 60
         },
@@ -2021,7 +2021,7 @@
           "active": false,
           "left": 11.25,
           "top": 1533.25,
-          "zIndex": 13,
+          "zIndex": 10,
           "widthName": 105.79052734375,
           "widthComment": 60
         },
@@ -2104,9 +2104,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 660.5,
-          "top": 1798.75,
-          "zIndex": 29,
+          "left": 1419.7129,
+          "top": 1398.75,
+          "zIndex": 106,
           "widthName": 173.4501953125,
           "widthComment": 80
         },
@@ -2124,7 +2124,7 @@
           "active": false,
           "left": 1529.6388888888875,
           "top": 332.11111111111114,
-          "zIndex": 4,
+          "zIndex": 3,
           "width": 127,
           "height": 100
         },
@@ -2136,7 +2136,7 @@
           "active": false,
           "left": 236.36111111111092,
           "top": 1113.4722222222226,
-          "zIndex": 11,
+          "zIndex": 8,
           "width": 195,
           "height": 100
         },
@@ -2148,7 +2148,7 @@
           "active": false,
           "left": 728.5277777777774,
           "top": 712.222222222222,
-          "zIndex": 10,
+          "zIndex": 7,
           "width": 135,
           "height": 100
         },
@@ -2160,7 +2160,7 @@
           "active": false,
           "left": 119.75,
           "top": 1681.25,
-          "zIndex": 15,
+          "zIndex": 11,
           "width": 232,
           "height": 207
         },
@@ -2170,9 +2170,9 @@
         "value": "UID는 PROG_STAT_WAIT,\nPROG_STAT_DONE\nTYPE은 IN_PROGRESS,\nCOMPLETION\n설명은 문의중, 답변완료",
         "ui": {
           "active": false,
-          "left": 1057.5,
-          "top": 1629,
-          "zIndex": 59,
+          "left": 1730,
+          "top": 1587.75,
+          "zIndex": 105,
           "width": 162,
           "height": 100
         },
@@ -2191,7 +2191,7 @@
           "columnIds": [
             "a72a2fd3-30f8-4810-a59d-07b8feb6511f"
           ],
-          "x": 1579.549897265625,
+          "x": 1433.2987986328126,
           "y": 1019.4042999999999,
           "direction": "bottom"
         },
@@ -2200,8 +2200,8 @@
           "columnIds": [
             "bf5f563d-2719-4a96-bc79-fc649e4e474f"
           ],
-          "x": 1573.0376375,
-          "y": 1124.4703,
+          "x": 1429.2876375,
+          "y": 1216.9703,
           "direction": "top"
         },
         "constraintName": "fk_shipment_to_mypage",
@@ -2217,8 +2217,8 @@
           "columnIds": [
             "73598d7c-7873-4d57-ac90-92a037d24e64"
           ],
-          "x": 1131.26174296875,
-          "y": 1032.8616,
+          "x": 1097.51174296875,
+          "y": 1106.6116,
           "direction": "right"
         },
         "end": {
@@ -2226,8 +2226,8 @@
           "columnIds": [
             "b9ff93a4-e3d4-48fe-9875-931078f9c389"
           ],
-          "x": 1333.8892,
-          "y": 1157.0953,
+          "x": 1190.1392,
+          "y": 1249.5953,
           "direction": "left"
         },
         "constraintName": "fk_users_to_mypage",
@@ -2243,8 +2243,8 @@
           "columnIds": [
             "73598d7c-7873-4d57-ac90-92a037d24e64"
           ],
-          "x": 897.283471484375,
-          "y": 1200.6116,
+          "x": 863.533471484375,
+          "y": 1274.3616,
           "direction": "bottom"
         },
         "end": {
@@ -2252,8 +2252,8 @@
           "columnIds": [
             "a9477f07-d097-4fe6-8f17-31edd3af64e4"
           ],
-          "x": 946.604686328125,
-          "y": 1364.2553,
+          "x": 755.2241931640625,
+          "y": 1713.0053,
           "direction": "top"
         },
         "constraintName": "fk_users_to_inquiry_list",
@@ -2269,8 +2269,8 @@
           "columnIds": [
             "73598d7c-7873-4d57-ac90-92a037d24e64"
           ],
-          "x": 663.3052,
-          "y": 948.9866,
+          "x": 629.5552,
+          "y": 1022.7366,
           "direction": "left"
         },
         "end": {
@@ -2321,17 +2321,17 @@
           "columnIds": [
             "1b25b33c-2b69-4e51-a601-37faefb1948b"
           ],
-          "x": 1251.86567265625,
-          "y": 1491.0053,
-          "direction": "right"
+          "x": 1060.4851794921874,
+          "y": 1713.0053,
+          "direction": "top"
         },
         "end": {
           "tableId": "359e298c-dca6-4db8-adf5-b3cfba8bd8d9",
           "columnIds": [
             "2130a284-ee44-48df-8e1d-12bd30103472"
           ],
-          "x": 1333.8892,
-          "y": 1222.3453,
+          "x": 1190.1392,
+          "y": 1314.8453,
           "direction": "left"
         },
         "constraintName": "fk_inquiry_list_to_mypage",
@@ -2347,8 +2347,8 @@
           "columnIds": [
             "68794821-e55f-46b8-885b-4a0094c841fa"
           ],
-          "x": 560.66718828125,
-          "y": 1333.8054,
+          "x": 523.16718828125,
+          "y": 1415.0554,
           "direction": "right"
         },
         "end": {
@@ -2356,8 +2356,8 @@
           "columnIds": [
             "bdfe84ab-ed0d-4890-8671-eace38ff365d"
           ],
-          "x": 663.3052,
-          "y": 1116.7366,
+          "x": 629.5552,
+          "y": 1190.4866,
           "direction": "left"
         },
         "constraintName": "fk_user_grade_to_users",
@@ -2382,8 +2382,8 @@
           "columnIds": [
             "6d49e135-d9b3-4c2c-9661-14cae91e2bba"
           ],
-          "x": 897.283471484375,
-          "y": 865.1116,
+          "x": 863.533471484375,
+          "y": 938.8616,
           "direction": "top"
         },
         "constraintName": "fk_auths_to_users",
@@ -2486,8 +2486,8 @@
           "columnIds": [
             "3025a0a9-8f81-4eea-a361-4018dc11622f"
           ],
-          "x": 641.3437,
-          "y": 1491.0053,
+          "x": 602.5937,
+          "y": 1839.7553,
           "direction": "left"
         },
         "constraintName": "fk_inquiry_type_to_inquirys",
@@ -2503,22 +2503,48 @@
           "columnIds": [
             "ba3b06ab-fee7-4be1-befa-583afccd2d6d"
           ],
-          "x": 945.6435546875,
-          "y": 1798.75,
-          "direction": "top"
+          "x": 1419.7129,
+          "y": 1464,
+          "direction": "left"
         },
         "end": {
           "tableId": "9a8897aa-27f8-4f19-8a3b-fdec44036a5a",
           "columnIds": [
             "9d96055d-1931-4978-8e9c-d6262be4c43e"
           ],
-          "x": 946.604686328125,
-          "y": 1617.7553,
-          "direction": "bottom"
+          "x": 1213.11567265625,
+          "y": 1839.7553,
+          "direction": "right"
         },
         "constraintName": "fk_progress_status_type_to_inquirys",
         "visible": true,
         "id": "8c6702c3-54fe-4a28-a115-9f98ea399e68"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "d490053d-6218-436f-aa00-2c904bd655a0",
+          "columnIds": [
+            "ba3b06ab-fee7-4be1-befa-583afccd2d6d"
+          ],
+          "x": 1704.8564546875,
+          "y": 1398.75,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "b2a0198f-b801-408b-8404-38405a8ea9f0",
+          "columnIds": [
+            "7a9cd2ef-7622-4675-8136-556ab06e3668"
+          ],
+          "x": 1725.8009958984376,
+          "y": 1019.4042999999999,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_progress_status_type_to_shipment",
+        "visible": true,
+        "id": "1515e2a9-aa6e-4018-bbfe-659fe5e71df9"
       }
     ]
   }
