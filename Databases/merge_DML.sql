@@ -29,15 +29,47 @@ VALUES
 
 
 INSERT INTO USERS
-(USER_UID, NAME, PASSWORD, E_MAIL, POSTALCODE, ADDRESS, DETAILADDRESS, EXTRAADDRESS, JOINDATE, PHONE, POINT, 
- GRADE_UID, AUTH_UID)
+(USER_UID, NAME, PASSWORD, E_MAIL, BIRTH_DATE, POSTALCODE, ADDRESS, DETAILADDRESS, EXTRAADDRESS, JOINDATE, PHONE, 
+  MARKETING_RECEIVE_ACCEPTION, GRADE_UID, AUTH_UID)
 VALUES
-('user1','천혜향','pw123','abc@naver.com','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01012345678',2000,
-'GRADE_F','AUTH_U'),
-('user2','한라봉','pw123','abc@naver.com','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01023456789',1500,
-'GRADE_F','AUTH_U'),
-('admin1','관리자','pw123','abc@naver.com','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01034567890',null,
-'GRADE_PL','AUTH_A')
+('user1','천혜향','pw123','abc@naver.com','1995-03-21','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01012345678',
+'Y', 'GRADE_F','AUTH_U'),
+('user2','한라봉','pw123','abc@naver.com','2000-08-15','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01023456789',
+'Y','GRADE_F','AUTH_U'),
+('user3','금귤','pw123','abc@naver.com','1992-07-07','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01023456789',
+'N(NULL이면 N으로 들어가게 하던지 체크가 안되면 으로 들어가게 하던지.)','GRADE_F','AUTH_U'),
+('user4','안성국','pw123','ask123@naver.com','2005-02-11','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01023256789',
+'Y','GRADE_PL','AUTH_U'),
+('user5','천호연','pw123','choyeon@naver.com','1992-01-01','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01021456789',
+'Y','GRADE_V','AUTH_U'),
+('user6','채치수','pw123','sizechae@naver.com','1990-10-07','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'0103556789',
+NULL,'GRADE_PU','AUTH_U'),
+('user7','강백호','pw123','power@naver.com','1992-07-25','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01023643789',
+'Y','GRADE_V','AUTH_U'),
+('user8','이재현','pw123','jhlee@naver.com','1992-02-08','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01023956789',
+'N(NULL이면 N으로 들어가게 하던지 체크가 안되면 으로 들어가게 하던지.)','GRADE_F','AUTH_U'),
+('user9','김남광','pw123','kjf@naver.com','1999-09-01','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01023456569',
+NULL,'GRADE_PU','AUTH_U'),
+('user10','김석진','pw123','sjk@naver.com','1999-10-17','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01053456789',
+'Y','GRADE_F','AUTH_U'),
+('user11','안지영','pw123','elle@naver.com','2019-07-07','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01090456789',
+'Y','GRADE_F','AUTH_U'),
+('user12','왕지영','pw123','KINGelle@naver.com','2019-07-07','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01185889955',
+'Y','GRADE_V','AUTH_U'),
+('admin1','관리자','pw123','abc@naver.com','1983-06-30','01684','서울시 강남구 테헤란로 84','101호','',sysdate(),'01030067890',
+NULL,'GRADE_PL','AUTH_A')
+;
+
+INSERT INTO POINT
+(POINT_UID, POINT_CHANGE, POINT_CHANGE_VALUE, POINT_CHANGE_DESCRIPTION, POINT_CHANGE_DATE, USER_UID)
+VALUES
+('POINT_230221_1','SAVE',800,'SAVE는 저장 USE는 사용',sysdate(),'USER1'),
+('POINT_230221_2','USE',1000,'SAVE는 저장 USE는 사용',sysdate(),'USER1'),
+('POINT_230221_3','SAVE',2000,'SAVE는 저장 USE는 사용',sysdate(),'USER2'),
+('POINT_230223_1','SAVE',100,'SAVE는 저장 USE는 사용',sysdate(),'USER2'),
+('POINT_230223_2','USE',300,'SAVE는 저장 USE는 사용',sysdate(),'USER3'),
+('POINT_230226_1','USE',200,'SAVE는 저장 USE는 사용',sysdate(),'USER3')
+-- 총 합계는 db에서 나타내지 않고 나중에 sum해서 화면에서 보여주면 된다.
 ;
 
 INSERT INTO COMMON_BOARD 
@@ -51,6 +83,14 @@ VALUES
 ('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.',sysdate(),'관리자',15,'notice1.jpg',NULL,NULL,
 'admin1','BOARD_NOTICE'),
 ('NOT_20230216_2','배송비 인상 안내','2023년 3월부터 배송비가 인상됩니다.',sysdate(),'관리자',76,NULL,NULL,NULL,
+'admin1','BOARD_NOTICE'),
+('NOT_20230221_1','한파로 인한 배송지연 안내','최근 한파로 인해 도로사정이 좋지 않아 배송이 지연됩니다.',sysdate(),'관리자',9,NULL,NULL,NULL,
+'admin1','BOARD_NOTICE'),
+('NOT_20230221_2','악성 사용자 제재','최근 DDOS등을 이용해 서버를 공격하는 악성사용자들을 제재할 예정입니다.',sysdate(),'관리자',31,NULL,NULL,NULL,
+'admin1','BOARD_NOTICE'),
+('NOT_20230221_3','홀리몰리 포스트를 사랑해주시는 고객님들께','안녕하세요 고객님! 저희 홀리몰리 포스트를 이용해주셔서 감사드립니다..람쥐.',sysdate(),'관리자',571,NULL,NULL,NULL,
+'admin1','BOARD_NOTICE'),
+('NOT_20230221_4','일부 지역 배송불가 안내','폭설로 인해 제주.산간 및 도서지역은 현재 배송이 불가능합니다.',sysdate(),'관리자',152,NULL,NULL,NULL,
 'admin1','BOARD_NOTICE'),
 ('FAQ_20230216_1','FAQ 접수문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,NULL,
 'user1','BOARD_FAQ_REGISTER'),
@@ -145,13 +185,17 @@ INSERT INTO SHIPMENT
 (TRACKING_NUMBER, NUMBER_OF_ITEMS, SENDER_NAME, SENDER_PHONE, DEPARTURE_POSTALCODE, DEPARTURE_ADDRESS,
 DEPARTURE_DETAILADDRESS, DEPARTURE_EXTRAADDRESS, RECIPIENT_NAME, RECIPIENT_PHONE, DESTINATION_POSTALCODE,
 DESTINATION_ADDRESS, DESTINATION_DETAILADDRESS, DESTINATION_EXTRAADDRESS, TOTAL_PRICE, ITEM_PRICE,
-SHIPMENT_PASSWORD, VISITING_DATE,SHIPMENT_TYPE_UID, REQUEST_UID, ITEM_TYPE_UID, PROGRESS_STATUS_UID)
+SHIPMENT_PASSWORD, VISITING_DATE,     RESERVATION_DATE, SHIPMENT_COMPLETION_DATE,   SHIPMENT_TYPE_UID, REQUEST_UID, ITEM_TYPE_UID, PROGRESS_STATUS_UID)
 
 VALUES
 ('TRK_20230217_1',2,'홍길동','01045671234','01623','서울시 강남구 테헤란로 14','103호',NULL,'이지금','01014235463',
-'02422','서울시 서초구 서초대로14','101동 304호','서초동',50000,25000,1234,'2023-02-19','SHIP_GEN','REQ_04','item_m_02','SHIP_PROG_STAT_REGI'),
+'02422','서울시 서초구 서초대로14','101동 304호','서초동',50000,25000,1234,'2023-02-19', sysdate(),'2023-02-22','SHIP_GEN','REQ_04','item_m_02','SHIP_PROG_STAT_COMP'),
 ('TRK_20230217_2',6,'하야시','01023245533','11920','서울시 강남구 봉은사로 10','307호',NULL,'서운령','01188882222',
-'21022','서울시 노원구 동일로 10','1층',NULL,180000,30000,1234,'2023-02-22','SHIP_BULK','REQ_02','item_c_02','SHIP_PROG_STAT_INPROG')
+'21022','서울시 노원구 동일로 10','1층',NULL,180000,30000,2546,'2023-02-22', sysdate(),NULL,'SHIP_BULK','REQ_02','item_c_02','SHIP_PROG_STAT_INPROG'),
+('TRK_20230221_1',1,'왕지영','01185889955','01684','서울시 강남구 테헤란로 84','101호',NULL,'강백호','01023643789',
+'01134','서울시 노원구 동일로 23','옥상',NULL,100000,100000,2345,'2023-02-22', sysdate(),NULL,'SHIP_GEN','REQ_03','item_c_03','SHIP_PROG_STAT_INPROG'),
+('TRK_20230221_2',6,'모코코','01099889955','01234','서울시 서초구 서초대로 3길','501동 301호',NULL,'권호성','01025323789',
+'04334','경기도 이천시 이천로 54-3','가동 3층',NULL,180000,30000,8458,'2023-02-10', '2023-02-12','2023-02-15','SHIP_BULK','REQ_03','item_c_03','SHIP_PROG_STAT_COMP')
 ;
 
 

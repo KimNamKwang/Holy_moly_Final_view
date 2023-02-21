@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -325,
-    "scrollLeft": -210,
-    "zoomLevel": 0.6,
+    "scrollTop": -737,
+    "scrollLeft": -630,
+    "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -766,7 +766,7 @@
           "active": false,
           "left": 624.2219,
           "top": 906.5285,
-          "zIndex": 122,
+          "zIndex": 191,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1334,7 +1334,7 @@
           "active": false,
           "left": 1402.0481,
           "top": 492.4041,
-          "zIndex": 183,
+          "zIndex": 239,
           "widthName": 69.1708984375,
           "widthComment": 60
         },
@@ -2210,29 +2210,6 @@
             "id": "fb3ec77e-dbc4-47cc-9ffc-c753a720ff58"
           },
           {
-            "name": "POINT",
-            "comment": "포인트",
-            "dataType": "INTEGER",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "ae25cef7-f089-42fc-86d4-960e15264270"
-          },
-          {
             "name": "POINT_CHANGE",
             "comment": "포인트 변화",
             "dataType": "VARCHAR(100)",
@@ -2254,6 +2231,29 @@
               "widthDefault": 60
             },
             "id": "aac2466b-325e-4896-a36b-8c20de24a412"
+          },
+          {
+            "name": "POINT_CHANGE_VALUE",
+            "comment": "포인트 변화 값",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 153.4677734375,
+              "widthComment": 87.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e5e06651-751f-4963-bc39-18aeb4ced26b"
           },
           {
             "name": "POINT_CHANGE_DESCRIPTION",
@@ -2329,7 +2329,7 @@
           "active": false,
           "left": 654,
           "top": 565,
-          "zIndex": 170,
+          "zIndex": 225,
           "widthName": 60,
           "widthComment": 60
         },
