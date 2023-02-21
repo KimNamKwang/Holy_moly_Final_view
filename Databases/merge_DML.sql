@@ -72,44 +72,54 @@ VALUES
 -- 총 합계는 db에서 나타내지 않고 나중에 sum해서 화면에서 보여주면 된다.
 ;
 
+
+
 INSERT INTO COMMON_BOARD 
-(COMMONBOARD_UID, TITLE, CONTENT, DATE_CREATED, WRITER, VIEWS, BOARD_FILE_NAME, EVENT_START_DATE, EVENT_END_DATE,
+(COMMONBOARD_UID, TITLE, CONTENT, DATE_CREATED, WRITER, VIEWS, EVENT_START_DATE, EVENT_END_DATE,
  USER_UID, BOARD_UID) 
 VALUES
-('EVT_20230216_1','김석진 데이터베이스 6행시 성공 기념 이벤트','이번 이벤트는 로지텍 마우스 추첨행사입니다',sysdate(),'관리자',123,'event1.jpg','2022-12-15','2023-02-16',
+('EVT_20230216_1','김석진 데이터베이스 6행시 성공 기념 이벤트','이번 이벤트는 로지텍 마우스 추첨행사입니다',sysdate(),'관리자',123,'2022-12-15','2023-02-16',
 'admin1','BOARD_EVENT'),
-('EVT_20230216_2','김석진 로지텍 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'event2.jpg','2023-01-10','2023-02-16',
+('EVT_20230216_2','김석진 로지텍 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'2023-01-10','2023-02-16',
 'admin1','BOARD_EVENT'),
-('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.',sysdate(),'관리자',15,'notice1.jpg',NULL,NULL,
+('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.',sysdate(),'관리자',15,NULL,NULL,
 'admin1','BOARD_NOTICE'),
-('NOT_20230216_2','배송비 인상 안내','2023년 3월부터 배송비가 인상됩니다.',sysdate(),'관리자',76,NULL,NULL,NULL,
+('NOT_20230216_2','배송비 인상 안내','2023년 3월부터 배송비가 인상됩니다.',sysdate(),'관리자',76,NULL,NULL,
 'admin1','BOARD_NOTICE'),
-('NOT_20230221_1','한파로 인한 배송지연 안내','최근 한파로 인해 도로사정이 좋지 않아 배송이 지연됩니다.',sysdate(),'관리자',9,NULL,NULL,NULL,
+('NOT_20230221_1','한파로 인한 배송지연 안내','최근 한파로 인해 도로사정이 좋지 않아 배송이 지연됩니다.',sysdate(),'관리자',9,NULL,NULL,
 'admin1','BOARD_NOTICE'),
-('NOT_20230221_2','악성 사용자 제재','최근 DDOS등을 이용해 서버를 공격하는 악성사용자들을 제재할 예정입니다.',sysdate(),'관리자',31,NULL,NULL,NULL,
+('NOT_20230221_2','악성 사용자 제재','최근 DDOS등을 이용해 서버를 공격하는 악성사용자들을 제재할 예정입니다.',sysdate(),'관리자',31,NULL,NULL,
 'admin1','BOARD_NOTICE'),
-('NOT_20230221_3','홀리몰리 포스트를 사랑해주시는 고객님들께','안녕하세요 고객님! 저희 홀리몰리 포스트를 이용해주셔서 감사드립니다..람쥐.',sysdate(),'관리자',571,NULL,NULL,NULL,
+('NOT_20230221_3','홀리몰리 포스트를 사랑해주시는 고객님들께','안녕하세요 고객님! 저희 홀리몰리 포스트를 이용해주셔서 감사드립니다..람쥐.',sysdate(),'관리자',571,NULL,NULL,
 'admin1','BOARD_NOTICE'),
-('NOT_20230221_4','일부 지역 배송불가 안내','폭설로 인해 제주.산간 및 도서지역은 현재 배송이 불가능합니다.',sysdate(),'관리자',152,NULL,NULL,NULL,
+('NOT_20230221_4','일부 지역 배송불가 안내','폭설로 인해 제주.산간 및 도서지역은 현재 배송이 불가능합니다.',sysdate(),'관리자',152,NULL,NULL,
 'admin1','BOARD_NOTICE'),
-('FAQ_20230216_1','FAQ 접수문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,NULL,
+('FAQ_20230216_1','FAQ 접수문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
 'user1','BOARD_FAQ_REGISTER'),
-('FAQ_20230216_2','FAQ 접수문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,NULL,
+('FAQ_20230216_2','FAQ 접수문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
 'user2','BOARD_FAQ_REGISTER'),
-('FAQ_20230216_3','FAQ 배송문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,NULL,
+('FAQ_20230216_3','FAQ 배송문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
 'user1','BOARD_FAQ_SHIPPING'),
-('FAQ_20230216_4','FAQ 배송문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,NULL,
+('FAQ_20230216_4','FAQ 배송문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
 'user2','BOARD_FAQ_SHIPPING'),
-('FAQ_20230216_5','FAQ 지도문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,NULL,
+('FAQ_20230216_5','FAQ 지도문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
 'user1','BOARD_FAQ_MAP'),
-('FAQ_20230216_6','FAQ 지도문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,NULL,
+('FAQ_20230216_6','FAQ 지도문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
 'user2','BOARD_FAQ_MAP'),
-('FAQ_20230216_7','FAQ 사고문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,NULL,
+('FAQ_20230216_7','FAQ 사고문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
 'user1','BOARD_FAQ_ACCIDENT'),
-('FAQ_20230216_8','FAQ 사고문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,NULL,
+('FAQ_20230216_8','FAQ 사고문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
 'user2','BOARD_FAQ_ACCIDENT')
 ;
 
+INSERT INTO ATTACHED_FILES
+(FILE_UID, ORIGINALFILE_NAME, FILE_FOLDER_NAME, COMMONBOARD_UID)
+VALUES
+('FILE_230221_1','logitech_mouse.jpg','files_for_event','EVT_20230216_1'),
+('FILE_230221_2','logitech_hamster.jpg','files_for_event','EVT_20230216_2'),
+('FILE_230223_1','sorry.png','files_for_notice','NOT_20230216_1'),
+('FILE_230224_1','squirrel.txt','files_for_notice','NOT_20230221_3')
+;
 
 INSERT INTO INQUIRY_TYPES
 (INQUIRY_TYPE_UID,INQUIRY_TYPE,INQUIRY_TYPE_DESCRIPTION)
