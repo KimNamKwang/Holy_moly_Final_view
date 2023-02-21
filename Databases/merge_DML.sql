@@ -72,7 +72,6 @@ VALUES
 -- 총 합계는 db에서 나타내지 않고 나중에 sum해서 화면에서 보여주면 된다.
 ;
 
-select SUM(POINT_CHANGE_VALUE) FROM POINT where USER_UID = 'user2';
 
 
 INSERT INTO COMMON_BOARD 
