@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -721,
-    "scrollLeft": -189,
-    "zoomLevel": 0.8,
+    "scrollTop": -440,
+    "scrollLeft": -47,
+    "zoomLevel": 0.9,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -1574,36 +1574,13 @@
               "widthDefault": 60
             },
             "id": "7b9a7327-6e2c-4a43-bd64-4f649ac97f07"
-          },
-          {
-            "name": "EVENT_DATE_UID",
-            "comment": "이벤트기간UID",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 115.89599609375,
-              "widthComment": 89.38818359375,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "98df26cd-fc99-41aa-90fe-d3b7d6ecb722"
           }
         ],
         "ui": {
           "active": false,
           "left": 9.1118,
           "top": 678.1389,
-          "zIndex": 23,
+          "zIndex": 54,
           "widthName": 116.1181640625,
           "widthComment": 70.61181640625
         },
@@ -2557,8 +2534,8 @@
             "id": "6dac6725-14e1-4c7c-88f8-562393008f87"
           },
           {
-            "name": "BOARD_UID",
-            "comment": "게시판 타입UID",
+            "name": "COMMONBOARD_UID",
+            "comment": "게시글 UID",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -2572,19 +2549,19 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 77.84814453125,
-              "widthComment": 93,
+              "widthName": 138.50634765625,
+              "widthComment": 67,
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             },
-            "id": "a2045d9f-b257-4168-aa0c-b80069e95abf"
+            "id": "c6c8ddf3-4feb-4cda-a94f-cbee7d61213a"
           }
         ],
         "ui": {
           "active": false,
           "left": 567.9365,
           "top": 548.288,
-          "zIndex": 22,
+          "zIndex": 51,
           "widthName": 139.73779296875,
           "widthComment": 60
         },
@@ -2769,7 +2746,7 @@
             "d79ae6af-5be6-474d-b981-141ec6ef0ae0"
           ],
           "x": 502.566878125,
-          "y": 883.6389,
+          "y": 868.2639,
           "direction": "right"
         },
         "constraintName": "fk_users_to_common_board",
@@ -3072,7 +3049,7 @@
             "a7e0917c-063d-4df5-9274-a662320c3d10"
           ],
           "x": 255.8393390625,
-          "y": 952.1389,
+          "y": 931.6389,
           "direction": "bottom"
         },
         "end": {
@@ -3145,52 +3122,26 @@
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
         "start": {
-          "tableId": "938cbe85-11f4-4fe6-b8b3-0b74ac52b3f7",
+          "tableId": "8a70b7dc-2b81-45d3-bb0d-34eed851c404",
           "columnIds": [
-            "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
+            "a7e0917c-063d-4df5-9274-a662320c3d10"
           ],
-          "x": 842.163657421875,
-          "y": 377.1374,
-          "direction": "bottom"
+          "x": 502.566878125,
+          "y": 741.5139,
+          "direction": "right"
         },
         "end": {
           "tableId": "98482f55-5c04-40b1-a54d-1e37b64d95c6",
           "columnIds": [
-            "a2045d9f-b257-4168-aa0c-b80069e95abf"
-          ],
-          "x": 812.870826171875,
-          "y": 548.288,
-          "direction": "top"
-        },
-        "constraintName": "fk_main_board_to_event_date_board",
-        "visible": true,
-        "id": "9da8c9c5-54d1-439c-9f4d-0811b4aa4dfb"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Ring",
-        "start": {
-          "tableId": "98482f55-5c04-40b1-a54d-1e37b64d95c6",
-          "columnIds": [
-            "d73fddd2-085a-4ebf-8f4e-578752db29fc"
+            "c6c8ddf3-4feb-4cda-a94f-cbee7d61213a"
           ],
           "x": 567.9365,
           "y": 623.788,
           "direction": "left"
         },
-        "end": {
-          "tableId": "8a70b7dc-2b81-45d3-bb0d-34eed851c404",
-          "columnIds": [
-            "98df26cd-fc99-41aa-90fe-d3b7d6ecb722"
-          ],
-          "x": 502.566878125,
-          "y": 746.6389,
-          "direction": "right"
-        },
-        "constraintName": "fk_event_date_board_to_common_board",
+        "constraintName": "fk_common_board_to_event_date_board",
         "visible": true,
-        "id": "81a928b1-77bc-43e5-bc55-1885fd03283e"
+        "id": "d256b184-e510-4215-8c67-5e673ffa300a"
       }
     ]
   }
