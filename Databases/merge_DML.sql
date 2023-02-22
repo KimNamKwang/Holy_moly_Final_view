@@ -5,25 +5,34 @@ VALUES
 ('BOARD_EVENT','EVENT','이벤트'),
 ('BOARD_FAQ','FAQ','FAQ')
 ;
-;
 
 INSERT INTO FAQ_TYPE 
 (FAQ_TYPE_UID, FAQ_TYPE, FAQ_TYPE_DESCRIPTION, BOARD_UID)
 VALUES
-('FAQ_REGISTER', 'REGISTER','접수문의', 'BOARD_FAQ'),
-('FAQ_SHIPPING','SHIPPING','배송문의','BOARD_FAQ'),
-('FAQ_MAP','MAP','지도문의','BOARD_FAQ'),
-('FAQ_ACCIDENT','ACCIDENT','사고문의','BOARD_FAQ')
+('FAQ_REGISTER', 'REGISTER','FAQ 접수문의', 'BOARD_FAQ'),
+('FAQ_SHIPPING','SHIPPING','FAQ 배송문의','BOARD_FAQ'),
+('FAQ_MAP','MAP','FAQ 지도문의','BOARD_FAQ'),
+('FAQ_ACCIDENT','ACCIDENT','FAQ 사고문의','BOARD_FAQ')
+;
+
+INSERT INTO EVENT_DATE_BOARD 
+(EVENT_DATE_UID, EVENT_START_DATE, EVENT_END_DATE, BOARD_UID)
+VALUES
+('EVT_DATE_20230216_1', '2023-02-22','2023-03-01', 'BOARD_EVENT'),
+('EVT_DATE_20230216_2', '2023-02-23','2023-03-02', 'BOARD_EVENT'),
+('EVT_DATE_20230218_1', '2023-02-23','2023-03-10', 'BOARD_EVENT'),
+('EVT_DATE_20230218_2', '2023-02-26','2023-04-01', 'BOARD_EVENT'),
+('EVT_DATE_20230220_1', '2023-02-27','2023-04-15', 'BOARD_EVENT')
 ;
 
 INSERT INTO  USER_GRADES
-(GRADE_UID,GRADE)
+(GRADE_UID,GRADE,GRADE_DESCRIPTION)
 VALUES
-('GRADE_F','FAMILY'),
-('GRADE_PU','PURPLE'),
-('GRADE_V','VIP'),
-('GRADE_VV','VVIP'),
-('GRADE_PL','PLATINUM')
+('GRADE_F','FAMILY','FAMILY등급'),
+('GRADE_PU','PURPLE','PURPLE등급'),
+('GRADE_V','VIP','VIP등급'),
+('GRADE_VV','VVIP','VVIP등급'),
+('GRADE_PL','PLATINUM','PLATINUM등급')
 ;
 
 INSERT INTO AUTHS
@@ -32,7 +41,6 @@ VALUES
 ('AUTH_U','ROLE_USER','일반 유저'),
 ('AUTH_A','ROLE_ADMIN','관리자')
 ;
-
 
 INSERT INTO USERS
 (USER_UID, NAME, PASSWORD, E_MAIL, BIRTH_DATE, POSTALCODE, ADDRESS, DETAILADDRESS, EXTRAADDRESS, JOINDATE, PHONE, 
@@ -78,44 +86,27 @@ VALUES
 -- 총 합계는 db에서 나타내지 않고 나중에 sum해서 화면에서 보여주면 된다.
 ;
 
-INSERT INTO COMMON_BOARD 
-(COMMONBOARD_UID, TITLE, CONTENT, DATE_CREATED, WRITER, VIEWS, EVENT_START_DATE, EVENT_END_DATE,
- USER_UID, BOARD_UID) 
-VALUES
-('EVT_20230216_1','김석진 데이터베이스 6행시 성공 기념 이벤트','이번 이벤트는 로지텍 마우스 추첨행사입니다',sysdate(),'관리자',123,'2022-12-15','2023-02-16',
-'admin1','BOARD_EVENT'),
-('EVT_20230216_2','김석진 로지텍 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'2023-01-10','2023-02-16',
-'admin1','BOARD_EVENT'),
-('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.',sysdate(),'관리자',15,NULL,NULL,
-'admin1','BOARD_NOTICE'),
-('NOT_20230216_2','배송비 인상 안내','2023년 3월부터 배송비가 인상됩니다.',sysdate(),'관리자',76,NULL,NULL,
-'admin1','BOARD_NOTICE'),
-('NOT_20230221_1','한파로 인한 배송지연 안내','최근 한파로 인해 도로사정이 좋지 않아 배송이 지연됩니다.',sysdate(),'관리자',9,NULL,NULL,
-'admin1','BOARD_NOTICE'),
-('NOT_20230221_2','악성 사용자 제재','최근 DDOS등을 이용해 서버를 공격하는 악성사용자들을 제재할 예정입니다.',sysdate(),'관리자',31,NULL,NULL,
-'admin1','BOARD_NOTICE'),
-('NOT_20230221_3','홀리몰리 포스트를 사랑해주시는 고객님들께','안녕하세요 고객님! 저희 홀리몰리 포스트를 이용해주셔서 감사드립니다..람쥐.',sysdate(),'관리자',571,NULL,NULL,
-'admin1','BOARD_NOTICE'),
-('NOT_20230221_4','일부 지역 배송불가 안내','폭설로 인해 제주.산간 및 도서지역은 현재 배송이 불가능합니다.',sysdate(),'관리자',152,NULL,NULL,
-'admin1','BOARD_NOTICE'),
-('FAQ_20230216_1','FAQ 접수문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
-'user1','BOARD_FAQ'),
-('FAQ_20230216_2','FAQ 접수문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
-'user2','BOARD_FAQ'),
-('FAQ_20230216_3','FAQ 배송문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
-'user1','BOARD_FAQ'),
-('FAQ_20230216_4','FAQ 배송문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
-'user2','BOARD_FAQ'),
-('FAQ_20230216_5','FAQ 지도문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
-'user1','BOARD_FAQ'),
-('FAQ_20230216_6','FAQ 지도문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
-'user2','BOARD_FAQ'),
-('FAQ_20230216_7','FAQ 사고문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
-'user1','BOARD_FAQ'),
-('FAQ_20230216_8','FAQ 사고문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
-'user2','BOARD_FAQ')
-;
 
+INSERT INTO COMMON_BOARD 
+(COMMONBOARD_UID, TITLE, CONTENT, DATE_CREATED, WRITER, VIEWS, USER_UID, BOARD_UID, FAQ_TYPE_UID, EVENT_DATE_UID) 
+VALUES
+('EVT_20230216_1','김석진 데이터베이스 6행시 성공 기념 이벤트','이번 이벤트는 로지텍 마우스 추첨행사입니다',sysdate(),'관리자',123,'admin1','BOARD_EVENT',NULL,'EVT_DATE_20230216_1'),
+('EVT_20230216_2','김석진 로지텍 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'admin1','BOARD_EVENT',NULL,'EVT_DATE_20230216_2'),
+('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.',sysdate(),'관리자',15,'admin1','BOARD_NOTICE',NULL,NULL),
+('NOT_20230216_2','배송비 인상 안내','2023년 3월부터 배송비가 인상됩니다.',sysdate(),'관리자',76,'admin1','BOARD_NOTICE',NULL,NULL),
+('NOT_20230221_1','한파로 인한 배송지연 안내','최근 한파로 인해 도로사정이 좋지 않아 배송이 지연됩니다.',sysdate(),'관리자',9,'admin1','BOARD_NOTICE',NULL,NULL),
+('NOT_20230221_2','악성 사용자 제재','최근 DDOS등을 이용해 서버를 공격하는 악성사용자들을 제재할 예정입니다.',sysdate(),'관리자',31,'admin1','BOARD_NOTICE',NULL,NULL),
+('NOT_20230221_3','홀리몰리 포스트를 사랑해주시는 고객님들께','안녕하세요 고객님! 저희 홀리몰리 포스트를 이용해주셔서 감사드립니다..람쥐.',sysdate(),'관리자',571,'admin1','BOARD_NOTICE',NULL,NULL),
+('NOT_20230221_4','일부 지역 배송불가 안내','폭설로 인해 제주.산간 및 도서지역은 현재 배송이 불가능합니다.',sysdate(),'관리자',152,'admin1','BOARD_NOTICE',NULL,NULL),
+('FAQ_20230216_1','FAQ 접수문의1','내용부분',sysdate(),'천혜향',NULL,'user1','BOARD_FAQ','FAQ_REGISTER',NULL),
+('FAQ_20230216_2','FAQ 접수문의2','내용부분',sysdate(),'한라봉',NULL,'user2','BOARD_FAQ','FAQ_REGISTER',NULL),
+('FAQ_20230216_3','FAQ 배송문의1','내용부분',sysdate(),'천혜향',NULL,'user1','BOARD_FAQ','FAQ_SHIPPING',NULL),
+('FAQ_20230216_4','FAQ 배송문의2','내용부분',sysdate(),'한라봉',NULL,'user2','BOARD_FAQ','FAQ_SHIPPING',NULL),
+('FAQ_20230216_5','FAQ 지도문의1','내용부분',sysdate(),'천혜향',NULL,'user1','BOARD_FAQ','FAQ_MAP',NULL),
+('FAQ_20230216_6','FAQ 지도문의2','내용부분',sysdate(),'한라봉',NULL,'user2','BOARD_FAQ','FAQ_MAP',NULL),
+('FAQ_20230216_7','FAQ 사고문의1','내용부분',sysdate(),'천혜향',NULL,'user1','BOARD_FAQ','FAQ_ACCIDENT',NULL),
+('FAQ_20230216_8','FAQ 사고문의2','내용부분',sysdate(),'한라봉',NULL,'user2','BOARD_FAQ','FAQ_ACCIDENT',NULL)
+;
 
 INSERT INTO ATTACHED_FILES
 (FILE_UID, ORIGINALFILE_NAME, FILE_FOLDER_NAME, COMMONBOARD_UID)

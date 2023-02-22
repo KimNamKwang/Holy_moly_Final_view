@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -195,
-    "scrollLeft": -94,
+    "scrollTop": -435,
+    "scrollLeft": -179,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -118,9 +118,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 669.4448,
-          "top": 85.5262,
-          "zIndex": 22,
+          "left": 568.3348,
+          "top": 246.6374,
+          "zIndex": 86,
           "widthName": 87.9599609375,
           "widthComment": 60
         },
@@ -1355,9 +1355,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1402.0481,
-          "top": 492.4041,
-          "zIndex": 13,
+          "left": 1414.7607421875,
+          "top": 495.7374,
+          "zIndex": 117,
           "widthName": 69.1708984375,
           "widthComment": 60
         },
@@ -1507,52 +1507,6 @@
             "id": "d69cad52-e422-4f35-8787-b3995bd302ed"
           },
           {
-            "name": "EVENT_START_DATE",
-            "comment": "이벤트 시작 일",
-            "dataType": "DATETIME",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 134.919921875,
-              "widthComment": 87.2236328125,
-              "widthDataType": 66.7587890625,
-              "widthDefault": 60
-            },
-            "id": "88ecc5e8-da7f-4216-830c-68bec101f510"
-          },
-          {
-            "name": "EVENT_END_DATE",
-            "comment": "이벤트 끝일",
-            "dataType": "DATETIME",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 120.955078125,
-              "widthComment": 70.61181640625,
-              "widthDataType": 66.7587890625,
-              "widthDefault": 60
-            },
-            "id": "1b7f334e-ce63-464e-819d-38664c805c40"
-          },
-          {
             "name": "USER_UID",
             "comment": "사용자 아이디",
             "dataType": "VARCHAR(100)",
@@ -1620,13 +1574,36 @@
               "widthDefault": 60
             },
             "id": "7b9a7327-6e2c-4a43-bd64-4f649ac97f07"
+          },
+          {
+            "name": "EVENT_DATE_UID",
+            "comment": "이벤트기간UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 115.89599609375,
+              "widthComment": 89.38818359375,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "98df26cd-fc99-41aa-90fe-d3b7d6ecb722"
           }
         ],
         "ui": {
           "active": false,
-          "left": 26.8894,
-          "top": 673.6946,
-          "zIndex": 19,
+          "left": 9.1118,
+          "top": 678.1389,
+          "zIndex": 160,
           "widthName": 116.1181640625,
           "widthComment": 70.61181640625
         },
@@ -1710,8 +1687,8 @@
         "ui": {
           "active": false,
           "left": 1448.01318359375,
-          "top": 66.5001,
-          "zIndex": 10,
+          "top": 9.834,
+          "zIndex": 119,
           "widthName": 119.025390625,
           "widthComment": 60
         },
@@ -1964,9 +1941,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1147.8887,
-          "top": 252.7513,
-          "zIndex": 21,
+          "left": 1123.4445,
+          "top": 156.0853,
+          "zIndex": 120,
           "widthName": 82.9072265625,
           "widthComment": 60
         },
@@ -2026,9 +2003,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 681.7782,
-          "top": 422.7774,
-          "zIndex": 3,
+          "left": 861.7787,
+          "top": 384.9996,
+          "zIndex": 122,
           "widthName": 73.5126953125,
           "widthComment": 60
         },
@@ -2304,9 +2281,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 654,
-          "top": 565,
-          "zIndex": 16,
+          "left": 753.9991,
+          "top": 701.6669,
+          "zIndex": 142,
           "widthName": 60,
           "widthComment": 60
         },
@@ -2520,14 +2497,122 @@
         ],
         "ui": {
           "active": false,
-          "left": 28.0834,
-          "top": 92.4722,
-          "zIndex": 20,
+          "left": 0,
+          "top": 163.5831,
+          "zIndex": 125,
           "widthName": 69.18994140625,
           "widthComment": 60
         },
         "visible": true,
         "id": "f0d37172-6e81-4cc0-8b42-a52c0aefce06"
+      },
+      {
+        "name": "EVENT_DATE_BOARD",
+        "comment": "",
+        "columns": [
+          {
+            "name": "EVENT_DATE_UID",
+            "comment": "이벤트기간UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 115.89599609375,
+              "widthComment": 89.38818359375,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "d73fddd2-085a-4ebf-8f4e-578752db29fc"
+          },
+          {
+            "name": "EVENT_START_DATE",
+            "comment": "이벤트시작일",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 134.919921875,
+              "widthComment": 80,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "9e0abc79-0a66-483e-97dc-4e5664c8c67d"
+          },
+          {
+            "name": "EVENT_END_DATE",
+            "comment": "이벤트끝일",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 120.955078125,
+              "widthComment": 67,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "6dac6725-14e1-4c7c-88f8-562393008f87"
+          },
+          {
+            "name": "BOARD_UID",
+            "comment": "게시판 타입UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 77.84814453125,
+              "widthComment": 93,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "a2045d9f-b257-4168-aa0c-b80069e95abf"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 567.9365,
+          "top": 548.288,
+          "zIndex": 154,
+          "widthName": 139.73779296875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "98482f55-5c04-40b1-a54d-1e37b64d95c6"
       }
     ],
     "indexes": []
@@ -2562,9 +2647,9 @@
         "value": "AUTH_UID는\nAUTH_U, AUTH_A로. AUTH는 ROLE_USER와 ROLE_ADMIN 두개로 구성할 예정",
         "ui": {
           "active": false,
-          "left": 772.5277777777774,
-          "top": 1500.222222222222,
-          "zIndex": 8,
+          "left": 793.6388888888889,
+          "top": 1479.1111111111118,
+          "zIndex": 114,
           "width": 135,
           "height": 100
         },
@@ -2586,9 +2671,9 @@
         "value": "UID는 PROG_STAT_WAIT,\nPROG_STAT_DONE\nTYPE은 IN_PROGRESS,\nCOMPLETION\n설명은 문의중, 답변완료",
         "ui": {
           "active": false,
-          "left": 1750,
-          "top": 1713.75,
-          "zIndex": 5,
+          "left": 1725.5555555555595,
+          "top": 1582.6388888888866,
+          "zIndex": 116,
           "width": 162,
           "height": 100
         },
@@ -2598,9 +2683,9 @@
         "value": "각 유저당 POINT_UID가 하나씩 존재하고 POINT는 없을 수도 있다. USER_UID로 찾아서 들어간다.",
         "ui": {
           "active": false,
-          "left": 988,
-          "top": 759,
-          "zIndex": 9,
+          "left": 1129.1111111111125,
+          "top": 587.8888888888881,
+          "zIndex": 132,
           "width": 150,
           "height": 100
         },
@@ -2619,8 +2704,8 @@
           "columnIds": [
             "a72a2fd3-30f8-4810-a59d-07b8feb6511f"
           ],
-          "x": 1548.357914453125,
-          "y": 1053.4041,
+          "x": 1561.070556640625,
+          "y": 1056.7374,
           "direction": "bottom"
         },
         "end": {
@@ -2706,8 +2791,8 @@
           "columnIds": [
             "d79ae6af-5be6-474d-b981-141ec6ef0ae0"
           ],
-          "x": 520.344478125,
-          "y": 820.9446,
+          "x": 502.566878125,
+          "y": 883.6389,
           "direction": "right"
         },
         "constraintName": "fk_users_to_common_board",
@@ -2723,8 +2808,8 @@
           "columnIds": [
             "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
           ],
-          "x": 669.4448,
-          "y": 183.40120000000002,
+          "x": 568.3348,
+          "y": 344.5124,
           "direction": "left"
         },
         "end": {
@@ -2732,8 +2817,8 @@
           "columnIds": [
             "f296b14c-6a9c-492e-8b5f-eeb0385783cf"
           ],
-          "x": 396.98070859375,
-          "y": 673.6946,
+          "x": 379.20310859375,
+          "y": 678.1389,
           "direction": "top"
         },
         "constraintName": "fk_main_to_common_board",
@@ -2828,7 +2913,7 @@
             "17526f87-5ce9-4c69-8adc-335e3a58e4d9"
           ],
           "x": 1724.006591796875,
-          "y": 197.0001,
+          "y": 140.334,
           "direction": "bottom"
         },
         "end": {
@@ -2836,8 +2921,8 @@
           "columnIds": [
             "e18d3b6e-9088-4321-9101-a278233586a7"
           ],
-          "x": 1840.977543359375,
-          "y": 492.4041,
+          "x": 1853.690185546875,
+          "y": 495.7374,
           "direction": "top"
         },
         "constraintName": "fk_manage_shipment_to_shipment",
@@ -2853,8 +2938,8 @@
           "columnIds": [
             "02064f1d-1b68-4cf5-a77e-bd5bb92c9e8a"
           ],
-          "x": 1188.25232109375,
-          "y": 477.7774,
+          "x": 1368.2528210937498,
+          "y": 439.9996,
           "direction": "right"
         },
         "end": {
@@ -2862,8 +2947,8 @@
           "columnIds": [
             "fd994e2a-4398-494d-9fe5-ab3cdb1075a5"
           ],
-          "x": 1402.0481,
-          "y": 772.9041,
+          "x": 1414.7607421875,
+          "y": 776.2374,
           "direction": "left"
         },
         "constraintName": "fk_requests_to_shipment",
@@ -2879,8 +2964,8 @@
           "columnIds": [
             "63e9341e-87d2-497b-94fa-575fe85843ae"
           ],
-          "x": 1660.1455359375,
-          "y": 318.0013,
+          "x": 1635.7013359375,
+          "y": 221.3353,
           "direction": "right"
         },
         "end": {
@@ -2888,8 +2973,8 @@
           "columnIds": [
             "e2223324-395e-4437-a784-14fa92bcad4e"
           ],
-          "x": 1548.357914453125,
-          "y": 492.4041,
+          "x": 1561.070556640625,
+          "y": 495.7374,
           "direction": "top"
         },
         "constraintName": "fk_item_types_to_shipment",
@@ -2966,8 +3051,8 @@
           "columnIds": [
             "7a9cd2ef-7622-4675-8136-556ab06e3668"
           ],
-          "x": 1840.977543359375,
-          "y": 1053.4041,
+          "x": 1853.690185546875,
+          "y": 1056.7374,
           "direction": "bottom"
         },
         "constraintName": "fk_progress_status_type_to_shipment",
@@ -2992,8 +3077,8 @@
           "columnIds": [
             "cb154677-c8e4-4489-bb52-d665eab4728b"
           ],
-          "x": 905.320068359375,
-          "y": 716,
+          "x": 1005.319168359375,
+          "y": 852.6669,
           "direction": "bottom"
         },
         "constraintName": "fk_users_to_point",
@@ -3009,8 +3094,8 @@
           "columnIds": [
             "a7e0917c-063d-4df5-9274-a662320c3d10"
           ],
-          "x": 273.6169390625,
-          "y": 968.1946,
+          "x": 255.8393390625,
+          "y": 952.1389,
           "direction": "bottom"
         },
         "end": {
@@ -3035,8 +3120,8 @@
           "columnIds": [
             "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
           ],
-          "x": 669.4448,
-          "y": 118.1512,
+          "x": 568.3348,
+          "y": 279.2624,
           "direction": "left"
         },
         "end": {
@@ -3044,8 +3129,8 @@
           "columnIds": [
             "567577ef-fcdb-416c-84bb-7bf04507bfa6"
           ],
-          "x": 548.29384921875,
-          "y": 167.9722,
+          "x": 520.21044921875,
+          "y": 239.0831,
           "direction": "right"
         },
         "constraintName": "fk_main_board_to_faq_type",
@@ -3061,8 +3146,8 @@
           "columnIds": [
             "a7d1217c-e9a5-42c1-9c17-c0268061b190"
           ],
-          "x": 288.188624609375,
-          "y": 243.4722,
+          "x": 260.105224609375,
+          "y": 314.5831,
           "direction": "bottom"
         },
         "end": {
@@ -3070,13 +3155,65 @@
           "columnIds": [
             "7b9a7327-6e2c-4a43-bd64-4f649ac97f07"
           ],
-          "x": 150.25316953125,
-          "y": 673.6946,
+          "x": 132.47556953125002,
+          "y": 678.1389,
           "direction": "top"
         },
         "constraintName": "fk_faq_type_to_common_board",
         "visible": true,
         "id": "8fd442b1-36bb-472a-926e-04671befe969"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "938cbe85-11f4-4fe6-b8b3-0b74ac52b3f7",
+          "columnIds": [
+            "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
+          ],
+          "x": 842.163657421875,
+          "y": 377.1374,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "98482f55-5c04-40b1-a54d-1e37b64d95c6",
+          "columnIds": [
+            "a2045d9f-b257-4168-aa0c-b80069e95abf"
+          ],
+          "x": 812.870826171875,
+          "y": 548.288,
+          "direction": "top"
+        },
+        "constraintName": "fk_main_board_to_event_date_board",
+        "visible": true,
+        "id": "9da8c9c5-54d1-439c-9f4d-0811b4aa4dfb"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Ring",
+        "start": {
+          "tableId": "98482f55-5c04-40b1-a54d-1e37b64d95c6",
+          "columnIds": [
+            "d73fddd2-085a-4ebf-8f4e-578752db29fc"
+          ],
+          "x": 567.9365,
+          "y": 623.788,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "8a70b7dc-2b81-45d3-bb0d-34eed851c404",
+          "columnIds": [
+            "98df26cd-fc99-41aa-90fe-d3b7d6ecb722"
+          ],
+          "x": 502.566878125,
+          "y": 746.6389,
+          "direction": "right"
+        },
+        "constraintName": "fk_event_date_board_to_common_board",
+        "visible": true,
+        "id": "81a928b1-77bc-43e5-bc55-1885fd03283e"
       }
     ]
   }
