@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -425,
-    "scrollLeft": -319,
+    "scrollTop": -169,
+    "scrollLeft": -113,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -118,9 +118,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 36.5276,
-          "top": 429.8324,
-          "zIndex": 18,
+          "left": 57.7776,
+          "top": 401.0824,
+          "zIndex": 90,
           "widthName": 87.9599609375,
           "widthComment": 60
         },
@@ -131,6 +131,29 @@
         "name": "MYPAGE",
         "comment": "마이페이지",
         "columns": [
+          {
+            "name": "MYPAGE_UID",
+            "comment": "마이페이지UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 86.27783203125,
+              "widthComment": 89.38818359375,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "4b8ea372-58fa-4224-a744-5982f04949f1"
+          },
           {
             "name": "TRACKING_NUMBER",
             "comment": "운송장번호",
@@ -203,9 +226,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1306.5829,
-          "top": 1181.4147,
-          "zIndex": 8,
+          "left": 1335.3329,
+          "top": 1185.1647,
+          "zIndex": 101,
           "widthName": 60,
           "widthComment": 67
         },
@@ -1580,7 +1603,7 @@
           "active": false,
           "left": 26.8894,
           "top": 673.6946,
-          "zIndex": 19,
+          "zIndex": 88,
           "widthName": 116.1181640625,
           "widthComment": 70.61181640625
         },
@@ -1918,9 +1941,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1038.722,
-          "top": 230.2513,
-          "zIndex": 14,
+          "left": 1101.222,
+          "top": 217.7513,
+          "zIndex": 67,
           "widthName": 82.9072265625,
           "widthComment": 60
         },
@@ -2374,6 +2397,114 @@
         },
         "visible": true,
         "id": "b35fade2-f070-4bf7-ab27-427115b94d70"
+      },
+      {
+        "name": "FAQ_TYPE",
+        "comment": "FAQ타입",
+        "columns": [
+          {
+            "name": "FAQ_TYPE_UID",
+            "comment": "FAQ타입UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.80810546875,
+              "widthComment": 76.39453125,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "a7d1217c-e9a5-42c1-9c17-c0268061b190"
+          },
+          {
+            "name": "FAQ_TYPE",
+            "comment": "FAQ타입",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.18994140625,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "a8737724-40b4-4f94-8844-cc45f192ffb1"
+          },
+          {
+            "name": "FAQ_TYPE_DESCRIPTION",
+            "comment": "FAQ타입설명",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 165.26171875,
+              "widthComment": 80.00634765625,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "1c36a643-3518-4955-9080-282295790fa5"
+          },
+          {
+            "name": "BOARD_UID",
+            "comment": "게시판 타입UID",
+            "dataType": "VARCHAR(100)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 77.84814453125,
+              "widthComment": 93,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "567577ef-fcdb-416c-84bb-7bf04507bfa6"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 9.75,
+          "top": 85.25,
+          "zIndex": 104,
+          "widthName": 69.18994140625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "f0d37172-6e81-4cc0-8b42-a52c0aefce06"
       }
     ],
     "indexes": []
@@ -2474,8 +2605,8 @@
           "columnIds": [
             "bf5f563d-2719-4a96-bc79-fc649e4e474f"
           ],
-          "x": 1545.7313375,
-          "y": 1181.4147,
+          "x": 1577.36952109375,
+          "y": 1185.1647,
           "direction": "top"
         },
         "constraintName": "fk_shipment_to_mypage",
@@ -2500,8 +2631,8 @@
           "columnIds": [
             "b9ff93a4-e3d4-48fe-9875-931078f9c389"
           ],
-          "x": 1306.5829,
-          "y": 1214.0397,
+          "x": 1335.3329,
+          "y": 1222.9147,
           "direction": "left"
         },
         "constraintName": "fk_users_to_mypage",
@@ -2569,8 +2700,8 @@
           "columnIds": [
             "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
           ],
-          "x": 310.356457421875,
-          "y": 560.3324,
+          "x": 331.606457421875,
+          "y": 531.5824,
           "direction": "bottom"
         },
         "end": {
@@ -2604,8 +2735,8 @@
           "columnIds": [
             "2130a284-ee44-48df-8e1d-12bd30103472"
           ],
-          "x": 1306.5829,
-          "y": 1279.2897,
+          "x": 1335.3329,
+          "y": 1298.4147,
           "direction": "left"
         },
         "constraintName": "fk_inquiry_list_to_mypage",
@@ -2725,8 +2856,8 @@
           "columnIds": [
             "63e9341e-87d2-497b-94fa-575fe85843ae"
           ],
-          "x": 1550.9788359375,
-          "y": 295.5013,
+          "x": 1613.4788359375,
+          "y": 283.0013,
           "direction": "right"
         },
         "end": {
@@ -2871,6 +3002,32 @@
         "constraintName": "fk_common_board_to_attached_files",
         "visible": true,
         "id": "17357c3d-cec4-441e-838b-67ea6660203c"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "938cbe85-11f4-4fe6-b8b3-0b74ac52b3f7",
+          "columnIds": [
+            "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
+          ],
+          "x": 331.606457421875,
+          "y": 401.0824,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "f0d37172-6e81-4cc0-8b42-a52c0aefce06",
+          "columnIds": [
+            "567577ef-fcdb-416c-84bb-7bf04507bfa6"
+          ],
+          "x": 269.855224609375,
+          "y": 236.25,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_main_board_to_faq_type",
+        "visible": true,
+        "id": "1782a1a2-474e-418c-a849-ba73212f432b"
       }
     ]
   }
