@@ -78,7 +78,6 @@ VALUES
 -- 총 합계는 db에서 나타내지 않고 나중에 sum해서 화면에서 보여주면 된다.
 ;
 
-
 INSERT INTO COMMON_BOARD 
 (COMMONBOARD_UID, TITLE, CONTENT, DATE_CREATED, WRITER, VIEWS, EVENT_START_DATE, EVENT_END_DATE,
  USER_UID, BOARD_UID) 
@@ -100,22 +99,23 @@ VALUES
 ('NOT_20230221_4','일부 지역 배송불가 안내','폭설로 인해 제주.산간 및 도서지역은 현재 배송이 불가능합니다.',sysdate(),'관리자',152,NULL,NULL,
 'admin1','BOARD_NOTICE'),
 ('FAQ_20230216_1','FAQ 접수문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
-'user1','BOARD_FAQ_REGISTER'),
+'user1','BOARD_FAQ'),
 ('FAQ_20230216_2','FAQ 접수문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
-'user2','BOARD_FAQ_REGISTER'),
+'user2','BOARD_FAQ'),
 ('FAQ_20230216_3','FAQ 배송문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
-'user1','BOARD_FAQ_SHIPPING'),
+'user1','BOARD_FAQ'),
 ('FAQ_20230216_4','FAQ 배송문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
-'user2','BOARD_FAQ_SHIPPING'),
+'user2','BOARD_FAQ'),
 ('FAQ_20230216_5','FAQ 지도문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
-'user1','BOARD_FAQ_MAP'),
+'user1','BOARD_FAQ'),
 ('FAQ_20230216_6','FAQ 지도문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
-'user2','BOARD_FAQ_MAP'),
+'user2','BOARD_FAQ'),
 ('FAQ_20230216_7','FAQ 사고문의1','내용부분',sysdate(),'천혜향',NULL,NULL,NULL,
-'user1','BOARD_FAQ_ACCIDENT'),
+'user1','BOARD_FAQ'),
 ('FAQ_20230216_8','FAQ 사고문의2','내용부분',sysdate(),'한라봉',NULL,NULL,NULL,
-'user2','BOARD_FAQ_ACCIDENT')
+'user2','BOARD_FAQ')
 ;
+
 
 INSERT INTO ATTACHED_FILES
 (FILE_UID, ORIGINALFILE_NAME, FILE_FOLDER_NAME, COMMONBOARD_UID)
@@ -213,9 +213,9 @@ VALUES
 '04334','경기도 이천시 이천로 54-3','가동 3층',NULL,180000,30000,8458,'2023-02-10', '2023-02-12','2023-02-15','SHIP_BULK','REQ_03','item_c_03','SHIP_PROG_STAT_COMP')
 ;
 
-
 INSERT INTO MYPAGE
-(TRACKING_NUMBER, USER_UID, INQUIRY_UID)
+(MYPAGE_UID, TRACKING_NUMBER, USER_UID, INQUIRY_UID)
 VALUES
-('TRK_20230217_1','user1','INQ_230217_1'),('TRK_20230217_2','user2',null)
+('MYPAGE_USER1','TRK_20230217_1','user1','INQ_230217_1'),
+('MYPAGE_USER2','TRK_20230217_2','user2',null)
 ;

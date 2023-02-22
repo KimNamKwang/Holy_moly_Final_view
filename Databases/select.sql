@@ -174,6 +174,14 @@ SELECT BIRTH_DATE, NAME, PHONE, ADDRESS, DETAILADDRESS, EXTRAADDRESS, E_MAIL, US
 FROM USERS
 WHERE USER_UID = 'user1' ;
 
+-- memberInquiry
+-- WHERE절 조건 부분 하드코딩. 실제로는 로그인 이후 SESSION이나 다른 부분에서 USER_UID 
+-- 가져와서 조건 부분에 넣는걸로.
+SELECT NAME, PHONE, E_MAIL
+FROM USERS
+WHERE USER_UID = 'user1' ;
+
+
 -- myinfo
 -- NAME, BIRTH_DATE, PASSWORD, PHONE, POSTALCODE, ADDRESS, DETAILADDRESS, EXTRAADDRESS
 -- 사용자 이름, 생년월일, 사용자 비밀번호, 전화번호, 우편번호, 주소, 상세주소, 주소참고사항
@@ -183,9 +191,10 @@ FROM USERS
 WHERE USER_UID = 'user3' ;
 
 -- myinfoPass
--- USER_UID
--- 하드코딩
-SELECT USER_UID
+-- USER_UID + 비밀번호 재확인을 편하게 하기 위해서 PASSWORD까지 추가. 혹시 보안에 문제되면
+-- 취소하고 DB값이랑 비교하는걸로..
+-- WHERE절 조건 하드코딩
+SELECT USER_UID, PASSWORD
 FROM USERS
 WHERE USER_UID = 'user1';
 
