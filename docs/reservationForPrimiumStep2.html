@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      th,
+      td {
+        padding-bottom: 2rem;
+      }
+      table {
+        width: 100%;
+      }
+      th {
+        color: lightgray;
+        font-size: 0.9rem;
+        width: 20%;
+      }
+
+      #infortable td {
+        width: 30%;
+      }
+
+      #moneycolor {
+        color: rgb(55, 210, 67);
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(246, 246, 245)">
+    <main
+      class="container"
+      style="font-family: 'Noto Sans KR', sans-serif; width: 45rem"
+    >
+      <!-- 제목 -->
+      <div class="fw-bold fs-4 text-center">프리미엄 홈택배 예약</div>
+      <!-- 결제 정보 -->
+      <div style="color: rgb(55, 210, 67)">
+        <div class="fs-5 fw-bold">결제정보</div>
+        <div><hr style="border: 1px solid; margin-top: 0.6rem" /></div>
+      </div>
+
+      <!-- 테이블 전체 박스 -->
+      <div style="background-color: white; border-radius: 10px" class="p-3">
+        <!-- table 발송인정보 -->
+        <div>
+          <div class="fw-bold">발송인정보</div>
+          <div>
+            <hr style="border: 0.1rem solid lightgray" />
+          </div>
+          <table id="infortable">
+            <tr>
+              <th>발송자</th>
+              <td>안지영</td>
+              <th>전화번호</th>
+              <td>010-6475-7182</td>
+            </tr>
+            <tr>
+              <th>주소</th>
+              <td colspan="3">[08745] 서울특별시 관악구 봉천로 473-13 202호</td>
+            </tr>
+            <tr>
+              <th>물품 전달방식</th>
+              <td colspan="3">부재중으로 현관문 앞에 두겠습니다.</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- table 수신인정보 -->
+        <div id="infortable">
+          <div class="fw-bold">발송인정보</div>
+          <div>
+            <hr style="border: 0.1rem solid lightgray" />
+          </div>
+          <table>
+            <tr>
+              <th>발송자</th>
+              <td>안지영</td>
+              <th>전화번호</th>
+              <td>010-6475-7182</td>
+            </tr>
+            <tr>
+              <th>주소</th>
+              <td colspan="3">
+                [09205] 경상북도 구미시 봉곡서로 82(세양청마루아파트) 1405호
+              </td>
+            </tr>
+            <tr>
+              <th>배송요청사항</th>
+              <td colspan="3">배송 시 경비실에 맡겨주세요</td>
+            </tr>
+            <tr>
+              <th>물품정보</th>
+              <td>의류</td>
+              <th>물품가액</th>
+              <td>120만원</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- 상품이용내역 -->
+        <div>
+          <div class="fw-bold">상품이용내역</div>
+          <div>
+            <hr style="border: 0.1rem solid lightgray" />
+          </div>
+          <table>
+            <tr>
+              <th>상품명</th>
+              <td>프리미엄택배(위탁배송:CJ대한통운)</td>
+            </tr>
+            <tr>
+              <th>방문희망일</th>
+              <td>2023년 2월 28일(15~17시 방문)</td>
+            </tr>
+            <tr>
+              <th>결제방식</th>
+              <td>선불</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- table 상품결제정보 -->
+        <div>
+          <div class="fw-bold">발송인정보</div>
+          <div>
+            <hr style="border: 0.1rem solid lightgray" />
+          </div>
+          <table id="infortable">
+            <tr>
+              <th>박스수량</th>
+              <td colspan="3">1개</td>
+            </tr>
+            <tr>
+              <th>기본운임<br />(타권)</th>
+              <td id="moneycolor">7,490원</td>
+              <th>도서지역<br />할증료</th>
+              <td id="moneycolor">0원</td>
+            </tr>
+            <tr>
+              <th>총 운임</th>
+              <td colspan="3" id="moneycolor">7,490원</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- 버튼 박스 -->
+      <div class="row">
+        <div class="col mt-3">
+          <a
+            href="./index.html"
+            class="btn btn-sm btn-secondary"
+            style="border-radius: 50px"
+            >BACK</a
+          >
+        </div>
+        <div class="col text-end mt-3">
+          <a
+            href="./index.html"
+            class="btn btn-lg text-light fw-bold"
+            style="background-color: rgb(55, 210, 67)"
+          >
+            >
+          </a>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
