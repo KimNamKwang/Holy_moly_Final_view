@@ -1,8 +1,0 @@
-INSERT INTO USERS 
-(USER_UID,NAME,PASSWORD,E_MAIL,POSTALCODE,ADDRESS,ADDRESSDETAIL,JOINDATE,PHONE,GRADE,USER_AUTH,POINT) 
-VALUES
-('user1','천혜향','pw123','abc@naver.com','389-150','테헤란로12길 11','101호',sysdate(),'01012345678','FAMILY','USER',2100),
-('user2','한라봉','pw234','aasc@daum.net','342-151','테헤란로10길 34','A동 301호',sysdate(),'01023456789','SILVER','USER',NULL)
-;
-
-select * from USERS;
