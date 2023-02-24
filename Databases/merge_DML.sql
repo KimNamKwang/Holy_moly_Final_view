@@ -9,10 +9,10 @@ VALUES
 INSERT INTO FAQ_TYPE 
 (FAQ_TYPE_UID, FAQ_TYPE, FAQ_TYPE_DESCRIPTION, BOARD_UID)
 VALUES
-('FAQ_REGISTER', 'REGISTER','접수문의', 'BOARD_FAQ'),
-('FAQ_SHIPPING','SHIPPING','배송문의','BOARD_FAQ'),
-('FAQ_MAP','MAP','지도문의','BOARD_FAQ'),
-('FAQ_ACCIDENT','ACCIDENT','사고문의','BOARD_FAQ')
+('FAQ_REGISTER', 'REGISTER','FAQ 접수문의', 'BOARD_FAQ'),
+('FAQ_SHIPPING','SHIPPING','FAQ 배송문의','BOARD_FAQ'),
+('FAQ_MAP','MAP','FAQ 지도문의','BOARD_FAQ'),
+('FAQ_ACCIDENT','ACCIDENT','FAQ 사고문의','BOARD_FAQ')
 ;
 
 INSERT INTO EVENT_DATE_BOARD 
@@ -126,43 +126,13 @@ VALUES
 ('Q_COMP_ELSE','COMPLAINORELSE','기타/서비스불만')
 ;
 
-INSERT INTO PROGRESS_STATUS_TYPE
-(PROGRESS_STATUS_UID,PROGRESS_STATUS_TYPE,PROGRESS_STATUS_DESCRIPTION)
-VALUES
-('INQ_PROG_STAT_WAIT','IN_PROGRESS','문의중'), 
-('INQ_PROG_STAT_DONE','COMPLETION','답변완료'),
-('SHIP_PROG_STAT_REGI','REGISTER','접수완료'),
-('SHIP_PROG_STAT_PICK','PIPCKUP','수거완료'),
-('SHIP_PROG_STAT_INPROG','IN PROGRESS','배송중'),
-('SHIP_PROG_STAT_COMP','COMPLETE','배송완료')
-;
-
-INSERT INTO INQUIRYS
-(INQUIRY_UID,INQUIRY_TITLE,INQUIRY_DATE,INQUIRY_CONTENT,INQUIRY_ANSWER,
-TRACKING_NUMBER_FOR_INQUIRY,USER_UID,INQUIRY_TYPE_UID,PROGRESS_STATUS_UID)
-VALUES
-('INQ_230217_1','배송문의드립니다',sysdate(),'어제 발송했는데 며칠이나 걸리는지 문의좀 드릴려고요','네 안녕하세요 고객님...',
-'TRK_20230217_1','user1','Q_SHIP','INQ_PROG_STAT_DONE'),
-('INQ_230217_2','설 명절선물 세트 판매 문의',sysdate(),'설 명절선물 세트 구매언제능한가요?',null,
-null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_WAIT'),
-('INQ_230217_3','등급문의드립니다',sysdate(),'월 결제 금액 얼마부터 PURPLE인가요?','네 고객님 저희 내부 규정상...',
-null,'user3','Q_GRADE','INQ_PROG_STAT_DONE'),
-('INQ_230217_4','파손보상문의',sysdate(),'물품이 파손되어서 보상처리 신청합니다',null,
-null,'user1','Q_COMPEN','INQ_PROG_STAT_WAIT'),
-('INQ_230217_5','어제 배송했는데요',sysdate(),'도착했다고 하는데 물건이 없는데요?','네 안녕하세요 고객님 저희가 배송기사측에',
-'TRK_20230217_2','user3','Q_SHIP','INQ_PROG_STAT_DONE'),
-('INQ_230217_6','개인정보사용처가 어떻게 되나요?',sysdate(),'제 개인정보 사용처가 알고 싶은데요','네 고객님 저희 홈페이지 메인에 이용약관을...',
-null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_DONE'),
-('INQ_230217_7','다음달 등급을 알 수 있을까요',sysdate(),'다음달 등급 미리 알 수 있나요?',null,
-null,'user2','Q_GRADE','INQ_PROG_STAT_WAIT')
-;
 
 INSERT INTO REQUESTS
 (REQUEST_UID, REQUEST_DESCRIPTION)
 VALUES
 ('REQ_01','기사님 방문 전 연락주세요'),('REQ_02','보낼 물품을 문 앞에 놓아 두겠습니다'),('REQ_03','보낼 물품을 경비실에 맡겨두겠습니다'),
-('REQ_04','파손에 주의해 주세요연락주세요'),('REQ_05','배송 시 경비실에 맡겨 주세요'),('REQ_06','배송 시 택배함에 넣어 주세요'),
-('REQ_07','배송 시 문앞에 놓아 주세요.')
+('REQ_04','파손에 주의해 주세요 연락주세요'),('REQ_05','배송 시 경비실에 맡겨 주세요'),('REQ_06','배송 시 택배함에 넣어 주세요'),
+('REQ_07','배송 시 문앞에 놓아 주세요'),('REQ_08','기사님께 직접 전달하겠습니다'),('REQ_09','무인택배함에 맡겨 놓겠습니다')
 ;
 
 INSERT INTO ITEM_TYPES
@@ -191,18 +161,58 @@ INSERT INTO SHIPMENT
 (TRACKING_NUMBER, NUMBER_OF_ITEMS, SENDER_NAME, SENDER_PHONE, DEPARTURE_POSTALCODE, DEPARTURE_ADDRESS,
 DEPARTURE_DETAILADDRESS, DEPARTURE_EXTRAADDRESS, RECIPIENT_NAME, RECIPIENT_PHONE, DESTINATION_POSTALCODE,
 DESTINATION_ADDRESS, DESTINATION_DETAILADDRESS, DESTINATION_EXTRAADDRESS, TOTAL_PRICE, ITEM_PRICE,
-SHIPMENT_PASSWORD, VISITING_DATE,     RESERVATION_DATE, SHIPMENT_COMPLETION_DATE,   SHIPMENT_TYPE_UID, REQUEST_UID, ITEM_TYPE_UID, PROGRESS_STATUS_UID)
+SHIPMENT_PASSWORD, VISITING_DATE, RESERVATION_DATE, SHIPMENT_TYPE_UID, REQUEST_UID, ITEM_TYPE_UID)
 
 VALUES
 ('TRK_20230217_1',2,'홍길동','01045671234','01623','서울시 강남구 테헤란로 14','103호',NULL,'이지금','01014235463',
-'02422','서울시 서초구 서초대로14','101동 304호','서초동',50000,25000,1234,'2023-02-19', sysdate(),'2023-02-22','SHIP_GEN','REQ_04','item_m_02','SHIP_PROG_STAT_COMP'),
+'02422','서울시 서초구 서초대로14','101동 304호','서초동',50000,25000,1234,'2023-02-19', sysdate(),'SHIP_GEN','REQ_04','item_m_02'),
 ('TRK_20230217_2',6,'하야시','01023245533','11920','서울시 강남구 봉은사로 10','307호',NULL,'서운령','01188882222',
-'21022','서울시 노원구 동일로 10','1층',NULL,180000,30000,2546,'2023-02-22', sysdate(),NULL,'SHIP_BULK','REQ_02','item_c_02','SHIP_PROG_STAT_INPROG'),
+'21022','서울시 노원구 동일로 10','1층',NULL,180000,30000,2546,'2023-02-22', sysdate(),'SHIP_BULK','REQ_02','item_c_02'),
 ('TRK_20230221_1',1,'왕지영','01185889955','01684','서울시 강남구 테헤란로 84','101호',NULL,'강백호','01023643789',
-'01134','서울시 노원구 동일로 23','옥상',NULL,100000,100000,2345,'2023-02-22', sysdate(),NULL,'SHIP_GEN','REQ_03','item_c_03','SHIP_PROG_STAT_INPROG'),
+'01134','서울시 노원구 동일로 23','옥상',NULL,100000,100000,2345,'2023-02-22', sysdate(),'SHIP_GEN','REQ_03','item_c_03'),
 ('TRK_20230221_2',6,'모코코','01099889955','01234','서울시 서초구 서초대로 3길','501동 301호',NULL,'권호성','01025323789',
-'04334','경기도 이천시 이천로 54-3','가동 3층',NULL,180000,30000,8458,'2023-02-10', '2023-02-12','2023-02-15','SHIP_BULK','REQ_03','item_c_03','SHIP_PROG_STAT_COMP')
+'04334','경기도 이천시 이천로 54-3','가동 3층',NULL,180000,30000,8458,'2023-02-10', '2023-02-12','SHIP_BULK','REQ_03','item_c_03')
 ;
+
+INSERT INTO PROGRESS_STATUS_TYPE
+(PROGRESS_STATUS_UID, PROGRESS_STATUS_TYPE, PROGRESS_STATUS_DESCRIPTION, PROGRESS_STATUS_TIME, TRACKING_NUMBER)
+VALUES
+('INQ_PROG_STAT_1','IN_PROGRESS','문의중',null,null), 
+('INQ_PROG_STAT_2','COMPLETION','답변완료',null,null),
+('INQ_PROG_STAT_3','COMPLETION','답변완료',null,null),
+('INQ_PROG_STAT_4','COMPLETION','답변완료',null,null),
+('INQ_PROG_STAT_5','IN_PROGRESS','문의중',null,null), 
+('SHIP_PROG_STAT_1','REGISTER','접수완료',sysdate(),'TRK_20230221_2'),
+('SHIP_PROG_STAT_2','PIPCKUP','수거완료',sysdate(),'TRK_20230221_1'),
+('SHIP_PROG_STAT_3','IN PROGRESS','배송중',sysdate(),'TRK_20230217_2'),
+('SHIP_PROG_STAT_4','COMPLETE','접수완료',sysdate(),'TRK_20230217_1'),
+('SHIP_PROG_STAT_5','COMPLETE','수거완료',sysdate(),'TRK_20230217_1'),
+('SHIP_PROG_STAT_6','COMPLETE','배송중',sysdate(),'TRK_20230217_1'),
+('SHIP_PROG_STAT_7','COMPLETE','배송완료',sysdate(),'TRK_20230217_1')
+;
+
+
+INSERT INTO INQUIRYS
+(INQUIRY_UID,INQUIRY_TITLE,INQUIRY_DATE,INQUIRY_CONTENT,INQUIRY_ANSWER,
+TRACKING_NUMBER_FOR_INQUIRY,USER_UID,INQUIRY_TYPE_UID,PROGRESS_STATUS_UID)
+VALUES
+('INQ_230217_1','배송문의드립니다',sysdate(),'어제 발송했는데 며칠이나 걸리는지 문의좀 드릴려고요','네 안녕하세요 고객님...',
+'TRK_20230217_1','user1','Q_SHIP','SHIP_PROG_STAT_7'),
+('INQ_230217_2','설 명절선물 세트 판매 문의',sysdate(),'설 명절선물 세트 구매언제능한가요?',null,
+null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_1'),
+('INQ_230217_3','등급문의드립니다',sysdate(),'월 결제 금액 얼마부터 PURPLE인가요?','네 고객님 저희 내부 규정상...',
+null,'user3','Q_GRADE','INQ_PROG_STAT_2'),
+('INQ_230217_4','파손보상문의',sysdate(),'물품이 파손되어서 보상처리 신청합니다',null,
+null,'user1','Q_COMPEN','INQ_PROG_STAT_3'),
+('INQ_230217_5','어제 배송했는데요',sysdate(),'도착했다고 안 뜨는데 물건이 도착한거 같아요','네 안녕하세요 고객님 저희가 배송기사측에',
+'TRK_20230217_2','user3','Q_SHIP','SHIP_PROG_STAT_1'),
+('INQ_230217_6','개인정보사용처가 어떻게 되나요?',sysdate(),'제 개인정보 사용처가 알고 싶은데요','네 고객님 저희 홈페이지 메인에 이용약관을...',
+null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_4'),
+('INQ_230217_7','다음달 등급을 알 수 있을까요',sysdate(),'다음달 등급 미리 알 수 있나요?',null,
+null,'user2','Q_GRADE','INQ_PROG_STAT_5')
+;
+
+
 
 INSERT INTO MYPAGE
 (MYPAGE_UID, TRACKING_NUMBER, USER_UID, INQUIRY_UID)
@@ -210,3 +220,4 @@ VALUES
 ('MYPAGE_USER1','TRK_20230217_1','user1','INQ_230217_1'),
 ('MYPAGE_USER2','TRK_20230217_2','user2',null)
 ;
+
