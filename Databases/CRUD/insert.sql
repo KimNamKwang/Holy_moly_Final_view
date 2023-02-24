@@ -41,6 +41,7 @@ VALUES ('INQ_230222_1', '오늘 점심 메뉴는?', SYSDATE(), '배고픈데 오
 		'user6', 'Q_COMP_ELSE', 'INQ_PROG_STAT_WAIT');
 
 -- reservationForHome/Bulk 2에서 3으로 넘어갈 때 INSERT 되도록.
+-- reservationInfo 에서 reservationForPremiumStep2 로 넘어갈 때 INSERT
 -- 물품종류 select name은 ITEM_TYPE_UID, 요청사항 select name은 REQUEST_UID로 지정하고 각 option의 value에는 해당하는 UID값을 넣어야 함.
 -- SHIPMENT_TYPE_UID는 예약페이지로 들어가는 경로에 따라 값을 담아뒀다가 해당하는 경로에 대한 UID를 넣어 주어야 함.
 -- PROGRESS_STATUS_UID는 SHIP_PROG_STAT_REGI(접수완료)로 고정.
