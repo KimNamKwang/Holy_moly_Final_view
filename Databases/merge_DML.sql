@@ -151,7 +151,7 @@ VALUES
 ('item_b_04','book_prints','인쇄물'),('item_b_05','book_else','기타 서적류'),
 
 ('item_m_01','medicine','약품류'),('item_m_02','medicine_drugs','의약품'),('item_m_03','medicine_oriental','한약'),
-('item_m_04','medicine_healthSupplement','건강보조제품'),('item_m_05','food','농축산물류'),('item_m_06','food','농축산물류'),
+('item_m_04','medicine_healthSupplement','건강보조제품'),
 
 ('item_c_01','clothing','의류/잡화'),('item_c_02','clothing_clothes','의류'),('item_c_03','clothing_shoes','신발'),
 ('item_c_04','clothing_bagAndWallets','가방/지갑'),('item_c_05','clothing_accessories','액세서리')

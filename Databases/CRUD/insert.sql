@@ -27,7 +27,7 @@ VALUES ('user20', '최자두', 'jaja123', 'jadu@daum.com', '1999-12-03', '29105'
 -- GRADE_UID, AUTH_UID는 하드코딩으로 'GRADE_F', 'AUTH_U'로 고정.
 INSERT INTO USERS (USER_UID, NAME, PASSWORD, E_MAIL, BIRTH_DATE, POSTALCODE, ADDRESS, DETAILADDRESS,
 			EXTRAADDRESS, JOINDATE, PHONE, MARKETING_RECEIVE_ACCEPTION, GRADE_UID, AUTH_UID) 
-VALUES ('use15', '강성석', 'qwezxc12	', 'sung@daum.com', '2002-05-27', '31942', '부산시 해운대로 13', '2층', 
+VALUES ('use15', '강성석', 'qwezxc12', 'sung@daum.com', '2002-05-27', '31942', '부산시 해운대로 13', '2층', 
 		'해운대동', SYSDATE(), '01027273838', 'N', 'GRADE_F', 'AUTH_U');
 
 -- memberInquiry
