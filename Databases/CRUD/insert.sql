@@ -6,7 +6,7 @@
 INSERT INTO COMMON_BOARD (COMMONBOARD_UID, TITLE, CONTENT, DATE_CREATED, WRITER, VIEWS, USER_UID,
 		BOARD_UID, FAQ_TYPE_UID)
 VALUES ('BOARD23', '커미가 너무 써요', '강사님... 제가 아직 애기인가봐요', SYSDATE(), '관리자', 0, 'admin1',
-		'BOARD_FAQ', 'FAQ_SHIPPING');
+		'BOARD_FAQ', 'FAQ_SHIPPING'); 
 
 -- adminBoardCreate 이벤트 기간
 -- COMMONBOARD_UID에는 위 INSERT COMMON_BOARD 문의 COMMONBOARD_UID가 들어가야 함. function으로 생성된 COMMONBOARD_UID를 넣으면 됨.
