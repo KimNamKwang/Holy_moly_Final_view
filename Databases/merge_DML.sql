@@ -66,6 +66,10 @@ NULL,'GRADE_PU','AUTH_U'),
 NULL,'GRADE_PL','AUTH_A')
 ;
 
+
+
+
+
 INSERT INTO POINT
 (POINT_UID, POINT_CHANGE_VALUE, POINT_CHANGE_DATE, USER_UID)
 VALUES
@@ -80,39 +84,39 @@ VALUES
 
 
 INSERT INTO COMMON_BOARD 
-(COMMONBOARD_UID, TITLE, CONTENT, DATE_CREATED, WRITER, VIEWS, USER_UID, BOARD_UID, FAQ_TYPE_UID) 
+(COMMONBOARD_UID, TITLE, CONTENT, DATE_CREATED, WRITER, VIEWS, REPLY_FOR_FAQ, USER_UID, BOARD_UID, FAQ_TYPE_UID) 
 VALUES
-('EVT_20230216_1','김석진 데이터베이스 6행시 성공 기념 이벤트','이번 이벤트는 로지텍 마우스 추첨행사입니다',sysdate(),'관리자',123,'admin1','BOARD_EVENT',NULL),
-('EVT_20230216_2','김석진 로지텍 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'admin1','BOARD_EVENT',NULL),
-('EVT_20230216_3','왕석진 로지착 청설모 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'admin1','BOARD_EVENT',NULL),
-('EVT_20230216_4','진석기 햄스터 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'admin1','BOARD_EVENT',NULL),
-('EVT_20230216_5','김진영 참외 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'admin1','BOARD_EVENT',NULL),
-('EVT_20230216_6','김준진 수박 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,'admin1','BOARD_EVENT',NULL),
-('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.',sysdate(),'관리자',15,'admin1','BOARD_NOTICE',NULL),
-('NOT_20230216_2','배송비 인상 안내','2023년 3월부터 배송비가 인상됩니다.',sysdate(),'관리자',76,'admin1','BOARD_NOTICE',NULL),
-('NOT_20230221_1','한파로 인한 배송지연 안내','최근 한파로 인해 도로사정이 좋지 않아 배송이 지연됩니다.',sysdate(),'관리자',9,'admin1','BOARD_NOTICE',NULL),
-('NOT_20230221_2','악성 사용자 제재','최근 DDOS등을 이용해 서버를 공격하는 악성사용자들을 제재할 예정입니다.',sysdate(),'관리자',31,'admin1','BOARD_NOTICE',NULL),
-('NOT_20230221_3','홀리몰리 포스트를 사랑해주시는 고객님들께','안녕하세요 고객님! 저희 홀리몰리 포스트를 이용해주셔서 감사드립니다..람쥐.',sysdate(),'관리자',571,'admin1','BOARD_NOTICE',NULL),
-('NOT_20230221_4','일부 지역 배송불가 안내','폭설로 인해 제주.산간 및 도서지역은 현재 배송이 불가능합니다.',sysdate(),'관리자',152,'admin1','BOARD_NOTICE',NULL),
-('FAQ_20230216_1','FAQ 접수문의1','내용부분',sysdate(),'천혜향',NULL,'user1','BOARD_FAQ','FAQ_REGISTER'),
-('FAQ_20230216_2','FAQ 접수문의2','내용부분',sysdate(),'한라봉',NULL,'user2','BOARD_FAQ','FAQ_REGISTER'),
-('FAQ_20230216_3','FAQ 배송문의1','내용부분',sysdate(),'천혜향',NULL,'user1','BOARD_FAQ','FAQ_SHIPPING'),
-('FAQ_20230216_4','FAQ 배송문의2','내용부분',sysdate(),'한라봉',NULL,'user2','BOARD_FAQ','FAQ_SHIPPING'),
-('FAQ_20230216_5','FAQ 지도문의1','내용부분',sysdate(),'천혜향',NULL,'user1','BOARD_FAQ','FAQ_MAP'),
-('FAQ_20230216_6','FAQ 지도문의2','내용부분',sysdate(),'한라봉',NULL,'user2','BOARD_FAQ','FAQ_MAP'),
-('FAQ_20230216_7','FAQ 사고문의1','내용부분',sysdate(),'천혜향',NULL,'user1','BOARD_FAQ','FAQ_ACCIDENT'),
-('FAQ_20230216_8','FAQ 사고문의2','내용부분',sysdate(),'한라봉',NULL,'user2','BOARD_FAQ','FAQ_ACCIDENT')
+('EVT_20230216_1','김석진 데이터베이스 6행시 성공 기념 이벤트','이번 이벤트는 로지텍 마우스 추첨행사입니다',sysdate(),'관리자',123,NULL,'admin1','BOARD_EVENT',NULL),
+('EVT_20230216_2','김석진 로지텍 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,NULL,'admin1','BOARD_EVENT',NULL),
+('EVT_20230216_3','왕석진 로지착 청설모 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,NULL,'admin1','BOARD_EVENT',NULL),
+('EVT_20230216_4','진석기 햄스터 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,NULL,'admin1','BOARD_EVENT',NULL),
+('EVT_20230216_5','김진영 참외 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,NULL,'admin1','BOARD_EVENT',NULL),
+('EVT_20230216_6','김준진 수박 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.',sysdate(),'관리자',100,NULL,'admin1','BOARD_EVENT',NULL),
+('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.',sysdate(),'관리자',15,NULL,'admin1','BOARD_NOTICE',NULL),
+('NOT_20230216_2','배송비 인상 안내','2023년 3월부터 배송비가 인상됩니다.',sysdate(),'관리자',76,NULL,'admin1','BOARD_NOTICE',NULL),
+('NOT_20230221_1','한파로 인한 배송지연 안내','최근 한파로 인해 도로사정이 좋지 않아 배송이 지연됩니다.',sysdate(),'관리자',9,NULL,'admin1','BOARD_NOTICE',NULL),
+('NOT_20230221_2','악성 사용자 제재','최근 DDOS등을 이용해 서버를 공격하는 악성사용자들을 제재할 예정입니다.',sysdate(),'관리자',31,NULL,'admin1','BOARD_NOTICE',NULL),
+('NOT_20230221_3','홀리몰리 포스트를 사랑해주시는 고객님들께','안녕하세요 고객님! 저희 홀리몰리 포스트를 이용해주셔서 감사드립니다..람쥐.',sysdate(),'관리자',571,NULL,'admin1','BOARD_NOTICE',NULL),
+('NOT_20230221_4','일부 지역 배송불가 안내','폭설로 인해 제주.산간 및 도서지역은 현재 배송이 불가능합니다.',sysdate(),'관리자',152,NULL,'admin1','BOARD_NOTICE',NULL),
+('FAQ_20230216_1','어제 배송했는데 언제 도착할까요?','어제 발송했습니다','2023-01-05','천혜향',NULL,'네 고객님 보통 평일 오후 5시 이전에 발송하신 물건은..','user1','BOARD_FAQ','FAQ_REGISTER'),
+('FAQ_20230216_2','접수를 취소하고 싶어요','접수를 취소하고 싶은데 어디서 해야하나요','2023-02-11','한라봉',NULL,'저희 예약 접수 화면을 보시면 예약확인 및 취소란이 있습니다.','user2','BOARD_FAQ','FAQ_REGISTER'),
+('FAQ_20230216_3','FAQ 배송문의1','내용부분',sysdate(),'천혜향',NULL,'답변입니다','user1','BOARD_FAQ','FAQ_SHIPPING'),
+('FAQ_20230216_4','FAQ 배송문의2','내용부분',sysdate(),'한라봉',NULL,'답변란','user2','BOARD_FAQ','FAQ_SHIPPING'),
+('FAQ_20230216_5','FAQ 지도문의1','내용부분',sysdate(),'천혜향',NULL,'답변란입니다','user1','BOARD_FAQ','FAQ_MAP'),
+('FAQ_20230216_6','FAQ 지도문의2','내용부분',sysdate(),'한라봉',NULL,'답변입니다','user2','BOARD_FAQ','FAQ_MAP'),
+('FAQ_20230216_7','물품이 파손되었을때는 어떻게 하나요','배송을 받아보니 물건이 파손되어있습니다.',sysdate(),'천혜향',NULL,'물품이 파손되었을시에는 먼저 저희 고객센터 1577-1122로 전화 혹은..','user1','BOARD_FAQ','FAQ_ACCIDENT'),
+('FAQ_20230216_8','FAQ 사고문의2','내용부분',sysdate(),'한라봉',NULL,'답변입니다','user2','BOARD_FAQ','FAQ_ACCIDENT')
 ;
 
 INSERT INTO EVENT_DATE_BOARD 
-(EVENT_DATE_UID, EVENT_START_DATE, EVENT_END_DATE, COMMONBOARD_UID)
+(EVENT_DATE_UID, EVENT_START_DATE, EVENT_END_DATE, BOARD_UID)
 VALUES
-('EVT_DATE_20230216_1', '2023-02-22','2023-03-01', 'EVT_20230216_1'),
-('EVT_DATE_20230216_2', '2023-02-23','2023-03-02', 'EVT_20230216_2'),
-('EVT_DATE_20230218_1', '2023-02-23','2023-03-10', 'EVT_20230216_3'),
-('EVT_DATE_20230218_2', '2023-02-26','2023-04-01', 'EVT_20230216_4'),
-('EVT_DATE_20230220_1', '2023-02-27','2023-04-15', 'EVT_20230216_5'),
-('EVT_DATE_20230220_2', '2023-02-27','2023-04-15', 'EVT_20230216_6')
+('EVT_DATE_20230216_1', '2023-02-22','2023-03-01', 'BOARD_EVENT'),
+('EVT_DATE_20230216_2', '2023-02-23','2023-03-02', 'BOARD_EVENT'),
+('EVT_DATE_20230218_1', '2023-02-23','2023-03-10', 'BOARD_EVENT'),
+('EVT_DATE_20230218_2', '2023-02-26','2023-04-01', 'BOARD_EVENT'),
+('EVT_DATE_20230220_1', '2023-02-27','2023-04-15', 'BOARD_EVENT'),
+('EVT_DATE_20230220_2', '2023-02-27','2023-04-15', 'BOARD_EVENT')
 ;
 
 INSERT INTO ATTACHED_FILES
@@ -152,7 +156,7 @@ VALUES
 ('item_b_04','book_prints','인쇄물'),('item_b_05','book_else','기타 서적류'),
 
 ('item_m_01','medicine','약품류'),('item_m_02','medicine_drugs','의약품'),('item_m_03','medicine_oriental','한약'),
-('item_m_04','medicine_healthSupplement','건강보조제품'),
+('item_m_04','medicine_healthSupplement','건강보조제품'),('item_m_05','food','농축산물류'),('item_m_06','food','농축산물류'),
 
 ('item_c_01','clothing','의류/잡화'),('item_c_02','clothing_clothes','의류'),('item_c_03','clothing_shoes','신발'),
 ('item_c_04','clothing_bagAndWallets','가방/지갑'),('item_c_05','clothing_accessories','액세서리')
@@ -231,11 +235,11 @@ null,'user2','Q_GRADE','INQ_PROG_STAT_5')
 ;
 
 
-
 INSERT INTO MYPAGE
 (MYPAGE_UID, TRACKING_NUMBER, USER_UID, INQUIRY_UID)
 VALUES
 ('MYPAGE_USER1','TRK_20230217_1','user1','INQ_230217_1'),
 ('MYPAGE_USER2','TRK_20230217_2','user2',null)
 ;
+
 
