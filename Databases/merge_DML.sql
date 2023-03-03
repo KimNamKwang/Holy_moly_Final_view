@@ -192,11 +192,8 @@ VALUES
 INSERT INTO PROGRESS_STATUS_TYPE
 (PROGRESS_STATUS_UID, PROGRESS_STATUS_TYPE, PROGRESS_STATUS_DESCRIPTION, PROGRESS_STATUS_TIME, TRACKING_NUMBER)
 VALUES
-('INQ_PROG_STAT_1','IN_PROGRESS','문의중',null,null), 
-('INQ_PROG_STAT_2','COMPLETION','답변완료',null,null),
-('INQ_PROG_STAT_3','COMPLETION','답변완료',null,null),
-('INQ_PROG_STAT_4','COMPLETION','답변완료',null,null),
-('INQ_PROG_STAT_5','IN_PROGRESS','문의중',null,null), 
+('INQ_PROG_STAT_IN','IN_PROGRESS','문의중',null,null), 
+('INQ_PROG_STAT_DONE','COMPLETION','답변완료',null,null),
 ('SHIP_PROG_STAT_1','REGISTER','접수완료',sysdate(),'TRK_20230221_2'),
 ('SHIP_PROG_STAT_2','PIPCKUP','수거완료',sysdate(),'TRK_20230221_1'),
 ('SHIP_PROG_STAT_3','IN_PROGRESS','배송중',sysdate(),'TRK_20230217_2'),
@@ -219,19 +216,19 @@ INSERT INTO INQUIRYS
 TRACKING_NUMBER_FOR_INQUIRY,USER_UID,INQUIRY_TYPE_UID,PROGRESS_STATUS_UID)
 VALUES
 ('INQ_230217_1','배송문의드립니다',sysdate(),'어제 발송했는데 며칠이나 걸리는지 문의좀 드릴려고요','네 안녕하세요 고객님...',
-'TRK_20230217_1','user1','Q_SHIP','SHIP_PROG_STAT_7'),
+'TRK_20230217_1','user1','Q_SHIP','INQ_PROG_STAT_DONE'),
 ('INQ_230217_2','설 명절선물 세트 판매 문의',sysdate(),'설 명절선물 세트 구매언제능한가요?',null,
-null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_1'),
+null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_DONE'),
 ('INQ_230217_3','등급문의드립니다',sysdate(),'월 결제 금액 얼마부터 PURPLE인가요?','네 고객님 저희 내부 규정상...',
-null,'user3','Q_GRADE','INQ_PROG_STAT_2'),
+null,'user3','Q_GRADE','INQ_PROG_STAT_DONE'),
 ('INQ_230217_4','파손보상문의',sysdate(),'물품이 파손되어서 보상처리 신청합니다',null,
-null,'user1','Q_COMPEN','INQ_PROG_STAT_3'),
+null,'user1','Q_COMPEN','INQ_PROG_STAT_IN'),
 ('INQ_230217_5','어제 배송했는데요',sysdate(),'도착했다고 안 뜨는데 물건이 도착한거 같아요','네 안녕하세요 고객님 저희가 배송기사측에',
-'TRK_20230217_2','user3','Q_SHIP','SHIP_PROG_STAT_1'),
+'TRK_20230217_2','user3','Q_SHIP','INQ_PROG_STAT_DONE'),
 ('INQ_230217_6','개인정보사용처가 어떻게 되나요?',sysdate(),'제 개인정보 사용처가 알고 싶은데요','네 고객님 저희 홈페이지 메인에 이용약관을...',
-null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_4'),
+null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_DONE'),
 ('INQ_230217_7','다음달 등급을 알 수 있을까요',sysdate(),'다음달 등급 미리 알 수 있나요?',null,
-null,'user2','Q_GRADE','INQ_PROG_STAT_5')
+null,'user2','Q_GRADE','INQ_PROG_STAT_IN')
 ;
 
 
@@ -241,5 +238,3 @@ VALUES
 ('MYPAGE_USER1','TRK_20230217_1','user1','INQ_230217_1'),
 ('MYPAGE_USER2','TRK_20230217_2','user2',null)
 ;
-
-
