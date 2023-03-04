@@ -228,7 +228,17 @@ null,'user1','Q_COMPEN','INQ_PROG_STAT_IN'),
 ('INQ_230217_6','개인정보사용처가 어떻게 되나요?',sysdate(),'제 개인정보 사용처가 알고 싶은데요','네 고객님 저희 홈페이지 메인에 이용약관을...',
 null,'user2','Q_COMP_ELSE','INQ_PROG_STAT_DONE'),
 ('INQ_230217_7','다음달 등급을 알 수 있을까요',sysdate(),'다음달 등급 미리 알 수 있나요?',null,
-null,'user2','Q_GRADE','INQ_PROG_STAT_IN')
+null,'user2','Q_GRADE','INQ_PROG_STAT_IN'),
+('INQ_230217_8','등급질문','2023-01-24','등급별로 할인 되는 금액이 얼만가요','네 고객님 저희 홈페이지에서 등급별 혜택 메뉴를 보시면 보다 더 자세하게 확인가능합니다',
+null,'user4','Q_GRADE','INQ_PROG_STAT_DONE'),
+('INQ_230217_9','물품이 파손된것 같아요',sysdate(),'배송받은분이 물건이 파손된것 같다고 연락이 왔는데 어떻게 하나요',null,
+null,'user5','Q_COMPEN','INQ_PROG_STAT_IN'),
+('INQ_230217_10','배송기사님 지정도 될까요?',sysdate(),'배송기사님을 지정할 수 있을까요? 저희 기산미이 친절하셔서요','네 고객님 현재 각 지역당 배송기사님이 지정되어있습니다.',
+null,'user6','Q_SHIP','INQ_PROG_STAT_DONE'),
+('INQ_230217_11','제주도 배송지연 언제까지 될까요?',sysdate(),'그리고 배송이 지연되는 만큼 피해보상도 가능한가요?',null,
+null,'user7','Q_COMP_ELSE','INQ_PROG_STAT_IN'),
+('INQ_230217_12','이벤트 문의',sysdate(),'이벤트에 당첨됬는데 따로 문자가 안 와서요',null,
+null,'user8','Q_COMP_ELSE','INQ_PROG_STAT_IN')
 ;
 
 
