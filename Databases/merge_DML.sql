@@ -107,7 +107,6 @@ VALUES
 ('FAQ_20230216_6','FAQ 지도문의2','내용부분',sysdate(),'한라봉',NULL,'답변입니다','user2','BOARD_FAQ','FAQ_MAP'),
 ('FAQ_20230216_7','물품이 파손되었을때는 어떻게 하나요','배송을 받아보니 물건이 파손되어있습니다.',sysdate(),'천혜향',NULL,'물품이 파손되었을시에는 먼저 저희 고객센터 1577-1122로 전화 혹은..','user1','BOARD_FAQ','FAQ_ACCIDENT'),
 ('FAQ_20230216_8','FAQ 사고문의2','내용부분',sysdate(),'한라봉',NULL,'답변입니다','user2','BOARD_FAQ','FAQ_ACCIDENT')
-('FAQ_20230305_1','위치를 못 찾겠어요','접수를 취소하고 싶은데 어디서 해야하나요','2023-03-05','왕지영',NULL,'저희 예약 접수 화면을 보시면 예약확인 및 취소란이 있습니다.','user12','BOARD_FAQ','FAQ_REGISTER')
 ;
 
 INSERT INTO EVENT_DATE_BOARD 
