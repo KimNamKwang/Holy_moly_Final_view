@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -1154,
-    "scrollLeft": -868,
+    "scrollTop": -288,
+    "scrollLeft": -131,
     "zoomLevel": 0.8,
     "show": {
       "tableComment": true,
@@ -120,7 +120,7 @@
           "active": false,
           "left": 577.0848,
           "top": 245.3874,
-          "zIndex": 21,
+          "zIndex": 19,
           "widthName": 87.9599609375,
           "widthComment": 60
         },
@@ -451,7 +451,7 @@
           "active": false,
           "left": 830.5937,
           "top": 1719.0053,
-          "zIndex": 13,
+          "zIndex": 12,
           "widthName": 64.60693359375,
           "widthComment": 75.68359375
         },
@@ -789,7 +789,7 @@
           "active": false,
           "left": 624.2219,
           "top": 906.5285,
-          "zIndex": 17,
+          "zIndex": 16,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1311,7 +1311,7 @@
           "active": false,
           "left": 1414.7607421875,
           "top": 495.7374,
-          "zIndex": 19,
+          "zIndex": 17,
           "widthName": 69.1708984375,
           "widthComment": 60
         },
@@ -1550,37 +1550,14 @@
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             },
-            "id": "7b9a7327-6e2c-4a43-bd64-4f649ac97f07"
-          },
-          {
-            "name": "EVENT_DATE_UID",
-            "comment": "이벤트기간UID",
-            "dataType": "VARCHAR(100)",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": false
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": true,
-              "pfk": false,
-              "widthName": 115.89599609375,
-              "widthComment": 89.38818359375,
-              "widthDataType": 94.94873046875,
-              "widthDefault": 60
-            },
-            "id": "98df26cd-fc99-41aa-90fe-d3b7d6ecb722"
+            "id": "98f4d0cb-8c4b-4710-8614-ecec9f587846"
           }
         ],
         "ui": {
           "active": false,
           "left": 7.8618,
           "top": 649.3889,
-          "zIndex": 22,
+          "zIndex": 23,
           "widthName": 116.1181640625,
           "widthComment": 70.61181640625
         },
@@ -1665,7 +1642,7 @@
           "active": false,
           "left": 1448.01318359375,
           "top": 9.834,
-          "zIndex": 14,
+          "zIndex": 13,
           "widthName": 119.025390625,
           "widthComment": 60
         },
@@ -1727,7 +1704,7 @@
           "active": false,
           "left": 56.9167,
           "top": 1349.8054,
-          "zIndex": 20,
+          "zIndex": 18,
           "widthName": 100.2490234375,
           "widthComment": 70.61181640625
         },
@@ -1959,7 +1936,7 @@
           "active": false,
           "left": 861.7787,
           "top": 384.9996,
-          "zIndex": 15,
+          "zIndex": 14,
           "widthName": 73.5126953125,
           "widthComment": 60
         },
@@ -2175,7 +2152,7 @@
           "active": false,
           "left": 1422.824,
           "top": 1464.75,
-          "zIndex": 27,
+          "zIndex": 20,
           "widthName": 173.4501953125,
           "widthComment": 80
         },
@@ -2282,8 +2259,8 @@
         "ui": {
           "active": false,
           "left": 753.9991,
-          "top": 701.6669,
-          "zIndex": 11,
+          "top": 702.9169,
+          "zIndex": 24,
           "widthName": 60,
           "widthComment": 60
         },
@@ -2498,8 +2475,8 @@
         "ui": {
           "active": false,
           "left": 0,
-          "top": 137.3331,
-          "zIndex": 23,
+          "top": 138.5831,
+          "zIndex": 22,
           "widthName": 69.18994140625,
           "widthComment": 60
         },
@@ -2580,8 +2557,8 @@
             "id": "6dac6725-14e1-4c7c-88f8-562393008f87"
           },
           {
-            "name": "BOARD_UID",
-            "comment": "게시판 타입UID",
+            "name": "COMMONBOARD_UID",
+            "comment": "게시글 UID",
             "dataType": "VARCHAR(100)",
             "default": "",
             "option": {
@@ -2595,19 +2572,19 @@
               "pk": false,
               "fk": true,
               "pfk": false,
-              "widthName": 77.84814453125,
-              "widthComment": 93,
+              "widthName": 138.50634765625,
+              "widthComment": 67,
               "widthDataType": 94.94873046875,
               "widthDefault": 60
             },
-            "id": "a2045d9f-b257-4168-aa0c-b80069e95abf"
+            "id": "84c42be4-2b5c-4daf-a26a-ec79234d1d1a"
           }
         ],
         "ui": {
           "active": false,
           "left": 567.9365,
           "top": 548.288,
-          "zIndex": 12,
+          "zIndex": 21,
           "widthName": 139.73779296875,
           "widthComment": 60
         },
@@ -2673,7 +2650,7 @@
           "active": false,
           "left": 1747.7777777777817,
           "top": 1702.6388888888864,
-          "zIndex": 16,
+          "zIndex": 15,
           "width": 162,
           "height": 100
         },
@@ -2792,7 +2769,7 @@
             "d79ae6af-5be6-474d-b981-141ec6ef0ae0"
           ],
           "x": 501.316878125,
-          "y": 870.2639,
+          "y": 854.8889,
           "direction": "right"
         },
         "constraintName": "fk_users_to_common_board",
@@ -3052,7 +3029,7 @@
             "cb154677-c8e4-4489-bb52-d665eab4728b"
           ],
           "x": 1005.319168359375,
-          "y": 852.6669,
+          "y": 853.9169,
           "direction": "bottom"
         },
         "constraintName": "fk_users_to_point",
@@ -3069,7 +3046,7 @@
             "a7e0917c-063d-4df5-9274-a662320c3d10"
           ],
           "x": 254.5893390625,
-          "y": 943.8889,
+          "y": 923.3889,
           "direction": "bottom"
         },
         "end": {
@@ -3084,110 +3061,6 @@
         "constraintName": "fk_common_board_to_attached_files",
         "visible": true,
         "id": "17357c3d-cec4-441e-838b-67ea6660203c"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Dash",
-        "start": {
-          "tableId": "938cbe85-11f4-4fe6-b8b3-0b74ac52b3f7",
-          "columnIds": [
-            "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
-          ],
-          "x": 577.0848,
-          "y": 278.0124,
-          "direction": "left"
-        },
-        "end": {
-          "tableId": "f0d37172-6e81-4cc0-8b42-a52c0aefce06",
-          "columnIds": [
-            "567577ef-fcdb-416c-84bb-7bf04507bfa6"
-          ],
-          "x": 520.21044921875,
-          "y": 212.8331,
-          "direction": "right"
-        },
-        "constraintName": "fk_main_board_to_faq_type",
-        "visible": true,
-        "id": "1782a1a2-474e-418c-a849-ba73212f432b"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Ring",
-        "start": {
-          "tableId": "f0d37172-6e81-4cc0-8b42-a52c0aefce06",
-          "columnIds": [
-            "a7d1217c-e9a5-42c1-9c17-c0268061b190"
-          ],
-          "x": 260.105224609375,
-          "y": 288.3331,
-          "direction": "bottom"
-        },
-        "end": {
-          "tableId": "8a70b7dc-2b81-45d3-bb0d-34eed851c404",
-          "columnIds": [
-            "7b9a7327-6e2c-4a43-bd64-4f649ac97f07"
-          ],
-          "x": 131.22556953125002,
-          "y": 649.3889,
-          "direction": "top"
-        },
-        "constraintName": "fk_faq_type_to_common_board",
-        "visible": true,
-        "id": "8fd442b1-36bb-472a-926e-04671befe969"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Dash",
-        "start": {
-          "tableId": "938cbe85-11f4-4fe6-b8b3-0b74ac52b3f7",
-          "columnIds": [
-            "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
-          ],
-          "x": 850.913657421875,
-          "y": 375.8874,
-          "direction": "bottom"
-        },
-        "end": {
-          "tableId": "98482f55-5c04-40b1-a54d-1e37b64d95c6",
-          "columnIds": [
-            "a2045d9f-b257-4168-aa0c-b80069e95abf"
-          ],
-          "x": 812.870826171875,
-          "y": 548.288,
-          "direction": "top"
-        },
-        "constraintName": "fk_main_board_to_event_date_board",
-        "visible": true,
-        "id": "9da8c9c5-54d1-439c-9f4d-0811b4aa4dfb"
-      },
-      {
-        "identification": false,
-        "relationshipType": "OneN",
-        "startRelationshipType": "Ring",
-        "start": {
-          "tableId": "98482f55-5c04-40b1-a54d-1e37b64d95c6",
-          "columnIds": [
-            "d73fddd2-085a-4ebf-8f4e-578752db29fc"
-          ],
-          "x": 567.9365,
-          "y": 623.788,
-          "direction": "left"
-        },
-        "end": {
-          "tableId": "8a70b7dc-2b81-45d3-bb0d-34eed851c404",
-          "columnIds": [
-            "98df26cd-fc99-41aa-90fe-d3b7d6ecb722"
-          ],
-          "x": 501.316878125,
-          "y": 723.0139,
-          "direction": "right"
-        },
-        "constraintName": "fk_event_date_board_to_common_board",
-        "visible": true,
-        "id": "81a928b1-77bc-43e5-bc55-1885fd03283e"
       },
       {
         "identification": false,
@@ -3214,6 +3087,84 @@
         "constraintName": "fk_shipment_to_progress_status_type",
         "visible": true,
         "id": "ac1f408c-d0c8-4ea6-85b8-504df8142795"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "8a70b7dc-2b81-45d3-bb0d-34eed851c404",
+          "columnIds": [
+            "a7e0917c-063d-4df5-9274-a662320c3d10"
+          ],
+          "x": 501.316878125,
+          "y": 717.8889,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "98482f55-5c04-40b1-a54d-1e37b64d95c6",
+          "columnIds": [
+            "84c42be4-2b5c-4daf-a26a-ec79234d1d1a"
+          ],
+          "x": 567.9365,
+          "y": 623.788,
+          "direction": "left"
+        },
+        "constraintName": "fk_common_board_to_event_date_board",
+        "visible": true,
+        "id": "c831634c-cb99-4499-a5b0-f2eabc6b05ac"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "938cbe85-11f4-4fe6-b8b3-0b74ac52b3f7",
+          "columnIds": [
+            "0c080ae1-6ebf-4ecf-a449-09948e8650e1"
+          ],
+          "x": 577.0848,
+          "y": 278.0124,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "f0d37172-6e81-4cc0-8b42-a52c0aefce06",
+          "columnIds": [
+            "567577ef-fcdb-416c-84bb-7bf04507bfa6"
+          ],
+          "x": 520.21044921875,
+          "y": 214.0831,
+          "direction": "right"
+        },
+        "constraintName": "fk_main_board_to_faq_type",
+        "visible": true,
+        "id": "1782a1a2-474e-418c-a849-ba73212f432b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Ring",
+        "start": {
+          "tableId": "f0d37172-6e81-4cc0-8b42-a52c0aefce06",
+          "columnIds": [
+            "a7d1217c-e9a5-42c1-9c17-c0268061b190"
+          ],
+          "x": 260.105224609375,
+          "y": 289.5831,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "8a70b7dc-2b81-45d3-bb0d-34eed851c404",
+          "columnIds": [
+            "98f4d0cb-8c4b-4710-8614-ecec9f587846"
+          ],
+          "x": 131.22556953125002,
+          "y": 649.3889,
+          "direction": "top"
+        },
+        "constraintName": "fk_faq_type_to_common_board",
+        "visible": true,
+        "id": "ca0353cb-15f9-4ba5-8ace-e6ce6feb3141"
       }
     ]
   }
