@@ -196,7 +196,7 @@ VALUES
 ('INQ_PROG_STAT_IN','INQ_IN_PROGRESS','문의중',null,null), 
 ('INQ_PROG_STAT_DONE','INQ_COMPLETION','답변완료',null,null),
 ('SHIP_PROG_STAT_1','REGISTER','접수완료',sysdate(),'TRK_20230221_2'),
-('SHIP_PROG_STAT_2','PIPCKUP','수거완료',sysdate(),'TRK_20230221_1'),
+('SHIP_PROG_STAT_2','PICKUP','수거완료',sysdate(),'TRK_20230221_1'),
 ('SHIP_PROG_STAT_3','IN_PROGRESS','배송중',sysdate(),'TRK_20230217_2'),
 ('SHIP_PROG_STAT_4','REGISTER','접수완료',sysdate(),'TRK_20230217_1'),
 ('SHIP_PROG_STAT_5','PIPCKUP','수거완료',sysdate(),'TRK_20230217_1'),
