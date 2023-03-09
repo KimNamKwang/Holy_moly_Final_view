@@ -43,7 +43,7 @@ VALUES
 ('user2','한라봉','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','abc@naver.com','2000-08-15','01684','서울시 강남구 테헤란로 84','101호','','2022-08-25 12:49:43','01023456789',
 'Y','GRADE_F','AUTH_U'),
 ('user3','금귤','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','abc@naver.com','1992-07-07','01684','서울시 강남구 테헤란로 84','101호','','2022-10-04 01:53:25','01023456789',
-'N(NULL이면 N으로 들어가게 하던지 체크가 안되면 으로 들어가게 하던지.)','GRADE_F','AUTH_U'),
+'N','GRADE_F','AUTH_U'),
 ('user4','안성국','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','ask123@naver.com','2005-02-11','01684','서울시 강남구 테헤란로 84','101호','','2022-11-06 10:13:07','01023256789',
 'Y','GRADE_PL','AUTH_U'),
 ('user5','천호연','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','choyeon@naver.com','1992-01-01','01684','서울시 강남구 테헤란로 84','101호','','2022-12-30 22:52:46','01021456789',
@@ -53,7 +53,7 @@ NULL,'GRADE_PU','AUTH_U'),
 ('user7','강백호','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','power@naver.com','1992-07-25','01684','서울시 강남구 테헤란로 84','101호','','2023-01-20 23:41:37','01023643789',
 'Y','GRADE_V','AUTH_U'),
 ('user8','이재현','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','jhlee@naver.com','1992-02-08','01684','서울시 강남구 테헤란로 84','101호','','2023-02-17 15:56:10','01023956789',
-'N(NULL이면 N으로 들어가게 하던지 체크가 안되면 으로 들어가게 하던지.)','GRADE_F','AUTH_U'),
+'N','GRADE_F','AUTH_U'),
 ('user9','김남광','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','kjf@naver.com','1999-09-01','01684','서울시 강남구 테헤란로 84','101호','','2023-01-05 11:35:56','01023456569',
 NULL,'GRADE_PU','AUTH_U'),
 ('user10','김석진','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','sjk@naver.com','1999-10-17','01684','서울시 강남구 테헤란로 84','101호','','2023-03-19 21:27:53','01053456789',
@@ -90,7 +90,7 @@ VALUES
 ('EVT_20230216_1','김석진 데이터베이스 6행시 성공 기념 이벤트','이번 이벤트는 로지텍 마우스 추첨행사입니다','2022-10-12 03:40:25','관리자',123,NULL,'admin1','BOARD_EVENT', NULL),
 ('EVT_20230216_2','김석진 로지텍 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-11-01 10:24:13','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
 ('EVT_20230216_3','왕석진 로지착 청설모 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-09-04 12:06:46','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
-('EVT_20230216_4','진석기 햄스터 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-12-42 05:12:52','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
+('EVT_20230216_4','진석기 햄스터 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-12-22 05:12:52','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
 ('EVT_20230216_5','김진영 참외 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-11-06 10:13:07','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
 ('EVT_20230216_6','김준진 수박 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-08-21 08:31:26','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
 ('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.','2023-02-22 23:25:04','관리자',15,NULL,'admin1','BOARD_NOTICE', NULL),
@@ -166,7 +166,7 @@ VALUES
 INSERT INTO SHIPMENT_TYPES
 (SHIPMENT_TYPE_UID, SHIPMENT_TYPE, SHIPMENT_TYPE_DESCRIPTION)
 VALUES
-('SHIP_GEN','GRNERAL','일반 택배'),('SHIP_BULK','BULF','다량 택배'),('SHIP_PRE','PREMIUN','프리미엄 택배')
+('SHIP_GEN','GENERAL','일반 택배'),('SHIP_BULK','BULK','다량 택배'),('SHIP_PRE','PREMIUN','프리미엄 택배')
 ;
 
 INSERT INTO SHIPMENT
