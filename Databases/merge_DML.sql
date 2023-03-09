@@ -43,7 +43,7 @@ VALUES
 ('user2','한라봉','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','abc@naver.com','2000-08-15','01684','서울시 강남구 테헤란로 84','101호','','2022-08-25 12:49:43','01023456789',
 'Y','GRADE_F','AUTH_U'),
 ('user3','금귤','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','abc@naver.com','1992-07-07','01684','서울시 강남구 테헤란로 84','101호','','2022-10-04 01:53:25','01023456789',
-'N(NULL이면 N으로 들어가게 하던지 체크가 안되면 으로 들어가게 하던지.)','GRADE_F','AUTH_U'),
+'N','GRADE_F','AUTH_U'),
 ('user4','안성국','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','ask123@naver.com','2005-02-11','01684','서울시 강남구 테헤란로 84','101호','','2022-11-06 10:13:07','01023256789',
 'Y','GRADE_PL','AUTH_U'),
 ('user5','천호연','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','choyeon@naver.com','1992-01-01','01684','서울시 강남구 테헤란로 84','101호','','2022-12-30 22:52:46','01021456789',
@@ -53,7 +53,7 @@ NULL,'GRADE_PU','AUTH_U'),
 ('user7','강백호','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','power@naver.com','1992-07-25','01684','서울시 강남구 테헤란로 84','101호','','2023-01-20 23:41:37','01023643789',
 'Y','GRADE_V','AUTH_U'),
 ('user8','이재현','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','jhlee@naver.com','1992-02-08','01684','서울시 강남구 테헤란로 84','101호','','2023-02-17 15:56:10','01023956789',
-'N(NULL이면 N으로 들어가게 하던지 체크가 안되면 으로 들어가게 하던지.)','GRADE_F','AUTH_U'),
+'N','GRADE_F','AUTH_U'),
 ('user9','김남광','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','kjf@naver.com','1999-09-01','01684','서울시 강남구 테헤란로 84','101호','','2023-01-05 11:35:56','01023456569',
 NULL,'GRADE_PU','AUTH_U'),
 ('user10','김석진','$2a$10$lNoaDTHR5.LvYz7t1k6rGu4KUVE7SNC7pfgMDxzdqjIXfB3bke8gq','sjk@naver.com','1999-10-17','01684','서울시 강남구 테헤란로 84','101호','','2023-03-19 21:27:53','01053456789',
@@ -90,7 +90,7 @@ VALUES
 ('EVT_20230216_1','김석진 데이터베이스 6행시 성공 기념 이벤트','이번 이벤트는 로지텍 마우스 추첨행사입니다','2022-10-12 03:40:25','관리자',123,NULL,'admin1','BOARD_EVENT', NULL),
 ('EVT_20230216_2','김석진 로지텍 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-11-01 10:24:13','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
 ('EVT_20230216_3','왕석진 로지착 청설모 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-09-04 12:06:46','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
-('EVT_20230216_4','진석기 햄스터 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-12-42 05:12:52','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
+('EVT_20230216_4','진석기 햄스터 마우스 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-12-22 05:12:52','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
 ('EVT_20230216_5','김진영 참외 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-11-06 10:13:07','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
 ('EVT_20230216_6','김준진 수박 당첨 기념 이벤트','로지텍 마우스에 당첨되신 분에 한해 로지텍 햄스터를 드립니다.','2022-08-21 08:31:26','관리자',100,NULL,'admin1','BOARD_EVENT', NULL),
 ('NOT_20230216_1','3월 배송지연 안내','2023년 3월 1일부터 12일까지 배송이 지연됩니다.','2023-02-22 23:25:04','관리자',15,NULL,'admin1','BOARD_NOTICE', NULL),
@@ -150,23 +150,23 @@ VALUES
 INSERT INTO ITEM_TYPES
 (ITEM_TYPE_UID, ITEM_TYPE, ITEM_TYPE_DESCRIPTION)
 VALUES
-('item_f_01','food','농축산물류'),('item_f_02','food_dried','건어물'),('item_f_03','food_fruits','과일류'),
-('item_f_04','food_rice','쌀'),('item_f_05','food_vegetables','채소류'),('item_f_06','food_else','기타'),
+('item_f_01','food_dried','건어물'),('item_f_02','food_fruits','과일류'),
+('item_f_03','food_rice','쌀'),('item_f_04','food_vegetables','채소류'),('item_f_05','food_else','기타 농축산물류'),
 
-('item_b_01','book','서적류'),('item_b_02','book_documents','서류'),('item_b_03','book_publications','서적'),
-('item_b_04','book_prints','인쇄물'),('item_b_05','book_else','기타 서적류'),
+('item_b_01','book_documents','서류'),('item_b_02','book_publications','서적'),
+('item_b_03','book_prints','인쇄물'),('item_b_04','book_else','기타 서적류'),
 
-('item_m_01','medicine','약품류'),('item_m_02','medicine_drugs','의약품'),('item_m_03','medicine_oriental','한약'),
-('item_m_04','medicine_healthSupplement','건강보조제품'),('item_m_05','food','농축산물류'),('item_m_06','food','농축산물류'),
+('item_m_01','medicine_drugs','의약품'),('item_m_02','medicine_oriental','한약'),
+('item_m_03','medicine_healthSupplement','건강보조제품'),('item_m_04','medicine_else','기타 약품류'),
 
-('item_c_01','clothing','의류/잡화'),('item_c_02','clothing_clothes','의류'),('item_c_03','clothing_shoes','신발'),
-('item_c_04','clothing_bagAndWallets','가방/지갑'),('item_c_05','clothing_accessories','액세서리')
+('item_c_01','clothing_clothes','의류'),('item_c_02','clothing_shoes','신발'),
+('item_c_03','clothing_bagAndWallets','가방/지갑'),('item_c_04','clothing_accessories','액세서리'),('item_c_05','clothing_else','기타 의류/잡화류')
 ;
 
 INSERT INTO SHIPMENT_TYPES
 (SHIPMENT_TYPE_UID, SHIPMENT_TYPE, SHIPMENT_TYPE_DESCRIPTION)
 VALUES
-('SHIP_GEN','GRNERAL','일반 택배'),('SHIP_BULK','BULF','다량 택배'),('SHIP_PRE','PREMIUN','프리미엄 택배')
+('SHIP_GEN','GENERAL','일반 택배'),('SHIP_BULK','BULK','다량 택배'),('SHIP_PRE','PREMIUN','프리미엄 택배')
 ;
 
 INSERT INTO SHIPMENT
@@ -193,21 +193,21 @@ VALUES
 INSERT INTO PROGRESS_STATUS_TYPE
 (PROGRESS_STATUS_UID, PROGRESS_STATUS_TYPE, PROGRESS_STATUS_DESCRIPTION, PROGRESS_STATUS_TIME, TRACKING_NUMBER)
 VALUES
-('INQ_PROG_STAT_IN','IN_PROGRESS','문의중',null,null), 
-('INQ_PROG_STAT_DONE','COMPLETION','답변완료',null,null),
+('INQ_PROG_STAT_IN','INQ_IN_PROGRESS','문의중',null,null), 
+('INQ_PROG_STAT_DONE','INQ_COMPLETION','답변완료',null,null),
 ('SHIP_PROG_STAT_1','REGISTER','접수완료','2022-10-14 09:10:25','TRK_20230221_2'),
-('SHIP_PROG_STAT_2','PIPCKUP','수거완료','2023-03-07 17:14:23','TRK_20230221_1'),
+('SHIP_PROG_STAT_2','PICKUP','수거완료','2023-03-07 17:14:23','TRK_20230221_1'),
 ('SHIP_PROG_STAT_3','IN_PROGRESS','배송중','2023-03-02 12:51:00','TRK_20230217_2'),
 ('SHIP_PROG_STAT_4','REGISTER','접수완료','2023-01-30 00:40:55','TRK_20230217_1'),
-('SHIP_PROG_STAT_5','PIPCKUP','수거완료','2022-11-23 23:40:26','TRK_20230217_1'),
+('SHIP_PROG_STAT_5','PICKUP','수거완료','2022-11-23 23:40:26','TRK_20230217_1'),
 ('SHIP_PROG_STAT_6','IN_PROGRESS','배송중','2022-09-20 06:28:52','TRK_20230217_1'),
 ('SHIP_PROG_STAT_7','COMPLETE','배송완료','2023-02-12 09:28:52','TRK_20230217_1'),
 ('SHIP_PROG_STAT_8','REGISTER','접수완료','2023-02-27 11:15:23','TRK_20230227_1'),
-('SHIP_PROG_STAT_9','PIPCKUP','수거완료','2023-02-27 17:08:00','TRK_20230227_1'),
+('SHIP_PROG_STAT_9','PICKUP','수거완료','2023-02-27 17:08:00','TRK_20230227_1'),
 ('SHIP_PROG_STAT_10','IN_PROGRESS','배송중','2023-02-28 10:00:08','TRK_20230227_1'),
 ('SHIP_PROG_STAT_11','COMPLETE','배송완료','2023-03-01 17:06:45','TRK_20230227_1'),
 ('SHIP_PROG_STAT_12','REGISTER','접수완료','2023-02-27 11:15:23','TRK_20230227_2'),
-('SHIP_PROG_STAT_13','PIPCKUP','수거완료','2023-02-27 17:08:00','TRK_20230227_2'),
+('SHIP_PROG_STAT_13','PICKUP','수거완료','2023-02-27 17:08:00','TRK_20230227_2'),
 ('SHIP_PROG_STAT_14','IN_PROGRESS','배송중','2023-02-28 10:00:08','TRK_20230227_2')
 ;
 
