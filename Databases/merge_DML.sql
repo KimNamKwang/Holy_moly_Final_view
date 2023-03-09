@@ -150,17 +150,17 @@ VALUES
 INSERT INTO ITEM_TYPES
 (ITEM_TYPE_UID, ITEM_TYPE, ITEM_TYPE_DESCRIPTION)
 VALUES
-('item_f_01','food','농축산물류'),('item_f_02','food_dried','건어물'),('item_f_03','food_fruits','과일류'),
-('item_f_04','food_rice','쌀'),('item_f_05','food_vegetables','채소류'),('item_f_06','food_else','기타'),
+('item_f_01','food_dried','건어물'),('item_f_02','food_fruits','과일류'),
+('item_f_03','food_rice','쌀'),('item_f_04','food_vegetables','채소류'),('item_f_05','food_else','기타 농축산물류'),
 
-('item_b_01','book','서적류'),('item_b_02','book_documents','서류'),('item_b_03','book_publications','서적'),
-('item_b_04','book_prints','인쇄물'),('item_b_05','book_else','기타 서적류'),
+('item_b_01','book_documents','서류'),('item_b_02','book_publications','서적'),
+('item_b_03','book_prints','인쇄물'),('item_b_04','book_else','기타 서적류'),
 
-('item_m_01','medicine','약품류'),('item_m_02','medicine_drugs','의약품'),('item_m_03','medicine_oriental','한약'),
-('item_m_04','medicine_healthSupplement','건강보조제품'),('item_m_05','food','농축산물류'),('item_m_06','food','농축산물류'),
+('item_m_01','medicine_drugs','의약품'),('item_m_02','medicine_oriental','한약'),
+('item_m_03','medicine_healthSupplement','건강보조제품'),('item_m_04','medicine_else','기타 약품류'),
 
-('item_c_01','clothing','의류/잡화'),('item_c_02','clothing_clothes','의류'),('item_c_03','clothing_shoes','신발'),
-('item_c_04','clothing_bagAndWallets','가방/지갑'),('item_c_05','clothing_accessories','액세서리')
+('item_c_01','clothing_clothes','의류'),('item_c_02','clothing_shoes','신발'),
+('item_c_03','clothing_bagAndWallets','가방/지갑'),('item_c_04','clothing_accessories','액세서리'),('item_c_05','clothing_else','기타 의류/잡화류')
 ;
 
 INSERT INTO SHIPMENT_TYPES
@@ -193,21 +193,21 @@ VALUES
 INSERT INTO PROGRESS_STATUS_TYPE
 (PROGRESS_STATUS_UID, PROGRESS_STATUS_TYPE, PROGRESS_STATUS_DESCRIPTION, PROGRESS_STATUS_TIME, TRACKING_NUMBER)
 VALUES
-('INQ_PROG_STAT_IN','IN_PROGRESS','문의중',null,null), 
-('INQ_PROG_STAT_DONE','COMPLETION','답변완료',null,null),
+('INQ_PROG_STAT_IN','INQ_IN_PROGRESS','문의중',null,null), 
+('INQ_PROG_STAT_DONE','INQ_COMPLETION','답변완료',null,null),
 ('SHIP_PROG_STAT_1','REGISTER','접수완료','2022-10-14 09:10:25','TRK_20230221_2'),
-('SHIP_PROG_STAT_2','PIPCKUP','수거완료','2023-03-07 17:14:23','TRK_20230221_1'),
+('SHIP_PROG_STAT_2','PICKUP','수거완료','2023-03-07 17:14:23','TRK_20230221_1'),
 ('SHIP_PROG_STAT_3','IN_PROGRESS','배송중','2023-03-02 12:51:00','TRK_20230217_2'),
 ('SHIP_PROG_STAT_4','REGISTER','접수완료','2023-01-30 00:40:55','TRK_20230217_1'),
-('SHIP_PROG_STAT_5','PIPCKUP','수거완료','2022-11-23 23:40:26','TRK_20230217_1'),
+('SHIP_PROG_STAT_5','PICKUP','수거완료','2022-11-23 23:40:26','TRK_20230217_1'),
 ('SHIP_PROG_STAT_6','IN_PROGRESS','배송중','2022-09-20 06:28:52','TRK_20230217_1'),
 ('SHIP_PROG_STAT_7','COMPLETE','배송완료','2023-02-12 09:28:52','TRK_20230217_1'),
 ('SHIP_PROG_STAT_8','REGISTER','접수완료','2023-02-27 11:15:23','TRK_20230227_1'),
-('SHIP_PROG_STAT_9','PIPCKUP','수거완료','2023-02-27 17:08:00','TRK_20230227_1'),
+('SHIP_PROG_STAT_9','PICKUP','수거완료','2023-02-27 17:08:00','TRK_20230227_1'),
 ('SHIP_PROG_STAT_10','IN_PROGRESS','배송중','2023-02-28 10:00:08','TRK_20230227_1'),
 ('SHIP_PROG_STAT_11','COMPLETE','배송완료','2023-03-01 17:06:45','TRK_20230227_1'),
 ('SHIP_PROG_STAT_12','REGISTER','접수완료','2023-02-27 11:15:23','TRK_20230227_2'),
-('SHIP_PROG_STAT_13','PIPCKUP','수거완료','2023-02-27 17:08:00','TRK_20230227_2'),
+('SHIP_PROG_STAT_13','PICKUP','수거완료','2023-02-27 17:08:00','TRK_20230227_2'),
 ('SHIP_PROG_STAT_14','IN_PROGRESS','배송중','2023-02-28 10:00:08','TRK_20230227_2')
 ;
 
