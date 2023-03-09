@@ -150,17 +150,17 @@ VALUES
 INSERT INTO ITEM_TYPES
 (ITEM_TYPE_UID, ITEM_TYPE, ITEM_TYPE_DESCRIPTION)
 VALUES
-('item_f_01','food','농축산물류'),('item_f_02','food_dried','건어물'),('item_f_03','food_fruits','과일류'),
-('item_f_04','food_rice','쌀'),('item_f_05','food_vegetables','채소류'),('item_f_06','food_else','기타'),
+('item_f_01','food_dried','건어물'),('item_f_02','food_fruits','과일류'),
+('item_f_03','food_rice','쌀'),('item_f_04','food_vegetables','채소류'),('item_f_05','food_else','기타 농축산물류'),
 
-('item_b_01','book','서적류'),('item_b_02','book_documents','서류'),('item_b_03','book_publications','서적'),
-('item_b_04','book_prints','인쇄물'),('item_b_05','book_else','기타 서적류'),
+('item_b_01','book_documents','서류'),('item_b_02','book_publications','서적'),
+('item_b_03','book_prints','인쇄물'),('item_b_04','book_else','기타 서적류'),
 
-('item_m_01','medicine','약품류'),('item_m_02','medicine_drugs','의약품'),('item_m_03','medicine_oriental','한약'),
-('item_m_04','medicine_healthSupplement','건강보조제품'),('item_m_05','food','농축산물류'),('item_m_06','food','농축산물류'),
+('item_m_01','medicine_drugs','의약품'),('item_m_02','medicine_oriental','한약'),
+('item_m_03','medicine_healthSupplement','건강보조제품'),('item_m_04','medicine_else','기타 약품류'),
 
-('item_c_01','clothing','의류/잡화'),('item_c_02','clothing_clothes','의류'),('item_c_03','clothing_shoes','신발'),
-('item_c_04','clothing_bagAndWallets','가방/지갑'),('item_c_05','clothing_accessories','액세서리')
+('item_c_01','clothing_clothes','의류'),('item_c_02','clothing_shoes','신발'),
+('item_c_03','clothing_bagAndWallets','가방/지갑'),('item_c_04','clothing_accessories','액세서리'),('item_c_05','clothing_else','의류/잡화')
 ;
 
 INSERT INTO SHIPMENT_TYPES
